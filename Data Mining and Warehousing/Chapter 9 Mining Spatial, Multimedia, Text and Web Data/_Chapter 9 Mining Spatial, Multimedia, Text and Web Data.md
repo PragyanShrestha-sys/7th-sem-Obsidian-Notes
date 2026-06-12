@@ -1,0 +1,2 @@
+## [[Spatial Data mining]]
+In data mining, **Spatial Data Mining** is the process of discovering interesting, useful, and non-trivial patterns, relationships, or knowledge from **spatial data**—data that has a geographic or location-based component (e.g., coordinates, regions, shapes, or network paths).

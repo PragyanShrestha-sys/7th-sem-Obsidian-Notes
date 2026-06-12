@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "39a6e689d4b970ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd501b2b15ebc6c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48b6f8009e3685f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 1 Introduction to Software project Management/Categorising Software Projects.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Categorising Software Projects"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7ae487dd631f02a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ed7bbf5d7e5ad37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47fb7c4618fea202",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9b2adb8b67deff4a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d8e68ddd8b032f9b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d6985cba9a339fa2",
+    "type": "split",
+    "children": [
+      {
+        "id": "4877f70d38e72834",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13cc702eb86dbff6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "9f9c83246ed62c67",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "ddf174d50d7a028b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "80f5b17d746efad4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "be68cec4420ebf85",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "48b6f8009e3685f4",
+  "lastOpenFiles": [
+    "Chapter 1 Introduction to Software project Management/_Chapter 1 Introduction to Software Project Management.md",
+    "Chapter 1 Introduction to Software project Management/Types of Project Plan.md",
+    "Chapter 1 Introduction to Software project Management/Software Project Management Framework.md",
+    "Chapter 1 Introduction to Software project Management/Project Management Life Cycle.md",
+    "Chapter 1 Introduction to Software project Management/Activities covered by SPM.md",
+    "Chapter 1 Introduction to Software project Management/Categorising Software Projects.md",
+    "Chapter 1 Introduction to Software project Management/Difference between software project and other types of project.md",
+    "Chapter 1 Introduction to Software project Management/Software Project.md",
+    "Chapter 1 Introduction to Software project Management/Software product.md",
+    "Chapter 1 Introduction to Software project Management/Some Attributes of software Product (Non - Functional requirements ).md",
+    "SEI (Software Engineering Institute) and its Missions.md",
+    "Operation Characteristics.md",
+    "Fesability Study.md",
+    "Transition Characteristics.md",
+    "Chapter 1 Introduction to Software project Management/Problems in Software Project Management.md"
+  ]
+}
