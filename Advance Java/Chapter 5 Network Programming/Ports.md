@@ -4,12 +4,13 @@ Here's a clear explanation of **network ports** – what they are and why they'r
 
 Think of a server (like google.com) as a **large apartment building**:
 
-| Concept | Analogy |
-|---------|---------|
-| **IP address** | The building's street address (e.g., 123 Main St) |
-| **Port number** | The specific apartment number (e.g., Apt 404) |
-| **Data packet** | A letter or package |
-| **Protocol (TCP/UDP)** | The mail service (registered vs regular mail) |
+| Concept                | Analogy                                           |
+| ---------------------- | ------------------------------------------------- |
+| **IP address**         | The building's street address (e.g., 123 Main St) |
+| **Port number**        | The specific apartment number (e.g., Apt 404)     |
+| **Data packet**        | A letter or package                               |
+| **Protocol (TCP/UDP)** | The mail service (registered vs regular mail)     |
+
 
 - The **IP address** gets the data to the right building.
 - The **port number** gets the data to the right apartment (application) inside that building.
@@ -27,7 +28,6 @@ A **port** is a **virtual endpoint** in an operating system – a numbered door 
 - **Different protocols** have separate port spaces (TCP port 80 ≠ UDP port 80)
 
 ---
-
 ## Why Are Ports Needed?
 
 ### Problem without ports:
@@ -61,13 +61,13 @@ The port number tells the OS exactly **which application queue** to deliver the 
 
 When you visit `https://google.com`:
 
-| Step | What happens | Port involved |
-|------|--------------|---------------|
-| 1 | Your browser picks a random **source port** (e.g., 54321) | Source: 54321 (temporary) |
-| 2 | Browser knows Google uses **destination port 443** (HTTPS) | Destination: 443 (well-known) |
-| 3 | Your computer sends packet: `FROM (your IP:54321) TO (8.8.8.8:443)` | Both ports in use |
-| 4 | Google's server receives on port 443, sends response back to 54321 | Response to 54321 |
-| 5 | Your OS sees "port 54321" and delivers data to your browser, not your email app | Matching completed |
+| Step | What happens                                                                    | Port involved                 |
+| ---- | ------------------------------------------------------------------------------- | ----------------------------- |
+| 1    | Your browser picks a random **source port** (e.g., 54321)                       | Source: 54321 (temporary)     |
+| 2    | Browser knows Google uses **destination port 443** (HTTPS)                      | Destination: 443 (well-known) |
+| 3    | Your computer sends packet: `FROM (your IP:54321) TO (8.8.8.8:443)`             | Both ports in use             |
+| 4    | Google's server receives on port 443, sends response back to 54321              | Response to 54321             |
+| 5    | Your OS sees "port 54321" and delivers data to your browser, not your email app | Matching completed            |
 
 **Key insight:** The **combination** of (your IP, your port, their IP, their port) uniquely identifies every connection on the internet. This is called a **socket**.
 
@@ -140,11 +140,11 @@ Typical home firewall rules:
 
 ## Summary Table: Ports vs IP Addresses
 
-| Concept | What it does | Analogy | Example |
-|---------|--------------|---------|---------|
-| **IP Address** | Identifies a specific machine on the network | Street address of apartment building | 192.168.1.100 |
-| **Port Number** | Identifies a specific application on that machine | Apartment number | 443 (HTTPS) |
-| **Socket** | IP + Port combined | Full address: 192.168.1.100:443 | Delivers to exact app |
+| Concept         | What it does                                      | Analogy                              | Example               |
+| --------------- | ------------------------------------------------- | ------------------------------------ | --------------------- |
+| **IP Address**  | Identifies a specific machine on the network      | Street address of apartment building | 192.168.1.100         |
+| **Port Number** | Identifies a specific application on that machine | Apartment number                     | 443 (HTTPS)           |
+| **Socket**      | IP + Port combined                                | Full address: 192.168.1.100:443      | Delivers to exact app |
 
 ---
 

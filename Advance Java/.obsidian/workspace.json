@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 4 Database Connectivityu/Transaction Processing in JDBC.md",
+                "file": "Chapter 5 Network Programming/Sockets Programming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transaction Processing in JDBC"
+              "title": "Sockets Programming"
             }
           }
         ]
@@ -185,8 +185,20 @@
   },
   "active": "a4035803757b0770",
   "lastOpenFiles": [
-    "Chapter 4 Database Connectivityu/_Chapter 4 Database Connectivity.md",
+    "Chapter 5 Network Programming/_Chapter 5 Network Programming.md",
+    "Chapter 5 Network Programming/Networking Classes in JDK.md",
+    "Chapter 5 Network Programming/Reading from URL.md",
+    "Chapter 5 Network Programming/Above code explanation.md",
+    "HTTP Response Codes (Common).md",
+    "Attachments/Pasted image 20260613131131.png",
+    "Chapter 5 Network Programming/Sockets Programming.md",
+    "Chapter 5 Network Programming/Socket Programming Using TCP and UDP.md",
+    "Chapter 5 Network Programming/Ports.md",
+    "Chapter 5 Network Programming/UDP and TCP.md",
+    "Chapter 5 Network Programming/Difference Between TCP and udp.md",
+    "Chapter 5 Network Programming/Three way handshake in TCP.md",
     "Chapter 4 Database Connectivityu/Transaction Processing in JDBC.md",
+    "Chapter 4 Database Connectivityu/_Chapter 4 Database Connectivity.md",
     "Chapter 4 Database Connectivityu/Prepared Statements.md",
     "What is 'scanner' how does it work(used for input).md",
     "Chapter 4 Database Connectivityu/DDL (Data Defination Language) and DML (Data Manipulation Language).md",
@@ -206,23 +218,11 @@
     "Attachments/Pasted image 20260613064630.png",
     "Attachments/Pasted image 20260613062039.png",
     "Chapter 3 Event Handling/_Chapter 3 Event Handling.md",
-    "Chapter 3 Event Handling/Handling Events.md",
-    "Chapter 3 Event Handling/3.1.md",
-    "Chapter 3 Event Handling/Complete Example Text Editor with Event Handling.md",
-    "Chapter 3 Event Handling/Adapter Classes.md",
-    "Without Action Command (Hard to identify).md",
-    "Chapter 3 Event Handling/Listener Interfaces.md",
-    "Chapter 3 Event Handling/shorter version (Have not checked).md",
-    "3.1 Event Handling Concepts.md",
-    "Chapter 7 Servlets and Java Server Pages/Untitled.md",
     "_pdfs/3_Connecting_to_Database_in_JSP.pdf",
-    "Chapter 7 Servlets and Java Server Pages/__Chapter 7 Servlets and Java Server Pages.md",
-    "Chapter 7 Servlets and Java Server Pages/Introductino to java web frameworks.md",
     "Attachments/Pasted image 20260608163227.png",
     "_pdfs",
     "Attachments/Pasted image 20260608140122.png",
     "Attachments/Pasted image 20260608140109.png",
-    "Attachments/Pasted image 20260608135303.png",
     "_pdfs/2_Implicit_Objects_in_JSP.pdf",
     "Chapter 8 RUI and CORBA",
     "Chapter 6 GUI with JAVA FX",

@@ -21,6 +21,7 @@ Step 4: Print each line
 ```java
 import java.net.*;
 ```
+
 | What it does | Why needed |
 |--------------|------------|
 | Imports Java's networking classes | Gives you `URL` class |
@@ -31,6 +32,7 @@ import java.net.*;
 ```java
 import java.io.*;`
 ```
+
 | What it does | Why needed |
 |--------------|------------|
 | Imports Java's input/output classes | Gives you `BufferedReader`, `InputStreamReader` |
@@ -41,6 +43,7 @@ import java.io.*;`
 ```java
 public class ReadURLShort {
 ```
+
 | What it does | Why needed |
 |--------------|------------|
 | Creates a class named ReadURLShort | Every Java program needs a class |
@@ -51,6 +54,7 @@ public class ReadURLShort {
 ```java
 public static void main(String[] args) throws IOException {
 ```
+
 | What it does | Why needed |
 |--------------|------------|
 | Main method where program starts | `throws IOException` = "I know errors might happen" |
@@ -61,6 +65,7 @@ public static void main(String[] args) throws IOException {
 ```java
 URL url = new URL("https://www.example.com");
 ```
+
 | What it does | Analogy |
 |--------------|---------|
 | Creates a URL object with the web address | Writing an address on an envelope |
@@ -76,10 +81,11 @@ new URL("https://www.example.com") = "put this address in the container"
 ```java
 try (BufferedReader reader = new BufferedReader(
 ```
-| What it does | Analogy |
-|--------------|---------|
-| Creates a BufferedReader (will explain below) | Getting a fast reader ready |
-| `try()` with parentheses = auto-closes when done | No need to manually close |
+
+| What it does                                     | Analogy                     |
+| ------------------------------------------------ | --------------------------- |
+| Creates a BufferedReader (will explain below)    | Getting a fast reader ready |
+| `try()` with parentheses = auto-closes when done | No need to manually close   |
 
 ---
 
@@ -94,6 +100,7 @@ Let me break this inside-out:
 ```java
 url.openStream()
 ```
+
 | What it does | Analogy |
 |--------------|---------|
 | Opens connection to the website | Opening the envelope |
@@ -103,15 +110,17 @@ url.openStream()
 ```java
 new InputStreamReader(url.openStream())
 ```
-| What it does | Analogy |
-|--------------|---------|
-| Converts raw bytes into characters | Translating letter from computer language to English |
-| Handles different text formats (UTF-8, etc.) | Making sure you can read it |
+
+| What it does                                 | Analogy                                              |
+| -------------------------------------------- | ---------------------------------------------------- |
+| Converts raw bytes into characters           | Translating letter from computer language to English |
+| Handles different text formats (UTF-8, etc.) | Making sure you can read it                          |
 
 #### Part C: `new BufferedReader(...)`
 ```java
 new BufferedReader(new InputStreamReader(url.openStream()))
 ```
+
 | What it does | Analogy |
 |--------------|---------|
 | Adds a "buffer" for efficient reading | Reading whole sentences instead of letter by letter |

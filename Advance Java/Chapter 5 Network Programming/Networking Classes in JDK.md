@@ -23,12 +23,12 @@ https://www.example.com:8080/products?id=123#section
 
 ## Why Work with URLs?
 
-| Need | Explanation |
-|------|-------------|
+| Need                     | Explanation                        |
+| ------------------------ | ---------------------------------- |
 | **Download web content** | Read HTML, JSON, XML from websites |
-| **Call web APIs** | Get data from REST services |
-| **Access resources** | Read files from internet |
-| **Web scraping** | Extract data from web pages |
+| **Call web APIs**        | Get data from REST services        |
+| **Access resources**     | Read files from internet           |
+| **Web scraping**         | Extract data from web pages        |
 
 ---
 
@@ -169,48 +169,7 @@ Full URL: https://www.google.com/search?q=java+networking
 ```
 
 ---
-## HTTP Response Codes (Common)
-
-| Code | Meaning |
-|------|---------|
-| 200 | OK (Success) |
-| 201 | Created (POST successful) |
-| 301 | Moved Permanently (redirect) |
-| 400 | Bad Request (client error) |
-| 401 | Unauthorized (need login) |
-| 403 | Forbidden (no permission) |
-| 404 | Not Found |
-| 500 | Internal Server Error |
-
-```java
-switch (conn.getResponseCode()) {
-    case HttpURLConnection.HTTP_OK:
-        System.out.println("Success!");
-        break;
-    case HttpURLConnection.HTTP_NOT_FOUND:
-        System.out.println("Page not found!");
-        break;
-    case HttpURLConnection.HTTP_INTERNAL_ERROR:
-        System.out.println("Server error!");
-        break;
-}
-```
-
----
-
-## URL vs URI
-
-| Aspect | URL | URI |
-|--------|-----|-----|
-| **Full form** | Uniform Resource Locator | Uniform Resource Identifier |
-| **Purpose** | Locates resource (with location) | Identifies resource (may not have location) |
-| **Example** | `https://www.google.com` | `/images/logo.png` |
-| **Java class** | `java.net.URL` | `java.net.URI` |
-
-```java
-URI uri = new URI("/products/123");
-URL url = uri.toURL();  // Convert URI to URL if possible
-```
+## [[HTTP Response Codes (Common)]]
 
 ---
 
@@ -223,12 +182,11 @@ URL url = uri.toURL();  // Convert URI to URL if possible
 | `getPort()`        | Port number (-1 if default) |
 | `getPath()`        | /path/to/file               |
 | `getQuery()`       | key=value&key2=value2       |
-| `getRef()`         | Anchor (#section)           |
 | `openStream()`     | InputStream to read content |
 | `openConnection()` | URLConnection object        |
 
 ---
-## [[Reading from URL]]
+## Reading from URL
 
 ![[Pasted image 20260607075556.png]]
 
@@ -270,7 +228,9 @@ public class ReadURLSimple {
 3. `BufferedReader` → Reads efficiently line by line
 4. `readLine()` → Gets one line of HTML/text
 
----
+note: Mathi basically website ma connect garyo (`url.openStream()`), ani tesko content transalte garyo (`InputStreamReader` → Converts bytes to characters) then  import  large chunks of data at a time (new BufferedReader(...)), then output for the user line by line (while statementwhile ((line = reader.readLine()) != null) )
+
+--- 
 
 ## Method 2: openStream() - Shortest Version
 

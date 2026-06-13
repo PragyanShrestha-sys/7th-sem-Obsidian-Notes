@@ -1,7 +1,7 @@
 Here's a **detailed theoretical explanation** of sockets.
 
 ## [[Socket Programming Using TCP and UDP]]
-tata ko sockets ko introduction ho 
+tala ko sockets ko introduction ho 
 
 ---
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 5 Mining Frequent Patterns/Real life Example.md",
+                "file": "Chapter 6 Classification and Predition/_Chapter 6 Classification and prediction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Real life Example"
+              "title": "_Chapter 6 Classification and prediction"
             }
           }
         ]
@@ -185,11 +185,14 @@
   },
   "active": "d7d4db105344740d",
   "lastOpenFiles": [
-    "how triplets is made in aprori algorihtm.md",
+    "Chapter 6 Classification and Predition/Classification by Back Propagation.md",
+    "Chapter 6 Classification and Predition/_Chapter 6 Classification and prediction.md",
+    "Chapter 5 Mining Frequent Patterns/_Chapter 7 Mining Frequent Patterns.md",
+    "Chapter 3 Data Pre processing/_Chapter 3 Data Preprocessing.md",
     "Chapter 5 Mining Frequent Patterns/Real life Example.md",
+    "how triplets is made in aprori algorihtm.md",
     "Chapter 5 Mining Frequent Patterns/Aprori alogrihtm.md",
     "Chapter 5 Mining Frequent Patterns/Finding Frequent Itemset.md",
-    "Chapter 5 Mining Frequent Patterns/_Chapter 7 Mining Frequent Patterns.md",
     "Chapter 5 Mining Frequent Patterns/Types of Association Rules.md",
     "Chapter 5 Mining Frequent Patterns/simple explanation for mero confusions.md",
     "Chapter 5 Mining Frequent Patterns/Market Basket Analysis.md",
@@ -207,11 +210,8 @@
     "Chapter 4 Data Cube Technology/Effecient method for data cube computation.md",
     "Chapter 4 Data Cube Technology/Data cube technology.md",
     "Chapter 3 Data Pre processing/Concept of hierarchy generation.md",
-    "Chapter 3 Data Pre processing/_Chapter 3 Data Preprocessing.md",
     "Chapter 3 Data Pre processing/Data Reduction.md",
     "Chapter 3 Data Pre processing/Data Integration.md",
-    "Chapter 3 Data Pre processing/Data Transformation.md",
-    "Chapter 3 Data Pre processing/Data Cleaning.md",
     "Chapter 9 Mining Spatial, Multimedia, Text and Web Data",
     "Attachments/Pasted image 20260514173846.png",
     "Chapter 8 Graph Mining and Social Network analysis",
