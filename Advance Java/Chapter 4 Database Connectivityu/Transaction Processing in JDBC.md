@@ -39,14 +39,14 @@ Result: Record 1 saved (bad!)    Result: ALL rolled back (good!)
 
 ## Transaction Methods in JDBC
 
-| Method | What it does |
-|--------|--------------|
-| `setAutoCommit(false)` | Disables auto-commit (starts transaction) |
-| `commit()` | Saves all changes permanently |
-| `rollback()` | Undoes all changes since last commit |
-| `setSavepoint(String name)` | Creates a savepoint to rollback to |
-| `releaseSavepoint(Savepoint sp)` | Removes a savepoint |
-| `getAutoCommit()` | Checks if auto-commit is enabled |
+| Method                           | What it does                              |
+| -------------------------------- | ----------------------------------------- |
+| `setAutoCommit(false)`           | Disables auto-commit (starts transaction) |
+| `commit()`                       | Saves all changes permanently             |
+| `rollback()`                     | Undoes all changes since last commit      |
+| `setSavepoint(String name)`      | Creates a savepoint to rollback to        |
+| `releaseSavepoint(Savepoint sp)` | Removes a savepoint                       |
+| `getAutoCommit()`                | Checks if auto-commit is enabled          |
 
 ---
 

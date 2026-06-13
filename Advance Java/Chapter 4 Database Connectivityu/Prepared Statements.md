@@ -134,6 +134,23 @@ public class PreparedStatementInsert {
 }
 ```
 
+note: [[What is 'scanner' how does it work(used for input)]]
+note: in 
+```
+pstmt.setString(1, name);
+            pstmt.setInt(2, age);
+            pstmt.setString(3, grade);
+
+SQL: INSERT INTO students (name, age, grade) VALUES (?, ?, ?)
+                                                      │  │  │
+                                                      │  │  └─ 3rd parameter (grade)
+                                                      │  └──── 2nd parameter (age)  
+                                                      └─────── 1st parameter (name)
+Java: pstmt.setString(1, "John")  ─────┐
+      pstmt.setInt(2, 25)        ─────┼─→ Each setXxx() matches the ? position
+      pstmt.setString(3, "A+")   ─────┘
+```
+
 ### Example 2: SELECT with PreparedStatement
 
 ```java
