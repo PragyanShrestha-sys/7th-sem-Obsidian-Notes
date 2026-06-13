@@ -18,13 +18,13 @@ Your Java App → JavaMail API → Mail Server → Recipient's Inbox
 
 ## Why is JavaMail Needed?
 
-| Need | Explanation |
-|------|-------------|
-| **User Registration** | Send confirmation/welcome emails |
-| **Password Reset** | Email reset links to users |
-| **Notifications** | Order confirmations, alerts, reminders |
-| **Reports** | Email generated reports automatically |
-| **Marketing** | Send newsletters to subscribers |
+| Need                  | Explanation                            |
+| --------------------- | -------------------------------------- |
+| **User Registration** | Send confirmation/welcome emails       |
+| **Password Reset**    | Email reset links to users             |
+| **Notifications**     | Order confirmations, alerts, reminders |
+| **Reports**           | Email generated reports automatically  |
+| **Marketing**         | Send newsletters to subscribers        |
 
 **Without JavaMail:** You would need to implement complex network protocols (SMTP, POP3, IMAP) yourself.
 
@@ -85,18 +85,7 @@ JavaMail has 4 main architectural components:
 2. **Get an authorization code** (not your regular password) from your email provider
 3. **Add JavaMail dependency** to your project
 
-### Maven Dependency
-
-```xml
-<dependency>
-    <groupId>com.sun.mail</groupId>
-    <artifactId>javax.mail</artifactId>
-    <version>1.6.2</version>
-</dependency>
-```
-
 ---
-
 ## Complete Code: Sending a Plain Text Email
 
 ```java
@@ -115,11 +104,7 @@ public class EmailSender {
         Properties props = new Properties();
         
         // Enable authentication (server requires username/password)
-        props.put("mail.smtp.auth", "true");
-        
-        // Enable STARTTLS (encrypts the connection)
-        props.put("mail.smtp.starttls.enable", "true");
-        
+        props.put("mail.smtp.auth", "true"); 
         // SMTP server address (for Gmail: smtp.gmail.com)
         props.put("mail.smtp.host", "smtp.gmail.com");
         
@@ -139,8 +124,6 @@ public class EmailSender {
             }
         });
         
-        // Optional: Enable debug mode to see SMTP conversation
-        // session.setDebug(true);
         
         try {
             // ========== CREATE MESSAGE ==========
@@ -178,165 +161,6 @@ public class EmailSender {
             // MessagingException is the parent of all JavaMail errors
             System.out.println("Failed to send email: " + e.getMessage());
             e.printStackTrace();
-        }
-    }
-}
-```
-
----
-
-## Complete Code: Sending an HTML Email with Attachment
-
-```java
-import java.util.Properties;
-import javax.mail.*;
-import javax.mail.internet.*;
-import javax.activation.*;     // For handling attachments (DataHandler, FileDataSource)
-
-public class EmailWithAttachment {
-    
-    public static void main(String[] args) {
-        
-        // ========== SERVER CONFIGURATION ==========
-        Properties props = new Properties();
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.port", "587");
-        
-        // ========== AUTHENTICATION ==========
-        Session session = Session.getInstance(props, new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("your-email@gmail.com", "your-auth-code");
-            }
-        });
-        
-        try {
-            // ========== CREATE MESSAGE ==========
-            MimeMessage message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("your-email@gmail.com"));
-            message.setRecipients(Message.RecipientType.TO, 
-                InternetAddress.parse("recipient@example.com"));
-            message.setSubject("HTML Email with Attachment");
-            
-            // ========== CREATE MULTIPART EMAIL ==========
-            // A Multipart email can contain multiple parts (text, HTML, attachments)
-            MimeMultipart multipart = new MimeMultipart();
-            
-            // ----- PART 1: HTML Body -----
-            MimeBodyPart htmlPart = new MimeBodyPart();
-            String htmlContent = "<h1>Hello!</h1>"
-                               + "<p>This is an <b>HTML</b> email sent from Java.</p>"
-                               + "<p>Check the attachment below.</p>";
-            htmlPart.setContent(htmlContent, "text/html");
-            multipart.addBodyPart(htmlPart);
-            
-            // ----- PART 2: Attachment -----
-            MimeBodyPart attachmentPart = new MimeBodyPart();
-            
-            // DataHandler handles the file data
-            // FileDataSource points to the file on disk
-            String filename = "path/to/your/file.pdf";
-            FileDataSource source = new FileDataSource(filename);
-            attachmentPart.setDataHandler(new DataHandler(source));
-            attachmentPart.setFileName(source.getName());  // Set name in email
-            multipart.addBodyPart(attachmentPart);
-            
-            // ========== SET CONTENT AND SEND ==========
-            message.setContent(multipart);
-            Transport.send(message);
-            
-            System.out.println("HTML email with attachment sent!");
-            
-        } catch (MessagingException e) {
-            System.out.println("Error: " + e.getMessage());
-        }
-    }
-}
-```
-
----
-
-## 2. Receiving Email - IMAP/POP3
-
-### Protocols for Receiving Email
-
-| Protocol | What it does | Default Port | Use case |
-|----------|--------------|--------------|----------|
-| **IMAP** | Reads messages from server | 993 (SSL) | Multiple devices, keep messages on server |
-| **POP3** | Downloads messages (often deletes from server) | 995 (SSL) | Single device, offline reading |
-
-### Code: Receiving Emails with IMAP
-
-```java
-import java.util.Properties;
-import javax.mail.*;
-
-public class EmailReceiver {
-    
-    public static void main(String[] args) {
-        
-        // ========== CONFIGURATION FOR IMAP ==========
-        Properties props = new Properties();
-        
-        // Set the protocol to IMAP
-        props.put("mail.store.protocol", "imap");
-        
-        // IMAP server (Gmail: imap.gmail.com)
-        props.put("mail.imap.host", "imap.gmail.com");
-        
-        // IMAP port (993 for SSL)
-        props.put("mail.imap.port", "993");
-        
-        // Enable SSL for secure connection
-        props.put("mail.imap.ssl.enable", "true");
-        
-        try {
-            // ========== CREATE SESSION ==========
-            Session session = Session.getDefaultInstance(props);
-            
-            // ========== CREATE STORE AND CONNECT ==========
-            // Store handles the connection to the mail server
-            Store store = session.getStore("imap");
-            store.connect("imap.gmail.com", "your-email@gmail.com", "your-auth-code");
-            
-            // ========== OPEN A FOLDER ==========
-            // INBOX is the default folder for received emails
-            Folder inbox = store.getFolder("INBOX");
-            
-            // OPEN_READ_ONLY: Just read, don't mark as read
-            // OPEN_READ_WRITE: Mark messages as read when opened
-            inbox.open(Folder.READ_ONLY);
-            
-            // ========== GET MESSAGES ==========
-            // Get all messages from the folder
-            Message[] messages = inbox.getMessages();
-            
-            System.out.println("Total messages: " + messages.length);
-            
-            // Process only the latest 10 messages
-            int start = Math.max(messages.length - 10, 0);
-            for (int i = start; i < messages.length; i++) {
-                Message msg = messages[i];
-                
-                System.out.println("\n--- Message " + (i + 1) + " ---");
-                System.out.println("Subject: " + msg.getSubject());
-                System.out.println("From: " + msg.getFrom()[0]);
-                System.out.println("Date: " + msg.getSentDate());
-                
-                // Get the content as String (plain text)
-                Object content = msg.getContent();
-                if (content instanceof String) {
-                    System.out.println("Body: " + ((String) content).substring(0, Math.min(100, ((String) content).length())) + "...");
-                }
-            }
-            
-            // ========== CLEAN UP ==========
-            inbox.close(false);  // false = don't expunge deleted messages
-            store.close();
-            
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
         }
     }
 }

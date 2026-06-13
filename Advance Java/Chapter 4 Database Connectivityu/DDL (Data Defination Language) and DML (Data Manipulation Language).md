@@ -67,7 +67,7 @@ DATABASE
 | `execute()` | Any SQL | Returns boolean |
 
 ---
-## [[DDL and DML Implementation in Java]]
+## [[DDL and DML Implementation in Java 1]]
 
 ---
 

@@ -32,11 +32,12 @@ Let me start with just **3 receipts** so you see the pattern clearly.
 **Items:** A, B, C (just 3 items to keep it simple)
 
 **Receipts:**
-| Receipt | Items |
-| :--- | :--- |
-| 1 | A, B |
-| 2 | A, B, C |
-| 3 | A, C |
+
+| Receipt | Items   |
+| :------ | :------ |
+| 1       | A, B    |
+| 2       | A, B, C |
+| 3       | A, C    |
 
 **Minimum Support = 2** (but for building the tree, we just need frequency order first)
 

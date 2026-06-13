@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d26efdb5c607da45",
+        "id": "5412e7787787d18c",
         "type": "tabs",
         "children": [
           {
-            "id": "a4035803757b0770",
+            "id": "dc408ceff38719eb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter 5 Network Programming/Sockets Programming.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Sockets Programming"
+              "title": "New tab"
             }
           }
         ]
@@ -183,41 +179,41 @@
       "bases:Create new base": false
     }
   },
-  "active": "a4035803757b0770",
+  "active": "dc408ceff38719eb",
   "lastOpenFiles": [
     "Chapter 5 Network Programming/_Chapter 5 Network Programming.md",
+    "Chapter 5 Network Programming/Sending Email VIA java.mail API.md",
+    "Chapter 5 Network Programming/UDP and TCP.md",
+    "Chapter 5 Network Programming/Sockets Programming.md",
+    "Chapter 5 Network Programming/Socket Programming Using TCP and UDP.md",
+    "Chapter 3 Event Handling/3.1.md",
+    "Chapter 3 Event Handling/_Chapter 3 Event Handling.md",
+    "Chapter 3 Event Handling/What is 'scanner' how does it work(used for input).md",
+    "Chapter 3 Event Handling/Without Action Command (Hard to identify).md",
+    "Chapter 7 Servlets and Java Server Pages/HTTP Response Codes (Common).md",
+    "Chapter 8 RUI and CORBA/Creating and Executing RMI Applications.md",
+    "Chapter 4 Database Connectivityu/DDL and DML Implementation in Java 1.md",
+    "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
+    "Chapter 6 GUI with JAVA FX/Java FX UI Controls.md",
+    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes.md",
     "Chapter 5 Network Programming/Networking Classes in JDK.md",
     "Chapter 5 Network Programming/Reading from URL.md",
     "Chapter 5 Network Programming/Above code explanation.md",
-    "HTTP Response Codes (Common).md",
     "Attachments/Pasted image 20260613131131.png",
-    "Chapter 5 Network Programming/Sockets Programming.md",
-    "Chapter 5 Network Programming/Socket Programming Using TCP and UDP.md",
     "Chapter 5 Network Programming/Ports.md",
-    "Chapter 5 Network Programming/UDP and TCP.md",
     "Chapter 5 Network Programming/Difference Between TCP and udp.md",
     "Chapter 5 Network Programming/Three way handshake in TCP.md",
     "Chapter 4 Database Connectivityu/Transaction Processing in JDBC.md",
     "Chapter 4 Database Connectivityu/_Chapter 4 Database Connectivity.md",
     "Chapter 4 Database Connectivityu/Prepared Statements.md",
-    "What is 'scanner' how does it work(used for input).md",
     "Chapter 4 Database Connectivityu/DDL (Data Defination Language) and DML (Data Manipulation Language).md",
-    "DDL and DML Implementation in Java.md",
     "Chapter 4 Database Connectivityu/JDBC Architecture(Java Database Connectivity) (imp).md",
-    "Chapter 4 Database Connectivityu/Difference between listeners and Adapter class.md",
-    "Chapter 3 Event Handling/Using Action Commands.md",
     "Attachments/Pasted image 20260613065459.png",
-    "Chapter 4 Database Connectivityu/RowSet Interface and Types.md",
-    "Chapter 4 Database Connectivityu/A connected, scrollable, updatable wrapper around ResultSet..md",
-    "Chapter 4 Database Connectivityu/Setting up database connection.md",
-    "Chapter 4 Database Connectivityu/Sql Exception.md",
-    "Chapter 4 Database Connectivityu/Statement, ResultSet & Query Execution.md",
     "Attachments/Pasted image 20260613064702.png",
     "Attachments/Pasted image 20260613064649.png",
     "Attachments/Pasted image 20260613064637.png",
     "Attachments/Pasted image 20260613064630.png",
     "Attachments/Pasted image 20260613062039.png",
-    "Chapter 3 Event Handling/_Chapter 3 Event Handling.md",
     "_pdfs/3_Connecting_to_Database_in_JSP.pdf",
     "Attachments/Pasted image 20260608163227.png",
     "_pdfs",

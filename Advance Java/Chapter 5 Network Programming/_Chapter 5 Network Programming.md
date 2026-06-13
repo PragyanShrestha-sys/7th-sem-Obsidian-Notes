@@ -33,6 +33,8 @@ A **port** is a **virtual endpoint** in an operating system – a numbered door 
 
 ---
 ## [[Sending Email VIA java.mail API]]
+
+
 ![[Pasted image 20260607101033.png]]
 
 ![[Pasted image 20260607100929.png]]

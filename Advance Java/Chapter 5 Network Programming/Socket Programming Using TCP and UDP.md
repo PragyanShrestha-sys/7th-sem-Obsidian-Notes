@@ -54,6 +54,31 @@ public class TCPServer {
 }
 ```
 
+```java
+import java.io.*;
+import java.net.*;
+
+public class TCPServer {
+    public static void main(String[] args) throws IOException {
+        
+        ServerSocket server = new ServerSocket(5000);
+        
+        System.out.println("Server waiting on port 5000...");
+        
+        Socket client = server.accept();
+        
+        System.out.println("Client connected!");
+        
+        PrintWriter out = new PrintWriter(client.getOutputStream(), true);
+        
+        out.println("Hello from server!");
+        
+        
+        client.close();
+        server.close();
+    }
+}
+```
 ---
 
 ### TCP Client (Connects to server)
@@ -92,6 +117,31 @@ public class TCPClient {
         
         // Step 5: Close the socket connection
         // Releases network resources
+        socket.close();
+    }
+}
+```
+
+
+``` java 
+import java.io.*;
+import java.net.*;
+
+public class TCPClient {
+    public static void main(String[] args) throws IOException {
+        
+        Socket socket = new Socket("localhost", 5000);
+        
+        System.out.println("Connected to server!");
+        
+        BufferedReader in = new BufferedReader(
+            new InputStreamReader(socket.getInputStream())
+        );
+        
+        String message = in.readLine();
+        
+        System.out.println("Server: " + message);
+        
         socket.close();
     }
 }
@@ -205,266 +255,6 @@ public class UDPReceiver {
 ```
 1. First run:  java UDPReceiver   (starts listening on port 7000)
 2. Then run:   java UDPSender      (sends packet to port 7000)
-```
-
----
-
-## Two-Way TCP Chat - Complete with Comments
-
-### TCP Chat Server
-
-```java
-import java.io.*;
-import java.net.*;
-
-public class TCPChatServer {
-    public static void main(String[] args) throws IOException {
-        
-        // Create server socket on port 6000
-        // This server will handle one client at a time
-        ServerSocket server = new ServerSocket(6000);
-        System.out.println("Chat server started on port 6000");
-        
-        // Wait for a client to connect (blocks until someone connects)
-        Socket client = server.accept();
-        System.out.println("Client connected!");
-        
-        // Input stream: reads messages FROM the client
-        BufferedReader in = new BufferedReader(
-            new InputStreamReader(client.getInputStream())
-        );
-        
-        // Output stream: sends messages TO the client
-        PrintWriter out = new PrintWriter(client.getOutputStream(), true);
-        
-        // Keyboard input: reads what YOU type on the server console
-        BufferedReader keyboard = new BufferedReader(
-            new InputStreamReader(System.in)
-        );
-        
-        String message;
-        
-        // Infinite chat loop
-        while (true) {
-            // RECEIVE: Read message from client
-            // This waits until client sends something
-            message = in.readLine();
-            
-            // If client says "quit" or disconnects, exit loop
-            if (message == null || message.equalsIgnoreCase("quit")) {
-                System.out.println("Client disconnected");
-                break;
-            }
-            
-            // Display client's message on server console
-            System.out.println("Client: " + message);
-            
-            // SEND: Read what server user types from keyboard
-            System.out.print("You: ");
-            String reply = keyboard.readLine();
-            
-            // Send reply to client
-            out.println(reply);
-            
-            // If server types "quit", exit
-            if (reply.equalsIgnoreCase("quit")) {
-                break;
-            }
-        }
-        
-        // Clean up connections
-        client.close();
-        server.close();
-    }
-}
-```
-
-### TCP Chat Client
-
-```java
-import java.io.*;
-import java.net.*;
-
-public class TCPChatClient {
-    public static void main(String[] args) throws IOException {
-        
-        // Connect to server on localhost (same computer) port 6000
-        Socket socket = new Socket("localhost", 6000);
-        System.out.println("Connected to chat server!");
-        
-        // Input stream: reads messages FROM the server
-        BufferedReader in = new BufferedReader(
-            new InputStreamReader(socket.getInputStream())
-        );
-        
-        // Output stream: sends messages TO the server
-        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-        
-        // Keyboard input: reads what YOU type on client console
-        BufferedReader keyboard = new BufferedReader(
-            new InputStreamReader(System.in)
-        );
-        
-        String message;
-        
-        // Infinite chat loop
-        while (true) {
-            // SEND: Read what client user types from keyboard
-            System.out.print("You: ");
-            message = keyboard.readLine();
-            
-            // Send message to server
-            out.println(message);
-            
-            // If user types "quit", exit loop
-            if (message.equalsIgnoreCase("quit")) {
-                break;
-            }
-            
-            // RECEIVE: Read response from server
-            // This waits until server sends something
-            String response = in.readLine();
-            
-            // Display server's response
-            System.out.println("Server: " + response);
-            
-            // If server says "quit", exit
-            if (response.equalsIgnoreCase("quit")) {
-                break;
-            }
-        }
-        
-        // Close connection
-        socket.close();
-    }
-}
-```
-
----
-
-## Two-Way UDP Chat - Complete with Comments
-
-### UDP Chat Sender
-
-```java
-import java.net.*;
-import java.util.Scanner;
-
-public class UDPSenderChat {
-    public static void main(String[] args) throws Exception {
-        
-        // Create UDP socket (system assigns a port automatically)
-        DatagramSocket socket = new DatagramSocket();
-        
-        // Destination address (where to send packets)
-        InetAddress address = InetAddress.getByName("localhost");
-        
-        // Scanner to read keyboard input
-        Scanner sc = new Scanner(System.in);
-        
-        // Buffer for receiving replies
-        byte[] buffer = new byte[1024];
-        
-        System.out.println("UDP Chat Started. Type 'quit' to exit.");
-        
-        while (true) {
-            // SEND: Read message from keyboard
-            System.out.print("You: ");
-            String msg = sc.nextLine();
-            
-            // Create packet with message, destination address, port 8000
-            DatagramPacket sendPacket = new DatagramPacket(
-                msg.getBytes(),    // Convert string to bytes
-                msg.length(),      // Length of message
-                address,           // Where to send
-                8000               // Destination port (receiver listens here)
-            );
-            
-            // Send the packet (like dropping in mailbox)
-            socket.send(sendPacket);
-            
-            // Check if we need to quit
-            if (msg.equalsIgnoreCase("quit")) {
-                System.out.println("Chat ended");
-                break;
-            }
-            
-            // RECEIVE: Wait for reply from receiver
-            DatagramPacket receivePacket = new DatagramPacket(buffer, buffer.length);
-            socket.receive(receivePacket);  // Blocks until reply arrives
-            
-            // Extract and display reply
-            String reply = new String(receivePacket.getData(), 0, receivePacket.getLength());
-            System.out.println("Receiver: " + reply);
-        }
-        
-        socket.close();
-        sc.close();
-    }
-}
-```
-
-### UDP Chat Receiver
-
-```java
-import java.net.*;
-import java.util.Scanner;
-
-public class UDPReceiverChat {
-    public static void main(String[] args) throws Exception {
-        
-        // Create UDP socket bound to port 8000 (listens on this port)
-        DatagramSocket socket = new DatagramSocket(8000);
-        
-        // Scanner to read keyboard input
-        Scanner sc = new Scanner(System.in);
-        
-        // Buffer for receiving messages
-        byte[] buffer = new byte[1024];
-        
-        System.out.println("UDP Chat Receiver on port 8000. Type 'quit' to exit.");
-        
-        while (true) {
-            // RECEIVE: Wait for message from sender
-            DatagramPacket receivePacket = new DatagramPacket(buffer, buffer.length);
-            socket.receive(receivePacket);  // Blocks until packet arrives
-            
-            // Extract message from packet
-            String msg = new String(receivePacket.getData(), 0, receivePacket.getLength());
-            System.out.println("Sender: " + msg);
-            
-            // Check if sender wants to quit
-            if (msg.equalsIgnoreCase("quit")) {
-                System.out.println("Sender ended chat");
-                break;
-            }
-            
-            // SEND: Read reply from keyboard
-            System.out.print("You: ");
-            String reply = sc.nextLine();
-            
-            // Create reply packet to send back to sender
-            // Use the sender's address and port from the received packet
-            DatagramPacket sendPacket = new DatagramPacket(
-                reply.getBytes(),                 // Convert reply to bytes
-                reply.length(),                   // Length
-                receivePacket.getAddress(),       // Sender's IP address
-                receivePacket.getPort()           // Sender's port (where they're listening)
-            );
-            
-            // Send reply
-            socket.send(sendPacket);
-            
-            // Check if we need to quit
-            if (reply.equalsIgnoreCase("quit")) {
-                break;
-            }
-        }
-        
-        socket.close();
-        sc.close();
-    }
-}
 ```
 
 ---
