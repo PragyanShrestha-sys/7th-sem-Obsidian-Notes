@@ -1,8 +1,8 @@
 [[simple explanation for mero confusions]]
 
+
+Association rules in data mining are =="if-then" statements that uncover hidden relationships, correlations, or co-occurrences among variables in large datasets==. They seek to answer the question: _"If a customer buys item X, what is the likelihood they will also buy item Y?"_ 
 note: Multi level bhaneko abstration matra ho 
-
-
 
 ---
 

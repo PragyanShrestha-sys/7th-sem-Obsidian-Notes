@@ -16,6 +16,8 @@ The classic example is the **"beer and diapers"** story (whether true or not, 
 
 ### [[Types of Association Rules]]
 
+Association rules in data mining are =="if-then" statements that uncover hidden relationships, correlations, or co-occurrences among variables in large datasets==. They seek to answer the question: _"If a customer buys item X, what is the likelihood they will also buy item Y?"_ 
+
 | Think of it as…                         | Rule Type          |
 | :-------------------------------------- | :----------------- |
 | "Buying this OR that item"              | Boolean            |
@@ -29,4 +31,5 @@ The classic example is the **"beer and diapers"** story (whether true or not, 
 
 1. Aprori algorithm 
 2. FP Growth
+
 

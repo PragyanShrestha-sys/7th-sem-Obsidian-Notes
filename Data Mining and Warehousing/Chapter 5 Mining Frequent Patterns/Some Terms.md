@@ -18,9 +18,7 @@ The **number of transactions** that contain a particular itemset.
 ### 3. Support
 The **fraction** (or percentage) of transactions that contain an itemset.  
 Formula:  
-\[
-\text{Support}(X) = \frac{\text{Support Count of } X}{\text{Total Number of Transactions}}
-\]
+![[Pasted image 20260613092239.png]]
 - **Example:** If {bread, milk} appears in 4 out of 10 transactions → support = 0.4 (or 40%).
 
 ---
@@ -45,13 +43,13 @@ An itemset for which **no proper superset has the same support count**.
 
 ### Quick Comparison Table
 
-| Term | Definition | Example (total 10 transactions) |
-| :--- | :--- | :--- |
-| **Itemset** | Set of items | {milk, eggs} |
-| **Support count** | # transactions containing itemset | 4 transactions |
-| **Support** | Fraction (count / total) | 4/10 = 0.4 (40%) |
-| **Frequent itemset** | Support ≥ minsup (e.g., 30%) | Yes (40% ≥ 30%) |
-| **Closed itemset** | No superset with same support | {milk, eggs} has count 4; {milk, eggs, bread} has count 3 → closed |
+| Term                 | Definition                        | Example (total 10 transactions)                                    |
+| :------------------- | :-------------------------------- | :----------------------------------------------------------------- |
+| **Itemset**          | Set of items                      | {milk, eggs}                                                       |
+| **Support count**    | # transactions containing itemset | 4 transactions                                                     |
+| **Support**          | Fraction (count / total)          | 4/10 = 0.4 (40%)                                                   |
+| **Frequent itemset** | Support ≥ minsup (e.g., 30%)      | Yes (40% ≥ 30%)                                                    |
+| **Closed itemset**   | No superset with same support     | {milk, eggs} has count 4; {milk, eggs, bread} has count 3 → closed |
 
 ---
 

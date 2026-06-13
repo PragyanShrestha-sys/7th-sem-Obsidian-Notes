@@ -16,7 +16,8 @@ You sell 5 items:
 You have **10 customer receipts** (transactions) from yesterday.
 
 ---
-
+note: 
+You must keep items in **consistent sorted order** (usually alphabetical/lexicographic) from the very beginning, throughout the entire Apriori algorithm.
 ### The Receipts (Your Data)
 
 | Receipt # | Items Bought             |
@@ -57,21 +58,21 @@ You count how many receipts contain each item.
 ## Step 2: Pairs (Which two items are often bought together?)
 
 You now check every possible pair.
-
 ### Candidate Pairs (C₂)
 
-| Pair | Which receipts have both? | Count | Frequent? (≥3) |
-| :--- | :--- | :--- | :--- |
-| {C, M} | Receipts 1,2,5,8,9 → **5 receipts** | 5 | ✅ Yes |
-| {C, J} | Receipts 2,3,7 → **3 receipts** | 3 | ✅ Yes |
-| {C, S} | Receipts 3,5 → **2 receipts** | 2 | ❌ No |
-| {C, T} | Receipts 7,9 → **2 receipts** | 2 | ❌ No |
-| {M, J} | Receipts 2,6 → **2 receipts** | 2 | ❌ No |
-| {M, S} | Receipts 4,5,6,10 → **4 receipts** | 4 | ✅ Yes |
-| {M, T} | Receipts 4,9 → **2 receipts** | 2 | ❌ No |
-| {J, S} | Receipts 3,6 → **2 receipts** | 2 | ❌ No |
-| {J, T} | Receipts 7 → **1 receipt** | 1 | ❌ No |
-| {S, T} | Receipts 4 → **1 receipt** | 1 | ❌ No |
+| Pair   | Which receipts have both?           | Count | Frequent? (≥3) |
+| :----- | :---------------------------------- | :---- | :------------- |
+| {C, M} | Receipts 1,2,5,8,9 → **5 receipts** | 5     | ✅ Yes          |
+| {C, J} | Receipts 2,3,7 → **3 receipts**     | 3     | ✅ Yes          |
+| {C, S} | Receipts 3,5 → **2 receipts**       | 2     | ❌ No           |
+| {C, T} | Receipts 7,9 → **2 receipts**       | 2     | ❌ No           |
+| {J,M}  | Receipts 2,6 → **2 receipts**       | 2     | ❌ No           |
+| {M, S} | Receipts 4,5,6,10 → **4 receipts**  | 4     | ✅ Yes          |
+| {M, T} | Receipts 4,9 → **2 receipts**       | 2     | ❌ No           |
+| {J, S} | Receipts 3,6 → **2 receipts**       | 2     | ❌ No           |
+| {J, T} | Receipts 7 → **1 receipt**          | 1     | ❌ No           |
+| {S, T} | Receipts 4 → **1 receipt**          | 1     | ❌ No           |
+|        |                                     |       |                |
 
 **L₂ = { {C,M}, {C,J}, {M,S} }** → Only 3 pairs are frequent.
 
@@ -94,18 +95,26 @@ Now you generate triplets **only from the frequent pairs (L₂)**.
 
 To check a triplet like {Coffee, Muffin, Juice}:
 - You need **all its pairs** to be frequent.
-- Pairs: {C,M} ✅, {C,J} ✅, {M,J} ❌ (M,J only had 2 receipts → NOT frequent)
-- **Therefore:** {C,M,J} cannot be frequent. **Prune it! Don't even check!**
+- Pairs: {C,M} ✅, {C,J} ✅, {M,J} ❌ (M,J only had 2 receipts → NOT frequent) [[how triplets is made in aprori algorihtm]]
+- **Therefore:** {C,M,J} cannot be frequent. **Prune it! Don't even check!** 
+note: Aprori etai sakkisakyo
+
+---
 
 Let's check all possible triplets systematically.
 
-| Triplet | All pairs frequent? | Check receipts? | Count | Frequent? |
-| :--- | :--- | :--- | :--- | :--- |
-| {C, M, J} | {C,M}✅, {C,J}✅, {M,J}❌ → **No** | Skip | - | ❌ Pruned |
-| {C, M, S} | {C,M}✅, {C,S}❌, {M,S}✅ → **No** | Skip | - | ❌ Pruned |
-| {C, M, T} | {C,M}✅, {C,T}❌, {M,T}❌ → **No** | Skip | - | ❌ Pruned |
-| {C, J, S} | {C,J}✅, {C,S}❌, {J,S}❌ → **No** | Skip | - | ❌ Pruned |
-| {M, S, ?} | Need {M,S} + another frequent pair | | | |
+
+note:  This table is purely **for demonstration/explanation purposes**.
+
+In the **actual Apriori algorithm**, you would **never** write out this table or check these triplets one by one like this.
+
+| Triplet   | All pairs frequent?                | Check receipts? | Count | Frequent? |
+| :-------- | :--------------------------------- | :-------------- | :---- | :-------- |
+| {C, M, J} | {C,M}✅, {C,J}✅, {M,J}❌ → **No**    | Skip            | -     | ❌ Pruned  |
+| {C, M, S} | {C,M}✅, {C,S}❌, {M,S}✅ → **No**    | Skip            | -     | ❌ Pruned  |
+| {C, M, T} | {C,M}✅, {C,T}❌, {M,T}❌ → **No**    | Skip            | -     | ❌ Pruned  |
+| {C, J, S} | {C,J}✅, {C,S}❌, {J,S}❌ → **No**    | Skip            | -     | ❌ Pruned  |
+| {M, S, ?} | Need {M,S} + another frequent pair |                 |       |           |
 
 The only triplet that survives pruning is **none** because every potential triplet fails the "all pairs frequent" test.
 

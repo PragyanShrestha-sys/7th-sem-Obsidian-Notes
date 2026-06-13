@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6a088ff494073824",
+        "id": "0b32e55d7a13bf1e",
         "type": "tabs",
         "children": [
           {
-            "id": "fc1c48f3c6bf7095",
+            "id": "d7d4db105344740d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 4 Data Cube Technology/_Chapter 4 Data Cube Technology.md",
+                "file": "Chapter 5 Mining Frequent Patterns/Real life Example.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Chapter 4 Data Cube Technology"
+              "title": "Real life Example"
             }
           }
         ]
@@ -183,10 +183,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "fc1c48f3c6bf7095",
+  "active": "d7d4db105344740d",
   "lastOpenFiles": [
-    "Chapter 4 Data Cube Technology/Class comparision (discriminating between two classes).md",
+    "how triplets is made in aprori algorihtm.md",
+    "Chapter 5 Mining Frequent Patterns/Real life Example.md",
+    "Chapter 5 Mining Frequent Patterns/Aprori alogrihtm.md",
+    "Chapter 5 Mining Frequent Patterns/Finding Frequent Itemset.md",
+    "Chapter 5 Mining Frequent Patterns/_Chapter 7 Mining Frequent Patterns.md",
+    "Chapter 5 Mining Frequent Patterns/Types of Association Rules.md",
+    "Chapter 5 Mining Frequent Patterns/simple explanation for mero confusions.md",
+    "Chapter 5 Mining Frequent Patterns/Market Basket Analysis.md",
+    "Chapter 5 Mining Frequent Patterns/Some Terms.md",
+    "Attachments/Pasted image 20260613092239.png",
     "Chapter 4 Data Cube Technology/_Chapter 4 Data Cube Technology.md",
+    "Chapter 4 Data Cube Technology/Class comparision (discriminating between two classes).md",
     "Chapter 4 Data Cube Technology/Attribute Oriented Induction.md",
     "Chapter 4 Data Cube Technology/Example Explanation.md",
     "Chapter 4 Data Cube Technology/Cube Compuation Strategies.md",
@@ -202,15 +212,6 @@
     "Chapter 3 Data Pre processing/Data Integration.md",
     "Chapter 3 Data Pre processing/Data Transformation.md",
     "Chapter 3 Data Pre processing/Data Cleaning.md",
-    "Chapter 2 Introduction to Data Mining/Issues and applications of Data Mining.md",
-    "Chapter 2 Introduction to Data Mining/_Chapter 2 Introduction to Data Mining.md",
-    "Chapter 2 Introduction to Data Mining/Statistical Description of data.md",
-    "Chapter 2 Introduction to Data Mining/KDD (Knowledge Discovery in Databases).md",
-    "explanation of the topics (range variance, standard deviation, interquartile range.md",
-    "Chapter 2 Introduction to Data Mining/Other Important Statistical Descriptions.md",
-    "Chapter 2 Introduction to Data Mining/Data Objects and Attribute types.md",
-    "Chapter 2 Introduction to Data Mining/Architecture of Data Mining System.md",
-    "Chapter 2 Introduction to Data Mining/Data mining functionalities.md",
     "Chapter 9 Mining Spatial, Multimedia, Text and Web Data",
     "Attachments/Pasted image 20260514173846.png",
     "Chapter 8 Graph Mining and Social Network analysis",
@@ -223,7 +224,6 @@
     "Attachments/Pasted image 20260509091106.png",
     "Attachments/Pasted image 20260506120736.png",
     "Attachments/Pasted image 20260506120730.png",
-    "Attachments/Pasted image 20260505124435.png",
     "Chapter 6 Classification and Predition",
     "Chapter 5 Mining Frequent Patterns",
     "Chapter 4 Data Cube Technology",
