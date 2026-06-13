@@ -70,13 +70,14 @@ note above are the classes in the inside the lava.sql.SQLException
 
 ## SQLException Methods
 
-| Method | What it returns | Example Output |
-|--------|-----------------|----------------|
-| `getMessage()` | Error description | "Table 'mydb.users' doesn't exist" |
-| `getErrorCode()` | Database-specific error code | 1146 (MySQL table not found) |
-| `getSQLState()` | Standard SQL state code | "42S02" (table not found) |
-| `getNextException()` | Next exception in chain | For multiple errors |
-| `printStackTrace()` | Full error trace | Complete error log |
+| Method               | What it returns              | Example Output                     |
+| -------------------- | ---------------------------- | ---------------------------------- |
+| `getMessage()`       | Error description            | "Table 'mydb.users' doesn't exist" |
+| `getErrorCode()`     | Database-specific error code | 1146 (MySQL table not found)       |
+| `getSQLState()`      | Standard SQL state code      | "42S02" (table not found)          |
+| `getNextException()` | Next exception in chain      | For multiple errors                |
+| `printStackTrace()`  | Full error trace             | Complete error log                 |
+|                      |                              |                                    |
 
 ---
 

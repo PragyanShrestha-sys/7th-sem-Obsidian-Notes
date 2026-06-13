@@ -10,7 +10,7 @@
 ---
 ## [[Cube Materialization]]
 
-**Materialization** just means "make permanent" — saving the computed results to disk so they persist and can be queried later.
+**Materialization** just means "make permanent" — saving the computed results to disk so they persist and can be queried later. 
 There are three types of cube materialization
 
 | Materialization | What Gets Stored                                                                                           |

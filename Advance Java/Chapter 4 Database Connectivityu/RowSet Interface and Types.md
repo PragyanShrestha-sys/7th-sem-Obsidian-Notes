@@ -35,13 +35,13 @@ ResultSet (Basic)              RowSet (Advanced)
 
 ## Types of RowSet
 
-| Type | Full Name | Connection | Use Case |
-|------|-----------|------------|----------|
-| **JdbcRowSet** | Connected RowSet | Always connected | Simple wrapper for ResultSet |
-| **CachedRowSet** | Disconnected RowSet | Disconnects after loading | Offline work |
-| **WebRowSet** | XML RowSet | Disconnected | XML exchange |
-| **JoinRowSet** | Join RowSet | Disconnected | Join multiple RowSets |
-| **FilteredRowSet** | Filtered RowSet | Disconnected | Filter data |
+| Type               | Full Name           | Connection                | Use Case                     |
+| ------------------ | ------------------- | ------------------------- | ---------------------------- |
+| **JdbcRowSet**     | Connected RowSet    | Always connected          | Simple wrapper for ResultSet |
+| **CachedRowSet**   | Disconnected RowSet | Disconnects after loading | Offline work                 |
+| **WebRowSet**      | XML RowSet          | Disconnected              | XML exchange                 |
+| **JoinRowSet**     | Join RowSet         | Disconnected              | Join multiple RowSets        |
+| **FilteredRowSet** | Filtered RowSet     | Disconnected              | Filter data                  |
 
 ---
 

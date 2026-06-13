@@ -1,4 +1,4 @@
-## [[JDBC Architecture (imp)]]
+## [[JDBC Architecture(Java Database Connectivity) (imp)]]
 
 what is jdbc?
 just and intermediatray between the userinterface and the database
@@ -24,7 +24,6 @@ Customer (Java App) → Translator (JDBC) → Foreigner (Database)
 ![[Pasted image 20260606102813.png]]
 
 ---
-
 ## [[Setting up database connection]]
 
 
@@ -103,7 +102,7 @@ Result: Record 1 saved (bad!)    Result: ALL rolled back (good!)
 
 
 ---
-
+![[Pasted image 20260613065459.png]]
 ## Note:
 
 ![[Pasted image 20260606155130.png]]

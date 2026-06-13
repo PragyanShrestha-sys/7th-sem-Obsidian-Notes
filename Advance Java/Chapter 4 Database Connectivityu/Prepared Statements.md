@@ -1,7 +1,5 @@
 Here's a **detailed explanation** of PreparedStatement and Batch Updates.
 
----
-
 ## Part 1: What is PreparedStatement?
 
 **PreparedStatement** is a pre-compiled SQL statement that can be executed multiple times with different parameters.

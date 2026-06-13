@@ -1,13 +1,6 @@
-![[Pasted image 20260606095609.png|676]]
-
-Here's a **short, clear explanation** of JDBC Architecture.
-
----
-
 ## What is JDBC?
 
 **JDBC** = **Java Database Connectivity**
-
 It's a Java API that allows Java programs to connect and interact with databases.
 
 ```
@@ -61,9 +54,37 @@ Java Program → JDBC → Database (MySQL, Oracle, PostgreSQL)
 └─────────────────────────────────────────────────────────────┘
 ```
 
-![[Pasted image 20260606100416.png]]
----
+![[Pasted image 20260613062039.png]]
 
+### 1. JDBC API (`java.sql`)
+The **standard Java interface** for database-independent connectivity.  
+Provides core classes/interfaces:  
+- `DriverManager`  
+- `Connection`  
+- `Statement` / `PreparedStatement`  
+- `ResultSet`  
+
+### 2. JDBC Driver Manager  
+**Routes requests** between your Java app and the correct database driver.  
+- Maintains a list of registered drivers  
+- Uses a **connection URL** to pick the right driver  
+- Calls: `Class.forName("driverClass")` (old way) or automatic discovery (modern)
+
+### 3. Database Driver  
+**Vendor-specific implementation** of the JDBC API.  
+- Translates JDBC calls into native database protocol  
+- Examples:  
+  - `mysql-connector-java` (MySQL)  
+  - `ojdbc` (Oracle)  
+  - `postgresql` (PostgreSQL)
+
+### 4. Database  
+The actual **DBMS** storing data (MySQL, Oracle, PostgreSQL, etc.).  
+- Executes SQL queries sent via the driver  
+- Returns results back through the same chain
+
+> **Flow:** Java App → JDBC API → DriverManager → Vendor Driver → Actual Database
+---
 ## The 4 Main Components
 
 | Component         | What it does                                   |
@@ -120,19 +141,22 @@ public class JDBCDemo {
 ```
 
 ---
-
 ## The 4 JDBC Driver Types
 
-| Type | Name | How it works |
-|------|------|--------------|
-| Type 1 | JDBC-ODBC Bridge | Converts JDBC to ODBC (obsolete) |
-| Type 2 | Native-API Driver | Uses database client library |
-| Type 3 | Network Protocol Driver | Middleware server |
-| Type 4 | Thin Driver | Pure Java, direct connection (most common) |
+| Type   | Name                    | How it works                                  |
+| ------ | ----------------------- | --------------------------------------------- |
+| Type 1 | JDBC-ODBC Bridge        | Converts JDBC to ODBC method class (obsolete) |
+| Type 2 | Native-API Driver       | Uses database client library                  |
+| Type 3 | Network Protocol Driver | Middleware server                             |
+| Type 4 | Thin Driver             | Pure Java, direct connection (most common)    |
+
+![[Pasted image 20260613064630.png]]
+![[Pasted image 20260613064637.png]]
+![[Pasted image 20260613064649.png]]
+![[Pasted image 20260613064702.png]]
 
 **Type 4 is most popular** (MySQL Connector/J, PostgreSQL JDBC Driver)
 
----
 
 ## Flow Diagram (Simple)
 
