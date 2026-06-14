@@ -21,7 +21,7 @@ public class DDLExample {
         try (Connection conn = DriverManager.getConnection(url, user, password);
              Statement stmt = conn.createStatement()) {
             
-            stmt.execute(createTableSQL);
+            stmt.executeUpdate(createTableSQL);
             System.out.println("Table created successfully.");
             
         } catch (SQLException e) {
@@ -30,6 +30,11 @@ public class DDLExample {
     }
 }
 ```
+
+note
+
+| `executeUpdate()` | DDL (CREATE, ALTER, DROP) & DML (INSERT, UPDATE, DELETE) | `int` (row count or 0 for DDL) |
+| ----------------- | -------------------------------------------------------- | ------------------------------ |
 
 ---
 
@@ -109,6 +114,8 @@ public class DMLExample {
     }
 }
 ```
+
+note : [[what is   pstmtSelect.setInt(1, 1)]]
 
 ---
 

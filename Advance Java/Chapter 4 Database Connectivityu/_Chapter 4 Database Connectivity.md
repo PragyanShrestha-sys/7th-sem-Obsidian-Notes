@@ -64,8 +64,13 @@ DATABASE
 ![[Pasted image 20260606153921.png]]
 
 ---
+## Cached Row Set
+![[Pasted image 20260614074509.png]]
+---
 ## [[Transaction Processing in JDBC]]
 
+![[Pasted image 20260614074435.png]]
+ 
  transaction** is a group of database operations that must execute together as a single unit - either ALL succeed or NONE take effect.
 
 ```

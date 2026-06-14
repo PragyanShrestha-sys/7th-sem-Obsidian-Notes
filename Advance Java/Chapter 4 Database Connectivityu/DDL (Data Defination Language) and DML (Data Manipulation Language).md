@@ -33,28 +33,6 @@ DATABASE
 
 ---
 
-## DDL Operations (Structure)
-
-| Command | What it does | SQL Example |
-|---------|--------------|-------------|
-| `CREATE` | Creates new table | `CREATE TABLE users (id INT, name VARCHAR(50))` |
-| `ALTER` | Modifies table structure | `ALTER TABLE users ADD COLUMN age INT` |
-| `DROP` | Deletes entire table | `DROP TABLE users` |
-| `TRUNCATE` | Deletes all rows (keeps structure) | `TRUNCATE TABLE users` |
-| `RENAME` | Renames table | `RENAME TABLE users TO customers` |
-
----
-
-## DML Operations (Data)
-
-| Command | What it does | SQL Example |
-|---------|--------------|-------------|
-| `SELECT` | Reads data | `SELECT * FROM users` |
-| `INSERT` | Adds new data | `INSERT INTO users VALUES (1, 'John')` |
-| `UPDATE` | Modifies existing data | `UPDATE users SET name='Bob' WHERE id=1` |
-| `DELETE` | Removes data | `DELETE FROM users WHERE id=1` |
-
----
 
 ## How is it Implemented in Java?
 

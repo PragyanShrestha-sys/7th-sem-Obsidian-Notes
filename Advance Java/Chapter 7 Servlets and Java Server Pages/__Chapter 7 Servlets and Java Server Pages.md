@@ -53,7 +53,7 @@ Web Browser                    Web Server with Servlet
 "A servlet is a part of servlet API and API as a whole is a system that uses servlets for request and response between the client and backend"
 
 ---
-## [[Processing Fourms in Servlet]]
+## [[Processing Fourms in Servlet (Post request in servlet ko example yeai lekhda huncha)]]
 
 ---
 ## [[Database access in servlets]]

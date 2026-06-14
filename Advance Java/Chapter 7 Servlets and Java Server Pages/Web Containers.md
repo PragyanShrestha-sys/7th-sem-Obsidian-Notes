@@ -12,18 +12,18 @@ Here's a **complete explanation** of what a Web Container is, why it's needed, a
 ┌─────────────────────────────────────────────────────────────┐
 │                     WEB SERVER                              │
 │  ┌─────────────────────────────────────────────────────┐   │
-│  │                   WEB CONTAINER                      │   │
-│  │                                                      │   │
-│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐            │   │
-│  │  │ Servlet │  │ Servlet │  │ JSP     │            │   │
-│  │  │ Lifecycle│ │  Request │  │ Engine  │            │   │
-│  │  │ Manager │  │ Handler │  │         │            │   │
-│  │  └─────────┘  └─────────┘  └─────────┘            │   │
-│  │                                                      │   │
-│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐            │   │
-│  │  │ Session │  │ Security│  │ Thread  │            │   │
-│  │  │ Manager │  │ Manager │  │ Pool    │            │   │
-│  │  └─────────┘  └─────────┘  └─────────┘            │   │
+│  │                   WEB CONTAINER                     │   │
+│  │                                                     │   │
+│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐              │   │
+│  │  │ Servlet │  │ Servlet │  │ JSP     │              │   │
+│  │  │ Lifecycle│ │  Request │  │ Engine  │             │   │
+│  │  │ Manager │  │ Handler │  │         │              │   │
+│  │  └─────────┘  └─────────┘  └─────────┘              │   │
+│  │                                                     │   │
+│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐              │   │
+│  │  │ Session │  │ Security│  │ Thread  │              │   │
+│  │  │ Manager │  │ Manager │  │ Pool    │              │   │
+│  │  └─────────┘  └─────────┘  └─────────┘              │   │
 │  └─────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -38,14 +38,14 @@ Here's a **complete explanation** of what a Web Container is, why it's needed, a
 
 ## Part 2: Why is a Web Container Needed?
 
-| Problem | Solution by Web Container |
-|---------|--------------------------|
-| Who creates servlet objects? | Container creates them |
-| Who calls servlet methods? | Container calls them |
+| Problem                        | Solution by Web Container                |
+| ------------------------------ | ---------------------------------------- |
+| Who creates servlet objects?   | Container creates them                   |
+| Who calls servlet methods?     | Container calls them                     |
 | Who manages servlet lifecycle? | Container handles init, service, destroy |
-| Who handles multiple requests? | Container creates threads |
-| Who manages sessions? | Container tracks user sessions |
-| Who handles security? | Container enforces authentication |
+| Who handles multiple requests? | Container creates threads                |
+| Who manages sessions?          | Container tracks user sessions           |
+| Who handles security?          | Container enforces authentication        |
 
 **Without Web Container:** You would have to manually manage everything - creating servlet objects, threading, sessions, etc.
 

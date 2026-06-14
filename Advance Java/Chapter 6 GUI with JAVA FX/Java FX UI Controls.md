@@ -1,5 +1,5 @@
 [[longer explanation with longer code]]
-
+[[super short code]]
 # JavaFX UI Controls - Short Demonstration
 
 Here's a **condensed version** with shorter code for each control, keeping the explanations.

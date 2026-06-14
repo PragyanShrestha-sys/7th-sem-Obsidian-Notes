@@ -22,12 +22,12 @@ Your Java Code → JDBC Driver → Database's Native Language
 
 ## The 4 Driver Types at a Glance
 
-| Type | Name | Architecture | Performance | Current Status |
-|------|------|--------------|-------------|----------------|
-| **Type 1** | JDBC-ODBC Bridge | JDBC → ODBC → DB | Slow | ❌ Obsolete |
-| **Type 2** | Native-API Driver | JDBC → Native Lib → DB | Medium | ⚠️ Rare |
-| **Type 3** | Network Protocol | JDBC → Middleware → DB | Good | ⚠️ Special cases |
-| **Type 4** | Thin Driver | JDBC → Direct → DB | Best | ✅ Most Common |
+| Type       | Name              | Architecture           | Performance | Current Status   |
+| ---------- | ----------------- | ---------------------- | ----------- | ---------------- |
+| **Type 1** | JDBC-ODBC Bridge  | JDBC → ODBC → DB       | Slow        | ❌ Obsolete       |
+| **Type 2** | Native-API Driver | JDBC → Native Lib → DB | Medium      | ⚠️ Rare          |
+| **Type 3** | Network Protocol  | JDBC → Middleware → DB | Good        | ⚠️ Special cases |
+| **Type 4** | Thin Driver       | JDBC → Direct → DB     | Best        | ✅ Most Common    |
 
 ---
 
@@ -35,14 +35,6 @@ Your Java Code → JDBC Driver → Database's Native Language
 
 ### What it is:
 A driver that converts JDBC calls into ODBC (Open Database Connectivity) calls.
-
-### How it works:
-
-```
-Java App → JDBC API → Type 1 Driver → ODBC API → ODBC Driver → Database
-                          ↓
-                    (Converts JDBC → ODBC)
-```
 
 ### Architecture Diagram:
 
@@ -84,16 +76,6 @@ Java App → JDBC API → Type 1 Driver → ODBC API → ODBC Driver → Databas
 | **Not for applets** | Can't be used in web browsers |
 | **Obsolete** | Removed from Java 8 |
 
-### Code Example (Historical):
-```java
-// This was the driver class for Type 1
-Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-Connection con = DriverManager.getConnection(
-    "jdbc:odbc:DataSourceName", "user", "pass"
-);
-```
-
-**Current Status:** ❌ **DEPRECATED/OBSOLETE** - Removed from Java 8. Don't use it.
 
 ---
 
@@ -144,28 +126,17 @@ Java App → JDBC API → Type 2 Driver → Native Library → Database Client �
 | **Feature-rich** | Uses native database capabilities |
 
 ### Disadvantages:
-| Disadvantage | Explanation |
-|--------------|-------------|
+| Disadvantage           | Explanation                                     |
+| ---------------------- | ----------------------------------------------- |
 | **Platform dependent** | Native library must be installed on each client |
-| **Vendor dependent** | Different library for each database |
-| **Deployment issues** | Need to install native libraries on all clients |
-| **Not for applets** | Can't download native libraries |
+| **Vendor dependent**   | Different library for each database             |
+
 
 ### Example Drivers:
 | Database | Type 2 Driver |
 |----------|---------------|
 | Oracle | Oracle OCI Driver |
 | MySQL | MySQL Native Driver (some versions) |
-
-### Code Example:
-```java
-// Type 2 driver example (Oracle OCI)
-Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con = DriverManager.getConnection(
-    "jdbc:oracle:oci8:@host:port:SID", "user", "pass"
-);
-// Note: Requires Oracle client installed on machine
-```
 
 **Current Status:** ⚠️ **RARELY USED** - Deployment complexity makes Type 4 more attractive.
 
@@ -219,13 +190,13 @@ Java App → JDBC API → Type 3 Driver → Middleware Server → Database-Speci
 ```
 
 ### Advantages:
-| Advantage | Explanation |
-|-----------|-------------|
-| **No client-side library** | Nothing to install on client machines |
-| **Database independent** | Application can switch databases easily |
-| **Load balancing** | Middleware can distribute connections |
-| **Firewall friendly** | Only need to open one port |
-| **Connection pooling** | Middleware can manage connection pools |
+| Advantage                  | Explanation                             |
+| -------------------------- | --------------------------------------- |
+| **No client-side library** | Nothing to install on client machines   |
+| **Database independent**   | Application can switch databases easily |
+| **Load balancing**         | Middleware can distribute connections   |
+| **Firewall friendly**      | Only need to open one port              |
+
 
 ### Disadvantages:
 | Disadvantage | Explanation |

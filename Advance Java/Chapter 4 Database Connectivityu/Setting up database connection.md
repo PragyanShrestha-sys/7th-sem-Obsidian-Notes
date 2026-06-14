@@ -71,10 +71,6 @@ import java.sql.*;  // Core JDBC package
 // Method 1: Using Class.forName() (Most common)
 Class.forName("com.mysql.cj.jdbc.Driver");
 
-// Method 2: Register manually (rare)
-DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-
-// Note: In modern JDBC (Java 6+), step 2 is automatic if JAR is in classpath
 ```
 
 ### Step 3: Create Connection
@@ -129,11 +125,13 @@ public class DatabaseConnectionDemo {
             
             System.out.println("Connection established successfully!");
             
-            // Step 3: Execute query
+            // Step 3: Execute query`rs.next()` moves through the result set one row at a time 
+            
+        //note: If the column contains non-numeric string data, `rs.getInt()` **returns 0**
             stmt = con.createStatement();
             rs = stmt.executeQuery("SELECT id, name FROM students");
             
-            // Step 4: Process results
+            // Step 4: Process results 
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");

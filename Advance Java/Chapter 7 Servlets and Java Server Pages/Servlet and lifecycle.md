@@ -31,13 +31,14 @@ Web Browser                    Web Server with Servlet
 
 ## Part 2: Why are Servlets Needed?
 
-| Problem | Without Servlet | With Servlet |
-|---------|-----------------|--------------|
-| Serve dynamic content | Only static HTML | ✅ Dynamic HTML based on user/database |
-| Process form data | Can't process | ✅ Read form parameters |
-| Handle user login | No | ✅ Validate credentials, create session |
-| Access database | No | ✅ Connect to database, display data |
-| Track users | No | ✅ Session management |
+| Problem               | Without Servlet  | With Servlet                           |
+| --------------------- | ---------------- | -------------------------------------- |
+| Serve dynamic content | Only static HTML | ✅ Dynamic HTML based on user/database  |
+| Process form data     | Can't process    | ✅ Read form parameters                 |
+| Handle user login     | No               | ✅ Validate credentials, create session |
+| Access database       | No               | ✅ Connect to database, display data    |
+| Track users           | No               | ✅ Session management                   |
+|                       |                  |                                        |
 
 **Without Servlets:** Web pages are static (same for everyone).
 **With Servlets:** Web pages are dynamic (different for each user).
@@ -121,10 +122,10 @@ public class HelloServlet extends HttpServlet {
         response.setContentType("text/html");
         
         // Get parameter from URL (e.g., ?name=John)
-        String name = request.getParameter("name");
-        if (name == null) {
-            name = "World";
-        }
+  //      String name = request.getParameter("name");
+  //      if (name == null) {
+  //          name = "World";
+  //      }
         
         // Generate HTML response
         PrintWriter out = response.getWriter();
@@ -156,9 +157,9 @@ public class HelloServlet extends HttpServlet {
 
 ## Part 6: doGet() vs doPost()
 
-| Method | When used | How data is sent | Use case |
-|--------|-----------|------------------|----------|
-| **doGet()** | GET request | In URL (visible) | Search, view pages |
+| Method       | When used    | How data is sent | Use case                            |
+| ------------ | ------------ | ---------------- | ----------------------------------- |
+| **doGet()**  | GET request  | In URL (visible) | Search, view pages                  |
 | **doPost()** | POST request | In body (hidden) | Login, form submission, file upload |
 
 ### URL with GET:
@@ -177,26 +178,26 @@ Browser ──→ Server
 
 ## Part 12: Servlet vs JSP vs HTML
 
-| Aspect | HTML | Servlet | JSP |
-|--------|------|---------|-----|
-| **Type** | Static | Java class | HTML + Java |
-| **Dynamic content** | ❌ No | ✅ Yes | ✅ Yes |
-| **Ease of writing HTML** | Easy | Hard (print statements) | Easy |
-| **Ease of writing Java** | N/A | Easy | Mixed |
-| **Use for** | Static pages | Logic/Processing | Display |
+| Aspect                   | HTML         | Servlet                 | JSP         |
+| ------------------------ | ------------ | ----------------------- | ----------- |
+| **Type**                 | Static       | Java class              | HTML + Java |
+| **Dynamic content**      | ❌ No         | ✅ Yes                   | ✅ Yes       |
+| **Ease of writing HTML** | Easy         | Hard (print statements) | Easy        |
+| **Ease of writing Java** | N/A          | Easy                    | Mixed       |
+| **Use for**              | Static pages | Logic/Processing        | Display     |
 
 ---
 
 ## Part 14: Servlet Best Practices
 
-| Practice | Why |
-|----------|-----|
-| **Use doPost() for form submissions** | Data not visible in URL |
-| **Never trust user input** | Validate all parameters |
-| **Use PreparedStatement** | Prevent SQL injection |
-| **Close database connections** | Avoid resource leaks |
-| **Use session for user state** | Track logged-in users |
-| **Separate logic from display** | Use JSP for presentation |
+| Practice                              | Why                      |
+| ------------------------------------- | ------------------------ |
+| **Use doPost() for form submissions** | Data not visible in URL  |
+| **Never trust user input**            | Validate all parameters  |
+| **Use PreparedStatement**             | Prevent SQL injection    |
+| **Close database connections**        | Avoid resource leaks     |
+| **Use session for user state**        | Track logged-in users    |
+| **Separate logic from display**       | Use JSP for presentation |
 
 ---
 

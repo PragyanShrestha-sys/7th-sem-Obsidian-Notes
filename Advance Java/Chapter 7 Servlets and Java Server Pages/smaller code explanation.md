@@ -90,42 +90,6 @@ public class GetCookieServlet extends HttpServlet {
 }
 ```
 
-### Delete Cookie - Remove cookie from browser
-
-```java
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-
-@WebServlet("/deleteCookie")  // URL pattern: /deleteCookie
-public class DeleteCookieServlet extends HttpServlet {
-    
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        
-        // Step 1: Create a cookie with SAME name as the one we want to delete
-        // Value doesn't matter - can be empty string
-        Cookie cookie = new Cookie("username", "");
-        
-        // Step 2: Set max age to 0 (zero)
-        // This tells browser to delete this cookie immediately
-        cookie.setMaxAge(0);
-        
-        // Step 3: Send this delete instruction to browser
-        resp.addCookie(cookie);
-        
-        // Step 4: Confirm deletion
-        resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
-        out.println("<h3>Cookie has been deleted from your browser!</h3>");
-        out.println("<a href='getCookie'>Check cookies now</a>");
-    }
-}
-```
-
----
-
 ## Part 2: Sessions (with Comments)
 
 ### Login Servlet - Create Session
@@ -230,113 +194,9 @@ public class WelcomeServlet extends HttpServlet {
 }
 ```
 
-### Logout Servlet - Destroy Session
 
-```java
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-
-@WebServlet("/logout")  // URL pattern: /logout
-public class LogoutServlet extends HttpServlet {
-    
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        
-        // Step 1: Get existing session (don't create new)
-        HttpSession session = req.getSession(false);
-        
-        // Step 2: If session exists, destroy it
-        if (session != null) {
-            // Remove specific attribute (optional - could keep others)
-            session.removeAttribute("user");
-            
-            // OR destroy entire session (all attributes gone)
-            session.invalidate();  // This ends the session completely
-        }
-        
-        // Step 3: Redirect user back to login page
-        // Send them to main servlet which will show login form
-        resp.sendRedirect("login");
-    }
-}
-```
 
 ---
-
-## Complete Mini Application (All in One)
-
-```java
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-
-@WebServlet("/app")
-public class CompleteAppServlet extends HttpServlet {
-    
-    // Handle all GET requests (show appropriate page)
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        
-        resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
-        
-        // Check if user is already logged in
-        HttpSession session = req.getSession(false);
-        
-        if (session != null && session.getAttribute("user") != null) {
-            // USER IS LOGGED IN - Show welcome page
-            String user = (String) session.getAttribute("user");
-            
-            out.println("<html><body>");
-            out.println("<h2>Welcome, " + user + "!</h2>");
-            out.println("<a href='app?action=logout'>Logout</a>");
-            out.println("</body></html>");
-            
-        } else {
-            // USER NOT LOGGED IN - Show login form
-            
-            // Check for "action" parameter
-            String action = req.getParameter("action");
-            
-            if ("logout".equals(action)) {
-                out.println("<h3>You have been logged out!</h3>");
-            }
-            
-            // Show login form
-            out.println("<html><body>");
-            out.println("<h3>Login</h3>");
-            out.println("<form method='post'>");
-            out.println("Username: <input name='username'>");
-            out.println("<input type='submit' value='Login'>");
-            out.println("</form>");
-            out.println("</body></html>");
-        }
-    }
-    
-    // Handle POST request (login form submission)
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        
-        // Get username from form
-        String username = req.getParameter("username");
-        
-        if (username != null && !username.trim().isEmpty()) {
-            // Create session and store user
-            HttpSession session = req.getSession();
-            session.setAttribute("user", username);
-        }
-        
-        // Go back to main page (which will show welcome screen)
-        resp.sendRedirect("app");
-    }
-}
-```
-
----
-
 ## Quick Reference
 
 | Operation | Code |
@@ -360,3 +220,6 @@ public class CompleteAppServlet extends HttpServlet {
 Cookie: new → addCookie → getCookies → loop
 Session: getSession → setAttribute → getAttribute → invalidate
 ```
+
+
+[[Complete Mini Application (All in One sessions and cookies)]]

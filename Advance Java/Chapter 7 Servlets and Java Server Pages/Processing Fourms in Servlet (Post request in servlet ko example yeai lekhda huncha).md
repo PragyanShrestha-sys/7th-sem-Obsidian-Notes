@@ -79,6 +79,12 @@ public class LoginServlet extends HttpServlet {
 }
 ```
 
+main part yo matra ho 
+
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+getting the parameters from the fourm 
+
 ---
 
 ## Key Methods to Read Form Data

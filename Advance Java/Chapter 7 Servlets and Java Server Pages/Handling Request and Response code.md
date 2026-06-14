@@ -1,5 +1,4 @@
 ![[Pasted image 20260608074324.png]]
-
 ## Get Method
 ![[Pasted image 20260608074342.png]]
 ![[Pasted image 20260608074354.png]]
