@@ -45,15 +45,7 @@
 
 ### Why Were Web Frameworks Created?
 
-**The Problem:** Every web application needs the same basic features:
-
-| Common Need | Without Framework | With Framework |
-|-------------|------------------|----------------|
-| Handle HTTP requests | Write low-level socket code | Use `@GetMapping` annotation |
-| Parse URL parameters | Manual string parsing | `@RequestParam` automatically |
-| Manage user sessions | Manual cookie handling | `@SessionAttribute` |
-| Connect to database | Write JDBC code every time | Use JPA Repository |
-| Security | Implement from scratch | `@PreAuthorize` annotation |
+**The Problem:** Every web application needs the same basic features: to automate features
 
 **The Solution:** Frameworks provide these common features out-of-the-box.
 
@@ -203,43 +195,6 @@
 
 ## Part 3: Framework Selection Criteria
 
-### Decision Matrix
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│            FRAMEWORK SELECTION CRITERIA                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  1. Project Requirements                                    │
-│     ├── Size (small/medium/large)                          │
-│     ├── Complexity (simple/complex)                        │
-│     ├── Type (REST API / Web UI / Microservice)            │
-│     └── Performance needs                                   │
-│                                                             │
-│  2. Team Skills                                             │
-│     ├── Existing knowledge                                  │
-│     ├── Learning curve                                      │
-│     └── Training time available                             │
-│                                                             │
-│  3. Community & Support                                     │
-│     ├── Documentation quality                               │
-│     ├── Stack Overflow activity                             │
-│     ├── Update frequency                                    │
-│     └── Commercial support options                          │
-│                                                             │
-│  4. Performance                                             │
-│     ├── Startup time                                        │
-│     ├── Memory consumption                                  │
-│     ├── Throughput                                          │
-│     └── Scalability                                         │
-│                                                             │
-│  5. Ecosystem                                               │
-│     ├── Available libraries                                 │
-│     ├── Integration options                                 │
-│     └── Tooling support                                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 ### Detailed Selection Criteria
 

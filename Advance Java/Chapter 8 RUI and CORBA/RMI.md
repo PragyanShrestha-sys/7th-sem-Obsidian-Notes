@@ -1,9 +1,5 @@
 # Java RMI (Remote Method Invocation) - Complete Guide
 
-Here's a **complete explanation** of Java RMI, what it is, why it's needed, and how to implement it.
-
----
-
 ## Part 1: What is RMI?
 
 **RMI (Remote Method Invocation)** is a Java API that allows a program running on one computer to invoke methods on an object located on another computer.

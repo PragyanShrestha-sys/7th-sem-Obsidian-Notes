@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5412e7787787d18c",
+        "id": "ddcb7693100f4e3b",
         "type": "tabs",
         "children": [
           {
-            "id": "dc408ceff38719eb",
+            "id": "f8552d00ae638d7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 7 Servlets and Java Server Pages/Processing Fourms in Servlet (Post request in servlet ko example yeai lekhda huncha).md",
+                "file": "Chapter 8 RUI and CORBA/RMI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Processing Fourms in Servlet (Post request in servlet ko example yeai lekhda huncha)"
+              "title": "RMI"
             }
           }
         ]
@@ -183,9 +183,23 @@
       "bases:Create new base": false
     }
   },
-  "active": "dc408ceff38719eb",
+  "active": "f8552d00ae638d7b",
   "lastOpenFiles": [
+    "Chapter 8 RUI and CORBA/_Chapter 8 RMI and CORBA.md",
+    "Chapter 8 RUI and CORBA/Creating and Executing RMI Applications.md",
+    "Chapter 8 RUI and CORBA/RMI Code Short.md",
+    "Chapter 8 RUI and CORBA/RMI.md",
+    "Chapter 7 Servlets and Java Server Pages/Introductino to java web frameworks.md",
     "Chapter 7 Servlets and Java Server Pages/__Chapter 7 Servlets and Java Server Pages.md",
+    "Chapter 7 Servlets and Java Server Pages/Database Access with JSP.md",
+    "Chapter 7 Servlets and Java Server Pages/Processing Forms in JSP.md",
+    "Chapter 7 Servlets and Java Server Pages/Object Scope in JSP.md",
+    "Chapter 7 Servlets and Java Server Pages/JSP implicit objects.md",
+    "Chapter 7 Servlets and Java Server Pages/Bhola Sir ko Notes.md",
+    "What is JSP.md",
+    "Attachments/Pasted image 20260614124351.png",
+    "Attachments/Pasted image 20260614124340.png",
+    "Chapter 7 Servlets and Java Server Pages/Servlet vs JSP (Java Server Pages).md",
     "Chapter 7 Servlets and Java Server Pages/Processing Fourms in Servlet (Post request in servlet ko example yeai lekhda huncha).md",
     "Chapter 7 Servlets and Java Server Pages/Servlet API.md",
     "Chapter 7 Servlets and Java Server Pages/Handling Request and Response code.md",
@@ -199,28 +213,14 @@
     "Chapter 7 Servlets and Java Server Pages/Database access in servlets.md",
     "Chapter 7 Servlets and Java Server Pages/Bhola Sir ko Notes(Database access with JSP).md",
     "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes.md",
-    "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
-    "Chapter 6 GUI with JAVA FX/Java FX UI Controls.md",
-    "super short code.md",
-    "Chapter 4 Database Connectivityu/_Chapter 4 Database Connectivity.md",
     "Attachments/Pasted image 20260614074509.png",
     "Attachments/Pasted image 20260614074446.png",
     "Attachments/Pasted image 20260614074435.png",
-    "Chapter 4 Database Connectivityu/Transaction Processing in JDBC.md",
-    "Chapter 4 Database Connectivityu/DDL (Data Defination Language) and DML (Data Manipulation Language).md",
-    "Chapter 4 Database Connectivityu/DDL and DML Implementation in Java 1.md",
-    "what is   pstmtSelect.setInt(1, 1).md",
-    "Chapter 4 Database Connectivityu/JDBC Architecture(Java Database Connectivity) (imp).md",
-    "Chapter 4 Database Connectivityu/Prepared Statements.md",
-    "Chapter 4 Database Connectivityu/Statement, ResultSet & Query Execution.md",
-    "Chapter 4 Database Connectivityu/Setting up database connection.md",
     "Attachments/Pasted image 20260613131131.png",
     "Attachments/Pasted image 20260613065459.png",
     "Attachments/Pasted image 20260613064702.png",
     "Attachments/Pasted image 20260613064649.png",
     "Attachments/Pasted image 20260613064637.png",
-    "Attachments/Pasted image 20260613064630.png",
-    "Attachments/Pasted image 20260613062039.png",
     "_pdfs/3_Connecting_to_Database_in_JSP.pdf",
     "_pdfs",
     "_pdfs/2_Implicit_Objects_in_JSP.pdf",

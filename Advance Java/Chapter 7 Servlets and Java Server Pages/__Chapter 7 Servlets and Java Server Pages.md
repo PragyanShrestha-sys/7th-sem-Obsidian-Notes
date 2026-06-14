@@ -71,9 +71,28 @@ Note: "Cookie and sessions are limited under the Cookie and HttpSession class"
 note: [[JSP file converts into Servlet pages and is processed]]
 note: [[JSP and servlet work together not alternatives]]
 
+
+
+> **Servlets are for processing (Controller). JSP are for displaying (View). Use Servlets for Java logic, database, form handling. Use JSP for HTML, CSS, JavaScript, and displaying data. Never mix them - keep logic in Servlets, presentation in JSP.**
+
+**Memory trick:**
+```
+Servlet = Logic (Controller)
+JSP = Look (View)
+
+Servlet does the thinking
+JSP does the showing
+
+Together they make dynamic web applications
+```
+
+
+
 ![[Pasted image 20260608125403.png|525]]
 ![[Pasted image 20260608125416.png|528]]
 
+---
+## [[What is JSP]]
 ---
 ## [[JSP Syntax]]
 | Element          | Syntax                     | When to Use               |

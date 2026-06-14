@@ -1,4 +1,4 @@
-![[Pasted image 20260608133210.png|551]]
+![[Pasted image 20260608133210.png|682]]
 
 ## [[Bhola Sir ko Notes]]
 

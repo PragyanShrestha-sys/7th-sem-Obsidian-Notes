@@ -11,7 +11,6 @@ JSP Page → Connect to Database → Execute SQL → Display Results
 ```
 
 ---
-
 ## Simple Example: Display Users from Database
 
 ### Complete JSP Code

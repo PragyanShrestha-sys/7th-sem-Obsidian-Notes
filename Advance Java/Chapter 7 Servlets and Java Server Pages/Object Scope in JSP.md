@@ -32,15 +32,14 @@ Here's a **complete explanation** of Object Scope in JSP.
 - **Application** = Bulletin board (everyone sees)
 
 ---
-
 ## The 4 Scopes Comparison Table
 
-| Scope | Lifetime | Who can access | When destroyed | Methods |
-|-------|----------|----------------|----------------|---------|
-| **Page** | Current JSP only | Current page only | After page finishes rendering | `pageContext.setAttribute()` |
-| **Request** | One HTTP request | Forwarded/included pages | After response sent | `request.setAttribute()` |
-| **Session** | User's entire visit | All pages user visits | Session timeout or logout | `session.setAttribute()` |
-| **Application** | Server lifetime | ALL users, ALL pages | Server shutdown | `application.setAttribute()` |
+| Scope           | Lifetime            | Who can access           | When destroyed                | Methods                      |
+| --------------- | ------------------- | ------------------------ | ----------------------------- | ---------------------------- |
+| **Page**        | Current JSP only    | Current page only        | After page finishes rendering | `pageContext.setAttribute()` |
+| **Request**     | One HTTP request    | Forwarded/included pages | After response sent           | `request.setAttribute()`     |
+| **Session**     | User's entire visit | All pages user visits    | Session timeout or logout     | `session.setAttribute()`     |
+| **Application** | Server lifetime     | ALL users, ALL pages     | Server shutdown               | `application.setAttribute()` |
 
 ---
 

@@ -28,22 +28,15 @@ Servlet (Java with HTML inside)          JSP (HTML with Java inside)
 
 ## Complete Difference Table
 
-| Feature | Servlet | JSP |
-|---------|---------|-----|
-| **Definition** | Java class that generates HTML | HTML page with embedded Java |
-| **Extension** | `.java` file | `.jsp` file |
-| **Translation** | Compiled directly to .class | Translated to servlet first, then compiled |
-| **Writing HTML** | Hard (must use out.println() for each line) | Easy (write HTML naturally) |
-| **Writing Java** | Easy (write Java code naturally) | Messy (need special tags: `<% %>`) |
-| **Role in MVC** | Controller (handles logic, request processing) | View (handles presentation, display) |
-| **Best for** | Business logic, form processing, database operations | Displaying data, HTML layout, UI components |
-| **Modifications** | Need recompilation and server restart | Auto-reload (can see changes without restart) |
-| **Code readability** | Poor for HTML (lots of strings) | Good for HTML, poor for Java |
-| **Separation of concerns** | Java and HTML mixed together | Still mixed but cleaner |
-| **Tag libraries** | No (must write all HTML manually) | Yes (JSTL, custom tags) |
-| **Expression Language (EL)** | No (${} syntax not available) | Yes (${} for easy data access) |
-| **Learning curve** | Steeper (need Java + HTTP knowledge) | Easier (HTML developers can learn) |
-| **Compilation time** | Compiles once | First request slower (translation + compile) |
+| Feature              | Servlet                                              | JSP                                          |
+| -------------------- | ---------------------------------------------------- | -------------------------------------------- |
+| **Definition**       | Java class that generates HTML                       | HTML page with embedded Java                 |
+| **Extension**        | `.java` file                                         | `.jsp` file                                  |
+| **Translation**      | Compiled directly to .class                          | Translated to servlet first, then compiled   |
+| **Writing Java**     | Easy (write Java code naturally)                     | Messy (need special tags: `<% %>`)           |
+| **Best for**         | Business logic, form processing, database operations | Displaying data, HTML layout, UI components  |
+| **Code readability** | Poor for HTML (lots of strings)                      | Good for HTML, poor for Java                 |
+
 
 ---
 
@@ -195,57 +188,6 @@ public class LoginServlet extends HttpServlet {
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Complete MVC Example
-
-**Servlet (Controller)**
-```java
-@WebServlet("/products")
-public class ProductController extends HttpServlet {
-    
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        
-        // Logic: Get data from database
-        List<String> products = Arrays.asList("Laptop", "Mouse", "Keyboard");
-        
-        // Store data in request
-        req.setAttribute("productList", products);
-        
-        // Forward to JSP for display
-        req.getRequestDispatcher("/WEB-INF/products.jsp").forward(req, resp);
-    }
-}
-```
-
-**JSP (View)**
-```jsp
-<!-- products.jsp -->
-<html>
-<body>
-    <h2>Product List</h2>
-    <ul>
-        <%-- Use JSTL or scriptlet to loop --%>
-        <c:forEach items="${productList}" var="product">
-            <li>${product}</li>
-        </c:forEach>
-    </ul>
-</body>
-</html>
-```
-
----
-
-## Lifecycle Comparison
-
-| Phase | Servlet | JSP |
-|-------|---------|-----|
-| **Load** | Container loads servlet class | Container translates JSP to servlet |
-| **Compile** | Compiles .java to .class | Compiles generated servlet |
-| **Initialize** | `init()` method | `jspInit()` method |
-| **Execute** | `service()` method | `_jspService()` method |
-| **Destroy** | `destroy()` method | `jspDestroy()` method |
-
----
 
 ## JSP Translation Process
 
@@ -269,13 +211,13 @@ HTML Response
 
 ## Key Takeaways
 
-| Point | Explanation |
-|-------|-------------|
-| **Servlets = Java with HTML** | Good for logic, bad for HTML |
-| **JSP = HTML with Java** | Good for display, bad for logic |
-| **Together = MVC** | Servlet = Controller, JSP = View |
-| **Never write HTML in Servlet** | Use JSP for display |
-| **Never write complex logic in JSP** | Use Servlet for business logic |
+| Point                                | Explanation                      |
+| ------------------------------------ | -------------------------------- |
+| **Servlets = Java with HTML**        | Good for logic, bad for HTML     |
+| **JSP = HTML with Java**             | Good for display, bad for logic  |
+| **Together = MVC**                   | Servlet = Controller, JSP = View |
+| **Never write HTML in Servlet**      | Use JSP for display              |
+| **Never write complex logic in JSP** | Use Servlet for business logic   |
 
 ---
 
