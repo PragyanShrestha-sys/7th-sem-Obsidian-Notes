@@ -1,13 +1,8 @@
-Here's a **simple, clear explanation** of Components and Containers in Java GUI.
 
----
-
-## The One-Sentence Summary
 
 > **Components are the things you see (buttons, labels, text boxes). Containers are the things that HOLD those things (windows, panels).**
 
 ---
-
 ## What is a Component?
 
 **Component** = Any individual GUI element that appears on screen.
@@ -25,17 +20,17 @@ Examples of Components:
 
 **Common Components:**
 
-| Component | What it does |
-|-----------|--------------|
-| `JButton` | Clickable button |
-| `JLabel` | Displays text or image |
-| `JTextField` | Single-line text input |
-| `JTextArea` | Multi-line text input |
-| `JCheckBox` | Checkbox (on/off) |
+| Component      | What it does              |
+| -------------- | ------------------------- |
+| `JButton`      | Clickable button          |
+| `JLabel`       | Displays text or image    |
+| `JTextField`   | Single-line text input    |
+| `JTextArea`    | Multi-line text input     |
+| `JCheckBox`    | Checkbox (on/off)         |
 | `JRadioButton` | Radio button (choose one) |
-| `JComboBox` | Dropdown list |
-| `JList` | List of items |
-| `JSlider` | Slider control |
+| `JComboBox`    | Dropdown list             |
+| `JList`        | List of items             |
+| `JSlider`      | Slider control            |
 
 ---
 
@@ -60,25 +55,26 @@ Container (holds things inside it):
 
 **Common Containers:**
 
-| Container | What it does |
-|-----------|--------------|
-| `JFrame` | Main window (top-level) |
-| `JDialog` | Popup dialog window |
-| `JPanel` | General-purpose container (groups components) |
-| `JScrollPane` | Scrollable container |
-| `JTabbedPane` | Container with tabs |
-| `JToolBar` | Container for toolbar buttons |
+| Container                        | What it does                                  |
+| -------------------------------- | --------------------------------------------- |
+| `JFrame`                         | Main window (top-level)                       |
+| `JDialog`                        | Popup dialog window                           |
+| `JPanel`                         | General-purpose container (groups components) |
+| `JScrollPane`                    | Scrollable container                          |
+| `Jcrollable containerTabbedPane` | Container with tabs                           |
+| `JToolBar`                       | Container for toolbar buttons                 |
+
 
 ---
 
 ## The Key Difference
 
-| Aspect | Component | Container |
-|--------|-----------|-----------|
-| **What is it?** | Individual UI element | Box that holds UI elements |
-| **Can it be drawn?** | ✅ Yes | ✅ Yes |
-| **Can it hold others?** | ❌ No | ✅ Yes |
-| **Examples** | Button, Label, TextField | Frame, Panel, Window |
+| Aspect                  | Component                | Container                  |
+| ----------------------- | ------------------------ | -------------------------- |
+| **What is it?**         | Individual UI element    | Box that holds UI elements |
+| **Can it be drawn?**    | ✅ Yes                    | ✅ Yes                      |
+| **Can it hold others?** | ❌ No                     | ✅ Yes                      |
+| **Examples**            | Button, Label, TextField | Frame, Panel, Window       |
 
 ```java
 // Component - CANNOT hold others

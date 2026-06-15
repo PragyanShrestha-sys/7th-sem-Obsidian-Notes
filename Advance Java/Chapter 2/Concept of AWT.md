@@ -44,7 +44,6 @@ AWT translates to: ┌───────────────────�
 **AWT's job:** Let you write Java code ONCE and have real buttons appear on EVERY operating system.
 
 ---
-
 ## The Key Feature: Heavyweight Components
 
 AWT components are called **"heavyweight"** because:
@@ -66,7 +65,6 @@ Button btn = new Button("Click");
 - ❌ **Bad:** Limited components (only what OS provides)
 
 ---
-
 ## The Problem That Led to Swing
 
 **AWT's limitation:** You only get what your OS provides.
@@ -109,26 +107,13 @@ But different governments (OS) produce different looking buttons!
 
 ## AWT vs Swing (The Big Difference)
 
-| Aspect | AWT | Swing |
-|--------|-----|-------|
-| **Who draws components?** | Your Operating System | Java itself |
-| **Look** | Native (OS-specific) | Same everywhere |
-| **Components** | Basic only (button, label) | Many (table, tree, slider) |
-| **Weight** | Heavyweight (uses OS) | Lightweight (Java draws) |
-| **Status** | Legacy (old) | Modern (current) |
-
----
-
-## Is AWT Still Used?
-
-| Scenario | Use AWT? |
-|----------|----------|
-| **New desktop applications** | ❌ No (use Swing or JavaFX) |
-| **Learning GUI concepts** | ✅ Yes (understanding basics) |
-| **Mobile/Small devices** | ✅ Sometimes (lightweight needs) |
-| **Legacy maintenance** | ✅ Yes (old code still exists) |
-
-**For your study:** Understand AWT concepts, but focus on Swing for actual coding.
+| Aspect                    | AWT                        | Swing                      |
+| ------------------------- | -------------------------- | -------------------------- |
+| **Who draws components?** | Your Operating System      | Java itself                |
+| **Look** (user interface) | Native (OS-specific)       | Same everywhere            |
+| **Components**            | Basic only (button, label) | Many (table, tree, slider) |
+| **Weight**                | Heavyweight (uses OS)      | Lightweight (Java draws)   |
+| **Status**                | Legacy (old)               | Modern (current)           |
 
 ---
 

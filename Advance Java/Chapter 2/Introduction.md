@@ -22,7 +22,7 @@ With AWT: Java could create real windows with buttons and mouse clicks
 | **Current status**       | Legacy (old)              | Modern (current)             |
 
 ---
-## [[Applet]]
+## [[Applet (to make interactive and dynamic components)]]
 
 ![[Pasted image 20260604074552.png]]
 
@@ -39,6 +39,10 @@ With AWT: Java could create real windows with buttons and mouse clicks
 	note: Containers are components that hold other componenets
 ---
 ## [[Layout Management]]
+
+for context:
+![[Pasted image 20260615075306.png]]
+![[Pasted image 20260615075352.png]]
 
 ---
 ## [[GUI Controls]]

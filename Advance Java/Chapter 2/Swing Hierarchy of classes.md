@@ -1,8 +1,5 @@
 ![[Pasted image 20260604075823.png]]
 
-Here's a **clear explanation** of the Swing class hierarchy diagram you shared.
-
----
 
 ## The Big Picture: Two Main Families
 

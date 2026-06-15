@@ -37,11 +37,11 @@ Here's a **complete theoretical explanation** of all the GUI controls you listed
 
 **What it is:** A non-editable text or image display.
 
-| Aspect | Description |
-|--------|-------------|
-| **Purpose** | Display static text or images |
-| **User can edit?** | ❌ No (display only) |
-| **Common uses** | Field labels, titles, instructions, images |
+| Aspect             | Description                                |
+| ------------------ | ------------------------------------------ |
+| **Purpose**        | Display static text or images              |
+| **User can edit?** | ❌ No (display only)                        |
+| **Common uses**    | Field labels, titles, instructions, images |
 
 ```java
 // Basic label
@@ -185,11 +185,12 @@ textArea.setText("New content\nMultiple lines");
 
 **What it is:** A container that adds scrolling ability to another component.
 
-| Aspect | Description |
-|--------|-------------|
-| **Purpose** | Add scroll bars to components |
+| Aspect               | Description                                  |
+| -------------------- | -------------------------------------------- |
+| **Purpose**          | Add scroll bars to components                |
 | **What it contains** | One component (usually a text area or table) |
-| **Common uses** | Large text areas, tables, lists, images |
+| **Common uses**      | Large text areas, tables, lists, images      |
+
 
 ```java
 // Create text area

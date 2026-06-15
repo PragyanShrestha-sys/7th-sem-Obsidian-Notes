@@ -1,6 +1,11 @@
-Here's a **complete theoretical explanation** of Layout Management and all the layout managers you listed.
-
----
+| Layout            | Positioning       | Component Sizes                                 | Resize Behavior    | Complexity | Best For           |
+| ----------------- | ----------------- | ----------------------------------------------- | ------------------ | ---------- | ------------------ |
+| **No Layout**     | Manual (x,y)      | Manual                                          | None (fixed)       | High       | Almost never       |
+| **FlowLayout**    | Left to right     | Preferred size                                  | Wraps to next line | Low        | Toolbars, buttons  |
+| **BorderLayout**  | 5 regions         | North/South height preferred; Center takes rest | Regions expand     | Low        | Main window        |
+| **GridLayout**    | Grid cells        | All equal                                       | All resize equally | Low        | Calculator, keypad |
+| **GridBagLayout** | Flexible grid     | Per-component                                   | Flexible           | High       | Complex forms      |
+| **GroupLayout**   | Sequential groups | Flexible                                        | Flexible           | High       | GUI builders       |
 
 ## Part 1: What is Layout Management?
 
@@ -61,24 +66,6 @@ Manual positioning: Buttons may overlap or have gaps
 Layout manager: Adjusts automatically
 ```
 
-### Problem 4: Maintenance Nightmare
-
-```java
-// Manual positioning (terrible to maintain)
-button1.setBounds(10, 20, 80, 25);
-button2.setBounds(100, 20, 80, 25);
-button3.setBounds(190, 20, 80, 25);
-// Want to add a button in the middle? Recalculate EVERYTHING!
-
-// Layout manager (easy to maintain)
-panel.add(button1);
-panel.add(button2);
-panel.add(button3);
-// Want to add a button? Just add it! Layout manager handles it.
-```
-
----
-
 ## Part 3: The Solution Layout Managers Provide
 
 | Problem | Layout Manager Solution |
@@ -93,19 +80,40 @@ panel.add(button3);
 
 ## Part 4: Explanation of Each Layout Manager
 
----
-
 ### 1. No Layout (Absolute Layout)
 
 **What it is:** You manually set exact positions and sizes for every component.
 
 ```java
-// No layout manager
-panel.setLayout(null);  // Turn off layout management
+import javax.swing.*;
+import java.awt.*;
 
-// Manually set position and size
-button.setBounds(50, 50, 100, 30);
-label.setBounds(50, 100, 100, 30);
+public class NoLayoutExample {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("No Layout Manager");
+        frame.setSize(300, 200);
+        
+        // Create panel and turn off layout manager
+        JPanel panel = new JPanel();
+        panel.setLayout(null);  // Turn off layout management
+        
+        // Create components
+        JButton button = new JButton("Click Me");
+        JLabel label = new JLabel("Hello World");
+        
+        // Manually set position and size (x, y, width, height)
+        button.setBounds(50, 50, 100, 30);
+        label.setBounds(50, 100, 100, 30);
+        
+        // Add components to panel
+        panel.add(button);
+        panel.add(label);
+        
+        // Add panel to frame
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+}
 ```
 
 **Characteristics:**
@@ -356,14 +364,14 @@ Result:
 
 ## Part 5: Comparison Table
 
-| Layout | Positioning | Component Sizes | Resize Behavior | Complexity | Best For |
-|--------|-------------|-----------------|-----------------|------------|----------|
-| **No Layout** | Manual (x,y) | Manual | None (fixed) | High | Almost never |
-| **FlowLayout** | Left to right | Preferred size | Wraps to next line | Low | Toolbars, buttons |
-| **BorderLayout** | 5 regions | North/South height preferred; Center takes rest | Regions expand | Low | Main window |
-| **GridLayout** | Grid cells | All equal | All resize equally | Low | Calculator, keypad |
-| **GridBagLayout** | Flexible grid | Per-component | Flexible | High | Complex forms |
-| **GroupLayout** | Sequential groups | Flexible | Flexible | High | GUI builders |
+| Layout            | Positioning       | Component Sizes                                 | Resize Behavior    | Complexity | Best For           |
+| ----------------- | ----------------- | ----------------------------------------------- | ------------------ | ---------- | ------------------ |
+| **No Layout**     | Manual (x,y)      | Manual                                          | None (fixed)       | High       | Almost never       |
+| **FlowLayout**    | Left to right     | Preferred size                                  | Wraps to next line | Low        | Toolbars, buttons  |
+| **BorderLayout**  | 5 regions         | North/South height preferred; Center takes rest | Regions expand     | Low        | Main window        |
+| **GridLayout**    | Grid cells        | All equal                                       | All resize equally | Low        | Calculator, keypad |
+| **GridBagLayout** | Flexible grid     | Per-component                                   | Flexible           | High       | Complex forms      |
+| **GroupLayout**   | Sequential groups | Flexible                                        | Flexible           | High       | GUI builders       |
 
 ---
 

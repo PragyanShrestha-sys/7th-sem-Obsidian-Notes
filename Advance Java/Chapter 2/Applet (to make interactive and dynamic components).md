@@ -1,6 +1,3 @@
-Here's a **short, simple introduction** to Java Applets.
-
----
 
 ## What is an Applet?
 
@@ -91,42 +88,24 @@ Applet: Runs INSIDE a web page (like a game embedded in a website)
 
 Applet has 4 automatic stages:
 
-| Stage | Method | When? |
-|-------|--------|-------|
-| 1 | `init()` | When applet first loads |
-| 2 | `start()` | When applet begins running |
-| 3 | `stop()` | When you leave the page |
-| 4 | `destroy()` | When browser closes |
+| Stage | Method      | When?                      |
+| ----- | ----------- | -------------------------- |
+| 1     | `init()`    | When applet first loads    |
+| 2     | `start()`   | When applet begins running |
+| 3     | `stop()`    | When you leave the page    |
+| 4     | `destroy()` | When browser closes        |
 
 ---
-
 ## Why You Don't See Applets Today
 
-| Problem | Explanation |
-|---------|-------------|
-| **Security** | Applets could harm your computer |
-| **Browsers** | Chrome, Firefox, Safari removed Java support |
-| **Better alternatives** | HTML5, JavaScript, Flash (historically) |
-| **Java plugin** | Required users to install Java (inconvenient) |
+| Problem                 | Explanation                                   |
+| ----------------------- | --------------------------------------------- |
+| **Security**            | Applets could harm your computer              |
+| **Browsers**            | Chrome, Firefox, Safari removed Java support  |
+| **Better alternatives** | HTML5, JavaScript, Flash (historically)       |
+| **Java plugin**         | Required users to install Java (inconvenient) |
 
 **Current status:** Applets are **DEPRECATED** (dead) since Java 9. Browsers no longer support them.
-
----
-
-## Simple Applet Code Example (Just for reference)
-
-```java
-import java.applet.*;
-import java.awt.*;
-
-public class SimpleApplet extends Applet {
-    public void paint(Graphics g) {
-        g.drawString("Hello from Applet!", 50, 50);
-    }
-}
-```
-
-**⚠️ You don't need to learn this for new development.**
 
 ---
 
