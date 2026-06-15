@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 8 RUI and CORBA/RMI.md",
+                "file": "Chapter 8 RUI and CORBA/RMI Code Short.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RMI"
+              "title": "RMI Code Short"
             }
           }
         ]
@@ -185,11 +185,17 @@
   },
   "active": "f8552d00ae638d7b",
   "lastOpenFiles": [
-    "Chapter 8 RUI and CORBA/_Chapter 8 RMI and CORBA.md",
     "Chapter 8 RUI and CORBA/Creating and Executing RMI Applications.md",
-    "Chapter 8 RUI and CORBA/RMI Code Short.md",
+    "Chapter 8 RUI and CORBA/RMI code LOng.md",
+    "Chapter 8 RUI and CORBA/_Chapter 8 RMI and CORBA.md",
     "Chapter 8 RUI and CORBA/RMI.md",
+    "Chapter 8 RUI and CORBA/CORBA.md",
+    "Corba Implementation.md",
     "Chapter 7 Servlets and Java Server Pages/Introductino to java web frameworks.md",
+    "Chapter 8 RUI and CORBA/how does idl and corba work together (i understood this explanation.md",
+    "Chapter 8 RUI and CORBA/interface matra kina define garcha implementaions in different laguages can be different no.md",
+    "Chapter 8 RUI and CORBA/IDL (Interface Definition Language) Example.md",
+    "Chapter 8 RUI and CORBA/RMI Code Short.md",
     "Chapter 7 Servlets and Java Server Pages/__Chapter 7 Servlets and Java Server Pages.md",
     "Chapter 7 Servlets and Java Server Pages/Database Access with JSP.md",
     "Chapter 7 Servlets and Java Server Pages/Processing Forms in JSP.md",
@@ -207,12 +213,6 @@
     "Chapter 7 Servlets and Java Server Pages/Types of Servlet.md",
     "Chapter 7 Servlets and Java Server Pages/Web Containers.md",
     "Chapter 7 Servlets and Java Server Pages/Web Container Responsibilities.md",
-    "Chapter 7 Servlets and Java Server Pages/Cookie and Sessions.md",
-    "Chapter 7 Servlets and Java Server Pages/smaller code explanation.md",
-    "Complete Mini Application (All in One sessions and cookies).md",
-    "Chapter 7 Servlets and Java Server Pages/Database access in servlets.md",
-    "Chapter 7 Servlets and Java Server Pages/Bhola Sir ko Notes(Database access with JSP).md",
-    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes.md",
     "Attachments/Pasted image 20260614074509.png",
     "Attachments/Pasted image 20260614074446.png",
     "Attachments/Pasted image 20260614074435.png",

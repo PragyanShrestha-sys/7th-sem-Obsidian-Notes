@@ -1,9 +1,4 @@
 # CORBA (Common Object Request Broker Architecture) - Complete Guide
-
-Here's a **complete explanation** of CORBA, what it is, why it's needed, and how it works.
-
----
-
 ## Part 1: What is CORBA?
 
 **CORBA (Common Object Request Broker Architecture)** is a standard that allows software components written in different programming languages and running on different computers to communicate with each other.
@@ -96,16 +91,16 @@ Here's a **complete explanation** of CORBA, what it is, why it's needed, and how
 
 ## CORBA Components Explained
 
-| Component | What it does |
-|-----------|--------------|
+| Component                               | What it does                                |
+| --------------------------------------- | ------------------------------------------- |
 | **IDL (Interface Definition Language)** | Language-neutral way to describe interfaces |
-| **ORB (Object Request Broker)** | Middleman that handles communication |
-| **Stub** | Client-side proxy (generated from IDL) |
-| **Skeleton** | Server-side proxy (generated from IDL) |
-| **Object Adapter** | Manages server-side objects lifecycle |
-| **Servant** | Actual implementation (your code) |
-| **Interface Repository** | Stores available interfaces |
-| **Implementation Repository** | Stores object implementations |
+| **ORB (Object Request Broker)**         | Middleman that handles communication        |
+| **Stub**                                | Client-side proxy (generated from IDL)      |
+| **Skeleton**                            | Server-side proxy (generated from IDL)      |
+| **Object Adapter**                      | Manages server-side objects lifecycle       |
+| **Servant**                             | Actual implementation (your code)           |
+| **Interface Repository**                | Stores available interfaces                 |
+| **Implementation Repository**           | Stores object implementations               |
 
 ---
 
@@ -194,108 +189,18 @@ idlj -fall Calculator.idl
 - `_CalculatorStub.java` (client stub)
 - `CalculatorPOA.java` (server skeleton)
 
-### Step 3: Implement Servant (Server)
-
-```java
-import org.omg.CORBA.*;
-import org.omg.PortableServer.*;
-
-// Servant - actual implementation
-public class CalculatorImpl extends CalculatorPOA {
-    
-    @Override
-    public int add(int a, int b) {
-        System.out.println("Adding: " + a + " + " + b);
-        return a + b;
-    }
-    
-    @Override
-    public int subtract(int a, int b) {
-        System.out.println("Subtracting: " + a + " - " + b);
-        return a - b;
-    }
-}
-```
-
-### Step 4: Create CORBA Server
-
-```java
-import org.omg.CORBA.*;
-import org.omg.PortableServer.*;
-
-public class CorbServer {
-    public static void main(String[] args) {
-        try {
-            // Initialize ORB
-            ORB orb = ORB.init(args, null);
-            
-            // Get reference to RootPOA
-            POA rootPOA = (POA) orb.resolve_initial_references("RootPOA");
-            
-            // Activate RootPOA
-            rootPOA.the_POAManager().activate();
-            
-            // Create servant
-            CalculatorImpl calcImpl = new CalculatorImpl();
-            
-            // Get object reference
-            org.omg.CORBA.Object ref = rootPOA.servant_to_reference(calcImpl);
-            Calculator href = CalculatorHelper.narrow(ref);
-            
-            // Bind to naming service (simplified)
-            System.out.println("Server ready...");
-            
-            // Wait for client requests
-            orb.run();
-            
-        } catch (Exception e) {
-            System.out.println("Server error: " + e.getMessage());
-        }
-    }
-}
-```
-
-### Step 5: Create CORBA Client
-
-```java
-import org.omg.CORBA.*;
-
-public class CorbaClient {
-    public static void main(String[] args) {
-        try {
-            // Initialize ORB
-            ORB orb = ORB.init(args, null);
-            
-            // Get object reference (simplified - normally from naming service)
-            // Calculator calc = CalculatorHelper.narrow(orb.string_to_object("corbaloc:..."));
-            
-            // Call remote method (simplified)
-            // int result = calc.add(10, 5);
-            // System.out.println("Result: " + result);
-            
-            System.out.println("Client would call remote method here");
-            
-        } catch (Exception e) {
-            System.out.println("Client error: " + e.getMessage());
-        }
-    }
-}
-```
-
----
-
 ## Part 7: CORBA vs RMI vs Web Services
 
-| Feature | CORBA | RMI | Web Services |
-|---------|-------|-----|--------------|
-| **Language support** | Many (C++, Java, Python) | Java only | Any |
-| **Platform support** | Many | Java only | Any |
-| **Protocol** | IIOP (Internet Inter-ORB Protocol) | JRMP (Java RMI) | HTTP/SOAP/REST |
-| **Complexity** | High | Medium | Low |
-| **Firewall friendly** | No | No | Yes (HTTP) |
-| **Performance** | Good | Good | Moderate |
-| **Standard** | OMG | Sun/Oracle | W3C |
-| **Current usage** | Legacy systems | Java distributed apps | Modern web services |
+| Feature               | CORBA                              | RMI                   | Web Services        |
+| --------------------- | ---------------------------------- | --------------------- | ------------------- |
+| **Language support**  | Many (C++, Java, Python)           | Java only             | Any                 |
+| **Platform support**  | Many                               | Java only             | Any                 |
+| **Protocol**          | IIOP (Internet Inter-ORB Protocol) | JRMP (Java RMI)       | HTTP/SOAP/REST      |
+| **Complexity**        | High                               | Medium                | Low                 |
+| **Firewall friendly** | No                                 | No                    | Yes (HTTP)          |
+| **Performance**       | Good                               | Good                  | Moderate            |
+| **Standard**          | OMG                                | Sun/Oracle            | W3C                 |
+| **Current usage**     | Legacy systems                     | Java distributed apps | Modern web services |
 
 ---
 
@@ -394,12 +299,6 @@ Client ORB ←── IIOP ──→ Server ORB
 - Legacy financial systems
 - Defense/aerospace applications
 - Old enterprise systems
-
-**Modern alternatives:**
-- gRPC (modern RPC framework)
-- REST APIs (HTTP-based)
-- Apache Thrift
-- GraphQL
 
 ---
 

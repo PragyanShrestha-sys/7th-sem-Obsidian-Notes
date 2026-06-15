@@ -142,13 +142,6 @@ public:
 };
 ```
 
-### Python Client (Calls either server!)
-```python
-# Python client - works with Java OR C++ server!
-calc = get_object_reference("CalculatorService")
-result = calc.add(10, 20)  # Same call works for both!
-```
-
 **Same IDL → Different implementations → Client works with any!**
 
 ---

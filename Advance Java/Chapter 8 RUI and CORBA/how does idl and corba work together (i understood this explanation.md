@@ -1,6 +1,3 @@
-# CORBA - Short Explanation
-
----
 
 ## What is CORBA?
 
@@ -31,11 +28,9 @@ Python App (Computer C) ←── CORBA ──→  Java App (Computer D)
 CORBA lets all three talk to each other seamlessly.
 
 ---
-
 ## How Does IDL Help?
 
 **IDL (Interface Definition Language)** is the language CORBA uses to describe "what methods are available" - independent of any programming language.
-
 ### Without IDL (Problem):
 ```
 Java says: public int add(int a, int b)

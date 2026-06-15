@@ -43,14 +43,14 @@ Computer A (Client)                    Computer B (Server)
 ![[Pasted image 20260607122406.png]]
 ### RMI Components:
 
-| Component | What it does |
-|-----------|--------------|
-| **Remote Interface** | Declares methods that can be called remotely |
-| **Remote Object** | Actual implementation on server |
-| **Stub** | Client-side proxy that forwards calls to server |
-| **Skeleton** | Server-side proxy that receives calls (Java 1.2+ automatic) |
-| **RMI Registry** | Looks up remote objects by name (like a phone book) |
-| **RMI Runtime** | Manages connections, marshaling, unmarshaling |
+| Component            | What it does                                                |
+| -------------------- | ----------------------------------------------------------- |
+| **Remote Interface** | Declares methods that can be called remotely                |
+| **Remote Object**    | Actual implementation on server                             |
+| **Stub**             | Client-side proxy that forwards calls to server             |
+| **Skeleton**         | Server-side proxy that receives calls (Java 1.2+ automatic) |
+| **RMI Registry**     | Looks up remote objects by name (like a phone book)         |
+| **RMI Runtime**      | Manages connections, marshaling, unmarshaling               |
 
 ---
 
@@ -275,82 +275,6 @@ Remote exception: Cannot divide by zero!
 | **Skeleton** | Server-side proxy that unmarshals parameters and calls actual method |
 | **Binding** | Registering remote object with a name in RMI Registry |
 | **Lookup** | Finding remote object by name from RMI Registry |
-
----
-
-## Complete Example: Chat Application using RMI
-
-### Remote Interface
-
-```java
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-
-public interface ChatService extends Remote {
-    void sendMessage(String user, String message) throws RemoteException;
-    void registerClient(ChatClient client) throws RemoteException;
-    String getMessages() throws RemoteException;
-}
-```
-
-### Client Callback Interface
-
-```java
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-
-public interface ChatClient extends Remote {
-    void receiveMessage(String user, String message) throws RemoteException;
-}
-```
-
-### Server Implementation
-
-```java
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
-import java.util.ArrayList;
-import java.util.List;
-
-public class ChatServiceImpl extends UnicastRemoteObject implements ChatService {
-    
-    private List<String> messages = new ArrayList<>();
-    private List<ChatClient> clients = new ArrayList<>();
-    
-    public ChatServiceImpl() throws RemoteException {
-        super();
-    }
-    
-    @Override
-    public void sendMessage(String user, String message) throws RemoteException {
-        String fullMessage = user + ": " + message;
-        messages.add(fullMessage);
-        System.out.println(fullMessage);
-        
-        // Broadcast to all clients
-        for (ChatClient client : clients) {
-            try {
-                client.receiveMessage(user, message);
-            } catch (Exception e) {
-                // Client disconnected
-            }
-        }
-    }
-    
-    @Override
-    public void registerClient(ChatClient client) throws RemoteException {
-        clients.add(client);
-        System.out.println("New client registered");
-    }
-    
-    @Override
-    public String getMessages() throws RemoteException {
-        return String.join("\n", messages);
-    }
-}
-```
-
----
 
 ## RMI vs Other Technologies
 

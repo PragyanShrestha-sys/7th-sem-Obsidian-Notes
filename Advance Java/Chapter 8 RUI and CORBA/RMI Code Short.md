@@ -120,21 +120,6 @@ public class RMIClient {
 
 ---
 
-## How to Run
-
-```bash
-# Terminal 1: Start registry
-rmiregistry
-
-# Terminal 2: Start server
-java RMIServer
-
-# Terminal 3: Run client
-java RMIClient
-```
-
----
-
 ## The 4 Essential Rules
 
 | Rule | Why |
