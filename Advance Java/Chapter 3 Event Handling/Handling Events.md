@@ -4,7 +4,7 @@ Here's a **complete theoretical explanation** of all the event types you listed.
 
 [[shorter version (Have not checked)]]
 
-
+![[Pasted image 20260615154910.png]]
 
 ---
 
@@ -24,14 +24,14 @@ User does something → Java creates an Event object → Event is sent to Listen
 
 **Different user actions create different kinds of events.**
 
-| User Action | Event Type | Listener |
-|-------------|------------|----------|
-| Clicking a button | ActionEvent | ActionListener |
-| Pressing a key | KeyEvent | KeyListener |
-| Clicking a mouse | MouseEvent | MouseListener |
-| Closing a window | WindowEvent | WindowListener |
-| Selecting a checkbox | ItemEvent | ItemListener |
-| Focusing on a field | FocusEvent | FocusListener |
+| User Action          | Event Type  | Listener       |
+| -------------------- | ----------- | -------------- |
+| Clicking a button    | ActionEvent | ActionListener |
+| Pressing a key       | KeyEvent    | KeyListener    |
+| Clicking a mouse     | MouseEvent  | MouseListener  |
+| Closing a window     | WindowEvent | WindowListener |
+| Selecting a checkbox | ItemEvent   | ItemListener   |
+| Focusing on a field  | FocusEvent  | FocusListener  |
 
 ---
 
@@ -39,12 +39,12 @@ User does something → Java creates an Event object → Event is sent to Listen
 
 **What it is:** The most common event - occurs when user performs an "action" on a component.
 
-| When does it occur? | Components that trigger it |
-|---------------------|---------------------------|
-| Button clicked | JButton |
-| Menu item selected | JMenuItem |
-| Checkbox/radio button selected | JCheckBox, JRadioButton |
-| Enter pressed in text field | JTextField |
+| When does it occur?            | Components that trigger it |
+| ------------------------------ | -------------------------- |
+| Button clicked                 | JButton                    |
+| Menu item selected             | JMenuItem                  |
+| Checkbox/radio button selected | JCheckBox, JRadioButton    |
+| Enter pressed in text field    | JTextField                 |
 
 ### Example: ActionEvent
 
@@ -131,7 +131,7 @@ public class KeyEventDemo {
             public void keyPressed(KeyEvent e) {
                 System.out.println("Key pressed: " + KeyEvent.getKeyText(e.getKeyCode()));
                 
-                // Check for modifier keys
+                // Check for modifier keys note: VK = "Virtual Keys"
                 if (e.isControlDown() && e.getKeyCode() == KeyEvent.VK_S) {
                     System.out.println("Ctrl+S pressed - Save action!");
                     e.consume(); // Prevent default behavior
@@ -175,14 +175,14 @@ public class KeyEventDemo {
 
 ### Common Key Codes
 
-| Key Code | Description |
-|----------|-------------|
-| `VK_ENTER` | Enter key |
-| `VK_SPACE` | Space bar |
-| `VK_ESCAPE` | Escape key |
-| `VK_BACK_SPACE` | Backspace |
-| `VK_TAB` | Tab key |
-| `VK_A` ... `VK_Z` | Letter keys |
+| Key Code             | Description   |
+| -------------------- | ------------- |
+| `VK_ENTER`           | Enter key     |
+| `VK_SPACE`           | Space bar     |
+| `VK_ESCAPE`          | Escape key    |
+| `VK_BACK_SPACE`      | Backspace     |
+| `VK_TAB`             | Tab key       |
+| `VK_A` ... `VK_Z`    | Letter keys   |
 | `VK_F1` ... `VK_F12` | Function keys |
 
 ---
@@ -206,74 +206,38 @@ import java.awt.event.*;
 public class FocusEventDemo {
     public static void main(String[] args) {
         JFrame frame = new JFrame("FocusEvent Demo");
-        JPanel panel = new JPanel(new GridLayout(3, 2, 10, 10));
+        JTextField field1 = new JTextField("Field 1", 15);
+        JTextField field2 = new JTextField("Field 2", 15);
         
-        JLabel nameLabel = new JLabel("Name:");
-        JTextField nameField = new JTextField(15);
-        
-        JLabel emailLabel = new JLabel("Email:");
-        JTextField emailField = new JTextField(15);
-        
-        JLabel ageLabel = new JLabel("Age:");
-        JTextField ageField = new JTextField(5);
-        
-        // Add focus listeners
-        nameField.addFocusListener(new FocusAdapter() {
+        // FocusListener example
+        field1.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
-                nameField.setBackground(Color.YELLOW);
-                System.out.println("Name field focused");
+                field1.setBackground(Color.YELLOW);
+                System.out.println("Field 1 - Gained focus");
             }
             
             @Override
             public void focusLost(FocusEvent e) {
-                nameField.setBackground(Color.WHITE);
-                if (nameField.getText().isEmpty()) {
-                    nameField.setBackground(Color.PINK);
-                    System.out.println("Name is required!");
-                }
+                field1.setBackground(Color.WHITE);
+                System.out.println("Field 1 - Lost focus");
             }
         });
         
-        emailField.addFocusListener(new FocusAdapter() {
+        field2.setName("Field 2");
+        field2.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
-                emailField.setBackground(Color.YELLOW);
-            }
-            
-            @Override
-            public void focusLost(FocusEvent e) {
-                emailField.setBackground(Color.WHITE);
-                String email = emailField.getText();
-                if (!email.contains("@")) {
-                    emailField.setBackground(Color.PINK);
-                    System.out.println("Invalid email!");
-                }
+                field2.setBackground(Color.CYAN);
+                System.out.println("Field 2 - Gained focus");
             }
         });
         
-        // Temporary focus (opposite component)
-        ageField.addFocusListener(new FocusAdapter() {
-            @Override
-            public void focusLost(FocusEvent e) {
-                // Check if focus is moving to another component
-                if (e.isTemporary()) {
-                    System.out.println("Temporary focus loss");
-                } else {
-                    System.out.println("Permanent focus loss");
-                }
-            }
-        });
-        
-        panel.add(nameLabel);
-        panel.add(nameField);
-        panel.add(emailLabel);
-        panel.add(emailField);
-        panel.add(ageLabel);
-        panel.add(ageField);
-        
-        frame.add(panel);
-        frame.setSize(400, 200);
+        frame.setLayout(new FlowLayout());
+        frame.add(field1);
+        frame.add(field2);
+        frame.setSize(300, 100);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
 }
@@ -301,84 +265,50 @@ public class FocusEventDemo {
 
 **What it is:** Occurs when user interacts with mouse on a component.
 
-| When does it occur? | Method in MouseListener | MouseMotionListener |
-|---------------------|------------------------|---------------------|
-| Mouse clicked (press + release) | `mouseClicked(MouseEvent e)` | |
-| Mouse button pressed | `mousePressed(MouseEvent e)` | |
-| Mouse button released | `mouseReleased(MouseEvent e)` | |
-| Mouse enters component | `mouseEntered(MouseEvent e)` | |
-| Mouse exits component | `mouseExited(MouseEvent e)` | |
-| Mouse moves (no button) | | `mouseMoved(MouseEvent e)` |
-| Mouse drags (button pressed) | | `mouseDragged(MouseEvent e)` |
+| When does it occur?             | Method in MouseListener       | MouseMotionListener          |
+| ------------------------------- | ----------------------------- | ---------------------------- |
+| Mouse clicked (press + release) | `mouseClicked(MouseEvent e)`  |                              |
+| Mouse button pressed            | `mousePressed(MouseEvent e)`  |                              |
+| Mouse button released           | `mouseReleased(MouseEvent e)` |                              |
+| Mouse enters component          | `mouseEntered(MouseEvent e)`  |                              |
+| Mouse exits component           | `mouseExited(MouseEvent e)`   |                              |
+| Mouse moves (no button)         |                               | `mouseMoved(MouseEvent e)`   |
+| Mouse drags (button pressed)    |                               | `mouseDragged(MouseEvent e)` |
 
 ### Example: MouseEvent
 
 ```java
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
 public class MouseEventDemo {
     public static void main(String[] args) {
         JFrame frame = new JFrame("MouseEvent Demo");
-        
         JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension(400, 300));
-        panel.setBackground(Color.LIGHT_GRAY);
         
-        JLabel statusLabel = new JLabel("Move mouse over panel");
-        
-        // MouseListener for clicks, enter, exit
         panel.addMouseListener(new MouseAdapter() {
-            @Override
             public void mouseClicked(MouseEvent e) {
-                int clicks = e.getClickCount();
-                if (clicks == 2) {
-                    statusLabel.setText("Double-click at (" + e.getX() + ", " + e.getY() + ")");
-                } else {
-                    statusLabel.setText("Click at (" + e.getX() + ", " + e.getY() + ")");
-                }
-                
-                // Check which button was clicked
-                if (SwingUtilities.isLeftMouseButton(e)) {
-                    System.out.println("Left button");
-                } else if (SwingUtilities.isRightMouseButton(e)) {
-                    System.out.println("Right button - popup menu");
-                }
+                System.out.println("Clicked at: " + e.getX() + ", " + e.getY());
+                System.out.println("Clicks: " + e.getClickCount());
             }
             
-            @Override
             public void mouseEntered(MouseEvent e) {
-                panel.setBackground(Color.CYAN);
-                statusLabel.setText("Mouse entered panel");
+                panel.setBackground(java.awt.Color.YELLOW);
             }
             
-            @Override
             public void mouseExited(MouseEvent e) {
-                panel.setBackground(Color.LIGHT_GRAY);
-                statusLabel.setText("Mouse exited panel");
+                panel.setBackground(null);
             }
         });
         
-        // MouseMotionListener for move and drag
         panel.addMouseMotionListener(new MouseMotionAdapter() {
-            @Override
             public void mouseMoved(MouseEvent e) {
-                statusLabel.setText("Position: (" + e.getX() + ", " + e.getY() + ")");
-            }
-            
-            @Override
-            public void mouseDragged(MouseEvent e) {
-                statusLabel.setText("Dragging at (" + e.getX() + ", " + e.getY() + ")");
-                panel.setBackground(Color.ORANGE);
+                System.out.println("Mouse at: " + e.getX() + ", " + e.getY());
             }
         });
         
-        frame.setLayout(new BorderLayout());
-        frame.add(panel, BorderLayout.CENTER);
-        frame.add(statusLabel, BorderLayout.SOUTH);
-        
-        frame.pack();
+        frame.add(panel);
+        frame.setSize(300, 200);
         frame.setVisible(true);
     }
 }
@@ -386,13 +316,13 @@ public class MouseEventDemo {
 
 ### Useful MouseEvent Methods
 
-| Method | What it returns |
-|--------|-----------------|
-| `getX()`, `getY()` | Mouse coordinates relative to component |
-| `getClickCount()` | Number of clicks (1 = single, 2 = double) |
-| `isPopupTrigger()` | Whether this event should show a popup menu |
-| `SwingUtilities.isLeftMouseButton(e)` | Checks if left button |
-| `SwingUtilities.isRightMouseButton(e)` | Checks if right button |
+| Method                                 | What it returns                             |
+| -------------------------------------- | ------------------------------------------- |
+| `getX()`, `getY()`                     | Mouse coordinates relative to component     |
+| `getClickCount()`                      | Number of clicks (1 = single, 2 = double)   |
+| `isPopupTrigger()`                     | Whether this event should show a popup menu |
+| `SwingUtilities.isLeftMouseButton(e)`  | Checks if left button                       |
+| `SwingUtilities.isRightMouseButton(e)` | Checks if right button                      |
 
 ---
 
@@ -417,80 +347,47 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class WindowEventDemo extends JFrame {
-    
-    private JTextArea logArea;
-    
     public WindowEventDemo() {
-        setTitle("WindowEvent Demo");
-        setSize(500, 400);
+        setSize(300, 200);
         
-        logArea = new JTextArea();
-        logArea.setEditable(false);
-        add(new JScrollPane(logArea));
-        
-        // Add window listener
         addWindowListener(new WindowAdapter() {
-            @Override
             public void windowOpened(WindowEvent e) {
-                log("Window opened");
+                System.out.println("Window opened");
             }
             
-            @Override
             public void windowClosing(WindowEvent e) {
-                log("Window closing (user clicked X)");
-                int confirm = JOptionPane.showConfirmDialog(WindowEventDemo.this,
-                    "Do you want to save before closing?",
-                    "Confirm Exit",
-                    JOptionPane.YES_NO_CANCEL_OPTION);
-                
-                if (confirm == JOptionPane.YES_OPTION) {
-                    log("Save and exit");
-                    System.exit(0);
-                } else if (confirm == JOptionPane.NO_OPTION) {
-                    log("Exit without saving");
-                    System.exit(0);
-                }
-                // Cancel - don't exit
+                System.out.println("Window closing");
+                System.exit(0);  // Exit on close
             }
             
-            @Override
             public void windowClosed(WindowEvent e) {
-                log("Window closed");
+                System.out.println("Window closed");
             }
             
-            @Override
             public void windowIconified(WindowEvent e) {
-                log("Window minimized");
+                System.out.println("Window minimized");
             }
             
-            @Override
             public void windowDeiconified(WindowEvent e) {
-                log("Window restored");
+                System.out.println("Window restored");
             }
             
-            @Override
             public void windowActivated(WindowEvent e) {
-                log("Window activated (gained focus)");
-            }
-            
-            @Override
-            public void windowDeactivated(WindowEvent e) {
-                log("Window deactivated (lost focus)");
+                System.out.println("Window focused");
             }
         });
         
         setVisible(true);
     }
     
-    private void log(String message) {
-        logArea.append(message + "\n");
-        System.out.println(message);
-    }
-    
     public static void main(String[] args) {
         new WindowEventDemo();
     }
 }
+
+//note : **No, you don't need a panel or field object** for a basic WindowEvent demo because: 
+//## The window itself is the component. 
+//The `JFrame` (which extends `Window`) is the component generating the window events. You're adding the WindowListener directly to the frame itself.
 ```
 
 ### WindowClosing vs WindowClosed
@@ -519,88 +416,35 @@ public class WindowEventDemo extends JFrame {
 
 ```java
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
 public class ItemEventDemo {
     public static void main(String[] args) {
         JFrame frame = new JFrame("ItemEvent Demo");
-        JPanel panel = new JPanel();
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         
-        JLabel statusLabel = new JLabel("Select options above");
+        JCheckBox checkBox = new JCheckBox("Check me");
+        JRadioButton radio = new JRadioButton("Radio me");
         
-        // Checkboxes
-        JCheckBox boldCheck = new JCheckBox("Bold");
-        JCheckBox italicCheck = new JCheckBox("Italic");
-        
-        // Radio buttons (in a group)
-        JRadioButton redRadio = new JRadioButton("Red");
-        JRadioButton greenRadio = new JRadioButton("Green");
-        JRadioButton blueRadio = new JRadioButton("Blue");
-        
-        ButtonGroup colorGroup = new ButtonGroup();
-        colorGroup.add(redRadio);
-        colorGroup.add(greenRadio);
-        colorGroup.add(blueRadio);
-        
-        // Combo box
-        String[] sizes = {"Small", "Medium", "Large"};
-        JComboBox<String> sizeCombo = new JComboBox<>(sizes);
-        
-        // ItemListener for checkboxes
-        ItemListener checkListener = e -> {
-            String item = (String) e.getItem();
-            int state = e.getStateChange();
-            
-            if (state == ItemEvent.SELECTED) {
-                statusLabel.setText(item + " selected");
-            } else {
-                statusLabel.setText(item + " deselected");
-            }
+        // Single listener demonstrating all ItemEvent features
+        ItemListener listener = e -> {
+            System.out.println("Item: " + e.getItem());
+            System.out.println("State: " + (e.getStateChange() == ItemEvent.SELECTED ? "SELECTED" : "DESELECTED"));
+            System.out.println("---");
         };
         
-        boldCheck.addItemListener(checkListener);
-        italicCheck.addItemListener(checkListener);
+        checkBox.addItemListener(listener);
+        radio.addItemListener(listener);
+        combo.addItemListener(listener);
         
-        // ItemListener for radio buttons
-        ItemListener radioListener = e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                statusLabel.setText("Color changed to: " + e.getItem());
-            }
-        };
+        // Group radio button to behave properly
+        ButtonGroup group = new ButtonGroup();
+        group.add(radio);
         
-        redRadio.addItemListener(radioListener);
-        greenRadio.addItemListener(radioListener);
-        blueRadio.addItemListener(radioListener);
-        
-        // ItemListener for combo box
-        sizeCombo.addItemListener(e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                statusLabel.setText("Size selected: " + e.getItem());
-            }
-        });
-        
-        // Add components to panel
-        panel.add(new JLabel("Text Style:"));
-        panel.add(boldCheck);
-        panel.add(italicCheck);
-        
-        panel.add(Box.createVerticalStrut(10));
-        panel.add(new JLabel("Text Color:"));
-        panel.add(redRadio);
-        panel.add(greenRadio);
-        panel.add(blueRadio);
-        
-        panel.add(Box.createVerticalStrut(10));
-        panel.add(new JLabel("Font Size:"));
-        panel.add(sizeCombo);
-        
-        panel.add(Box.createVerticalStrut(20));
-        panel.add(statusLabel);
-        
-        frame.add(panel);
-        frame.setSize(300, 400);
+        frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
+        frame.add(checkBox);
+        frame.add(radio);
+        frame.add(combo);
+        frame.setSize(250, 150);
         frame.setVisible(true);
     }
 }
@@ -612,216 +456,6 @@ public class ItemEventDemo {
 |--------|-----------------|
 | `getItem()` | The item that was selected/deselected |
 | `getStateChange()` | `ItemEvent.SELECTED` or `ItemEvent.DESELECTED` |
-
----
-
-## Complete Example: Form with All Event Types
-
-```java
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-
-public class CompleteEventDemo extends JFrame {
-    
-    private JTextArea logArea;
-    private JTextField nameField;
-    private JCheckBox subscribeCheck;
-    private JRadioButton maleRadio, femaleRadio;
-    private JComboBox<String> countryCombo;
-    
-    public CompleteEventDemo() {
-        setTitle("Complete Event Handling Demo");
-        setSize(600, 500);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        // Create main panel
-        JPanel mainPanel = new JPanel(new BorderLayout(10, 10));
-        mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        
-        // Form panel
-        JPanel formPanel = new JPanel(new GridBagLayout());
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(5, 5, 5, 5);
-        gbc.anchor = GridBagConstraints.WEST;
-        
-        // Name field with focus and key events
-        gbc.gridx = 0; gbc.gridy = 0;
-        formPanel.add(new JLabel("Name:"), gbc);
-        gbc.gridx = 1;
-        nameField = new JTextField(15);
-        formPanel.add(nameField, gbc);
-        
-        nameField.addFocusListener(new FocusAdapter() {
-            public void focusGained(FocusEvent e) {
-                log("Focus gained: Name field");
-                nameField.setBackground(Color.YELLOW);
-            }
-            public void focusLost(FocusEvent e) {
-                log("Focus lost: Name field");
-                nameField.setBackground(Color.WHITE);
-                if (nameField.getText().isEmpty()) {
-                    log("WARNING: Name is required!");
-                }
-            }
-        });
-        
-        nameField.addKeyListener(new KeyAdapter() {
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    log("Enter pressed in name field");
-                }
-            }
-        });
-        
-        // Checkbox with item event
-        gbc.gridx = 0; gbc.gridy = 1;
-        formPanel.add(new JLabel("Subscribe:"), gbc);
-        gbc.gridx = 1;
-        subscribeCheck = new JCheckBox("Receive newsletter");
-        formPanel.add(subscribeCheck, gbc);
-        
-        subscribeCheck.addItemListener(e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                log("Subscribed to newsletter");
-            } else {
-                log("Unsubscribed from newsletter");
-            }
-        });
-        
-        // Radio buttons with item event
-        gbc.gridx = 0; gbc.gridy = 2;
-        formPanel.add(new JLabel("Gender:"), gbc);
-        gbc.gridx = 1;
-        JPanel genderPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        maleRadio = new JRadioButton("Male");
-        femaleRadio = new JRadioButton("Female");
-        ButtonGroup genderGroup = new ButtonGroup();
-        genderGroup.add(maleRadio);
-        genderGroup.add(femaleRadio);
-        genderPanel.add(maleRadio);
-        genderPanel.add(femaleRadio);
-        formPanel.add(genderPanel, gbc);
-        
-        ItemListener genderListener = e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                log("Gender selected: " + e.getItem());
-            }
-        };
-        maleRadio.addItemListener(genderListener);
-        femaleRadio.addItemListener(genderListener);
-        
-        // Combo box with item and action events
-        gbc.gridx = 0; gbc.gridy = 3;
-        formPanel.add(new JLabel("Country:"), gbc);
-        gbc.gridx = 1;
-        String[] countries = {"Select Country", "USA", "UK", "Canada", "Australia"};
-        countryCombo = new JComboBox<>(countries);
-        formPanel.add(countryCombo, gbc);
-        
-        countryCombo.addItemListener(e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED && 
-                countryCombo.getSelectedIndex() > 0) {
-                log("Country selected: " + e.getItem());
-            }
-        });
-        
-        // Buttons with action events
-        JPanel buttonPanel = new JPanel(new FlowLayout());
-        JButton submitButton = new JButton("Submit");
-        JButton clearButton = new JButton("Clear");
-        JButton closeButton = new JButton("Close");
-        
-        submitButton.addActionListener(e -> {
-            log("SUBMIT clicked");
-            validateAndSubmit();
-        });
-        
-        clearButton.addActionListener(e -> {
-            log("CLEAR clicked");
-            clearForm();
-        });
-        
-        closeButton.addActionListener(e -> {
-            log("CLOSE clicked");
-            System.exit(0);
-        });
-        
-        buttonPanel.add(submitButton);
-        buttonPanel.add(clearButton);
-        buttonPanel.add(closeButton);
-        
-        // Log area
-        logArea = new JTextArea(10, 40);
-        logArea.setEditable(false);
-        JScrollPane scrollPane = new JScrollPane(logArea);
-        scrollPane.setBorder(BorderFactory.createTitledBorder("Event Log"));
-        
-        // Mouse events on log area
-        logArea.addMouseListener(new MouseAdapter() {
-            public void mouseEntered(MouseEvent e) {
-                logArea.setBackground(Color.CYAN);
-            }
-            public void mouseExited(MouseEvent e) {
-                logArea.setBackground(Color.WHITE);
-            }
-        });
-        
-        // Assemble
-        mainPanel.add(formPanel, BorderLayout.NORTH);
-        mainPanel.add(buttonPanel, BorderLayout.CENTER);
-        mainPanel.add(scrollPane, BorderLayout.SOUTH);
-        
-        add(mainPanel);
-        setVisible(true);
-    }
-    
-    private void log(String message) {
-        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("HH:mm:ss");
-        String timestamp = sdf.format(new java.util.Date());
-        logArea.append("[" + timestamp + "] " + message + "\n");
-        System.out.println(message);
-    }
-    
-    private void validateAndSubmit() {
-        StringBuilder errors = new StringBuilder();
-        
-        if (nameField.getText().trim().isEmpty()) {
-            errors.append("- Name is required\n");
-        }
-        
-        if (!maleRadio.isSelected() && !femaleRadio.isSelected()) {
-            errors.append("- Gender must be selected\n");
-        }
-        
-        if (countryCombo.getSelectedIndex() == 0) {
-            errors.append("- Country must be selected\n");
-        }
-        
-        if (errors.length() > 0) {
-            log("VALIDATION FAILED:\n" + errors.toString());
-            JOptionPane.showMessageDialog(this, errors.toString(), 
-                "Validation Error", JOptionPane.ERROR_MESSAGE);
-        } else {
-            log("VALIDATION SUCCESS! Form submitted.");
-            JOptionPane.showMessageDialog(this, "Form submitted successfully!");
-        }
-    }
-    
-    private void clearForm() {
-        nameField.setText("");
-        subscribeCheck.setSelected(false);
-        maleRadio.setSelected(false);
-        femaleRadio.setSelected(false);
-        countryCombo.setSelectedIndex(0);
-        log("Form cleared");
-    }
-    
-    public static void main(String[] args) {
-        new CompleteEventDemo();
-    }
-}
-```
 
 ---
 
