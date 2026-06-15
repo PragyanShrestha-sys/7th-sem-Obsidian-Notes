@@ -20,7 +20,6 @@ Here's a **complete theoretical explanation** of all the menu-related topics you
 ```
 
 ---
-
 ## The Menu Hierarchy
 
 ```

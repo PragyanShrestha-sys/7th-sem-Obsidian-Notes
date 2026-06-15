@@ -30,10 +30,10 @@ These are special windows and components that extend basic GUI functionality:
 
 **What it is:** Pre-built popup dialogs for common tasks like messages, confirmations, and input.
 
-| Aspect | Description |
-|--------|-------------|
-| **Purpose** | Quick popup windows for user interaction |
-| **Advantage** | No need to create custom dialog windows |
+| Aspect          | Description                                  |
+| --------------- | -------------------------------------------- |
+| **Purpose**     | Quick popup windows for user interaction     |
+| **Advantage**   | No need to create custom dialog windows      |
 | **Common uses** | Error messages, confirmations, input prompts |
 
 ### Types of Option Dialogs
@@ -112,7 +112,6 @@ public class CustomDialog extends JDialog {
         super(parent, "Custom Dialog", true);  // true = modal (blocks parent)
         
         setSize(300, 200);
-        setLocationRelativeTo(parent);
         
         // Add components
         JPanel panel = new JPanel();
@@ -190,17 +189,8 @@ if (result == JFileChooser.APPROVE_OPTION) {
     File selectedDir = chooser.getSelectedFile();
 }
 
-// FILE FILTERS (show only certain file types)
-FileNameExtensionFilter filter = new FileNameExtensionFilter(
-    "Text Files", "txt", "text");
-chooser.setFileFilter(filter);
-
-// Multiple file selection
-chooser.setMultiSelectionEnabled(true);
 File[] files = chooser.getSelectedFiles();
 
-// Default directory
-chooser.setCurrentDirectory(new File(System.getProperty("user.home")));
 ```
 
 **Visual:**
@@ -435,9 +425,9 @@ JScrollPane scrollPane = new JScrollPane(table);
 frame.add(scrollPane);
 
 // Customize table
-table.setRowHeight(25);
-table.setShowGrid(true);
-table.setGridColor(Color.GRAY);
+//table.setRowHeight(25);
+//table.setShowGrid(true);
+//table.setGridColor(Color.GRAY);
 
 // Selection modes
 table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -450,11 +440,6 @@ if (selectedRow != -1) {
     String name = (String) table.getValueAt(selectedRow, 1);
     System.out.println("Selected: " + name);
 }
-
-// Create table model (better for dynamic data)
-DefaultTableModel model = new DefaultTableModel(columns, 0);
-model.addRow(new Object[]{5, "Eve", 29, "IT"});
-table.setModel(model);
 
 // Add row
 model.addRow(new Object[]{6, "Frank", 32, "Finance"});
@@ -560,202 +545,18 @@ String[] data = {"Parent", "Child 1", "Child 2", "Grandchild"};
 
 ---
 
-## Complete Example: Document Editor with All Components
-
-```java
-import javax.swing.*;
-import javax.swing.tree.*;
-import javax.swing.table.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.File;
-
-public class AdvancedComponentsDemo extends JFrame {
-    
-    private JDesktopPane desktop;
-    private JTable dataTable;
-    private JTree fileTree;
-    
-    public AdvancedComponentsDemo() {
-        setTitle("Advanced Components Demo");
-        setSize(900, 700);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        // Create menu bar
-        JMenuBar menuBar = new JMenuBar();
-        
-        // File menu
-        JMenu fileMenu = new JMenu("File");
-        JMenuItem openItem = new JMenuItem("Open");
-        openItem.addActionListener(e -> showFileChooser());
-        fileMenu.add(openItem);
-        
-        JMenuItem colorItem = new JMenuItem("Choose Color");
-        colorItem.addActionListener(e -> showColorChooser());
-        fileMenu.add(colorItem);
-        
-        JMenuItem dialogItem = new JMenuItem("Show Dialog");
-        dialogItem.addActionListener(e -> showOptionDialog());
-        fileMenu.add(dialogItem);
-        
-        JMenuItem newFrameItem = new JMenuItem("New Internal Frame");
-        newFrameItem.addActionListener(e -> createInternalFrame());
-        fileMenu.add(newFrameItem);
-        
-        fileMenu.addSeparator();
-        JMenuItem exitItem = new JMenuItem("Exit");
-        exitItem.addActionListener(e -> System.exit(0));
-        fileMenu.add(exitItem);
-        
-        menuBar.add(fileMenu);
-        setJMenuBar(menuBar);
-        
-        // Split pane for tree and table
-        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-        
-        // Create tree panel (left)
-        JPanel treePanel = new JPanel(new BorderLayout());
-        treePanel.setBorder(BorderFactory.createTitledBorder("File Explorer"));
-        createFileTree();
-        treePanel.add(new JScrollPane(fileTree), BorderLayout.CENTER);
-        
-        // Create table panel (right)
-        JPanel tablePanel = new JPanel(new BorderLayout());
-        tablePanel.setBorder(BorderFactory.createTitledBorder("Data Table"));
-        createDataTable();
-        tablePanel.add(new JScrollPane(dataTable), BorderLayout.CENTER);
-        
-        splitPane.setLeftComponent(treePanel);
-        splitPane.setRightComponent(tablePanel);
-        splitPane.setDividerLocation(250);
-        
-        // Desktop for internal frames
-        desktop = new JDesktopPane();
-        desktop.setBorder(BorderFactory.createTitledBorder("Internal Frames"));
-        
-        // Main content
-        JSplitPane mainSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-        mainSplit.setTopComponent(splitPane);
-        mainSplit.setBottomComponent(desktop);
-        mainSplit.setDividerLocation(400);
-        
-        add(mainSplit);
-        setVisible(true);
-    }
-    
-    private void createFileTree() {
-        DefaultMutableTreeNode root = new DefaultMutableTreeNode("My Computer");
-        
-        DefaultMutableTreeNode documents = new DefaultMutableTreeNode("Documents");
-        documents.add(new DefaultMutableTreeNode("resume.txt"));
-        documents.add(new DefaultMutableTreeNode("notes.txt"));
-        
-        DefaultMutableTreeNode pictures = new DefaultMutableTreeNode("Pictures");
-        pictures.add(new DefaultMutableTreeNode("vacation.jpg"));
-        pictures.add(new DefaultMutableTreeNode("family.png"));
-        
-        root.add(documents);
-        root.add(pictures);
-        
-        fileTree = new JTree(root);
-        fileTree.addTreeSelectionListener(e -> {
-            DefaultMutableTreeNode node = (DefaultMutableTreeNode) 
-                fileTree.getLastSelectedPathComponent();
-            if (node != null && node.isLeaf()) {
-                JOptionPane.showMessageDialog(this, 
-                    "Opening: " + node.getUserObject(),
-                    "File Selected", 
-                    JOptionPane.INFORMATION_MESSAGE);
-            }
-        });
-    }
-    
-    private void createDataTable() {
-        String[] columns = {"ID", "Name", "Role", "Status"};
-        Object[][] data = {
-            {1, "Alice", "Developer", "Active"},
-            {2, "Bob", "Designer", "Active"},
-            {3, "Charlie", "Manager", "Inactive"},
-            {4, "Diana", "Tester", "Active"}
-        };
-        dataTable = new JTable(data, columns);
-        dataTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-    }
-    
-    private void showFileChooser() {
-        JFileChooser chooser = new JFileChooser();
-        int result = chooser.showOpenDialog(this);
-        if (result == JFileChooser.APPROVE_OPTION) {
-            File file = chooser.getSelectedFile();
-            JOptionPane.showMessageDialog(this, 
-                "Selected file: " + file.getName(),
-                "File Chooser", 
-                JOptionPane.INFORMATION_MESSAGE);
-        }
-    }
-    
-    private void showColorChooser() {
-        Color color = JColorChooser.showDialog(this, "Pick a Color", Color.RED);
-        if (color != null) {
-            desktop.setBackground(color);
-        }
-    }
-    
-    private void showOptionDialog() {
-        String[] options = {"Save", "Don't Save", "Cancel"};
-        int result = JOptionPane.showOptionDialog(this, 
-            "Do you want to save changes?", "Save File",
-            JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
-            null, options, options[0]);
-        
-        if (result == 0) {
-            JOptionPane.showMessageDialog(this, "File saved!");
-        } else if (result == 1) {
-            JOptionPane.showMessageDialog(this, "Changes discarded");
-        }
-    }
-    
-    private void createInternalFrame() {
-        int count = desktop.getAllFrames().length + 1;
-        JInternalFrame frame = new JInternalFrame("Document " + count, 
-            true, true, true, true);
-        
-        JTextArea textArea = new JTextArea();
-        textArea.setLineWrap(true);
-        frame.add(new JScrollPane(textArea));
-        
-        frame.setSize(300, 200);
-        frame.setLocation(count * 30, count * 30);
-        frame.setVisible(true);
-        desktop.add(frame);
-        
-        try {
-            frame.setSelected(true);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new AdvancedComponentsDemo());
-    }
-}
-```
-
----
-
 ## Quick Reference Table
 
-| Component | Class | Purpose |
-|-----------|-------|---------|
-| Option Dialog | `JOptionPane` | Quick popup messages/input |
-| Custom Dialog | `JDialog` | Custom popup windows |
-| File Chooser | `JFileChooser` | Browse files |
-| Color Chooser | `JColorChooser` | Pick colors |
-| Frame | `JFrame` | Main window |
-| Internal Frame | `JInternalFrame` | Child window inside frame |
-| Table | `JTable` | Spreadsheet data |
-| Tree | `JTree` | Hierarchical data |
+| Component      | Class            | Purpose                    |
+| -------------- | ---------------- | -------------------------- |
+| Option Dialog  | `JOptionPane`    | Quick popup messages/input |
+| Custom Dialog  | `JDialog`        | Custom popup windows       |
+| File Chooser   | `JFileChooser`   | Browse files               |
+| Color Chooser  | `JColorChooser`  | Pick colors                |
+| Frame          | `JFrame`         | Main window                |
+| Internal Frame | `JInternalFrame` | Child window inside frame  |
+| Table          | `JTable`         | Spreadsheet data           |
+| Tree           | `JTree`          | Hierarchical data          |
 
 ---
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 2/GUI Controls.md",
+                "file": "Chapter 6 GUI with JAVA FX/Java FX UI Controls.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GUI Controls"
+              "title": "Java FX UI Controls"
             }
           }
         ]
@@ -185,7 +185,13 @@
   },
   "active": "f8552d00ae638d7b",
   "lastOpenFiles": [
+    "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
+    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes.md",
+    "Chapter 2/Dialogues.md",
     "Chapter 2/Introduction.md",
+    "Chapter 2/_Chapter 2 User.md",
+    "Chapter 2/Menu.md",
+    "Chapter 2/GUI Controls.md",
     "Chapter 2/Layout Management.md",
     "Attachments/Pasted image 20260615075352.png",
     "Attachments/Pasted image 20260615075306.png",
@@ -193,7 +199,6 @@
     "Chapter 2/Swing Hierarchy of classes.md",
     "Chapter 2/Applet (to make interactive and dynamic components).md",
     "Chapter 2/Concept of AWT.md",
-    "Chapter 2/_Chapter 2 User.md",
     "Chapter 5 Network Programming/_Chapter 5 Network Programming.md",
     "Chapter 6 GUI with JAVA FX/super short code.md",
     "Chapter 8 RUI and CORBA/RMI Code Short.md",
@@ -208,10 +213,6 @@
     "Chapter 8 RUI and CORBA/interface matra kina define garcha implementaions in different laguages can be different no.md",
     "Chapter 8 RUI and CORBA/IDL (Interface Definition Language) Example.md",
     "Chapter 7 Servlets and Java Server Pages/__Chapter 7 Servlets and Java Server Pages.md",
-    "Chapter 7 Servlets and Java Server Pages/Database Access with JSP.md",
-    "Chapter 7 Servlets and Java Server Pages/Processing Forms in JSP.md",
-    "Chapter 7 Servlets and Java Server Pages/Object Scope in JSP.md",
-    "Chapter 7 Servlets and Java Server Pages/JSP implicit objects.md",
     "Attachments/Pasted image 20260614124351.png",
     "Attachments/Pasted image 20260614124340.png",
     "Attachments/Pasted image 20260614074509.png",

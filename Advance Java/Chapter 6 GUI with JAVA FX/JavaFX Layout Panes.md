@@ -102,7 +102,7 @@ BorderPane Layout:
 │     LEFT      │        CENTER           │
 │               │                         │
 ├───────────────┴─────────────────────────┤
-│                BOTTOM                    │
+│                BOTTOM                   │
 └─────────────────────────────────────────┘
 ```
 
@@ -387,80 +387,33 @@ With column span:
 
 ```java
 import javafx.application.Application;
-import javafx.geometry.HPos;
-import javafx.geometry.Insets;
-import javafx.geometry.VPos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class GridPaneDemo extends Application {
+public class GridPaneShortened extends Application {
     
     @Override
     public void start(Stage stage) {
-        // Create GridPane
         GridPane grid = new GridPane();
         
-        // Set gaps
-        grid.setHgap(10);  // Horizontal gap
-        grid.setVgap(10);  // Vertical gap
-        grid.setPadding(new Insets(20));  // Padding around grid
+        // Essential GridPane settings
+        grid.setHgap(10);      // Horizontal gap between cells
+        grid.setVgap(10);      // Vertical gap between cells
         
-        // Add components with their positions
+        // Adding components: grid.add(node, column, row)
+        grid.add(new Label("Name:"), 0, 0);      // col 0, row 0
+        grid.add(new TextField(), 1, 0);         // col 1, row 0
         
-        // Row 0: First Name
-        Label firstNameLabel = new Label("First Name:");
-        grid.add(firstNameLabel, 0, 0);  // column 0, row 0
+        grid.add(new Label("Email:"), 0, 1);     // col 0, row 1
+        grid.add(new TextField(), 1, 1);         // col 1, row 1
         
-        TextField firstNameField = new TextField();
-        grid.add(firstNameField, 1, 0);  // column 1, row 0
-        firstNameField.setPrefWidth(200);
+        // Span: grid.add(node, col, row, colspan, rowspan)
+        grid.add(new Label("Full width:"), 0, 2, 2, 1);  // spans 2 columns
         
-        // Row 1: Last Name
-        Label lastNameLabel = new Label("Last Name:");
-        grid.add(lastNameLabel, 0, 1);  // column 0, row 1
-        
-        TextField lastNameField = new TextField();
-        grid.add(lastNameField, 1, 1);  // column 1, row 1
-        
-        // Row 2: Email
-        Label emailLabel = new Label("Email:");
-        grid.add(emailLabel, 0, 2);  // column 0, row 2
-        
-        TextField emailField = new TextField();
-        grid.add(emailField, 1, 2);  // column 1, row 2
-        
-        // Row 3: Phone (spanning 2 columns)
-        Label phoneLabel = new Label("Phone Number:");
-        grid.add(phoneLabel, 0, 3);
-        
-        TextField phoneField = new TextField();
-        grid.add(phoneField, 1, 3);
-        
-        // Row 4: Buttons (spanning 2 columns)
-        Button saveBtn = new Button("Save");
-        Button cancelBtn = new Button("Cancel");
-        
-        // Create HBox for buttons
-        javafx.scene.layout.HBox buttonBox = new javafx.scene.layout.HBox(10);
-        buttonBox.getChildren().addAll(saveBtn, cancelBtn);
-        
-        grid.add(buttonBox, 0, 4, 2, 1);  // span 2 columns, 1 row
-        
-        // Set column constraints (make column 1 expand)
-        javafx.scene.layout.ColumnConstraints col1 = new javafx.scene.layout.ColumnConstraints();
-        col1.setPercentWidth(30);  // 30% of width
-        
-        javafx.scene.layout.ColumnConstraints col2 = new javafx.scene.layout.ColumnConstraints();
-        col2.setPercentWidth(70);  // 70% of width
-        
-        grid.getColumnConstraints().addAll(col1, col2);
-        
-        Scene scene = new Scene(grid, 500, 300);
-        stage.setTitle("GridPane Demo - Registration Form");
+        Scene scene = new Scene(grid, 400, 150);
         stage.setScene(scene);
         stage.show();
     }
@@ -471,6 +424,46 @@ public class GridPaneDemo extends Application {
 }
 ```
 
+Code example (with only spanning):
+
+```java 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+public class SimpleGridPane extends Application {
+    
+    @Override
+    public void start(Stage stage) {
+        GridPane grid = new GridPane();
+        grid.setHgap(10);
+        grid.setVgap(10);
+        
+        // Row 0
+        grid.add(new Label("Name:"), 0, 0);
+        grid.add(new TextField(), 1, 0);
+        
+        // Row 1
+        grid.add(new Label("Age:"), 0, 1);
+        grid.add(new TextField(), 1, 1);
+        
+        // Row 2
+        grid.add(new Label("City:"), 0, 2);
+        grid.add(new TextField(), 1, 2);
+        
+        Scene scene = new Scene(grid, 300, 150);
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+```
 **Use when:**
 - Data entry forms (labels in one column, fields in another)
 - Calculator layout
