@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1 PROGRAMMING IN JAVA/Path and Class Path.md",
+                "file": "Chapter 9 PAST YEAR QUESTIONS/2081/081 Short questions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Path and Class Path"
+              "title": "081 Short questions"
+            }
+          },
+          {
+            "id": "822ae0de487375ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 1 PROGRAMMING IN JAVA/_Chapter 1 Programming in JAVA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_Chapter 1 Programming in JAVA"
+            }
+          },
+          {
+            "id": "178bfd33e80d6cbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 8 RMI and CORBA/RMI Code Short.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RMI Code Short"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,34 +212,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "e25a9b8c54ea12e7",
+  "active": "178bfd33e80d6cbf",
   "lastOpenFiles": [
-    "Chapter 5 Network Programming/_Chapter 5 Network Programming.md",
+    "Chapter 8 RMI and CORBA/Creating and Executing RMI Applications.md",
+    "Chapter 8 RMI and CORBA/RMI code LOng.md",
+    "Chapter 8 RMI and CORBA/_Chapter 8 RMI and CORBA.md",
+    "Chapter 4 Database Connectivityu/Setting up database connection.md",
     "Chapter 4 Database Connectivityu/_Chapter 4 Database Connectivity.md",
-    "Chapter 9 PAST YEAR QUESTIONS/2081/081 Short questions.md",
-    "Chapter 7 Servlets and Java Server Pages/Processing Forms in JSP.md",
-    "Chapter 7 Servlets and Java Server Pages/__Chapter 7 Servlets and Java Server Pages.md",
-    "Chapter 7 Servlets and Java Server Pages/Servlet vs JSP (Java Server Pages).md",
-    "Chapter 7 Servlets and Java Server Pages/What is JSP.md",
-    "Chapter 7 Servlets and Java Server Pages/Servlet and lifecycle (get request ko example nicha ).md",
-    "Chapter 4 Database Connectivityu/Sql Escape sequences.md",
-    "Chapter 8 RUI and CORBA/WRITE IDL FILE AND GEENRATION THE STUB AND SKELETOP CODE FOR CORBA IMPLEMENTATION.md",
-    "Chapter 4 Database Connectivityu/ResultSet.md",
-    "Chapter 4 Database Connectivityu/ResultSet Types & Concurrency.md",
+    "Short Questions (5 marks).md",
+    "Attachments/Pasted image 20260616194956.png",
+    "Chapter 9 PAST YEAR QUESTIONS/2080/2080 past questions.md",
     "Chapter 4 Database Connectivityu/Statement, ResultSet & Query Execution.md",
-    "Chapter 7 Servlets and Java Server Pages/Processing Fourms in Servlet (Post request in servlet ko example yeai lekhda huncha).md",
-    "Chapter 7 Servlets and Java Server Pages/Handling Request and Response code.md",
-    "Chapter 7 Servlets and Java Server Pages/Types of Servlet.md",
-    "Chapter 7 Servlets and Java Server Pages/Web Containers.md",
-    "Chapter 7 Servlets and Java Server Pages/Web Container Responsibilities.md",
-    "Chapter 7 Servlets and Java Server Pages/Servlet API.md",
-    "Chapter 3 Event Handling/_Chapter 3 Event Handling.md",
-    "Chapter 3 Event Handling/Without Action Command (Hard to identify).md",
-    "Chapter 3 Event Handling/What is 'scanner' how does it work(used for input).md",
-    "Chapter 3 Event Handling/Using Action Commands.md",
-    "Chapter 3 Event Handling/shorter version (Have not checked).md",
-    "Chapter 3 Event Handling/Listener Interfaces.md",
-    "Chapter 3 Event Handling/Handling Events.md",
+    "Chapter 4 Database Connectivityu/JDBC Architecture(Java Database Connectivity) (imp).md",
+    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes.md",
+    "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
+    "Chapter 6 GUI with JAVA FX/Java FX UI Controls.md",
+    "Chapter 8 RMI and CORBA/RMI Code Short.md",
+    "Chapter 8 RMI and CORBA/Corba Implementation.md",
+    "Chapter 8 RMI and CORBA/WRITE IDL FILE AND GEENRATION THE STUB AND SKELETOP CODE FOR CORBA IMPLEMENTATION.md",
+    "Chapter 8 RMI and CORBA/how does idl and corba work together (i understood this explanation.md",
+    "Chapter 8 RMI and CORBA/CORBA (Common Object Request Broker Architecture).md",
+    "Chapter 8 RMI and CORBA/IDL (Interface Definition Language) Example.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2081/081 Long Questions.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2081/2081.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2081/081 Short questions.md",
+    "Chapter 1 PROGRAMMING IN JAVA/_Chapter 1 Programming in JAVA.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2080",
+    "Chapter 1 PROGRAMMING IN JAVA/Path and Class Path.md",
+    "Chapter 1 PROGRAMMING IN JAVA/Java Buzzwords.md",
+    "Chapter 5 Network Programming/Socket Programming Using TCP and UDP.md",
+    "Chapter 5 Network Programming/Sockets Programming.md",
+    "Attachments/Pasted image 20260616161602.png",
     "Chapter 9 PAST YEAR QUESTIONS/2081",
     "Chapter 9 PAST YEAR QUESTIONS/2082",
     "Chapter 9 PAST YEAR QUESTIONS",
@@ -222,14 +254,11 @@
     "Attachments/Pasted image 20260614124340.png",
     "Attachments/Pasted image 20260614074509.png",
     "Attachments/Pasted image 20260614074446.png",
-    "Attachments/Pasted image 20260614074435.png",
-    "Attachments/Pasted image 20260613131131.png",
     "_pdfs/3_Connecting_to_Database_in_JSP.pdf",
     "_pdfs",
     "_pdfs/2_Implicit_Objects_in_JSP.pdf",
-    "Chapter 8 RUI and CORBA",
+    "Chapter 8 RMI and CORBA",
     "Chapter 6 GUI with JAVA FX",
-    "Chapter 5 Network Programming",
-    "Chapter 4 Database Connectivityu"
+    "Chapter 5 Network Programming"
   ]
 }

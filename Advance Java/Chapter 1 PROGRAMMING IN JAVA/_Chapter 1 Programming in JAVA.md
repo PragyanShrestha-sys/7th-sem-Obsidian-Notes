@@ -4,6 +4,7 @@
 
 ---
 ## [[Java Buzzwords]]
+
 1. JDK 
 2. JRE 
 3. JVM
@@ -14,6 +15,16 @@ JVM = For EXECUTING (PART OF THE JRE) (the actual engine that does the work)
 
 ---
 ## [[Path and Class Path ]]
+
+| Question               | PATH                                     | CLASSPATH                       |
+| ---------------------- | ---------------------------------------- | ------------------------------- |
+| **What does it find?** | Executables (java.exe, javac.exe)        | Classes (.class files) and JARs |
+| **Used by?**           | Operating System                         | JVM and Java Compiler (javac)   |
+| **Typical content**    | JDK bin directory                        | ., project folders, JARs        |
+| **Default value**      | System default (includes system folders) | . (current directory only)      |
+| **Set permanently?**   | Yes (common)                             | No (bad practice)               |
+| **Override method**    | Can't easily override                    | Use `-cp` or `-classpath` flag  |
+| **Separator**          | Windows: `;` Linux/Mac: `:`              | Windows: `;` Linux/Mac: `:`     |
 
 | Variable      | What it does                                                                                                                           | For Whom             |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |

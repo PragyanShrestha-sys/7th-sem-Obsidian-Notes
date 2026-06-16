@@ -36,6 +36,12 @@ Customer (Java App) → Translator (JDBC) → Foreigner (Database)
 
 > **"Execute are the methods inside statement"** ✅ **CORRECT**
 
+| Method                      | What it does                  | When to use        | Returns           |
+| --------------------------- | ----------------------------- | ------------------ | ----------------- |
+| `executeQuery(String sql)`  | Executes SELECT query         | Reading data       | `ResultSet`       |
+| `executeUpdate(String sql)` | Executes INSERT/UPDATE/DELETE | Changing data      | `int` (row count) |
+| `execute(String sql)`       | Executes any SQL              | Unknown query type | `boolean`         |
+
 ---
 ## [[Sql Exception]]
 ![[Pasted image 20260606152002.png]]

@@ -44,11 +44,11 @@ int count = stmt.executeUpdate("DELETE FROM users WHERE id=1");  // For INSERT/U
 
 ### Execution Methods
 
-| Method | What it does | When to use | Returns |
-|--------|--------------|-------------|---------|
-| `executeQuery(String sql)` | Executes SELECT query | Reading data | `ResultSet` |
-| `executeUpdate(String sql)` | Executes INSERT/UPDATE/DELETE | Changing data | `int` (row count) |
-| `execute(String sql)` | Executes any SQL | Unknown query type | `boolean` |
+| Method                      | What it does                  | When to use        | Returns           |
+| --------------------------- | ----------------------------- | ------------------ | ----------------- |
+| `executeQuery(String sql)`  | Executes SELECT query         | Reading data       | `ResultSet`       |
+| `executeUpdate(String sql)` | Executes INSERT/UPDATE/DELETE | Changing data      | `int` (row count) |
+| `execute(String sql)`       | Executes any SQL              | Unknown query type | `boolean`         |
 
 ---
 

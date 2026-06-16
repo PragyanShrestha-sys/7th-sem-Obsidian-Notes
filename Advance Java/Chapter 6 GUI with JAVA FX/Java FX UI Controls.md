@@ -2,6 +2,16 @@
 [[super short code]]
 # JavaFX UI Controls - Short Demonstration
 
+note: Comparision to Swing (equivalent herne ho bhane)
+- **`JFrame` ↔ `Stage`** (The top-level OS window)
+- **`JPanel` ↔ `Scene`** (The container that holds all your UI components)
+
+|Component|Job|What it does|
+|---|---|---|
+|**`Scene`**|**Adding stuff**|Holds all your UI components (buttons, labels, layouts)|
+|**`Stage`**|**Modifying stuff**|Controls the window itself (title, size, position, behavior|
+
+
 Here's a **condensed version** with shorter code for each control, keeping the explanations.
 
 ---
@@ -80,6 +90,18 @@ boolean isChecked = check1.isSelected();  // Get state
 ```java
 Hyperlink link = new Hyperlink("Click here");
 link.setOnAction(e -> System.out.println("Link clicked!"));
+//for website 
+link.setOnAction(e -> {
+    try { Desktop.getDesktop().browse(new URI("https://google.com")); }
+    catch (Exception ex) {}
+
+//for local file
+
+link.setOnAction(e -> {
+    try { Desktop.getDesktop().open(new File("C:/file.txt")); }
+    catch (Exception ex) {}
+});
+});
 ```
 
 ---

@@ -1,5 +1,4 @@
 
-
 **What is a Listener Interface?** An interface that declares methods for handling specific events.
 
 | Listener Interface | Methods                                                                                  | When called                   |

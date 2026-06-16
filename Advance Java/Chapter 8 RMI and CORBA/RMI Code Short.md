@@ -18,11 +18,11 @@ Computer A (Client)              Computer B (Server)
 
 ## Why Needed?
 
-| Problem | Solution |
-|---------|----------|
-| Code runs on one computer | Call methods on remote computers |
-| Build distributed systems | Java objects communicate across network |
-| Client-server applications | Client calls server methods directly |
+| Problem                    | Solution                                |
+| -------------------------- | --------------------------------------- |
+| Code runs on one computer  | Call methods on remote computers        |
+| Build distributed systems  | Java objects communicate across network |
+| Client-server applications | Client calls server methods directly    |
 
 ---
 
@@ -74,7 +74,6 @@ public class CalculatorImpl extends UnicastRemoteObject implements Calculator {
 ```
 
 ---
-
 ### Step 3: RMI Server (Registers the object)
 
 ```java

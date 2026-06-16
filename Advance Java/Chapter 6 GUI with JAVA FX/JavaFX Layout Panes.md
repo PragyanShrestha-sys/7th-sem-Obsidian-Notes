@@ -160,10 +160,13 @@ public class BorderPaneDemo extends Application {
         borderPane.setCenter(centerLabel);
         
         // Create scene
+        //Scene scene = new Scene(root, width, height);
         Scene scene = new Scene(borderPane, 600, 400);
         stage.setTitle("BorderPane Demo");
         stage.setScene(scene);
-        stage.show();
+        stage.show();//**Without `stage.show()`**, everything exists in memory (the house is built, painted, and furnished), but **the lights are off and the doors are locked** – you can't see it on your monitor!
+        
+        
     }
     
     public static void main(String[] args) {
@@ -171,6 +174,13 @@ public class BorderPaneDemo extends Application {
     }
 }
 ```
+
+note: 
+
+|Component|Job|What it does|
+|---|---|---|
+|**`Scene`**|**Adding stuff**|Holds all your UI components (buttons, labels, layouts)|
+|**`Stage`**|**Modifying stuff**|Controls the window itself (title, size, position, behavior|
 
 **Use when:**
 - Main application window

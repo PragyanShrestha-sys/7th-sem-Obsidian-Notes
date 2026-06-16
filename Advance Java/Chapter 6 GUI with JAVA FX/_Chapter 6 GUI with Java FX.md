@@ -4,9 +4,7 @@
 ![[Pasted image 20260607104045.png]]
 
 ---
-
 ## Part 2: [[JavaFX Layout Panes]]
-
 **Memory trick:**
 ```
 FlowPane = "Flows and wraps" (like text)
