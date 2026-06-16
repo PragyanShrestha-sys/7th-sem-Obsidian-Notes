@@ -42,6 +42,7 @@ Here's a **complete theoretical explanation** of all the GUI controls you listed
 | **Purpose**        | Display static text or images              |
 | **User can edit?** | ❌ No (display only)                        |
 | **Common uses**    | Field labels, titles, instructions, images |
+[[jlabel extra code for concept with jfrmae]]
 
 ```java
 // Basic label

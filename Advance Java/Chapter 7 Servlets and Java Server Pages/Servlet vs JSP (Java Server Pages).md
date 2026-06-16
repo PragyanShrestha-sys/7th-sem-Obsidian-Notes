@@ -37,9 +37,7 @@ Servlet (Java with HTML inside)          JSP (HTML with Java inside)
 | **Best for**         | Business logic, form processing, database operations | Displaying data, HTML layout, UI components  |
 | **Code readability** | Poor for HTML (lots of strings)                      | Good for HTML, poor for Java                 |
 
-
 ---
-
 ## Code Comparison - Same Output
 
 ### Servlet Version (Hello World)
@@ -115,7 +113,7 @@ public class LoginServlet extends HttpServlet {
 }
 ```
 
-### JSP (Messy for Logic)
+### JSP (Messy for Logic) (request and response )
 ```jsp
 <%-- This is messy for complex logic --%>
 <%
