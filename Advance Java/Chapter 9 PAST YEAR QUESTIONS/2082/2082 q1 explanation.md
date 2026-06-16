@@ -52,7 +52,3 @@ public class MoveIcon {
 }
 ```
 
----
-## How do you handle HTTP request and response using JSP? Illustrate with an example.
-
-[[]]

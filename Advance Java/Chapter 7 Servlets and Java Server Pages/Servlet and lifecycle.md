@@ -134,17 +134,7 @@ public class HelloServlet extends HttpServlet {
         out.println("<h1>Hello, " + name + "!</h1>");
         out.println("</body>");
         out.println("</html>");
-    }
-    
-    // Called for every POST request
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        
-        // Usually call doGet or handle form submission
-        doGet(request, response);
-    }
-    
+    }   
     // Called once when servlet is unloaded
     @Override
     public void destroy() {

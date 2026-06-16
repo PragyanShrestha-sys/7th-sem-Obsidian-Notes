@@ -329,46 +329,34 @@ frame.setResizable(false);
 import javax.swing.*;
 import java.awt.*;
 
-public class InternalFrameDemo extends JFrame {
-    
-    public InternalFrameDemo() {
-        setTitle("MDI Application");
-        setSize(800, 600);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        // Create desktop pane (holds internal frames)
-        JDesktopPane desktop = new JDesktopPane();
-        setContentPane(desktop);
-        
-        // Create internal frame
-        JInternalFrame internalFrame = new JInternalFrame("Document 1", 
-                                          true,  // resizable
-                                          true,  // closable
-                                          true,  // maximizable
-                                          true); // iconifiable (minimize)
-        
-        // Add content
-        JTextArea textArea = new JTextArea();
-        internalFrame.add(new JScrollPane(textArea));
-        
-        internalFrame.setSize(300, 200);
-        internalFrame.setVisible(true);
-        
-        // Add to desktop
-        desktop.add(internalFrame);
-        
-        // Create multiple internal frames
-        JInternalFrame anotherFrame = new JInternalFrame("Document 2", true, true, true, true);
-        anotherFrame.setSize(300, 200);
-        anotherFrame.setLocation(100, 100);
-        anotherFrame.setVisible(true);
-        desktop.add(anotherFrame);
-        
-        setVisible(true);
-    }
-    
+public class InternalFrameDemo {
     public static void main(String[] args) {
-        new InternalFrameDemo();
+        // Create main frame
+        JFrame frame = new JFrame("MDI Application");
+        frame.setSize(800, 600);
+        
+        // Desktop pane - container for internal frames
+        JDesktopPane desktop = new JDesktopPane();
+        frame.setContentPane(desktop);
+        
+        // Internal Frame 1
+        JInternalFrame doc1 = new JInternalFrame("Document 1", true, true, true, true);
+//                                                  ↑     ↑     ↑     ↑
+//                                            resizable closable maximizable iconifiable(no minimize)
+        doc1.add(new JScrollPane(new JTextArea()));
+        doc1.setSize(300, 200);
+        doc1.setVisible(true);
+        desktop.add(doc1);
+        
+        // Internal Frame 2
+        JInternalFrame doc2 = new JInternalFrame("Document 2", true, true, true, true);
+        doc2.add(new JScrollPane(new JTextArea()));
+        doc2.setSize(300, 200);
+        doc2.setLocation(100, 100);
+        doc2.setVisible(true);
+        desktop.add(doc2);
+        
+        frame.setVisible(true);
     }
 }
 ```
@@ -577,3 +565,54 @@ JTree = Parent and children
 ```
 
 Would you like me to explain **event handling** (how to respond to button clicks, menu selections, etc.) next?
+
+---
+
+## Q. Movie question with implementation of COM.DAT
+
+```java
+import java.io.*;
+
+class MOVIE implements Serializable {
+    String name, genre;
+    MOVIE(String n, String g) { name = n; genre = g; }
+}
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("COM.DAT"));
+        
+        MOVIE[] movies = {
+            new MOVIE("The Hangover", "comedy"),
+            new MOVIE("Inception", "sci-fi"),
+            new MOVIE("Dumb & Dumber", "comedy"),
+            new MOVIE("The Matrix", "action")
+        };
+        
+        for (MOVIE m : movies)
+            if (m.genre.equalsIgnoreCase("comedy"))
+                out.writeObject(m);
+        
+        out.close();
+    }
+}
+```
+
+**Key Points:**
+- `Serializable` allows objects to be written to file
+- `ObjectOutputStream` writes objects to binary file `COM.DAT`
+- Only movies with genre "comedy" are saved
+- `equalsIgnoreCase()` handles case-insensitive comparison
+## What is COM.DAT?
+
+**COM.DAT** is just a **custom filename** you chose for your data file. It's not a special or standard file type - it's a name you made up.
+
+```
+Your Program
+     ↓ (has MOVIE objects)
+ObjectOutputStream  ← "Convert object to bytes"
+     ↓ (sends bytes)
+FileOutputStream    ← "Write bytes to file"
+     ↓
+COM.DAT File (created on disk)
+```

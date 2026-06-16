@@ -136,3 +136,5 @@ Rest in peace, applets. You were cool in the 90s.
 **For your study:** Know what applets were (a Java program in a browser), but FOCUS on Swing for desktop applications and Java for backend/server applications.
 
 Would you like me to explain **why applets died** or **what replaced them** next?
+
+---

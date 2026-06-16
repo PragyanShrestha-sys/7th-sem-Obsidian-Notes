@@ -27,6 +27,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Chapter 2 USER INTERFACE WITH SWING/Swing Hierarchy of classes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Swing Hierarchy of classes"
+            }
+          },
+          {
+            "id": "b6d3e401b6daa420",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Chapter 9 PAST YEAR QUESTIONS/2082/SHORT (5 MARKS).md",
                 "mode": "source",
                 "source": false
@@ -36,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -198,38 +212,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "ac8bf64ea402adee",
+  "active": "b6d3e401b6daa420",
   "lastOpenFiles": [
-    "Chapter 7 Servlets and Java Server Pages/Servlet vs JSP (Java Server Pages).md",
+    "Chapter 2 USER INTERFACE WITH SWING/Swing Hierarchy of classes.md",
     "Chapter 9 PAST YEAR QUESTIONS/2082/SHORT (5 MARKS).md",
+    "Chapter 2 USER INTERFACE WITH SWING/Introduction.md",
+    "Chapter 2 USER INTERFACE WITH SWING/_Chapter 2 User.md",
+    "Chapter 2 USER INTERFACE WITH SWING/Applet (to make interactive and dynamic components).md",
+    "Chapter 2 USER INTERFACE WITH SWING/Dialogues.md",
     "Chapter 9 PAST YEAR QUESTIONS/2082/2082 q1 explanation.md",
+    "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
+    "Chapter 7 Servlets and Java Server Pages/GET AND POST REQUEST OF SERVELT CODE EXAMPLE.md",
     "Chapter 9 PAST YEAR QUESTIONS/2082/2082.md",
+    "Chapter 7 Servlets and Java Server Pages/Processing Fourms in Servlet (Post request in servlet ko example yeai lekhda huncha).md",
     "Chapter 7 Servlets and Java Server Pages/__Chapter 7 Servlets and Java Server Pages.md",
+    "Chapter 7 Servlets and Java Server Pages/Servlet vs JSP (Java Server Pages).md",
+    "Chapter 7 Servlets and Java Server Pages/Servlet and lifecycle.md",
     "Chapter 7 Servlets and Java Server Pages/Handling Request and Response code.md",
     "Chapter 9 PAST YEAR QUESTIONS/2082",
     "Chapter 3 Event Handling/Handling Events.md",
     "Chapter 9 PAST YEAR QUESTIONS",
     "Chapter 3 Event Handling/_Chapter 3 Event Handling.md",
-    "Chapter 2/jlabel extra code for concept with jfrmae.md",
-    "Chapter 2/GUI Controls.md",
-    "Chapter 2/Concept of AWT.md",
-    "Chapter 2/Introduction.md",
-    "Chapter 2/Layout Management.md",
-    "Chapter 2/_Chapter 2 User.md",
+    "Chapter 2 USER INTERFACE WITH SWING/jlabel extra code for concept with jfrmae.md",
+    "Chapter 2 USER INTERFACE WITH SWING/GUI Controls.md",
+    "Chapter 2 USER INTERFACE WITH SWING/Concept of AWT.md",
+    "Chapter 2 USER INTERFACE WITH SWING/Layout Management.md",
     "Chapter 6 GUI with JAVA FX/Java FX UI Controls.md",
-    "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
-    "Chapter 2/Swing Hierarchy of classes.md",
-    "Chapter 1/Packages.md",
-    "Chapter 1/1.2.md",
-    "Chapter 1/_Chapter 1 Programming in JAVA.md",
-    "Chapter 1/Try, Catch, Finally, Throw, Throws.md",
-    "Chapter 1/1.3 Exception Handling.md",
-    "Chapter 7 Servlets and Java Server Pages/Servlet and lifecycle.md",
+    "Chapter 1 PROGRAMMING IN JAVA/Packages.md",
+    "Chapter 1 PROGRAMMING IN JAVA/1.2.md",
+    "Chapter 1 PROGRAMMING IN JAVA/_Chapter 1 Programming in JAVA.md",
+    "Chapter 1 PROGRAMMING IN JAVA/Try, Catch, Finally, Throw, Throws.md",
     "Attachments/Pasted image 20260615154910.png",
     "Attachments/Pasted image 20260615154908.png",
-    "Chapter 3 Event Handling/shorter version (Have not checked).md",
-    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes.md",
-    "Chapter 2/Dialogues.md",
     "Attachments/Pasted image 20260615075352.png",
     "Attachments/Pasted image 20260615075306.png",
     "Attachments/Pasted image 20260614124351.png",
