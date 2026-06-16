@@ -23,6 +23,7 @@ User fills form → Clicks submit → JSP reads data → Shows response
 
 ### Step 1: HTML Form (form.html)
 ```html
+//note: action= 'process.jsp' le arko page ma automatically pathaucha
 <form action="process.jsp" method="post">
     Name: <input type="text" name="username">
     <input type="submit">

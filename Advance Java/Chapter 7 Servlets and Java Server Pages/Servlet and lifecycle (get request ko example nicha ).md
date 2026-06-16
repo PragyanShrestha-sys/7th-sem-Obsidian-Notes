@@ -1,4 +1,4 @@
-# Servlets - Complete Explanation
+  # Servlets - Complete Explanation
 
 Here's a **complete explanation** of Servlets, what they are, why they're needed, and how they work.
 
@@ -122,10 +122,10 @@ public class HelloServlet extends HttpServlet {
         response.setContentType("text/html");
         
         // Get parameter from URL (e.g., ?name=John)
-  //      String name = request.getParameter("name");
-  //      if (name == null) {
-  //          name = "World";
-  //      }
+       String name = request.getParameter("name");
+		if (name == null) {
+        name = "World";
+      }
         
         // Generate HTML response
         PrintWriter out = response.getWriter();

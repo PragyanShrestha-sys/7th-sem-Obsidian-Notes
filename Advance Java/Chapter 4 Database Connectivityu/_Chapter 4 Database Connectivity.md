@@ -107,6 +107,10 @@ Result: Record 1 saved (bad!)    Result: ALL rolled back (good!)
 
 
 ---
+## [[Sql Escape sequences]]
+
+SQL escapes are ==mechanisms that instruct a database to treat special characters (like quotes or wildcards) as plain text rather than executable code or SQL syntax==. This is vital for preventing **SQL injection attacks** and ensuring queries do not break when processing text data.
+
 ![[Pasted image 20260613065459.png]]
 ## Note:
 

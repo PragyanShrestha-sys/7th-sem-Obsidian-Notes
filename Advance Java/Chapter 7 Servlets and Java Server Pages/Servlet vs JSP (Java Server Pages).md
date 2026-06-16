@@ -87,7 +87,6 @@ public class HelloServlet extends HttpServlet {
 **Notice:** JSP is much cleaner and easier to write for HTML!
 
 ---
-
 ## Code Comparison - Form Processing
 
 ### Servlet (Better for Logic)

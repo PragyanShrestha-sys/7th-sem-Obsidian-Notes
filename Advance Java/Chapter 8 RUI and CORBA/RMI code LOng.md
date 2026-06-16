@@ -199,7 +199,6 @@ public class RMIServer {
 ```
 
 ---
-
 ### Step 4: RMI Client (Calls Remote Methods)
 
 ```java

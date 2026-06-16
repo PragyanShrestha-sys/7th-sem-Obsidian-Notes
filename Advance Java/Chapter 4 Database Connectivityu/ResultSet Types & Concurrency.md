@@ -16,11 +16,11 @@ Row 1 → Row 2 → Row 3        Row 1 ↔ Row 2 ↔ Row 3
 
 ## Why are ResultSet Types Needed?
 
-| Problem | Solution (Type) |
-|---------|-----------------|
-| Can only move forward | Use scrollable type |
-| Can't go to specific row | Use absolute() method |
-| Can't see how many rows | Use last() + getRow() |
+| Problem                   | Solution (Type)       |
+| ------------------------- | --------------------- |
+| Can only move forward     | Use scrollable type   |
+| Can't go to specific row  | Use absolute() method |
+| Can't see how many rows   | Use last() + getRow() |
 | Need to process backwards | Use previous() method |
 
 **Without scrollable types:** You can only read from first row to last row, one by one.
@@ -29,13 +29,13 @@ Row 1 → Row 2 → Row 3        Row 1 ↔ Row 2 ↔ Row 3
 
 ---
 
-## The 3 ResultSet Types
+## The 3 ResultSet (scrollable)Types
 
-| Type | Value | What it allows | Can see changes? |
-|------|-------|----------------|------------------|
-| `TYPE_FORWARD_ONLY` | 1003 | Only move forward (next()) | N/A |
-| `TYPE_SCROLL_INSENSITIVE` | 1004 | Move anywhere (forward/back/absolute) | ❌ No |
-| `TYPE_SCROLL_SENSITIVE` | 1005 | Move anywhere + sees database changes | ✅ Yes |
+| Type                      | Value | What it allows (methods)              | Can see changes? |
+| ------------------------- | ----- | ------------------------------------- | ---------------- |
+| `TYPE_FORWARD_ONLY`       | 1003  | Only move forward (next())            | N/A              |
+| `TYPE_SCROLL_INSENSITIVE` | 1004  | Move anywhere (forward/back/absolute) | ❌ No             |
+| `TYPE_SCROLL_SENSITIVE`   | 1005  | Move anywhere + sees database changes | ✅ Yes            |
 
 ---
 

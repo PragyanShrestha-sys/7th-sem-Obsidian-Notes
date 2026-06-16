@@ -22,7 +22,7 @@ web container is backend packaged
 ```
 
 ---
-## [[Servlet and lifecycle]]
+## [[Servlet and lifecycle (get request ko example nicha )]]
 
 **A Servlet is a Java program that runs on a web server and handles client requests (usually from web browsers).**
 

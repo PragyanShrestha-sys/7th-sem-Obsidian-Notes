@@ -3,7 +3,7 @@
 ## [[Creating and Executing RMI Applications]]
 
 ---
-## [[CORBA]]
+## [[CORBA (Common Object Request Broker Architecture)]]
 [[how does idl and corba work together (i understood this explanation]]
 
 
