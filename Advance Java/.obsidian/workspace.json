@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 9 PAST YEAR QUESTIONS/2081/081 Short questions.md",
+                "file": "Chapter 9 PAST YEAR QUESTIONS/2079/2079 year questions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "081 Short questions"
+              "title": "2079 year questions"
+            }
+          },
+          {
+            "id": "b8e14fd4b1ede2f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 9 PAST YEAR QUESTIONS/2082/082 long questions java.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "082 long questions java"
             }
           },
           {
@@ -211,15 +225,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "a29cc1ddcfa392fa",
+  "active": "e25a9b8c54ea12e7",
   "lastOpenFiles": [
+    "Chapter 9 PAST YEAR QUESTIONS/2082/082 long questions java.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2082/2082.md",
+    "PAST QUESTIONS.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2079/2079 year questions.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2080/2080 past questions.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2081/2081.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2081/081 Short questions.md",
     "Chapter 1 PROGRAMMING IN JAVA/_Chapter 1 Programming in JAVA.md",
     "Chapter 9 PAST YEAR QUESTIONS/2079/79 short question no 2 ans.md",
     "Chapter 9 PAST YEAR QUESTIONS/2079/079 long questions.md",
     "Attachments/Pasted image 20260617193603.png",
     "Attachments/Pasted image 20260617193534.png",
     "Attachments/Pasted image 20260617193259.png",
-    "Chapter 9 PAST YEAR QUESTIONS/2079/2079 year questions.md",
     "Chapter 9 PAST YEAR QUESTIONS/2079/079 short questions.md",
     "Chapter 9 PAST YEAR QUESTIONS/2080/2080 Long questions (10 marks.md",
     "Chapter 9 PAST YEAR QUESTIONS/2080/80 ko long question no 1 ko ans.md",
@@ -230,7 +250,6 @@
     "Chapter 7 Servlets and Java Server Pages/Object Scope in JSP.md",
     "Chapter 7 Servlets and Java Server Pages/Database Access with JSP.md",
     "Attachments/Pasted image 20260617185715.png",
-    "Chapter 9 PAST YEAR QUESTIONS/2080/2080 past questions.md",
     "Chapter 9 PAST YEAR QUESTIONS/2080/2080 Short Questions (5 marks).md",
     "Chapter 9 PAST YEAR QUESTIONS/2080/tcp client and server returing greatest number among other numbers.md",
     "Chapter 2 USER INTERFACE WITH SWING/GUI Controls.md",
@@ -238,13 +257,8 @@
     "Chapter 2 USER INTERFACE WITH SWING/_Chapter 2 User.md",
     "Chapter 2 USER INTERFACE WITH SWING/Layout Management.md",
     "Chapter 2 USER INTERFACE WITH SWING/Types of Containers.md",
-    "Chapter 2 USER INTERFACE WITH SWING/Swing Hierarchy of classes.md",
-    "Chapter 2 USER INTERFACE WITH SWING/Menu.md",
-    "Chapter 2 USER INTERFACE WITH SWING/jlabel extra code for concept with jfrmae.md",
     "Attachments/Pasted image 20260617184807.png",
     "Attachments/Pasted image 20260617184804.png",
-    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes (extends application).md",
-    "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
     "Attachments/Pasted image 20260617181548.png",
     "Attachments/Pasted image 20260617133037.png",
     "Attachments/Pasted image 20260617133032.png",
