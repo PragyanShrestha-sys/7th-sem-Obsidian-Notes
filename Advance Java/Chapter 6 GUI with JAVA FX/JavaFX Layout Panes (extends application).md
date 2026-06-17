@@ -436,15 +436,20 @@ public class GridPaneShortened extends Application {
 
 Code example (with only spanning):
 
+```java
+	grid.add(Node node, int columnIndex, int rowIndex, int colspan, int rowspan);
+```
+
 ```java 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class SimpleGridPane extends Application {
+public class GridPaneMultiSpans extends Application {
     
     @Override
     public void start(Stage stage) {
@@ -452,19 +457,37 @@ public class SimpleGridPane extends Application {
         grid.setHgap(10);
         grid.setVgap(10);
         
-        // Row 0
-        grid.add(new Label("Name:"), 0, 0);
-        grid.add(new TextField(), 1, 0);
+        // Row 0: Full width header (spans 3 columns)
+        grid.add(new Label("User Profile"), 0, 0, 3, 1);
         
-        // Row 1
-        grid.add(new Label("Age:"), 0, 1);
+        // Row 1: Labels and fields (3 columns)
+        grid.add(new Label("First Name:"), 0, 1);
         grid.add(new TextField(), 1, 1);
+        grid.add(new Label("Last Name:"), 2, 1);
         
-        // Row 2
-        grid.add(new Label("City:"), 0, 2);
-        grid.add(new TextField(), 1, 2);
+        // Row 2: Full width email (spans 3 columns)
+        grid.add(new Label("Email:"), 0, 2);
+        grid.add(new TextField(), 1, 2, 2, 1);  // spans 2 columns
         
-        Scene scene = new Scene(grid, 300, 150);
+        // Row 3: Tall button (spans 2 rows)
+        Button tallButton = new Button("TALL\nBUTTON");
+        tallButton.setPrefHeight(60);
+        grid.add(tallButton, 0, 3, 1, 2);  // spans 2 rows
+        
+        // Row 3: Address (spans 2 columns)
+        grid.add(new Label("Address:"), 1, 3);
+        grid.add(new TextField(), 2, 3);
+        
+        // Row 4: City and State (2 columns)
+        grid.add(new Label("City:"), 1, 4);
+        grid.add(new TextField(), 2, 4);
+        
+        // Row 5: Save button (spans 3 columns)
+        Button save = new Button("Save Profile");
+        grid.add(save, 0, 5, 3, 1);
+        
+        Scene scene = new Scene(grid, 500, 300);
+        stage.setTitle("Multi Spans Example");
         stage.setScene(scene);
         stage.show();
     }
@@ -494,39 +517,5 @@ public class SimpleGridPane extends Application {
 
 ---
 
-## Nested Layouts (Combining Panes)
 
-**Most real applications combine multiple layout panes:**
 
-```java
-// Example: Complex layout using nested panes
-BorderPane mainLayout = new BorderPane();
-
-// Top: HBox for toolbar
-HBox toolbar = new HBox(10);
-toolbar.getChildren().addAll(
-    new Button("New"), 
-    new Button("Open"), 
-    new Button("Save")
-);
-mainLayout.setTop(toolbar);
-
-// Left: VBox for navigation
-VBox navMenu = new VBox(10);
-navMenu.getChildren().addAll(
-    new Button("Home"),
-    new Button("Products"),
-    new Button("Settings")
-);
-mainLayout.setLeft(navMenu);
-
-// Center: GridPane for content
-GridPane content = new GridPane();
-// ... add content to grid
-mainLayout.setCenter(content);
-
-// Bottom: HBox for status
-HBox statusBar = new HBox(10);
-statusBar.getChildren().add(new Label("Ready"));
-mainLayout.setBottom(statusBar);
-```

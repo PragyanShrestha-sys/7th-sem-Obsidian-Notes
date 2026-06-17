@@ -7,7 +7,7 @@ Here's the **complete code with detailed comments** explaining what each part do
 **TCP (Transmission Control Protocol)** is a connection-oriented protocol that provides reliable, ordered, and error-checked delivery of data. Think of it like making a phone call - you dial, wait for answer, talk, then hang up. Both sides know the connection exists.
 
 ---
-
+[[tcp client and server returing greatest number among other numbers]]
 ### TCP Server (Waits for clients)
 
 ```java

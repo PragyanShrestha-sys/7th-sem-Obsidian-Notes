@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 8 RMI and CORBA/RMI Code Short.md",
+                "file": "Chapter 9 PAST YEAR QUESTIONS/2080/Short Questions (5 marks).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RMI Code Short"
+              "title": "Short Questions (5 marks)"
+            }
+          },
+          {
+            "id": "69418cdfe6a15a59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 9 PAST YEAR QUESTIONS/2079/079 short questions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "079 short questions"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -107,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300.5
   },
   "right": {
     "id": "04d0689ae94e6ff7",
@@ -212,53 +226,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "178bfd33e80d6cbf",
+  "active": "69418cdfe6a15a59",
   "lastOpenFiles": [
-    "Chapter 8 RMI and CORBA/Creating and Executing RMI Applications.md",
-    "Chapter 8 RMI and CORBA/RMI code LOng.md",
-    "Chapter 8 RMI and CORBA/_Chapter 8 RMI and CORBA.md",
-    "Chapter 4 Database Connectivityu/Setting up database connection.md",
-    "Chapter 4 Database Connectivityu/_Chapter 4 Database Connectivity.md",
-    "Short Questions (5 marks).md",
-    "Attachments/Pasted image 20260616194956.png",
+    "Attachments/Pasted image 20260617125113.png",
+    "Chapter 7 Servlets and Java Server Pages/JSP implicit objects.md",
+    "Chapter 7 Servlets and Java Server Pages/__Chapter 7 Servlets and Java Server Pages.md",
+    "Chapter 9 PAST YEAR QUESTIONS/2079/079 short questions.md",
+    "Attachments/Pasted image 20260617124651.png",
+    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes (extends application).md",
+    "Chapter 9 PAST YEAR QUESTIONS/2080/Short Questions (5 marks).md",
     "Chapter 9 PAST YEAR QUESTIONS/2080/2080 past questions.md",
+    "Attachments/Pasted image 20260617123028.png",
+    "Chapter 9 PAST YEAR QUESTIONS/2080/tcp client and server returing greatest number among other numbers.md",
+    "Attachments/Pasted image 20260617121816.png",
+    "Chapter 4 Database Connectivityu/_Chapter 4 Database Connectivity.md",
+    "Chapter 4 Database Connectivityu/JDBC Driver Types.md",
+    "Chapter 4 Database Connectivityu/ResultSet Types & Concurrency.md",
+    "Chapter 4 Database Connectivityu/ResultSet.md",
     "Chapter 4 Database Connectivityu/Statement, ResultSet & Query Execution.md",
-    "Chapter 4 Database Connectivityu/JDBC Architecture(Java Database Connectivity) (imp).md",
-    "Chapter 6 GUI with JAVA FX/JavaFX Layout Panes.md",
+    "Chapter 4 Database Connectivityu/RowSet Interface and Types.md",
+    "Attachments/Pasted image 20260617105906.png",
+    "Chapter 9 PAST YEAR QUESTIONS/2079/2079 year questions.md",
+    "Chapter 3 Event Handling/Handling Events.md",
+    "Chapter 3 Event Handling/_Chapter 3 Event Handling.md",
+    "Attachments/Pasted image 20260617104146.png",
+    "Chapter 2 USER INTERFACE WITH SWING/Layout Management.md",
+    "Attachments/Pasted image 20260617102548.png",
+    "Attachments/Pasted image 20260617102545.png",
+    "Chapter 2 USER INTERFACE WITH SWING/_Chapter 2 User.md",
+    "Chapter 2 USER INTERFACE WITH SWING/Applet (to make interactive and dynamic components).md",
     "Chapter 6 GUI with JAVA FX/_Chapter 6 GUI with Java FX.md",
+    "Attachments/Pasted image 20260617095215.png",
+    "Chapter 9 PAST YEAR QUESTIONS/2079",
+    "Chapter 9 PAST YEAR QUESTIONS/2082/2079",
+    "Chapter 1 PROGRAMMING IN JAVA/Thread introduction and tread states and life cycle.md",
+    "Attachments/Pasted image 20260617075348.png",
     "Chapter 6 GUI with JAVA FX/Java FX UI Controls.md",
-    "Chapter 8 RMI and CORBA/RMI Code Short.md",
-    "Chapter 8 RMI and CORBA/Corba Implementation.md",
-    "Chapter 8 RMI and CORBA/WRITE IDL FILE AND GEENRATION THE STUB AND SKELETOP CODE FOR CORBA IMPLEMENTATION.md",
-    "Chapter 8 RMI and CORBA/how does idl and corba work together (i understood this explanation.md",
-    "Chapter 8 RMI and CORBA/CORBA (Common Object Request Broker Architecture).md",
-    "Chapter 8 RMI and CORBA/IDL (Interface Definition Language) Example.md",
-    "Chapter 9 PAST YEAR QUESTIONS/2081/081 Long Questions.md",
-    "Chapter 9 PAST YEAR QUESTIONS/2081/2081.md",
-    "Chapter 9 PAST YEAR QUESTIONS/2081/081 Short questions.md",
-    "Chapter 1 PROGRAMMING IN JAVA/_Chapter 1 Programming in JAVA.md",
+    "Chapter 2 USER INTERFACE WITH SWING/Menu.md",
+    "Chapter 2 USER INTERFACE WITH SWING/Swing Hierarchy of classes.md",
+    "Chapter 2 USER INTERFACE WITH SWING/Introduction.md",
+    "Attachments/Pasted image 20260617073825.png",
     "Chapter 9 PAST YEAR QUESTIONS/2080",
-    "Chapter 1 PROGRAMMING IN JAVA/Path and Class Path.md",
-    "Chapter 1 PROGRAMMING IN JAVA/Java Buzzwords.md",
-    "Chapter 5 Network Programming/Socket Programming Using TCP and UDP.md",
-    "Chapter 5 Network Programming/Sockets Programming.md",
-    "Attachments/Pasted image 20260616161602.png",
     "Chapter 9 PAST YEAR QUESTIONS/2081",
     "Chapter 9 PAST YEAR QUESTIONS/2082",
     "Chapter 9 PAST YEAR QUESTIONS",
-    "Attachments/Pasted image 20260615154910.png",
-    "Attachments/Pasted image 20260615154908.png",
-    "Attachments/Pasted image 20260615075352.png",
-    "Attachments/Pasted image 20260615075306.png",
-    "Attachments/Pasted image 20260614124351.png",
-    "Attachments/Pasted image 20260614124340.png",
-    "Attachments/Pasted image 20260614074509.png",
-    "Attachments/Pasted image 20260614074446.png",
     "_pdfs/3_Connecting_to_Database_in_JSP.pdf",
     "_pdfs",
     "_pdfs/2_Implicit_Objects_in_JSP.pdf",
-    "Chapter 8 RMI and CORBA",
-    "Chapter 6 GUI with JAVA FX",
-    "Chapter 5 Network Programming"
+    "Chapter 8 RMI and CORBA"
   ]
 }

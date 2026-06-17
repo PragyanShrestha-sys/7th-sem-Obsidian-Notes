@@ -4,7 +4,7 @@
 ![[Pasted image 20260607104045.png]]
 
 ---
-## Part 2: [[JavaFX Layout Panes]]
+## Part 2: [[JavaFX Layout Panes (extends application)]]
 **Memory trick:**
 ```
 FlowPane = "Flows and wraps" (like text)
@@ -22,3 +22,15 @@ GridPane = "Grid of cells" (rows and columns)
 
 ---
 ## [[Java FX UI Controls]]
+
+---
+# JavaFX UI Controls - Short Demonstration
+
+note: Comparision to Swing (equivalent herne ho bhane)
+- **`JFrame` ↔ `Stage`** (The top-level OS window)
+- **`JPanel` ↔ `Scene`** (The container that holds all your UI components)
+
+|Component|Job|What it does|
+|---|---|---|
+|**`Scene`**|**Adding stuff**|Holds all your UI components (buttons, labels, layouts)|
+|**`Stage`**|**Modifying stuff**|Controls the window itself (title, size, position, behavior|

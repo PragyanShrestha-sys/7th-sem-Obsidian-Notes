@@ -36,6 +36,7 @@ Row 1 → Row 2 → Row 3        Row 1 ↔ Row 2 ↔ Row 3
 | `TYPE_FORWARD_ONLY`       | 1003  | Only move forward (next())            | N/A              |
 | `TYPE_SCROLL_INSENSITIVE` | 1004  | Move anywhere (forward/back/absolute) | ❌ No             |
 | `TYPE_SCROLL_SENSITIVE`   | 1005  | Move anywhere + sees database changes | ✅ Yes            |
+|                           |       |                                       |                  |
 
 ---
 

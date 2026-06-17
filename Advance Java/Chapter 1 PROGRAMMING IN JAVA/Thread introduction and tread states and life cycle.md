@@ -1,7 +1,6 @@
 Perfect! Let me start from the very beginning.
 
 ---
-
 ## Part 1: What is a Thread?
 
 ### The Short Answer

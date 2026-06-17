@@ -102,7 +102,6 @@ public class EmailSender {
         // 1. Set up mail server properties
         // Properties object holds configuration parameters for the mail session
         Properties props = new Properties();
-        
         // Enable authentication (server requires username/password)
         props.put("mail.smtp.auth", "true"); 
         // SMTP server address (for Gmail: smtp.gmail.com)
@@ -111,18 +110,10 @@ public class EmailSender {
         // SMTP server port (587 is standard TLS port)
         props.put("mail.smtp.port", "587");
         
-        // ========== AUTHENTICATION ==========
+
+        //This creates a **mail session** - a connection factory that holds all your email configuration and can create messages.
+        Session session = Session.getInstance(props);
         
-        // 2. Create a Session object with authentication
-        // The Authenticator class handles login credentials
-        Session session = Session.getInstance(props, new Authenticator() {
-            @Override
-            protected PasswordAuthentication getPasswordAuthentication() {
-                // Return username and password (or authorization code)
-                // Note: Use environment variables for production!
-                return new PasswordAuthentication("your-email@gmail.com", "your-auth-code");
-            }
-        });
         
         
         try {

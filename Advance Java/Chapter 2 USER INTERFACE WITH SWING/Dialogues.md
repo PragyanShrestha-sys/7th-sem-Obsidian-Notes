@@ -331,28 +331,23 @@ import java.awt.*;
 
 public class InternalFrameDemo {
     public static void main(String[] args) {
-        // Create main frame
         JFrame frame = new JFrame("MDI Application");
         frame.setSize(800, 600);
         
-        // Desktop pane - container for internal frames
         JDesktopPane desktop = new JDesktopPane();
         frame.setContentPane(desktop);
         
-        // Internal Frame 1
+        // Frame 1
         JInternalFrame doc1 = new JInternalFrame("Document 1", true, true, true, true);
-//                                                  ↑     ↑     ↑     ↑
-//                                            resizable closable maximizable iconifiable(no minimize)
         doc1.add(new JScrollPane(new JTextArea()));
-        doc1.setSize(300, 200);
+        doc1.setBounds(0, 0, 300, 200);
         doc1.setVisible(true);
         desktop.add(doc1);
         
-        // Internal Frame 2
+        // Frame 2
         JInternalFrame doc2 = new JInternalFrame("Document 2", true, true, true, true);
         doc2.add(new JScrollPane(new JTextArea()));
-        doc2.setSize(300, 200);
-        doc2.setLocation(100, 100);
+        doc2.setBounds(100, 100, 300, 200);
         doc2.setVisible(true);
         desktop.add(doc2);
         
@@ -418,14 +413,25 @@ frame.add(scrollPane);
 //table.setGridColor(Color.GRAY);
 
 // Selection modes
+// 1. SINGLE_SELECTION - Only ONE row at a time
 table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-// OR
+//or
+// 2. SINGLE_INTERVAL_SELECTION - Contiguous block of rows (shift+click)
+table.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+//or
+// 3. MULTIPLE_INTERVAL_SELECTION - Any combination (default, ctrl+click)
 table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 
 // Get selected data
-int selectedRow = table.getSelectedRow();
+int selectedRow = table.getSelectedRow();     // Get selected row
+int selectedCol = table.getSelectedColumn();  // Get selected column
 if (selectedRow != -1) {
-    String name = (String) table.getValueAt(selectedRow, 1);
+    String name = (String) table.getValueAt(selectedRow, selectedCol);
+//     ↑         ↑        ↑                      ↑       ↑
+//     |         |        |                      |       |
+//  Variable   Cast    Table                  Row index   Column index
+//  to store   to      object                              (0-based)
+//  the value  String
     System.out.println("Selected: " + name);
 }
 

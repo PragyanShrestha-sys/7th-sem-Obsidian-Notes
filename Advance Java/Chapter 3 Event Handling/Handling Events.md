@@ -346,48 +346,27 @@ public class MouseEventDemo {
 import javax.swing.*;
 import java.awt.event.*;
 
-public class WindowEventDemo extends JFrame {
-    public WindowEventDemo() {
-        setSize(300, 200);
+public class WindowEventDemo {
+    public static void main(String[] args) {
+        // Create frame
+        JFrame frame = new JFrame("Window Event Demo");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        addWindowListener(new WindowAdapter() {
+        // Add window listener with all events
+        frame.addWindowListener(new WindowAdapter() {
             public void windowOpened(WindowEvent e) {
                 System.out.println("Window opened");
             }
-            
-            public void windowClosing(WindowEvent e) {
-                System.out.println("Window closing");
-                System.exit(0);  // Exit on close
-            }
-            
             public void windowClosed(WindowEvent e) {
                 System.out.println("Window closed");
             }
-            
-            public void windowIconified(WindowEvent e) {
-                System.out.println("Window minimized");
-            }
-            
-            public void windowDeiconified(WindowEvent e) {
-                System.out.println("Window restored");
-            }
-            
-            public void windowActivated(WindowEvent e) {
-                System.out.println("Window focused");
-            }
         });
         
-        setVisible(true);
-    }
-    
-    public static void main(String[] args) {
-        new WindowEventDemo();
+        // Show frame
+        frame.setVisible(true);
     }
 }
-
-//note : **No, you don't need a panel or field object** for a basic WindowEvent demo because: 
-//## The window itself is the component. 
-//The `JFrame` (which extends `Window`) is the component generating the window events. You're adding the WindowListener directly to the frame itself.
 ```
 
 ### WindowClosing vs WindowClosed

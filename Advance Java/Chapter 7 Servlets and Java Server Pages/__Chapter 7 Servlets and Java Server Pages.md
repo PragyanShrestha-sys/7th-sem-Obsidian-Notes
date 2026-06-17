@@ -108,6 +108,7 @@ note:  A JSP **directive** (like `<%@ page ... %>`, `<%@ include ... %>`, or `<%
 
 ---
 ## [[JSP implicit objects]]
+
 ![[Pasted image 20260608133212.png]]
 
 ---
