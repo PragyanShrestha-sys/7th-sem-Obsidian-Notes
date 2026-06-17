@@ -65,7 +65,7 @@ public class FlowPaneDemo extends Application {
         
         // Add buttons (they will wrap automatically)
         for (int i = 1; i <= 10; i++) {
-            flowPane.getChildren().add(new Button("Button " + i));
+            flowPane.add(new Button("Button " + i));
         }
         
         // Create scene and show

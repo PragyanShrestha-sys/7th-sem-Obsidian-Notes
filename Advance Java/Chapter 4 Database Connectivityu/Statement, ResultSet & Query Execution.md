@@ -109,6 +109,7 @@ public class StatementResultSetDemo {
             ResultSet rs = stmt.executeQuery("SELECT id, name, age FROM students");
             
             // ========== 3. PROCESS RESULTSET ==========
+            //**`rs.next()` moves the cursor forward one row at a time, from first to last.**
             while (rs.next()) {
                 int id = rs.getInt("id");           // Get by column name
                 String name = rs.getString("name");

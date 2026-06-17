@@ -1,6 +1,6 @@
 ## CORBA IDL File & Stub/Skeleton Generation
 
----
+Yes, exactly! In the **Common Object Request Broker Architecture (CORBA)**, ==the **Interface Definition Language (IDL)** is used to create a completely language-independent and platform-neutral communication interfac==
 
 ### 1. IDL File (Calculator.idl)
 ```idl
@@ -73,9 +73,7 @@ public class Client {
         ORB orb = ORB.init(args, null);
         
         // 2. Get server reference (simplified)
-        Calculator calc = CalculatorHelper.narrow(
-            orb.string_to_object("corbaname::localhost:1050")
-        );
+   
         
         // 3. Use the remote object
         System.out.println("Add: " + calc.add(10, 5));

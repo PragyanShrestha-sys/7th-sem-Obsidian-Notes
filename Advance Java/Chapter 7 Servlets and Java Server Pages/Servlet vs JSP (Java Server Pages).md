@@ -28,14 +28,14 @@ Servlet (Java with HTML inside)          JSP (HTML with Java inside)
 
 ## Complete Difference Table
 
-| Feature              | Servlet                                              | JSP                                          |
-| -------------------- | ---------------------------------------------------- | -------------------------------------------- |
-| **Definition**       | Java class that generates HTML                       | HTML page with embedded Java                 |
-| **Extension**        | `.java` file                                         | `.jsp` file                                  |
-| **Translation**      | Compiled directly to .class                          | Translated to servlet first, then compiled   |
-| **Writing Java**     | Easy (write Java code naturally)                     | Messy (need special tags: `<% %>`)           |
-| **Best for**         | Business logic, form processing, database operations | Displaying data, HTML layout, UI components  |
-| **Code readability** | Poor for HTML (lots of strings)                      | Good for HTML, poor for Java                 |
+| Feature              | Servlet                                              | JSP                                         |
+| -------------------- | ---------------------------------------------------- | ------------------------------------------- |
+| **Definition**       | Java class that generates HTML                       | HTML page with embedded Java                |
+| **Extension**        | `.java` file                                         | `.jsp` file                                 |
+| **Translation**      | Compiled directly to .class                          | Translated to servlet first, then compiled  |
+| **Writing Java**     | Easy (write Java code naturally)                     | Messy (need special tags: `<% %>`)          |
+| **Best for**         | Business logic, form processing, database operations | Displaying data, HTML layout, UI components |
+
 
 ---
 ## Code Comparison - Same Output

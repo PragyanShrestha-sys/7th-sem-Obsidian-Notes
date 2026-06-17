@@ -1,4 +1,4 @@
-
+ 
 
 How does JavaFX hyperlink control format text that functions as button? Illustrate with an example.
 

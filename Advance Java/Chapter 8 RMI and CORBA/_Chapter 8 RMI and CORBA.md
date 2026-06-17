@@ -28,4 +28,4 @@ CORBA is like: Any language → IDL → ORB → Any other language
 
 ![[Pasted image 20260607125546.png]]
 
-## [[Corba Implementation]]
+## [[CORBA Implementation (Common Object Request Broker Architecture)]]
