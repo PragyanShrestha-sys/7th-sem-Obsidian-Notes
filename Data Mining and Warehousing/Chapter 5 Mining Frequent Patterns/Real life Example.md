@@ -66,7 +66,7 @@ You now check every possible pair.
 | {J, S} | Receipts 3,6 → **2 receipts**       | 2     | ❌ No           |
 | {J, T} | Receipts 7 → **1 receipt**          | 1     | ❌ No           |
 | {S, T} | Receipts 4 → **1 receipt**          | 1     | ❌ No           |
-|        |                                     |       |                |
+
 
 **L₂ = { {C,M}, {C,J}, {M,S} }** → Only 3 pairs are frequent.
 
@@ -142,7 +142,7 @@ Algorithm stops.
 | {Coffee, Muffin} | 5 | **Strong pair** → Offer Coffee+Muffin combo |
 | {Coffee, Juice} | 3 | **Moderate pair** → Offer Coffee+Juice combo |
 | {Muffin, Sandwich} | 4 | **Strong pair** → Offer Muffin+Sandwich combo |
- 
+
 **No triplet was frequent** → A 3-item combo deal (like Coffee+Muffin+Juice) wouldn't sell enough to be worth it.
 
 ---

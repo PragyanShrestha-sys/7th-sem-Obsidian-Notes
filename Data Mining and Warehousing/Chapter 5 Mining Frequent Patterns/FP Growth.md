@@ -47,11 +47,11 @@ Let me start with just **3 receipts** so you see the pattern clearly.
 
 Scan all receipts and count how many times each item appears:
 
-| Item | Count |
-| :--- | :--- |
-| A | 3 times (in receipts 1, 2, 3) |
-| B | 2 times (in receipts 1, 2) |
-| C | 2 times (in receipts 2, 3) |
+| Item | Count                         |
+| :--- | :---------------------------- |
+| A    | 3 times (in receipts 1, 2, 3) |
+| B    | 2 times (in receipts 1, 2)    |
+| C    | 2 times (in receipts 2, 3)    |
 
 **Order by frequency (highest to lowest):** A (3), B (2), C (2)
 
