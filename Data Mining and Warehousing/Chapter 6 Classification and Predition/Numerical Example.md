@@ -6,50 +6,45 @@ Absolutely! Let me walk you through a **complete numerical example** of ID3 as a
 
 We have 14 days of historical data. We want to predict **Play?** (Yes/No) based on 4 attributes:
 
-| Day | Outlook | Temperature | Humidity | Wind | Play? |
-|-----|---------|-------------|----------|------|-------|
-| 1 | Sunny | Hot | High | Weak | No |
-| 2 | Sunny | Hot | High | Strong | No |
-| 3 | Overcast | Hot | High | Weak | Yes |
-| 4 | Rain | Mild | High | Weak | Yes |
-| 5 | Rain | Cool | Normal | Weak | Yes |
-| 6 | Rain | Cool | Normal | Strong | No |
-| 7 | Overcast | Cool | Normal | Strong | Yes |
-| 8 | Sunny | Mild | High | Weak | No |
-| 9 | Sunny | Cool | Normal | Weak | Yes |
-| 10 | Rain | Mild | Normal | Weak | Yes |
-| 11 | Sunny | Mild | Normal | Strong | Yes |
-| 12 | Overcast | Mild | High | Strong | Yes |
-| 13 | Overcast | Hot | Normal | Weak | Yes |
-| 14 | Rain | Mild | High | Strong | No |
+| Day | Outlook  | Temperature | Humidity | Wind   | Play? |
+| --- | -------- | ----------- | -------- | ------ | ----- |
+| 1   | Sunny    | Hot         | High     | Weak   | No    |
+| 2   | Sunny    | Hot         | High     | Strong | No    |
+| 3   | Overcast | Hot         | High     | Weak   | Yes   |
+| 4   | Rain     | Mild        | High     | Weak   | Yes   |
+| 5   | Rain     | Cool        | Normal   | Weak   | Yes   |
+| 6   | Rain     | Cool        | Normal   | Strong | No    |
+| 7   | Overcast | Cool        | Normal   | Strong | Yes   |
+| 8   | Sunny    | Mild        | High     | Weak   | No    |
+| 9   | Sunny    | Cool        | Normal   | Weak   | Yes   |
+| 10  | Rain     | Mild        | Normal   | Weak   | Yes   |
+| 11  | Sunny    | Mild        | Normal   | Strong | Yes   |
+| 12  | Overcast | Mild        | High     | Strong | Yes   |
+| 13  | Overcast | Hot         | Normal   | Weak   | Yes   |
+| 14  | Rain     | Mild        | High     | Strong | No    |
 
 **Goal:** Which attribute (Outlook, Temperature, Humidity, or Wind) should be selected FIRST to split the data?
 
 ---
-
 ## Step 1: Understand What We Start With (Root Node)
-
 Before any split, at the root node, we have all 14 records.
-
 ### Count the classes:
 
-| Class | Count |
-|-------|-------|
-| Play = Yes | 9 |
-| Play = No | 5 |
-| **Total** | **14** |
+| Class      | Count  |
+| ---------- | ------ |
+| Play = Yes | 9      |
+| Play = No  | 5      |
+| **Total**  | **14** |
 
 ### Calculate proportions:
 
 | Proportion | Formula | Value |
-|------------|---------|-------|
-| p(Yes) | 9/14 | 0.643 |
-| p(No) | 5/14 | 0.357 |
+| ---------- | ------- | ----- |
+| p(Yes)     | 9/14    | 0.643 |
+| p(No)      | 5/14    | 0.357 |
 
 ---
-
 ## Step 2: Calculate Current Entropy (How "Mixed" We Are)
-
 ### Formula:
 
 ```
@@ -99,28 +94,24 @@ Entropy(root) = 0.409 + 0.530 = 0.94
 
 We will calculate **Information Gain** for each attribute using:
 
-```
-Gain(S, A) = Entropy(S) - Σ (|S_v| / |S|) × Entropy(S_v)
-```
-
+![[Pasted image 20260619135435.png]]
 Where:
 - S = Current set (14 records)
 - A = Attribute being tested
 - S_v = Subset where attribute A = value v
 
 ---
-
 ## Attribute 1: Outlook
 
 ### Step 3.1: Split data by Outlook
 
 Outlook has 3 possible values: Sunny, Overcast, Rain
 
-| Outlook | Records | Yes | No | Total |
-|---------|---------|-----|-----|-------|
-| Sunny | Day 1,2,8,9,11 | 2 | 3 | 5 |
-| Overcast | Day 3,7,12,13 | 4 | 0 | 4 |
-| Rain | Day 4,5,6,10,14 | 3 | 2 | 5 |
+| Outlook  | Records         | Yes | No  | Total |
+| -------- | --------------- | --- | --- | ----- |
+| Sunny    | Day 1,2,8,9,11  | 2   | 3   | 5     |
+| Overcast | Day 3,7,12,13   | 4   | 0   | 4     |
+| Rain     | Day 4,5,6,10,14 | 3   | 2   | 5     |
 
 ### Step 3.2: Calculate entropy for each subset
 
@@ -181,8 +172,8 @@ Gain(Outlook) = Entropy(root) - Weighted Entropy
               = 0.25
 ```
 
-| Attribute | Gain |
-|-----------|------|
+| Attribute   | Gain     |
+| ----------- | -------- |
 | **Outlook** | **0.25** |
 
 ---
@@ -256,8 +247,8 @@ Weighted Entropy = (4/14)×1.0 + (6/14)×0.92 + (4/14)×0.81
 Gain(Temperature) = 0.94 - 0.91 = 0.03
 ```
 
-| Attribute | Gain |
-|-----------|------|
+| Attribute   | Gain     |
+| ----------- | -------- |
 | Temperature | **0.03** |
 
 ---
@@ -320,9 +311,9 @@ Weighted Entropy = (7/14)×0.99 + (7/14)×0.59
 Gain(Humidity) = 0.94 - 0.79 = 0.15
 ```
 
-| Attribute | Gain |
-|-----------|------|
-| Humidity | **0.15** |
+| Attribute | Gain     |
+| --------- | -------- |
+| Humidity  | **0.15** |
 
 ---
 
@@ -332,10 +323,10 @@ Gain(Humidity) = 0.94 - 0.79 = 0.15
 
 Wind has 2 values: Weak, Strong
 
-| Wind | Records | Yes | No | Total |
-|------|---------|-----|-----|-------|
-| Weak | Day 1,3,4,5,8,9,10,13 | 6 | 2 | 8 |
-| Strong | Day 2,6,7,11,12,14 | 3 | 3 | 6 |
+| Wind   | Records               | Yes | No  | Total |
+| ------ | --------------------- | --- | --- | ----- |
+| Weak   | Day 1,3,4,5,8,9,10,13 | 6   | 2   | 8     |
+| Strong | Day 2,6,7,11,12,14    | 3   | 3   | 6     |
 
 ### Step 3.2: Calculate entropy for each subset
 
@@ -389,12 +380,13 @@ Gain(Wind) = 0.94 - 0.89 = 0.05
 
 ## Step 4: Compare All Gains and Select the Best
 
-| Attribute | Information Gain | Rank |
-|-----------|------------------|------|
-| **Outlook** | **0.25** | **1st ← SELECTED** |
-| Humidity | 0.15 | 2nd |
-| Wind | 0.05 | 3rd |
-| Temperature | 0.03 | 4th |
+| Attribute   | Information Gain | Rank               |
+| ----------- | ---------------- | ------------------ |
+| **Outlook** | **0.25**         | **1st ← SELECTED** |
+| Humidity    | 0.15             | 2nd                |
+| Wind        | 0.05             | 3rd                |
+| Temperature | 0.03             | 4th                |
+
 
 ### Selection Decision:
 
@@ -427,14 +419,13 @@ Once we select **Outlook**, we split the data into 3 branches:
 ```
 
 ### For the Sunny branch (2 Yes, 3 No):
-
 We repeat the SAME process with the remaining attributes {Temperature, Humidity, Wind}
 
-| Attribute | Gain (in Sunny branch) |
-|-----------|------------------------|
-| Humidity | 0.97 |
-| Temperature | 0.57 |
-| Wind | 0.02 |
+| Attribute   | Gain (in Sunny branch) |
+| ----------- | ---------------------- |
+| Humidity    | 0.97                   |
+| Temperature | 0.57                   |
+| Wind        | 0.02                   |
 
 **Select Humidity** next for the Sunny branch.
 

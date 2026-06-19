@@ -60,29 +60,7 @@ Apply regular mining techniques on these extracted features:
 
 ---
 
-## Common Tasks in Multimedia Data Mining
-
-### 1. Image Mining
-- **Content-Based Image Retrieval (CBIR)** : Find similar images based on visual content (Google Images search by picture)
-- **Object detection** : Find all faces, cars, or tumors in images
-- **Image clustering** : Group photos by scene type (beach, mountain, city)
-
-### 2. Video Mining
-- **Scene segmentation** : Automatically cut video into shots and scenes
-- **Motion pattern mining** : Detect unusual walking patterns in CCTV footage
-- **Video summarization** : Create a short trailer from a full movie
-- **Event detection** : Detect goal moments in soccer video
-
-### 3. Audio Mining
-- **Speech recognition** : Convert spoken words to text
-- **Music genre classification** : Rock, classical, jazz from audio features
-- **Speaker identification** : Recognize who is speaking
-- **Audio event detection** : Detect gunshot, glass break, scream
-
-### 4. Cross-modal mining (multiple types together)
-- **Video captioning** : Watch a video and generate text description
-- **Audio-visual synchronization** : Match lip movements to speech
-- **Text-to-image generation** : Create image from description (DALL-E, Midjourney)
+## [[Common Tasks in Multimedia Data Mining]]
 
 ---
 
@@ -99,30 +77,6 @@ Apply regular mining techniques on these extracted features:
 | **Face unlock on phone** | Verify identity from camera image | Image |
 
 ---
-
-## Key Challenges
-
-| Challenge | Why it's hard |
-|-----------|---------------|
-| **Semantic gap** | What pixels show vs. what humans understand (e.g., pixels vs. "a happy family") |
-| **High dimensionality** | One 1 MP image = 3 million numbers (RGB), one video = billions |
-| **Storage & speed** | Mining TBs or PBs of video is computationally expensive |
-| **Feature extraction** | No universal "best" features – depends on task |
-| **Labeling** | Requires humans to manually label images/videos for supervised learning |
-
----
-
-## Simple Analogy
-
-| Step | Regular mining | Multimedia mining |
-|------|----------------|-------------------|
-| **Data** | Spreadsheet of sales | A photo album |
-| **Problem** | "Find months with high sales" | "Find all photos with dogs" |
-| **Challenge** | None – just SUM and GROUP BY | First you must teach the computer what a dog LOOKS like |
-| **Solution** | Direct query | Extract features (fur, ears, snout, tail), then detect |
-
----
-
 ## Quick Summary
 
 > **Multimedia data mining** = Teaching computers to find patterns in **pictures, sounds, and videos** by first converting them into numbers (features), then applying standard mining techniques (clustering, classification, association).

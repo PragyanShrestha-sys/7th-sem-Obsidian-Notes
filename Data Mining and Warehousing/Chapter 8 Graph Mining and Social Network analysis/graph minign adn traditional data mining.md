@@ -8,10 +8,10 @@
 
 ## The Critical Distinction
 
-| What We Compare | Traditional Mining | Graph Mining |
-|----------------|-------------------|--------------|
-| **Between attributes of one object** | ✅ Yes (e.g., "Age" vs "Income" for one person) | ❌ No |
-| **Between different objects** | ❌ No (treats objects as independent) | ✅ Yes (finds patterns in connections) |
+| What We Compare                      | Traditional Mining                             | Graph Mining                          |
+| ------------------------------------ | ---------------------------------------------- | ------------------------------------- |
+| **Between attributes of one object** | ✅ Yes (e.g., "Age" vs "Income" for one person) | ❌ No                                  |
+| **Between different objects**        | ❌ No (treats objects as independent)           | ✅ Yes (finds patterns in connections) |
 
 ---
 

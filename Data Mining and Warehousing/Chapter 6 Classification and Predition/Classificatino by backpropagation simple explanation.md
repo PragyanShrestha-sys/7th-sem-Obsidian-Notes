@@ -1,6 +1,3 @@
-Absolutely! Let me explain **classification by backpropagation** in very simple, detailed terms — like you're learning it for the first time.
-
----
 
 ## Part 1: Why is it used? (The Problem It Solves)
 
@@ -17,14 +14,14 @@ Traditional methods (like decision trees or simple rules) work well for simple p
 That's hard to write rules for manually. **Backpropagation** learns these complex, non-linear patterns automatically by trial and error.
 
 ### When is it used?
-| Use Case | Example |
-|----------|---------|
-| Image recognition | Handwriting, face, object detection |
-| Speech recognition | Voice commands, transcription |
-| Medical diagnosis | Tumor malignant vs benign |
-| Credit scoring | Will customer default on loan? |
-| Fraud detection | Is this transaction legit or fraud? |
-| Customer prediction | Will user click ad? Buy product? |
+| Use Case            | Example                             |
+| ------------------- | ----------------------------------- |
+| Image recognition   | Handwriting, face, object detection |
+| Speech recognition  | Voice commands, transcription       |
+| Medical diagnosis   | Tumor malignant vs benign           |
+| Credit scoring      | Will customer default on loan?      |
+| Fraud detection     | Is this transaction legit or fraud? |
+| Customer prediction | Will user click ad? Buy product?    |
 
 **Key idea:** Use when relationships between inputs and outputs are too complex for simple math or rules.
 

@@ -18,9 +18,12 @@ Choosing the **most useful question (attribute)** to ask first when building a d
 
 ---
 
-## The Formula You Need
+## [[The Formula You Need]]
 
 ### 1. Entropy (How mixed is the data?)
+
+![[Pasted image 20260619065411.png]]
+
 ```
 Entropy = -p₁×log₂(p₁) - p₂×log₂(p₂)
 ```
@@ -42,33 +45,31 @@ Weighted Entropy = Σ (size_of_subset / total_size) × Entropy(subset)
 
 ## Step-by-Step Algorithm
 
-| Step | Action |
-|------|--------|
-| 1 | Calculate **Entropy** of current node (before split) |
-| 2 | For each attribute: Split data, calculate weighted entropy, then Gain |
-| 3 | Select attribute with **highest Gain** |
-| 4 | Split data using that attribute |
-| 5 | Repeat for each child node (using remaining attributes) |
+| Step | Action                                                                |
+| ---- | --------------------------------------------------------------------- |
+| 1    | Calculate **Entropy** of current node (before split)                  |
+| 2    | For each attribute: Split data, calculate weighted entropy, then Gain |
+| 3    | Select attribute with **highest Gain**                                |
+| 4    | Split data using that attribute                                       |
+| 5    | Repeat for each child node (using remaining attributes)               |
 
 ---
 
 ## Quick Log Values (Memorize These)
 
-| p | log₂(p) |
-|---|---------|
-| 1.0 | 0 |
-| 0.75 | -0.415 |
-| 0.67 | -0.585 |
-| 0.6 | -0.737 |
-| 0.5 | -1.0 |
-| 0.4 | -1.322 |
-| 0.33 | -1.585 |
-| 0.25 | -2.0 |
+| p    | log₂(p) |
+| ---- | ------- |
+| 1.0  | 0       |
+| 0.75 | -0.415  |
+| 0.67 | -0.585  |
+| 0.6  | -0.737  |
+| 0.5  | -1.0    |
+| 0.4  | -1.322  |
+| 0.33 | -1.585  |
+| 0.25 | -2.0    |
 
 ---
-
 ## Complete Numerical Example (Play Tennis)
-
 ### Starting Data:
 - Total = 14 records
 - Yes = 9, No = 5
@@ -86,14 +87,13 @@ Entropy(root) = -0.643×log₂(0.643) - 0.357×log₂(0.357)
 ---
 
 ### Step 2: Evaluate Each Attribute
-
 #### Attribute 1: Outlook
 
-| Outlook | Yes | No | Total | Entropy |
-|---------|-----|-----|-------|---------|
-| Sunny | 2 | 3 | 5 | 0.97 |
-| Overcast | 4 | 0 | 4 | 0 |
-| Rain | 3 | 2 | 5 | 0.97 |
+| Outlook  | Yes | No  | Total | Entropy |
+| -------- | --- | --- | ----- | ------- |
+| Sunny    | 2   | 3   | 5     | 0.97    |
+| Overcast | 4   | 0   | 4     | 0       |
+| Rain     | 3   | 2   | 5     | 0.97    |
 
 ```
 Weighted Entropy = (5/14)×0.97 + (4/14)×0 + (5/14)×0.97 = 0.69

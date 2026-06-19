@@ -1,6 +1,3 @@
-Here's a **detailed explanation** of Beam Search with a real-life numerical example.
-
----
 
 ## What Is Beam Search? (Detailed Definition)
 
@@ -13,15 +10,14 @@ Here's a **detailed explanation** of Beam Search with a real-life numerical exam
 - Large k → slower, more memory, closer to optimal
 
 ---
-
 ## Why Is Beam Search Used?
 
-| Problem | Why Beam Search? |
-|---------|------------------|
-| **Exponential explosion** | Many problems (like graph mining) have massive search spaces. Exhaustive search is impossible. |
-| **Memory constraints** | BFS stores all nodes at a level — infeasible for large graphs. |
-| **Speed requirements** | Need a "good enough" solution quickly, not necessarily optimal. |
-| **Real-time systems** | Speech recognition, machine translation, route planning — must decide fast. |
+| Problem                                              | Why Beam Search?                                                                               |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Exponential explosion(search space thulo huncha)** | Many problems (like graph mining) have massive search spaces. Exhaustive search is impossible. |
+| **Memory constraints**                               | BFS stores all nodes at a level — infeasible for large graphs.                                 |
+| **Speed requirements**                               | Need a "good enough" solution quickly, not necessarily optimal.                                |
+| **Real-time systems**                                | Speech recognition, machine translation, route planning — must decide fast.                    |
 
 **Common applications:**
 - Speech recognition (finding most likely word sequence)
@@ -31,36 +27,7 @@ Here's a **detailed explanation** of Beam Search with a real-life numerical exam
 - Decoding in neural networks (e.g., beam search for text generation)
 
 ---
-
 ## How Is It Used? (Step-by-Step Process)
-
-### The Algorithm Pseudocode
-
-```
-function beam_search(start_node, k, max_depth):
-    frontier = [start_node]  # initial beam
-    
-    for depth in 1 to max_depth:
-        all_candidates = []
-        
-        for node in frontier:
-            children = expand(node)  # generate successors
-            score each child using heuristic
-            all_candidates.extend(children)
-        
-        # Sort by score (higher is better)
-        sort(all_candidates, descending by score)
-        
-        # Keep only top k
-        frontier = all_candidates[0:k]
-        
-        if any node in frontier is goal:
-            return best_goal_node
-    
-    return best_node_in_frontier
-```
-
----
 
 ## Real-Life Numerical Example: Planning a Vacation Trip
 
@@ -70,19 +37,19 @@ You are planning a **5-day vacation** starting from New York. Each day you choos
 
 **Data:**
 
-| Day | Possible cities | Enjoyment score (0-100) |
-|-----|----------------|------------------------|
-| 1 (from NYC) | Boston (B): 80, Washington (W): 90, Chicago (C): 70 |
-| 2 | From B: Montreal(85), NYC(60), Philly(75)
-| 2 | From W: Richmond(70), Atlanta(95), Nashville(80)
-| 2 | From C: Detroit(65), StLouis(75), Indianapolis(70)
+| Day          | Possible cities                                     | Enjoyment score (0-100) |
+| ------------ | --------------------------------------------------- | ----------------------- |
+| 1 (from NYC) | Boston (B): 80, Washington (W): 90, Chicago (C): 70 |                         |
+| 2            | From B: Montreal(85), NYC(60), Philly(75)           |                         |
+| 2            | From W: Richmond(70), Atlanta(95), Nashville(80)    |                         |
+| 2            | From C: Detroit(65), StLouis(75), Indianapolis(70)  |                         |
 
 **Goal:** Find the best 3-day trip (Days 1-2 are enough to illustrate).
-
 **Beam width (k) = 2**
 
----
+**Beam width (k = 2)** means that at each step (each day), you only keep the **top 2 most promising partial trips** (highest total enjoyment so far), instead of keeping all possible paths.
 
+---
 ### Step-by-Step Execution
 
 #### Day 0 (Start)
@@ -96,11 +63,11 @@ Frontier = [NYC (score 0)]
 
 Expand NYC → generate all possible Day 1 cities:
 
-| Path | Score |
-|------|-------|
-| NYC → Boston | 80 |
-| NYC → Washington | 90 |
-| NYC → Chicago | 70 |
+| Path             | Score |
+| ---------------- | ----- |
+| NYC → Boston     | 80    |
+| NYC → Washington | 90    |
+| NYC → Chicago    | 70    |
 
 **All candidates:** [B:80, W:90, C:70]
 
@@ -120,19 +87,19 @@ Expand NYC → generate all possible Day 1 cities:
 
 **From Washington (Path A, score 90):**
 
-| Path | Total Score |
-|------|-------------|
-| NYC→W→Richmond | 90 + 70 = 160 |
-| NYC→W→Atlanta | 90 + 95 = 185 |
+| Path            | Total Score   |
+| --------------- | ------------- |
+| NYC→W→Richmond  | 90 + 70 = 160 |
+| NYC→W→Atlanta   | 90 + 95 = 185 |
 | NYC→W→Nashville | 90 + 80 = 170 |
 
 **From Boston (Path B, score 80):**
 
-| Path | Total Score |
-|------|-------------|
+| Path           | Total Score   |
+| -------------- | ------------- |
 | NYC→B→Montreal | 80 + 85 = 165 |
-| NYC→B→NYC | 80 + 60 = 140 |
-| NYC→B→Philly | 80 + 75 = 155 |
+| NYC→B→NYC      | 80 + 60 = 140 |
+| NYC→B→Philly   | 80 + 75 = 155 |
 
 **All candidates:** 
 - W→Atlanta: 185
@@ -152,9 +119,9 @@ Expand NYC → generate all possible Day 1 cities:
 
 ### Final Result
 
-| Beam Search (k=2) | Best possible path (exhaustive search) |
-|-------------------|----------------------------------------|
-| NYC→W→Atlanta (score 185) | NYC→W→Atlanta (score 185) |
+| Beam Search (k=2)         | Best possible path (exhaustive search) |
+| ------------------------- | -------------------------------------- |
+| NYC→W→Atlanta (score 185) | NYC→W→Atlanta (score 185)              |
 
 In this case, Beam Search found the **optimal** path. If we had used k=1 (greedy):
 - Day 1 chose Washington (best)

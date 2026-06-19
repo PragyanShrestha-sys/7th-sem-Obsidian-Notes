@@ -32,14 +32,14 @@ Raw Text → Preprocessing → Features → Mining → Insights
 
 ### Step 1: Preprocessing (cleaning the text)
 
-| Technique | What it does | Example |
-|-----------|--------------|---------|
-| **Tokenization** | Split text into words | "I love pizza" → ["I", "love", "pizza"] |
-| **Lowercasing** | Make everything lowercase | "Great" → "great" |
-| **Remove punctuation** | Delete .,!? etc. | "Hello!" → "Hello" |
-| **Remove stop words** | Remove common words (the, a, and, of) | "the cat sat" → "cat sat" |
-| **Stemming** | Reduce words to root form | "running", "ran", "runs" → "run" |
-| **Lemmatization** | Reduce to dictionary form (better than stemming) | "better" → "good" |
+| Technique              | What it does                                     | Example                                 |
+| ---------------------- | ------------------------------------------------ | --------------------------------------- |
+| **Tokenization**       | Split text into words                            | "I love pizza" → ["I", "love", "pizza"] |
+| **Lowercasing**        | Make everything lowercase                        | "Great" → "great"                       |
+| **Remove punctuation** | Delete .,!? etc.                                 | "Hello!" → "Hello"                      |
+| **Remove stop words**  | Remove common words (the, a, and, of)            | "the cat sat" → "cat sat"               |
+| **Stemming**           | Reduce words to root form                        | "running", "ran", "runs" → "run"        |
+| **Lemmatization**      | Reduce to dictionary form (better than stemming) | "better" → "good"                       |
 
 ### Step 2: Convert text to numbers (feature extraction)
 
@@ -66,16 +66,16 @@ Now that text is numbers, you can use regular data mining:
 
 ## Real-World Examples
 
-| Application | What it does | Text source |
-|-------------|--------------|-------------|
-| **Email spam filter** | Classify email as spam or not | Email body |
-| **Customer review analysis** | Find what people like/dislike | Amazon, Yelp reviews |
-| **Chatbots (ChatGPT, etc.)** | Understand and respond to user | User messages |
-| **Sentiment analysis for stocks** | Gauge market sentiment from news | Financial news articles |
-| **Medical record mining** | Extract symptoms, diagnoses, drugs | Doctor's notes |
-| **Legal document search** | Find relevant cases from millions | Court documents |
-| **Social media monitoring** | Track brand mentions and sentiment | Tweets, Facebook posts |
-| **Fraud detection** | Find suspicious language in claims | Insurance claim descriptions |
+| Application                       | What it does                       | Text source                  |
+| --------------------------------- | ---------------------------------- | ---------------------------- |
+| **Email spam filter**             | Classify email as spam or not      | Email body                   |
+| **Customer review analysis**      | Find what people like/dislike      | Amazon, Yelp reviews         |
+| **Chatbots (ChatGPT, etc.)**      | Understand and respond to user     | User messages                |
+| **Sentiment analysis for stocks** | Gauge market sentiment from news   | Financial news articles      |
+| **Medical record mining**         | Extract symptoms, diagnoses, drugs | Doctor's notes               |
+| **Legal document search**         | Find relevant cases from millions  | Court documents              |
+| **Social media monitoring**       | Track brand mentions and sentiment | Tweets, Facebook posts       |
+| **Fraud detection**               | Find suspicious language in claims | Insurance claim descriptions |
 
 ---
 

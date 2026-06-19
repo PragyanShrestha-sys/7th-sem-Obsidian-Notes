@@ -1,9 +1,5 @@
 In the context of **classification** (and supervised learning in general), the process of building and evaluating a model is divided into two distinct and sequential phases: **Learning (Training)** and **Testing**. These phases ensure that the model not only learns from past data but also generalizes well to new, unseen data.
 
-Here is a step-by-step explanation of both phases.
-
----
-
 ## 1. Learning (Training) Phase
 
 The **learning phase** is where the classification algorithm builds the model. The input is a pre-labeled dataset called the **training set**.
@@ -67,10 +63,10 @@ The **testing phase** determines how well the learned model will perform on **ne
 
 Using the **same data** for both learning and testing is a fatal mistake (called **overfitting**). Here's why:
 
-| Scenario | What Happens | Problem |
-|----------|--------------|---------|
-| **Train on all data, test on same data** | Model simply memorizes the training examples (like learning answers to an exam by rote). | Fails on new, unseen data (poor generalization). |
-| **Separate training & test sets** | Model learns general patterns from training, then is tested on unseen data. | Gives a realistic estimate of real-world performance. |
+| Scenario                                 | What Happens                                                                             | Problem                                               |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| **Train on all data, test on same data** | Model simply memorizes the training examples (like learning answers to an exam by rote). | Fails on new, unseen data (poor generalization).      |
+| **Separate training & test sets**        | Model learns general patterns from training, then is tested on unseen data.              | Gives a realistic estimate of real-world performance. |
 
 > **Analogy:**  
 > - **Training** = Studying for an exam using a textbook (learning concepts).  

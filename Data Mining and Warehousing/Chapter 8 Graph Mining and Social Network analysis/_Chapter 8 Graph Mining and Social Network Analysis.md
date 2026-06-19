@@ -1,7 +1,7 @@
 
 **Graph mining is the extraction of meaningful patterns, insights, and structures from data that is already represented as a graph (nodes and edges).**
 
-**SNA is defined by its use of graph structure.** The "network" in Social Network Analysis _is_ a graph. If you're not analyzing relationships as graph connections, you're not doing SNA — you're just doing regular statistics or data mining.
+**SNA(social network analysis) is defined by its use of graph structure.** The "network" in Social Network Analysis _is_ a graph. If you're not analyzing relationships as graph connections, you're not doing SNA — you're just doing regular statistics or data mining.
 
 ---
 ## [[Why Graph Mining]]
@@ -13,16 +13,16 @@ There are 2 graph mining algorithms
 1. Beam Search 
 2. Inductive Logic Programming
 
-|Algorithm|Corrected Summary|
-|---|---|
-|**Beam Search**|_A search algorithm that keeps the top k best nodes at each step — a less greedy version of greedy search._|
-|**ILP**|_An algorithm that learns logical rules describing relationships between entities in the data._|
+| Algorithm       | Corrected Summary                                                                                           |
+| --------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Beam Search** | _A search algorithm that keeps the top k best nodes at each step — a less greedy version of greedy search._ |
+| **ILP**         | _An algorithm that learns logical rules describing relationships between entities in the data._             |
+
 
 ---
 
 ## [[Software network analysis concept]]
 
-note:
 **No — SNA does NOT directly include psychological factors.** It captures _social structure_, not _internal mental states_.
 
 |**SNA Captures (Observable)**|**SNA Does NOT Capture (Internal)**|
@@ -35,7 +35,6 @@ note:
 
 ---
 ## [[Link Mining]]
-
 
 **Link mining is a set of techniques applied to graph-structured data to analyze, predict, or classify the relationships (edges) between entities (nodes).**
 
@@ -51,7 +50,6 @@ note:
 **"Friend of a friend" is the concept that if Person A is connected to Person B, and Person B is connected to Person C, then A and C are likely to have some form of relationship or influence — even if no direct link exists between them.**
 
 ---
-
 ## [[Degree Assortativity]]
 
 **Degree assortativity measures whether nodes in a graph tend to connect to other nodes with a similar number of connections (degree).**
@@ -65,7 +63,7 @@ note:
 > *"Structural Balance says networks seek psychological consistency (even number of negatives per triangle), while Status Theory says networks reflect social hierarchy (positive edges flow upward) — and these theories conflict when predicting real signed networks, requiring context or hybrid models to resolve."*
 
 ---
-## [[Trust Coupling]]
+## [[Trust Coupling (Trust in a Network)]]
 
 ---
 

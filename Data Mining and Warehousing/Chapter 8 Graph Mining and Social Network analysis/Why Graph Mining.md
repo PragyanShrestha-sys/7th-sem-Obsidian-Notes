@@ -8,17 +8,17 @@ Here's a simple, concrete example that clearly shows why graph mining beats trad
 ### The Data
 A bank has a table of credit card transactions:
 
-| Person | Transaction Amount | Merchant | Time |
-|--------|-------------------|----------|------|
-| John | $500 | Electronics | 2pm |
-| Mary | $500 | Electronics | 2:05pm |
-| Steve | $500 | Electronics | 2:10pm |
-| Lisa | $500 | Electronics | 2:15pm |
+| Person | Transaction Amount | Merchant    | Time   |
+| ------ | ------------------ | ----------- | ------ |
+| John   | $500               | Electronics | 2pm    |
+| Mary   | $500               | Electronics | 2:05pm |
+| Steve  | $500               | Electronics | 2:10pm |
+| Lisa   | $500               | Electronics | 2:15pm |
+
 
 **And also:** The bank knows who shares phone numbers, addresses, or family relationships (connection data).
 
 ---
-
 ## What Traditional Mining Sees
 
 Traditional algorithms look at **each row independently**:
@@ -51,16 +51,15 @@ Graph mining first builds a graph:
 
 ### Graph Mining Finds:
 
-| Pattern Discovered | Meaning |
-|-------------------|---------|
-| **Dense subgraph** (all connected to all) | These 4 people are tightly linked |
-| **Same timestamp pattern** | Transactions occurred within 15 minutes |
-| **Same merchant** | All bought at same electronics store |
-
+| Pattern Discovered                        | Meaning                                 |
+| ----------------------------------------- | --------------------------------------- |
+| **Dense subgraph** (all connected to all) | These 4 people are tightly linked       |
+| **Same timestamp pattern**                | Transactions occurred within 15 minutes |
+| **Same merchant**                         | All bought at same electronics store    |
+  
 **Graph mining conclusion:** "This is a coordinated fraud ring — likely one person using four cards."
 
 ---
-
 ## Why Graph Mining Is Better Here
 
 | Aspect | Traditional Mining | Graph Mining |
@@ -81,10 +80,11 @@ Graph mining first builds a graph:
 
 ## Another Quick Example: Product Recommendation
 
-| Method | What It Does | Result |
-|--------|--------------|--------|
-| **Traditional** | "People who bought a phone also bought a case" (association rule) | Works fine |
-| **Graph mining** | "Your friend John bought this camera — you trust John" | Often **better** because social trust beats generic patterns |
+| Method           | What It Does                                                      | Result                                                       |
+| ---------------- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
+| **Traditional**  | "People who bought a phone also bought a case" (association rule) | Works fine                                                   |
+| **Graph mining** | "Your friend John bought this camera — you trust John"            | Often **better** because social trust beats generic patterns |
+|                  |                                                                   |                                                              |
 
 Graph mining wins when **who is connected** matters more than **what was bought**.
 

@@ -1,6 +1,4 @@
 
-## What Is Degree Assortativity? (One Sentence)
-
 > **Degree assortativity measures whether nodes in a graph tend to connect to other nodes with a similar number of connections (degree).**
 
 ---

@@ -1,12 +1,9 @@
 _"Iterative propagation is just the process of assigning trust values between all the data points that are represented as a graph."_
 
-Here is a **complete, from-scratch explanation** of **Iterative Propagation** of trust and distrust in a network.
+
 aaile ko lai mathi ko explanation bhaye pugcha
 
-
-
 ---
-
 ## Part 1: What Is Iterative Propagation?
 
 **Iterative propagation** is the process of repeatedly applying atomic propagation rules across a network, using **newly inferred edges** to discover even more edges, until no new edges can be found or a stopping condition is met.
@@ -17,13 +14,13 @@ aaile ko lai mathi ko explanation bhaye pugcha
 
 ## Part 2: Why Iterative Instead of Atomic?
 
-| Aspect | Atomic Propagation | Iterative Propagation |
-|--------|-------------------|----------------------|
-| **Steps** | One inference only | Multiple repeated inferences |
-| **Edges used** | Only original known edges | Original + previously inferred edges |
-| **Maximum path length** | 2 hops | Unlimited (up to network diameter) |
-| **Completeness** | Discovers only direct neighbors of neighbors | Discovers all reachable trust paths |
-| **Speed** | Very fast | Slower (requires multiple passes) |
+| Aspect                  | Atomic Propagation                           | Iterative Propagation                |
+| ----------------------- | -------------------------------------------- | ------------------------------------ |
+| **Steps**               | One inference only                           | Multiple repeated inferences         |
+| **Edges used**          | Only original known edges                    | Original + previously inferred edges |
+| **Maximum path length** | 2 hops                                       | Unlimited (up to network diameter)   |
+| **Completeness**        | Discovers only direct neighbors of neighbors | Discovers all reachable trust paths  |
+| **Speed**               | Very fast                                    | Slower (requires multiple passes)    |
 
 ### The Problem Atomic Cannot Solve
 
@@ -92,11 +89,11 @@ D → E (trust)
 
 ### Iteration 1 (depth 2, using original edges)
 
-| Known edges | Inferred |
-|-------------|----------|
-| A→B, B→C | A→C (trust) |
-| B→C, C→D | B→D (trust) |
-| C→D, D→E | C→E (trust) |
+| Known edges | Inferred    |
+| ----------- | ----------- |
+| A→B, B→C    | A→C (trust) |
+| B→C, C→D    | B→D (trust) |
+| C→D, D→E    | C→E (trust) |
 
 **Newly inferred:** A→C, B→D, C→E
 
@@ -138,144 +135,6 @@ No new edges possible. Stop.
 
 ---
 
-## Part 5: Step-by-Step Example (With Distrust)
-
-### Network
-```
-A → B (trust +)
-B → C (distrust -)
-C → D (trust +)
-D → E (distrust -)
-```
-
-### Iteration 1 (depth 2)
-
-| Known edges | Calculation | Inferred |
-|-------------|-------------|----------|
-| A→B (+), B→C (-) | (+) × (-) = (-) | A→C (distrust) |
-| B→C (-), C→D (+) | (-) × (+) = (-) | B→D (distrust) |
-| C→D (+), D→E (-) | (+) × (-) = (-) | C→E (distrust) |
-
-**New:** A→C (-), B→D (-), C→E (-)
-
-### Iteration 2 (depth 3)
-
-| Edges used | Calculation | Inferred |
-|------------|-------------|----------|
-| A→C (-), C→D (+) | (-) × (+) = (-) | A→D (distrust) |
-| B→D (-), D→E (-) | (-) × (-) = (+) | B→E (trust) |
-
-**New:** A→D (-), B→E (+)
-
-### Iteration 3 (depth 4)
-
-| Edges used | Calculation | Inferred |
-|------------|-------------|----------|
-| A→D (-), D→E (-) | (-) × (-) = (+) | A→E (trust) |
-
-**New:** A→E (+)
-
-### Final Result
-
-| From | To | Sign | Path |
-|------|----|------|------|
-| A | B | + | direct |
-| A | C | - | A→B→C |
-| A | D | - | A→B→C→D |
-| A | E | + | A→B→C→D→E |
-| B | C | - | direct |
-| B | D | - | B→C→D |
-| B | E | + | B→C→D→E |
-| C | D | + | direct |
-| C | E | - | C→D→E |
-| D | E | - | direct |
-
----
-
-## Part 6: Convergence and Stopping Conditions
-
-### When to Stop Iterating
-
-| Condition | Explanation |
-|-----------|-------------|
-| **No new edges** | Fixed point reached |
-| **Max depth reached** | Limit on path length (e.g., "6 degrees of separation") |
-| **Diminishing returns** | Trust scores below threshold |
-| **Oscillation detected** | Signs keep flipping in cycles |
-
-### The Oscillation Problem
-
-In signed networks (with both trust and distrust), cycles can cause **infinite oscillation**:
-
-**Example (3-cycle with all distrust):**
-```
-A → B (-)
-B → C (-)
-C → A (-)
-```
-
-**Propagation:**
-- A→B (-), B→C (-) → A→C (+)
-- Now A→C (+), C→A (-) → ... conflict
-
-**Solution:** Stop after fixed depth or use damping.
-
----
-
-## Part 7: Numerical Example with Trust Scores
-
-### Network with Weighted Trust
-
-```
-A → B: 0.9
-B → C: 0.7
-C → D: 0.5
-D → E: 0.3
-```
-
-### Iterative Propagation (using multiplication)
-
-**Iteration 1:**
-- A→C = 0.9 × 0.7 = 0.63
-- B→D = 0.7 × 0.5 = 0.35
-- C→E = 0.5 × 0.3 = 0.15
-
-**Iteration 2:**
-- A→D = 0.63 × 0.5 = 0.315
-- B→E = 0.35 × 0.3 = 0.105
-
-**Iteration 3:**
-- A→E = 0.315 × 0.3 = 0.0945
-
-**Result with decay:** Trust decreases with distance.
-
----
-
-## Part 8: Damping Factor (Optional)
-
-To model that **longer paths are less reliable**, multiply by a damping factor:
-
-```
-trust(A, C) = damping × trust(A, B) × trust(B, C)
-```
-
-Where `damping` < 1 (e.g., 0.9).
-
-### Example with Damping (0.9)
-
-**Network:** A→B (0.9), B→C (0.8), C→D (0.7)
-
-**Without damping:**
-- A→C = 0.9 × 0.8 = 0.72
-- A→D = 0.72 × 0.7 = 0.504
-
-**With damping (0.9 each step):**
-- A→C = 0.9 × (0.9 × 0.8) = 0.648
-- A→D = 0.9 × (0.648 × 0.7) = 0.408
-
-Damping reduces influence of longer paths.
-
----
 
 ## Part 9: Real-World Example — eBay Trust Network
 

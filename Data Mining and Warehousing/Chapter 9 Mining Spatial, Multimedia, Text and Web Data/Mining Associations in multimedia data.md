@@ -1,4 +1,4 @@
-## Mining Associations in Multimedia Data – Simple Explanation
+
 
 **Mining associations in multimedia data** means finding rules that link **different features or objects extracted from images, videos, audio, or text** – for example, "If a photo contains a **beach**, then it is likely to also contain a **sky** and **water**."
 
@@ -9,12 +9,11 @@ Instead of "diapers → beer," you get rules like:
 
 ## How It Differs from Regular Association Mining
 
-| Aspect | Regular Association | Multimedia Association |
-|--------|---------------------|------------------------|
-| **Items** | Products (diapers, beer) | Visual features (colors, shapes, objects), audio features (pitch, tempo) |
-| **Data** | Transaction table | Images, videos, audio files |
-| **Example rule** | Diapers → Beer | "Sky" and "grass" → "sun" |
-| **Need feature extraction?** | No | Yes (convert image to objects first) |
+| Aspect                       | Regular Association      | Multimedia Association                                                   |
+| ---------------------------- | ------------------------ | ------------------------------------------------------------------------ |
+| **Items**                    | Products (diapers, beer) | Visual features (colors, shapes, objects), audio features (pitch, tempo) |
+| **Data**                     | Transaction table        | Images, videos, audio files                                              |
+| **Need feature extraction?** | No                       | Yes (convert image to objects first)                                     |
 
 ---
 

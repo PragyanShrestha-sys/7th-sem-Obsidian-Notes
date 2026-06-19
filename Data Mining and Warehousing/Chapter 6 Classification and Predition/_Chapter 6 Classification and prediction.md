@@ -7,12 +7,12 @@ In **Data Mining** and **Data Warehousing**, **Classification** and **Prediction
 ## [[Learning (Trainning) and Testing of classificaiton]]
 
 **Training:** Using **labeled data** in an algorithm to make the model understand the relationship between features and class labels.
-
 **Testing:** Using **known data** (which has labels) but feeding it into the model **without the labels** to check the model's accuracy, simulating real-life use.
 
 ---
-## [[ID3 Algorithm for attribute selection]]
+## [[ID3(Iterative Dichotomiser 3)Algorithm for attribute selection]]
 
+The **whole entire point** of the ID3 algorithm is exactly what you said: **to mathematically figure out which attribute is the "best" one to study (split on) at each step of building a decision tree.**  
 
 ---
 ## [[Bayesian classification]]

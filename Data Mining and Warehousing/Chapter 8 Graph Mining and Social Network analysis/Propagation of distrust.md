@@ -3,7 +3,6 @@ Here is a **complete, from-scratch explanation** of **Propagation of Distrust** 
 note: maile ni ramro sanga padheko chaina 
 
 ---
-
 ## Part 1: What Is Distrust?
 
 In a trust network, **distrust** is the negative counterpart of trust.
@@ -21,21 +20,16 @@ Alice → Carol (-) (Alice distrusts Carol)
 ```
 
 ---
-
 ## Part 2: Why Propagate Distrust?
 
 ### The Same Problem as Trust
-
 Most node pairs have no direct edge. We need to infer whether A should **distrust** C based on known relationships.
-
 ### The Core Insight
-
 Distrust propagates **differently** from trust. It follows a **sign multiplication rule**.
 
 > *"Trust and distrust multiply like positive and negative numbers."*
 
 ---
-
 ## Part 3: The Fundamental Rules of Distrust Propagation
 
 ### The Sign Multiplication Table
@@ -46,61 +40,6 @@ Distrust propagates **differently** from trust. It follows a **sign multiplicati
 | Trust (+) | Distrust (-) | Distrust (-) |
 | Distrust (-) | Trust (+) | Distrust (-) |
 | Distrust (-) | Distrust (-) | Trust (+) |
-
-### The Folk Sayings (Easy to Remember)
-
-| Rule | Folk Saying |
-|------|-------------|
-| (+) × (+) = (+) | "My friend's friend is my friend" |
-| (+) × (-) = (-) | "My friend's enemy is my enemy" |
-| (-) × (+) = (-) | "My enemy's friend is my enemy" |
-| (-) × (-) = (+) | "My enemy's enemy is my friend" |
-
----
-
-## Part 4: Visual Examples of Each Rule
-
-### Rule 1: Trust + Trust = Trust
-```
-A → B (+)      A → B (+)
-B → C (+)  →   A → C (+)
-
-A -----→ B -----→ C
- \_______________/
-      Trust (+)
-```
-
-### Rule 2: Trust + Distrust = Distrust
-```
-A → B (+)      A → B (+)
-B → C (-)  →   A → C (-)
-
-A -----→ B --x--> C
- \_______________/
-     Distrust (-)
-```
-
-### Rule 3: Distrust + Trust = Distrust
-```
-A --x→ B (-)    A --x→ B (-)
-B → C (+)    →  A --x→ C (-)
-
-A --x--> B -----→ C
- \_______________/
-     Distrust (-)
-```
-
-### Rule 4: Distrust + Distrust = Trust
-```
-A --x→ B (-)    A --x→ B (-)
-B --x→ C (-) →  A → C (+)
-
-A --x--> B --x--> C
- \_______________/
-      Trust (+)
-```
-
----
 
 ## Part 5: Atomic Propagation of Distrust
 

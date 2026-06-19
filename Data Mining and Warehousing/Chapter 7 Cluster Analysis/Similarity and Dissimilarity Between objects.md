@@ -93,6 +93,7 @@ Dissimilarity = (Number of attributes that differ) / (Total number of attributes
 ```
 
 **Example:** 
+
 | Person | Gender | Eye Color | Country |
 |--------|--------|-----------|---------|
 | A | M | Blue | USA |

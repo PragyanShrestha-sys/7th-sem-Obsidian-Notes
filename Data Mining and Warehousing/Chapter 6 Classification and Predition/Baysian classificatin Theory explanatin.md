@@ -1,7 +1,6 @@
 # Bayesian Classification - Simple Explanation
 
 ## What is Bayesian Classification?
-
 **Bayesian Classification** is a method that uses **probability** to predict which category (class) something belongs to.
 
 Instead of saying *"This is definitely spam"*, it says:
@@ -10,7 +9,6 @@ Instead of saying *"This is definitely spam"*, it says:
 Then it chooses the category with the **highest probability**.
 
 ---
-
 ## Why is it Used?
 
 | Problem | Why Bayesian Helps |
@@ -55,13 +53,13 @@ Your email inbox receives hundreds of emails. Which are spam? Which are legitima
 
 You show the algorithm 1000 emails that you have already labeled:
 
-| Email Content | Actual Class |
-|---------------|---------------|
-| "Get rich quick! Buy now!" | Spam |
-| "Meeting at 3pm tomorrow" | Not Spam |
-| "Congratulations! You won a prize!" | Spam |
-| "Your order has been shipped" | Not Spam |
-| "FREE money! Click here" | Spam |
+| Email Content                       | Actual Class |
+| ----------------------------------- | ------------ |
+| "Get rich quick! Buy now!"          | Spam         |
+| "Meeting at 3pm tomorrow"           | Not Spam     |
+| "Congratulations! You won a prize!" | Spam         |
+| "Your order has been shipped"       | Not Spam     |
+| "FREE money! Click here"            | Spam         |
 
 The algorithm learns:
 - **Prior probability:** 40% of emails are spam, 60% are not spam

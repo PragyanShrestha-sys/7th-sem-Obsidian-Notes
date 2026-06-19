@@ -5,17 +5,14 @@ Excellent question — you're moving from *what* SNA is to *why* it matters. Let
 > **SNA reveals that a person's or entity's behavior, success, risk, or influence is determined not just by who they *are*, but by who they are *connected to* and *where* they sit in the network.**
 
 ---
-
 ## Core Concept: The Limits of Traditional Analysis
 
 ### Traditional view (without SNA):
 - To understand a person/customer/employee, you look at their **attributes**:
   - Age, income, job title, purchase history, etc.
 - This treats each entity as **independent** of others.
-
 ### The problem SNA solves:
 > **People are NOT independent.** Your friends influence your buying decisions. Your position in a company affects your promotion chances. Fraudsters who know each other behave similarly.
-
 ### Example that makes it clear:
 
 | Traditional Analysis | Social Network Analysis |
@@ -51,14 +48,16 @@ Excellent question — you're moving from *what* SNA is to *why* it matters. Let
 
 ---
 
+
+
 ## The Core Intellectual Shift SNA Forces
 
-| Without SNA | With SNA |
-|-------------|----------|
+| Without SNA                                 | With SNA                                       |
+| ------------------------------------------- | ---------------------------------------------- |
 | The unit of analysis is a **single entity** | The unit of analysis is the **entire network** |
-| "What are this person's attributes?" | "Where does this person sit in the structure?" |
-| Independent observations | Interdependent observations |
-| Tables (rows = people) | Graphs (nodes + edges) |
+| "What are this person's attributes?"        | "Where does this person sit in the structure?" |
+| Independent observations                    | Interdependent observations                    |
+| Tables (rows = people)                      | Graphs (nodes + edges)                         |
 
 ---
 
@@ -70,7 +69,6 @@ Excellent question — you're moving from *what* SNA is to *why* it matters. Let
 - A mediocre product recommended by a friend is **more likely to sell** than a great product with no social proof.
 
 ---
-
 ## Pulling It All Together
 
 **The point of SNA in one paragraph:**

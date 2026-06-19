@@ -16,13 +16,13 @@ Human language is messy, ambiguous, and full of irregularities. Preprocessing ap
 
 ### Why Is It Needed?
 
-| Problem | Explanation | Example |
-|---------|-------------|---------|
-| **Infinite variation** | Same meaning can be expressed infinitely many ways | "I run", "I am running", "I ran" all relate to "run" |
-| **Noise** | Punctuation, capitalization, typos add irrelevant variation | "Hello!", "hello", "HELLO" mean same thing |
-| **High dimensionality** | Every unique word is a dimension; too many unique words = sparse data | "run", "RUN", "running", "runs" treated as 4 dimensions instead of 1 |
-| **Function words clutter** | Words like "the", "a", "an" carry little meaning but appear often | Skew frequency analysis |
-| **Computational efficiency** | Raw text is bulky and slow to process | Removing stop words reduces data size by 30-50% |
+| Problem                      | Explanation                                                           | Example                                                              |
+| ---------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Infinite variation**       | Same meaning can be expressed infinitely many ways                    | "I run", "I am running", "I ran" all relate to "run"                 |
+| **Noise**                    | Punctuation, capitalization, typos add irrelevant variation           | "Hello!", "hello", "HELLO" mean same thing                           |
+| **High dimensionality**      | Every unique word is a dimension; too many unique words = sparse data | "run", "RUN", "running", "runs" treated as 4 dimensions instead of 1 |
+| **Function words clutter**   | Words like "the", "a", "an" carry little meaning but appear often     | Skew frequency analysis                                              |
+| **Computational efficiency** | Raw text is bulky and slow to process                                 | Removing stop words reduces data size by 30-50%                      |
 
 **The fundamental need:** Computers require **numerical, fixed-dimensional inputs**. Preprocessing is the bridge from variable-length, messy strings to clean tokens ready for mathematical operations.
 
@@ -70,23 +70,6 @@ Human language is messy, ambiguous, and full of irregularities. Preprocessing ap
 
 ---
 
-### What Is It Used For? (Applications)
-
-| Application | What It Extracts | Real-World Example |
-|-------------|------------------|---------------------|
-| **News aggregation** | Entities (people, orgs, locations), events | Google News extracts: who, what, where, when from headlines |
-| **Medical record mining** | Symptoms, diagnoses, drugs, dosages | Extract (Patient X, diagnosed_with, Diabetes) from doctor's notes |
-| **Legal document review** | Parties, judges, rulings, dates | E-discovery: extract all references to "confidential" in contracts |
-| **Competitive intelligence** | Acquisitions, product launches, partnerships | Extract (Tesla, partnered_with, Panasonic) from press releases |
-| **Customer support automation** | Issue type, product, urgency | Extract "billing", "refund", "login problem" from tickets |
-| **Social media monitoring** | Brand mentions, sentiment, trending topics | Extract (Nike, mentioned_by, influencer) from tweets |
-| **Academic research** | Citations, authors, institutions, methodologies | Extract (Paper A, cites, Paper B) from research papers |
-| **Fraud detection** | Suspicious entities, unusual relationships | Extract shell companies connected to same address |
-| **Intelligence analysis** | People, organizations, events, timeliness | Extract (Person A, met_with, Person B) from classified documents |
-| **Question answering systems** | Specific facts to answer user queries | "Who won the 2020 World Series?" → Extract (Los Angeles Dodgers, won, 2020 World Series) |
-| **Knowledge graph construction** | Entities and relations for Google Knowledge Graph | Extract (Paris, is_capital_of, France), (Eiffel Tower, located_in, Paris) |
-
----
 
 ## The Big Picture: How They Fit Together
 

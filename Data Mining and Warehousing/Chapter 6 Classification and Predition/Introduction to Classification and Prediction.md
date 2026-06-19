@@ -67,19 +67,17 @@ Below is a detailed explanation of each, along with their key differences.
 - R-squared (R²)
 
 ---
-
 ## Key Differences Between Classification and Prediction
 
-| Aspect | Classification | Prediction (Regression) |
-|--------|----------------|--------------------------|
-| **Output type** | Discrete / categorical | Continuous / numeric |
-| **Example output** | “Spam” or “Not spam” | Price = $250,000 |
-| **Algorithms** | Decision Trees, SVM, Naïve Bayes | Linear Regression, SVR |
-| **Evaluation metrics** | Accuracy, Precision, Recall | MAE, RMSE, R² |
-| **Typical task** | Label assignment | Value estimation |
+| Aspect                 | Classification                   | Prediction (Regression) |
+| ---------------------- | -------------------------------- | ----------------------- |
+| **Output type**        | Discrete / categorical           | Continuous / numeric    |
+| **Example output**     | “Spam” or “Not spam”             | Price = $250,000        |
+| **Algorithms**         | Decision Trees, SVM, Naïve Bayes | Linear Regression, SVR  |
+| **Evaluation metrics** | Accuracy, Precision, Recall      | MAE, RMSE, R²           |
+| **Typical task**       | Label assignment                 | Value estimation        |
 
 ---
-
 ## Relationship Between Both
 
 - Both are **supervised learning** tasks.

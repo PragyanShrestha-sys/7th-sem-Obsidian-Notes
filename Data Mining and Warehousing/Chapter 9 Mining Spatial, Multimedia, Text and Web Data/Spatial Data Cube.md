@@ -2,8 +2,17 @@ A **Spatial Data Cube** extends the traditional data cube concept (used in OLAP)
 
 The three categories you asked about refer to different ways dimensions and measures are classified based on whether they contain spatial properties (geometry, location, shape, topology).
 
----
+**"Geographical locations are represented using these mathematical concepts points, lines, polygons, and THAT is spatial data."**
 
+
+```
+note : 
+- **Dimensions** are the **"who, what, where, and when"**—they are the **categories or filters** you use to slice and group your data. (e.g., _Time, Product Category, Store Location, Customer Age Group_).
+    
+- **Measures** are the **"how much"**—they are the **numeric facts** you are actually analyzing. (e.g., _Total Sales Dollars, Number of Units Sold, Profit_).
+```
+
+---
 ## 1. Non-Spatial Dimension
 
 In this case, **both the dimension and the measure are non-spatial**, but the data is organized using a spatial context or hierarchy.
@@ -48,6 +57,7 @@ Here, **dimensions are spatial**, but **measures are non-spatial**. Aggregation 
 
 ### Key point:
 The grouping is based on **spatial relationships**, but what you get back is a table of numbers (non-spatial). For instance:  
+
 | Zone (spatial) | Avg Response Time (non-spatial) |
 |----------------|----------------------------------|
 | 0–1 km         | 4.2 min                          |

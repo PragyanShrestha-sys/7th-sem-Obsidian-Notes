@@ -5,8 +5,6 @@ note: The reason Bayesian classification is powerful is not just that it gives p
 ---
 ## [[Numerical Explanation]]
 
-
-
 ![[Pasted image 20260506120736.png|521]]
 
 .
