@@ -55,9 +55,11 @@ public class MoveIcon {
 </head>
 <body>
     <form method="post">
-        Name: <input name="username"><br>
-        Pass: <input name="password" type="password"><br>
-        <input type="submit" value="Login">
+            <label for="username">Name:</label>
+		    <input name="username" id="username"><br>
+		    <label for="password">Pass:</label>
+		    <input name="password" id="password" type="password"><br>
+    <input type="submit" value="Login">
     </form>
 
     <%-- Login logic --%>
@@ -218,7 +220,7 @@ public class CalculatorLayout {
         
         for (String btn : btns) {
             panel.add(new JButton(btn));
-        }
+        }   
         
         frame.add(panel);
         
@@ -244,15 +246,14 @@ A **package** in programming (particularly in Java-like languages) is a namespac
 
 ## Method Overloading vs. Method Overriding
 
-| Feature                | **Overloading**                                                                            | **Overriding**                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| **Definition**         | Multiple methods in the **same class** with the **same name** but **different parameters** | Subclass provides a **specific implementation** of a method already defined in its parent class |
-| **Relationship**       | Within the same class or between parent/child classes                                      | Between parent and child classes (inheritance)                                                  |
-| **Parameters**         | **Must differ** (number, type, or order)                                                   | **Must be identical**                                                                           |
-| **Return type**        | Can be different                                                                           | Must be the same or covariant (subtype)                                                         |
-| **Checked exceptions** | Can declare different exceptions                                                           | Cannot declare new/broader checked exceptions                                                   |
-| **Binding**            | **Compile-time** (static binding)                                                          | **Runtime** (dynamic binding)                                                                   |
-| **Keyword**            | No special keyword                                                                         | `@Override` annotation (optional but recommended)                                               |
+| Feature          | **Overloading**                                                                            | **Overriding**                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| **Definition**   | Multiple methods in the **same class** with the **same name** but **different parameters** | Subclass provides a **specific implementation** of a method already defined in its parent class |
+| **Relationship** | Within the same class or between parent/child classes                                      | Between parent and child classes (inheritance)                                                  |
+| **Parameters**   | **Must differ** (number, type, or order)                                                   | **Must be identical**                                                                           |
+| **Return type**  | Can be different                                                                           | Must be the same or covariant (subtype)                                                         |
+| **Binding**      | **Compile-time** (static binding)                                                          | **Runtime** (dynamic binding)                                                                   |
+| **Keyword**      | No special keyword                                                                         | `@Override` annotation (optional but recommended)                                               |
 
 
 ### Examples:
@@ -291,7 +292,7 @@ public class Dog extends Animal {
 
 applets were designed to be **embedded directly within HTML web pages** using the `<applet>` tag.
 No, we do not need Java applets anymore, as the technology is completely obsolete and has been entirely removed from modern Java
-==**Yes, exactly.**== Java applets were Java source code compiled into bytecode (`.class` files) that ran directly inside a web browser using the HTML `<applet>` tag
+Java applets were Java source code compiled into bytecode (`.class` files) that ran directly inside a web browser using the HTML `<applet>` tag
 
 ![[Pasted image 20260604075823.png]]
 
