@@ -13,7 +13,7 @@ Because of the Apriori property: if a triplet is frequent, **all its pairs must 
 ### Step 3a: Sort L₂ lexicographically 
 
 L₂ sorted:  
-1. {C, M}  
+1. {jj, M}  
 2. {C, J}  
 3. {M, S}
 
@@ -39,10 +39,10 @@ We compare each pair with later pairs.
 
 For candidate {C, M, J}, check if **all its 2-item subsets** are in L₂:
 
-| Subset | In L₂? |
-|--------|--------|
-| {C, M} | ✅ Yes |
-| {C, J} | ✅ Yes |
+| Subset | In L₂?                                     |
+| ------ | ------------------------------------------ |
+| {C, M} | ✅ Yes                                      |
+| {C, J} | ✅ Yes                                      |
 | {M, J} | ❌ No (was in C₂ but count=2, so not in L₂) |
 
 **Since {M, J} is NOT frequent, {C, M, J} cannot be frequent.**  

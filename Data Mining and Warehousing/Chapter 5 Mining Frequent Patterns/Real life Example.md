@@ -1,11 +1,5 @@
-A **numerical explanation** is good, but numbers alone can be dry. A **real-life story** makes it stick.
-
-Let me walk you through the **exact same Apriori steps**, but this time you are the owner of a small **coffee shop**.
-
----
-
 ## The Scenario: Your Coffee Shop
-
+new edit
 You sell 5 items:
 - **C** = Coffee
 - **M** = Muffin
@@ -43,13 +37,13 @@ You must keep items in **consistent sorted order** (usually alphabetical/lexic
 
 You count how many receipts contain each item.
 
-| Item | Count | Frequent? (≥3) |
-| :--- | :--- | :--- |
-| Coffee (C) | Receipts 1,2,3,5,7,8,9 → **7** | ✅ Yes |
-| Muffin (M) | Receipts 1,2,4,5,6,8,9,10 → **8** | ✅ Yes |
-| Juice (J) | Receipts 2,3,6,7 → **4** | ✅ Yes |
-| Sandwich (S) | Receipts 3,4,5,6,10 → **5** | ✅ Yes |
-| Tea (T) | Receipts 4,7,9 → **3** | ✅ Yes |
+| Item         | Count                             | Frequent? (≥3) |
+| :----------- | :-------------------------------- | :------------- |
+| Coffee (C)   | Receipts 1,2,3,5,7,8,9 → **7**    | ✅ Yes          |
+| Muffin (M)   | Receipts 1,2,4,5,6,8,9,10 → **8** | ✅ Yes          |
+| Juice (J)    | Receipts 2,3,6,7 → **4**          | ✅ Yes          |
+| Sandwich (S) | Receipts 3,4,5,6,10 → **5**       | ✅ Yes          |
+| Tea (T)      | Receipts 4,7,9 → **3**            | ✅ Yes          |
 
 **L₁ = {C, M, J, S, T}** → All 5 items are frequent (each appears in ≥3 receipts).
 
@@ -77,20 +71,17 @@ You now check every possible pair.
 **L₂ = { {C,M}, {C,J}, {M,S} }** → Only 3 pairs are frequent.
 
 ---
-
 ### Business Insight So Far
 
-- Coffee + Muffin appear together in **5 receipts** → Very common!
+- Coffee + Muffin appear togjether in **5 receipts** → Very common!
 - Coffee + Juice appear together in **3 receipts** → Common.
 - Muffin + Sandwich appear together in **4 receipts** → Common.
 - Coffee + Sandwich? Only 2 receipts → Not common enough.
 
 ---
-
 ## Step 3: Triplets (Which three items are often bought together?)
 
 Now you generate triplets **only from the frequent pairs (L₂)**.
-
 ### The Apriori Pruning Rule in Action
 
 To check a triplet like {Coffee, Muffin, Juice}:
@@ -110,7 +101,7 @@ In the **actual Apriori algorithm**, you would **never** write out this table
 
 | Triplet   | All pairs frequent?                | Check receipts? | Count | Frequent? |
 | :-------- | :--------------------------------- | :-------------- | :---- | :-------- |
-| {C, M, J} | {C,M}✅, {C,J}✅, {M,J}❌ → **No**    | Skip            | -     | ❌ Pruned  |
+| {C, M, J} | {C,M}✅, {C,J}✅, {J,M}❌ → **No**    | Skip            | -     | ❌ Pruned  |
 | {C, M, S} | {C,M}✅, {C,S}❌, {M,S}✅ → **No**    | Skip            | -     | ❌ Pruned  |
 | {C, M, T} | {C,M}✅, {C,T}❌, {M,T}❌ → **No**    | Skip            | -     | ❌ Pruned  |
 | {C, J, S} | {C,J}✅, {C,S}❌, {J,S}❌ → **No**    | Skip            | -     | ❌ Pruned  |
@@ -119,6 +110,21 @@ In the **actual Apriori algorithm**, you would **never** write out this table
 The only triplet that survives pruning is **none** because every potential triplet fails the "all pairs frequent" test.
 
 **L₃ = ∅** (No frequent triplets)
+
+---
+## [[Making Association Rules]]
+
+
+![https://www.youtube.com/watch?v=TSpXwhX5MOs&list=PLtusNRRQtirxX15AaS1BmJyusN236JFdk&index=4]
+
+tyo 3 ta pair wala bata banako ho
+![[Pasted image 20260619185355.png]]
+![[Pasted image 20260619185612.png]]
+
+note: minimum association confidencer percent = 75%
+
+---
+ 
 
 Algorithm stops.
 
@@ -136,7 +142,7 @@ Algorithm stops.
 | {Coffee, Muffin} | 5 | **Strong pair** → Offer Coffee+Muffin combo |
 | {Coffee, Juice} | 3 | **Moderate pair** → Offer Coffee+Juice combo |
 | {Muffin, Sandwich} | 4 | **Strong pair** → Offer Muffin+Sandwich combo |
-
+ 
 **No triplet was frequent** → A 3-item combo deal (like Coffee+Muffin+Juice) wouldn't sell enough to be worth it.
 
 ---
@@ -181,6 +187,4 @@ You wanted to check {Coffee, Muffin, Juice}.
 >yes , so why not? 
 >Short ans: Computationally fesable hudaina. 
 >[[Long Ans]]
-
-
 

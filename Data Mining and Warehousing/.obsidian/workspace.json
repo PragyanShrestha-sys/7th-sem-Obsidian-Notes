@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 6 Classification and Predition/Numerical Example.md",
+                "file": "Chapter 5 Mining Frequent Patterns/Real life Example.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Numerical Example"
+              "title": "Real life Example"
             }
           }
         ]
@@ -185,11 +185,16 @@
   },
   "active": "d7d4db105344740d",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20260619185612.png",
+    "Attachments/Pasted image 20260619185355.png",
+    "Chapter 5 Mining Frequent Patterns/Long Ans.md",
+    "Chapter 5 Mining Frequent Patterns/Real life Example.md",
+    "Chapter 5 Mining Frequent Patterns/Aprori alogrihtm.md",
+    "Chapter 6 Classification and Predition/how triplets is made in aprori algorihtm.md",
+    "Chapter 5 Mining Frequent Patterns/_Chapter 7 Mining Frequent Patterns.md",
     "Chapter 6 Classification and Predition/Numerical Example.md",
     "Chapter 6 Classification and Predition/ID3(Iterative Dichotomiser 3)Algorithm for attribute selection.md",
     "Chapter 6 Classification and Predition/_Chapter 6 Classification and prediction.md",
-    "Chapter 5 Mining Frequent Patterns/_Chapter 7 Mining Frequent Patterns.md",
-    "Chapter 5 Mining Frequent Patterns/Aprori alogrihtm.md",
     "Attachments/Pasted image 20260619135435.png",
     "Attachments/Pasted image 20260619135427.png",
     "Attachments/Pasted image 20260619135423.png",
@@ -211,15 +216,11 @@
     "Chapter 8 Graph Mining and Social Network analysis/Predecting positive and negative Links.md",
     "Chapter 8 Graph Mining and Social Network analysis/Trust Coupling (Trust in a Network).md",
     "Chapter 8 Graph Mining and Social Network analysis/Iterative Propagation.md",
-    "Chapter 8 Graph Mining and Social Network analysis/Propagation of distrust.md",
-    "Chapter 8 Graph Mining and Social Network analysis/Atomic Propagation.md",
-    "Complete Real-World Example.md",
     "Attachments/Pasted image 20260619070358.png",
     "Attachments/Pasted image 20260619070349.png",
     "Attachments/Pasted image 20260619070312.png",
     "Attachments/Pasted image 20260619070229.png",
     "Attachments/Pasted image 20260619070031.png",
-    "Attachments/Pasted image 20260619070021.png",
     "Chapter 9 Mining Spatial, Multimedia, Text and Web Data",
     "Chapter 8 Graph Mining and Social Network analysis",
     "Chapter 7 Cluster Analysis",
