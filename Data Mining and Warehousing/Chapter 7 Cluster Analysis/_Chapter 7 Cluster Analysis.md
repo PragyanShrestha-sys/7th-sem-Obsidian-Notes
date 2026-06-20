@@ -2,7 +2,6 @@
 **Cluster analysis is exactly that: a grouping process that places similar data points together.**
 
 To add a little more precision to your concise definition:
-
 - **"Similar"** is measured mathematically (e.g., by distance - points that are close together are considered similar).
 - **The key distinction** from everyday grouping is that clustering is **automatic and unsupervised** the algorithm discovers the groups on its own, without being told what to look for or given any labels.
 So in short:

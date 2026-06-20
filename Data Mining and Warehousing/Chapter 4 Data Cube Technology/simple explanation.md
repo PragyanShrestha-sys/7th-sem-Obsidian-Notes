@@ -17,7 +17,6 @@ Here is each strategy explained in the simplest possible terms, using plain lang
 ## Strategy 2: Simultaneous Aggregation and Caching
 
 **Simple explanation:** Don't do the same work twice. Calculate multiple answers at once, and keep the results in your hand (not on a slow hard drive).
-
 **Analogy:** Imagine you're counting money in a jar of coins.
 
 | Bad way                                               | Good way                                                                                                 |
@@ -28,10 +27,10 @@ Here is each strategy explained in the simplest possible terms, using plain lang
 | Count quarters → write total → put paper away         |                                                                                                          |
 | **4 passes through the jar**                          | **1 pass through the jar**                                                                               |
 
+
 **Simultaneous** = multiple counts at once. **Caching** = keeping the partial piles on your desk instead of walking to a filing cabinet after each coin.
 
 ---
-
 ## Strategy 3: Smallest-Parent Method
 
 **Simple explanation:** Don't start from the biggest pile if you can start from a smaller pile. Always begin with the least amount of work.
@@ -66,7 +65,6 @@ Here is each strategy explained in the simplest possible terms, using plain lang
 ## Strategy 5: Apriori Pruning
 
 **Simple explanation:** If a category is already too small, don't waste time checking its subcategories. They can only be even smaller.
-
 **Analogy:** You're looking for rooms where the temperature is above 100°F.
 
 | Step | Logic |

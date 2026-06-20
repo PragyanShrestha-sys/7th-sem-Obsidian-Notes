@@ -1,6 +1,3 @@
-Here's a clear explanation of **Link Mining**.
-
----
 
 ## What Is Link Mining? (One Sentence)
 
@@ -24,13 +21,13 @@ Link mining looks at **the connections between objects** — the links themselve
 
 ## What Link Mining Does (Main Tasks)
 
-| Task | What It Means | Example |
-|------|---------------|---------|
-| **Link prediction** | Predicting if a link should exist between two nodes | "Should LinkedIn recommend John connect with Mary?" |
-| **Link type prediction** | Classifying what kind of relationship an edge represents | Is this connection "friend," "colleague," or "family"? |
-| **Object classification** | Classifying a node based on its links to others | "Is this Twitter account a bot?" (based on who it follows) |
-| **Object clustering (community detection)** | Grouping nodes that are densely connected | Finding friend groups in a social network |
-| **Link strength prediction** | Predicting how strong or weak a connection is | "How likely is this friendship to last?" |
+| Task                                        | What It Means                                            | Example                                                    |
+| ------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
+| **Link prediction**                         | Predicting if a link should exist between two nodes      | "Should LinkedIn recommend John connect with Mary?"        |
+| **Link type prediction**                    | Classifying what kind of relationship an edge represents | Is this connection "friend," "colleague," or "family"?     |
+| **Object classification**                   | Classifying a node based on its links to others          | "Is this Twitter account a bot?" (based on who it follows) |
+| **Object clustering (community detection)** | Grouping nodes that are densely connected                | Finding friend groups in a social network                  |
+| **Link strength prediction**                | Predicting how strong or weak a connection is            | "How likely is this friendship to last?"                   |
 
 ---
 
@@ -96,25 +93,6 @@ If those are different, traditional mining would say "No." But they share Bob as
 
 **Relationship:**
 > Link mining is a **subset** of graph mining focused specifically on **edges** and what they reveal.
-
----
-
-## Another Real Example: Fraud Detection
-
-### Graph
-- **Nodes:** Bank accounts
-- **Edges:** Transactions between accounts
-
-### Link Mining Task
-Predict which accounts are fraudulent based only on connection patterns.
-
-### What link mining finds:
-- Accounts with unusually **high degree** (many incoming transactions) → suspicious
-- Accounts that form **triangles** with known fraudsters → suspicious
-- Accounts lying on **short paths** between fraudsters → suspicious
-
-### Why it works:
-Fraudsters often create highly connected networks. Link mining detects these **structural patterns** without needing any attributes (like name or address).
 
 ---
 

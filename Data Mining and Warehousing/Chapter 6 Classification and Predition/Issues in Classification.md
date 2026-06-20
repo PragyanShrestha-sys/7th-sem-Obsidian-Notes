@@ -29,7 +29,6 @@ Here are the **main problems** you face when building classifiers:
 - Poor accuracy on BOTH training and test data
 
 **Analogy:** Trying to fit a straight line through a curve — no matter what, it misses the pattern.
-
 **Fixes:** Use more complex model, add features, reduce regularization.
 
 ---
@@ -62,24 +61,6 @@ Here are the **main problems** you face when building classifiers:
 **Fixes:** Feature selection, dimensionality reduction (PCA), get more data.
 
 ---
-
-## 5. Noisy Data
-
-**Problem:** Data contains errors, missing values, or outliers.
-
-**Symptoms:**
-- Confusing patterns
-- Model performance suffers
-
-**Examples:**
-- Wrong labels ("spam" marked as "not spam")
-- Missing values (empty fields)
-- Outliers (typo: age = 999)
-
-**Fixes:** Data cleaning, outlier removal, robust models.
-
----
-
 ## 6. Non-Linearly Separable Data
 
 **Problem:** No straight line (or plane) can separate the classes.
@@ -106,41 +87,6 @@ Here are the **main problems** you face when building classifiers:
 
 ---
 
-## 8. Multiclass Problems
-
-**Problem:** Binary classifiers naturally handle 2 classes, but real problems often have many classes.
-
-**Examples:** Handwriting digits (10 classes), object recognition (1000 classes)
-
-**Fixes:** One-vs-Rest (train one classifier per class), One-vs-One (pairwise classification).
-
----
-
-## 9. Concept Drift
-
-**Problem:** The underlying pattern changes over time.
-
-**Example:** Spam emails evolve — what was spam last year may not be spam today.
-
-**Symptoms:** Model gets worse over time even though nothing changed in the code.
-
-**Fixes:** Retrain periodically, use online/adaptive learning.
-
----
-
-## 10. Cost-Sensitive Issues
-
-**Problem:** Different errors have different costs.
-
-**Example (Cancer diagnosis):**
-- False Negative (saying "healthy" when actually cancer) → DEATH
-- False Positive (saying "cancer" when actually healthy) → More tests, stress
-
-**Symptom:** Treating all errors equally is wrong.
-
-**Fixes:** Cost-sensitive learning, adjust thresholds.
-
----
 
 ## Quick Reference Table
 

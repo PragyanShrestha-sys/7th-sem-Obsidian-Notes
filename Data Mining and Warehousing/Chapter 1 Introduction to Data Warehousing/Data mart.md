@@ -1,5 +1,4 @@
 
-
 A **Data Mart** is a subject-oriented subset of a data warehouse. While a data warehouse contains integrated data from the entire enterprise (e.g., sales, finance, HR, supply chain), a data mart focuses on a single business function or department (e.g., **only Sales** or **only Marketing**).
 
 Think of it this way:
@@ -31,11 +30,3 @@ Relating this back to the **Data Warehouse Implementation** steps you asked abou
 1.  **Improved Performance (Hardware Integration):** Because the data mart is smaller, users do not run slow, complex queries against the giant warehouse.
 2.  **Security (User Application):** You can grant a user access to the Marketing Mart without exposing sensitive HR or Finance data.
 3.  **Faster Roll-out:** Instead of waiting 2 years for the whole enterprise warehouse to be perfect, you can "Roll-out" a single Sales Data Mart in 4 weeks.
-
-### Summary Example
-
-Imagine a retail company:
-
-- **Data Warehouse:** Contains 10 years of data: Transactions, Products, Customers, Employees, Logistics, Returns.
-- **Sales Data Mart:** A subset of the warehouse containing only: Current year's Transactions + Product details + Customer names.
-- **Usage:** The Sales Manager logs into the BI tool, connects to the *Sales Mart*, and runs a report on "Last Quarter's Top Products." The query runs in 3 seconds because the mart ignores inventory and employee data.

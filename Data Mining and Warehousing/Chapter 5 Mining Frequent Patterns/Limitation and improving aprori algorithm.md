@@ -29,7 +29,6 @@ Even with pruning, Apriori may generate **millions of candidates** that still ne
 **The problem:** Every candidate must be checked against the database, even if it ultimately fails.
 
 ---
-
 ### Limitation 3: High Memory Usage
 
 - Storing all candidate itemsets (C₁, C₂, C₃, ...) in memory
@@ -53,7 +52,6 @@ Apriori works well for **short patterns** (like market basket) but struggles wit
 ---
 
 ### Limitation 5: Single Minimum Support
-
 Apriori uses **one** `min_support` value for ALL items.
 
 | Problem | Example |
@@ -146,28 +144,6 @@ Several improvements and alternative algorithms address these limitations.
 | :--- | :--- |
 | Milk | 5% |
 | Caviar | 0.1% |
-
----
-
-### Improvement 5: Reduce Output Size
-
-Instead of outputting **all** frequent itemsets, output only:
-
-#### Closed Frequent Itemsets
-- An itemset where **no proper superset has the same support**
-- Much smaller set, but preserves all information
-
-#### Maximal Frequent Itemsets
-- An itemset where **no proper superset is frequent**
-- Even smaller, but loses support information
-
-**Comparison for a dense dataset:**
-
-| Output Type | Number of Itemsets |
-| :--- | :--- |
-| All frequent | 10,000+ |
-| Closed | 500 |
-| Maximal | 50 |
 
 ---
 

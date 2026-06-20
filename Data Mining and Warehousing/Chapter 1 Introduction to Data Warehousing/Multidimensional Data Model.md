@@ -1,6 +1,5 @@
 Think of a **multi-dimensional data model** as a way to organize data AS a **"cube"** (or a set of cubes) optimized for **analysis and reporting**, not for transaction processing.
 
-
 ## The Core Analogy: A Real Estate "Cube"
 
 Imagine you run a property management company. Your business fact is **"Apartment Rental."**

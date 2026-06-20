@@ -44,7 +44,6 @@ There are 2 graph mining algorithms
 |"It is a technique"|✅ Correct|More precisely, it's a **collection of techniques** (link prediction, link classification, etc.)|
 
 ---
-
 ## [[Friend of Friend]]
 
 **"Friend of a friend" is the concept that if Person A is connected to Person B, and Person B is connected to Person C, then A and C are likely to have some form of relationship or influence — even if no direct link exists between them.**
@@ -55,8 +54,7 @@ There are 2 graph mining algorithms
 **Degree assortativity measures whether nodes in a graph tend to connect to other nodes with a similar number of connections (degree).**
 
 ---
-
-## [[Signed network]]
+## [[Signed network (Thoery of structural balance and status)]]
 
  **A signed network is a graph where each edge has a positive (+) or negative (-) sign representing the type of relationship between two nodes.**
 

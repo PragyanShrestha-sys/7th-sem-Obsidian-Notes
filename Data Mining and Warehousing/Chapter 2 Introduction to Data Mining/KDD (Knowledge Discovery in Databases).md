@@ -1,9 +1,6 @@
 
 **KDD** stands for **Knowledge Discovery in Databases**. It is the overall, multi-step process of discovering useful knowledge from large datasets. Data mining is just **one step** within the larger KDD process.
 
-> **Key distinction:** Data mining applies specific algorithms to identify patterns. KDD includes everything from understanding the data to deploying results.
-
----
 
 ## The 9-Step KDD Process
 

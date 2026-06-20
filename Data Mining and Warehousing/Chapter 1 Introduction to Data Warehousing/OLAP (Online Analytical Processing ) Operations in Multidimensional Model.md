@@ -1,9 +1,5 @@
-Now that you understand the cube is just a metaphor, let's learn the "verbs" (actions) you can perform on it. These are the **OLAP Operations**.
 
 **OLAP** stands for **Online Analytical Processing**. Think of these as the standard moves an analyst makes to explore data.
-
-Here are the 5 core operations, explained with a simple **Sales Cube** (Dimensions: Time, Product, City. Measure: Sales $).
-
 ### 1. SLICE (Cutting a single layer)
 
 You take one dimension and filter it to a **single value**. This creates a 2D view (a "slice") from your 3D cube.
@@ -30,6 +26,7 @@ This is the most important one. You move **up** (Roll-Up) or **down** (Drill-Dow
 | :---------------------- | :-------------------------------- | :----------------------------------------------- |
 | **Roll-Up** (Aggregate) | Go from `Month` up to `Quarter`   | "Show me total sales by Quarter" (less detail)   |
 | **Drill-Down** (Detail) | Go from `Quarter` down to `Month` | "Show me sales by Month inside Q1" (more detail) |
+
 
 - **SQL Analogy:** Changing the `GROUP BY` level (e.g., `GROUP BY Quarter` vs `GROUP BY Month`).
 

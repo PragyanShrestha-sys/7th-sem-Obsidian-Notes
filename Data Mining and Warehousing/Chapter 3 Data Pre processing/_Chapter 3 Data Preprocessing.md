@@ -40,3 +40,6 @@ Data preprocessing is **not optional** — it’s the foundation that makes ware
 
 
 ![[Pasted image 20260429125016.png]]
+
+---
+## [[Dataminign Primitives]]

@@ -1,10 +1,7 @@
-Here's a simple, concrete example that clearly shows why graph mining beats traditional methods.
 
----
 [[graph minign adn traditional data mining]]
 
 ## The Scenario: Detecting a Fraud Ring
-
 ### The Data
 A bank has a table of credit card transactions:
 
@@ -14,7 +11,6 @@ A bank has a table of credit card transactions:
 | Mary   | $500               | Electronics | 2:05pm |
 | Steve  | $500               | Electronics | 2:10pm |
 | Lisa   | $500               | Electronics | 2:15pm |
-
 
 **And also:** The bank knows who shares phone numbers, addresses, or family relationships (connection data).
 
@@ -30,11 +26,9 @@ Traditional algorithms look at **each row independently**:
 | Statistics | "Average transaction amount = $500 (normal)" |
 
 **Result:** ✅ No fraud detected. All transactions look normal individually.
-
 **The problem:** Traditional mining cannot see that John, Mary, Steve, and Lisa are **connected**.
 
 ---
-
 ## What Graph Mining Sees
 
 Graph mining first builds a graph:
@@ -84,7 +78,7 @@ Graph mining first builds a graph:
 | ---------------- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Traditional**  | "People who bought a phone also bought a case" (association rule) | Works fine                                                   |
 | **Graph mining** | "Your friend John bought this camera — you trust John"            | Often **better** because social trust beats generic patterns |
-|                  |                                                                   |                                                              |
+
 
 Graph mining wins when **who is connected** matters more than **what was bought**.
 
@@ -94,4 +88,3 @@ Graph mining wins when **who is connected** matters more than **what was bought*
 
 > *"Graph mining is better when the pattern spans multiple connected objects — because traditional methods treat each object as independent and miss the coordination entirely."*
 
-Does this example make the advantage clear?

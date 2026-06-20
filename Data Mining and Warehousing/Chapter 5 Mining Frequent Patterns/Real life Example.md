@@ -132,16 +132,17 @@ Algorithm stops.
 
 ## Step 4: What Did You Learn?
 
-| Frequent Itemset | Support Count | Business Meaning |
-| :--- | :--- | :--- |
-| {Coffee} | 7 | Coffee is very popular |
-| {Muffin} | 8 | Muffins are very popular |
-| {Juice} | 4 | Decent sales |
-| {Sandwich} | 5 | Decent sales |
-| {Tea} | 3 | Just meets threshold |
-| {Coffee, Muffin} | 5 | **Strong pair** → Offer Coffee+Muffin combo |
-| {Coffee, Juice} | 3 | **Moderate pair** → Offer Coffee+Juice combo |
-| {Muffin, Sandwich} | 4 | **Strong pair** → Offer Muffin+Sandwich combo |
+| Frequent Itemset   | Support Count | Business Meaning                              |
+| :----------------- | :------------ | :-------------------------------------------- |
+| {Coffee}           | 7             | Coffee is very popular                        |
+| {Muffin}           | 8             | Muffins are very popular                      |
+| {Juice}            | 4             | Decent sales                                  |
+| {Sandwich}         | 5             | Decent sales                                  |
+| {Tea}              | 3             | Just meets threshold                          |
+| {Coffee, Muffin}   | 5             | **Strong pair** → Offer Coffee+Muffin combo   |
+| {Coffee, Juice}    | 3             | **Moderate pair** → Offer Coffee+Juice combo  |
+| {Muffin, Sandwich} | 4             | **Strong pair** → Offer Muffin+Sandwich combo |
+  
 
 **No triplet was frequent** → A 3-item combo deal (like Coffee+Muffin+Juice) wouldn't sell enough to be worth it.
 

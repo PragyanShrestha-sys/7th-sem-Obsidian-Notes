@@ -1,7 +1,7 @@
 
 ## What Is Beam Search? (Detailed Definition)
 
-**Beam Search** is a heuristic search algorithm that explores a graph by expanding only the **most promising nodes** at each depth level, where "most promising" means the top **k** nodes according to a scoring function.
+**Beam Search** is a [[heuristic]] search algorithm that explores a graph by expanding only the **most promising nodes** at each depth level, where "most promising" means the top **k** nodes according to a scoring function.
 
 **Beam width (k)** = the maximum number of nodes kept at each level.
 
@@ -34,15 +34,14 @@
 ### Scenario
 
 You are planning a **5-day vacation** starting from New York. Each day you choose a city to visit. You want to maximize "enjoyment score" but cannot explore all possible paths (millions).
-
 **Data:**
 
-| Day          | Possible cities                                     | Enjoyment score (0-100) |
-| ------------ | --------------------------------------------------- | ----------------------- |
-| 1 (from NYC) | Boston (B): 80, Washington (W): 90, Chicago (C): 70 |                         |
-| 2            | From B: Montreal(85), NYC(60), Philly(75)           |                         |
-| 2            | From W: Richmond(70), Atlanta(95), Nashville(80)    |                         |
-| 2            | From C: Detroit(65), StLouis(75), Indianapolis(70)  |                         |
+| Day          | Possible cities                                     |
+| ------------ | --------------------------------------------------- |
+| 1 (from NYC) | Boston (B): 80, Washington (W): 90, Chicago (C): 70 |
+| 2            | From B: Montreal(85), NYC(60), Philly(75)           |
+| 2            | From W: Richmond(70), Atlanta(95), Nashville(80)    |
+| 2            | From C: Detroit(65), StLouis(75), Indianapolis(70)  |
 
 **Goal:** Find the best 3-day trip (Days 1-2 are enough to illustrate).
 **Beam width (k) = 2**
@@ -193,4 +192,3 @@ In **frequent subgraph mining**:
 
 > *"Beam Search keeps only the top k most promising partial solutions at each step, trading perfect optimality for massive speed and memory savings — essential for huge search spaces like subgraph mining."*
 
-Would you like me to do the same detailed treatment for Inductive Logic Programming next?

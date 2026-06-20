@@ -18,15 +18,15 @@ Let's use a simpler relationship: **Learning what "grandparent" means.**
 
 **Facts stored in the database:**
 
-| Fact ID | Predicate | Arguments |
-|---------|-----------|-----------|
-| F1 | `parent` | (alice, bob) |
-| F2 | `parent` | (bob, carol) |
-| F3 | `parent` | (carol, david) |
-| F4 | `male` | (bob) |
-| F5 | `male` | (david) |
-| F6 | `female` | (alice) |
-| F7 | `female` | (carol) |
+| Fact ID | Predicate | Arguments      |
+| ------- | --------- | -------------- |
+| F1      | `parent`  | (alice, bob)   |
+| F2      | `parent`  | (bob, carol)   |
+| F3      | `parent`  | (carol, david) |
+| F4      | `male`    | (bob)          |
+| F5      | `male`    | (david)        |
+| F6      | `female`  | (alice)        |
+| F7      | `female`  | (carol)        |
 
 ### Step 2: Examples Provided to ILP
 

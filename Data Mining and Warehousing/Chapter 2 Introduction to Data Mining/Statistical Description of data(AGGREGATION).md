@@ -1,4 +1,5 @@
 
+
 ## What is Statistical Description of Data?
 
 **Statistical description** refers to using basic statistical measures to summarize, understand, and describe the main characteristics of a dataset. It helps you answer questions like: *"Where is the center of the data?" "How spread out are the values?" "What is the shape of the distribution?"*
@@ -38,10 +39,21 @@ These measures are fundamental for **data exploration, preprocessing, outlier de
 ### 3. Measures of Shape
 *Tell you about the distribution's form.*
 
-| Measure | What it describes | Interpretation |
-| :--- | :--- | :--- |
-| **Skewness** | Symmetry | 0 = symmetric (normal), Positive = tail on right, Negative = tail on left |
-| **Kurtosis** | "Peakedness" or tail heaviness | High = heavy tails & sharp peak, Low = flat & light tails |
+| Measure      | What it describes              | Interpretation                                                            |
+| :----------- | :----------------------------- | :------------------------------------------------------------------------ |
+| **Skewness** | Symmetry                       | 0 = symmetric (normal), Positive = tail on right, Negative = tail on left |
+| **Kurtosis** | "Peakedness" or tail heaviness | High = heavy tails & sharp peak, Low = flat & light tails                 |
+
+1. Skewness: Measuring Asymmetry
+
+Skewness tells you whether your data is evenly distributed around the center or if it leans to one side. A perfectly symmetrical distribution (like a standard bell curve) has a skewness of 0.
+
+- **Positive Skew (Right-Skewed):** The right tail is longer or more stretched out. The majority of data points are concentrated on the lower end, with a few exceptionally high values. In this case: Mean > Median > Mode. 
+- **Negative Skew (Left-Skewed):** The left tail is longer or more stretched out. Most of the data is concentrated on the higher end, with a few exceptionally low values. In this case: Mean < Median < Mode.
+- **Acceptable Ranges:** In most analyses, a skewness value between -1 and +1 (or -2 and +2) is considered acceptable for assuming relatively normal data. 
+
+2. Kurtosis: Measuring Tailedness and Outliers
+Kurtosis evaluates how heavy or light the tails of a distribution are compared to a normal distribution. It tells you whether the data is concentrated heavily in the center (creating a sharp peak) or spread out toward the extremes (heavy tails).
 
 ---
 ## Five-Number Summary

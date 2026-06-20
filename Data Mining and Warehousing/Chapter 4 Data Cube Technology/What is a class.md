@@ -1,7 +1,6 @@
 ## What "Class" Means in Data Mining
 
 In data mining, a **class** is simply **a group or category of data that shares a common characteristic you care about**.
-
 ### Simple Definition
 
 > A **class** = A set of data instances that belong to the same category or label.

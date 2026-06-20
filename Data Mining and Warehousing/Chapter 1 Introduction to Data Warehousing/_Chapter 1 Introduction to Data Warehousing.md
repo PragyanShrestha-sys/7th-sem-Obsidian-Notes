@@ -20,7 +20,9 @@ A data warehouse is a centralized repository that consolidates structured histor
 This is a perfect topic for data warehousing. Think of a **multi-dimensional data model** as a way to organize data not as a flat spreadsheet or a series of linked relational tables, but as a **"cube"** (or a set of cubes) optimized for **analysis and reporting**, not for transaction processing.
 
 ---
+## [[Conceptual Modelling of Data Warehouse]]
 
+---
 ## [[Architecture of Data Ware house (3 tier)]]
 
 ![[Pasted image 20260427074150.png]]

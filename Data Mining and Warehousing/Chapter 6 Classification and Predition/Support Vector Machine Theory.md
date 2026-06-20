@@ -1,5 +1,6 @@
 yo maiel ni properly bujheko chiana herna parcha
 
+https://www.youtube.com/watch?v=_YPScrckx28
 ## PART 1: The Core Idea (No Graphs Needed)
 
 **Imagine you have two piles of different colored marbles on a table:**
@@ -43,14 +44,14 @@ SVM needs to find a **boundary** (a single number) that separates reds from blue
 - Boundary at 4.5? (4.5 is between 3 and 7)
 - Boundary at 5.0? 
 - Boundary at 5.5?
-
+-
 **Which is best?**
 
-| Boundary | Distance to closest red | Distance to closest blue | Margin (total) |
-|----------|------------------------|-------------------------|----------------|
-| 4.5 | 4.5 - 3 = 1.5 | 7 - 4.5 = 2.5 | 1.5 + 2.5 = 4.0 |
-| 5.0 | 5.0 - 3 = 2.0 | 7 - 5.0 = 2.0 | 2.0 + 2.0 = 4.0 |
-| 5.5 | 5.5 - 3 = 2.5 | 7 - 5.5 = 1.5 | 2.5 + 1.5 = 4.0 |
+| Boundary | Distance to closest red | Distance to closest blue | Margin (total)  |
+| -------- | ----------------------- | ------------------------ | --------------- |
+| 4.5      | 4.5 - 3 = 1.5           | 7 - 4.5 = 2.5            | 1.5 + 2.5 = 4.0 |
+| 5.0      | 5.0 - 3 = 2.0           | 7 - 5.0 = 2.0            | 2.0 + 2.0 = 4.0 |
+| 5.5      | 5.5 - 3 = 2.5           | 7 - 5.5 = 1.5            | 2.5 + 1.5 = 4.0 |
 
 **All give the same margin!** So any boundary between 3 and 7 works.
 
@@ -248,20 +249,19 @@ Calculate: 0.5 × 8 + 0.5 × 6 - 5 = 4 + 3 - 5 = 2
 ```
 
 ---
-
 ## PART 10: Summary Without Graphs
 
-| Concept | Simple Meaning |
-|---------|----------------|
-| **SVM** | A way to draw a separating line that is as far as possible from both groups |
-| **Margin** | The empty space/gap between the two groups |
-| **Support Vectors** | The points closest to the dividing line (only these matter) |
-| **Hyperplane** | The dividing line (in 2D), plane (in 3D), or flat surface (in higher dimensions) |
-| **Kernel** | A trick to transform data so it becomes separable |
-| **Soft Margin** | Allowing some mistakes if data overlaps |
+| Concept             | Simple Meaning                                                                   |
+| ------------------- | -------------------------------------------------------------------------------- |
+| **SVM**             | A way to draw a separating line that is as far as possible from both groups      |
+| **Margin**          | The empty space/gap between the two groups                                       |
+| **Support Vectors** | The points closest to the dividing line (only these matter)                      |
+| **Hyperplane**      | The dividing line (in 2D), plane (in 3D), or flat surface (in higher dimensions) |
+| **Kernel**          | A trick to transform data so it becomes separable                                |
+| **Soft Margin**     | Allowing some mistakes if data overlaps                                          |
 
 ---
-
+ 
 ## Final Simple Example You Can Do on Paper
 
 **On a sheet of paper:**

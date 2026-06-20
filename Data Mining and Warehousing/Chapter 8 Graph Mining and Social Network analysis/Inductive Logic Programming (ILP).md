@@ -11,12 +11,12 @@ Here's a **detailed explanation** of Inductive Logic Programming (ILP) with a re
 
 **Key distinction from traditional ML:**
 
-| Traditional ML                               | ILP                                      |
-| -------------------------------------------- | ---------------------------------------- |
-| Learns from flat attribute tables            | Learns from **relational facts**         |
-| Assumes independent instances                | Handles **connections between entities** |
-| Outputs equations or probabilities           | Outputs **logical rules**                |
-| Cannot represent "parent of," "connected to" | Natively represents relationships        |
+| ILP                                      |
+| ---------------------------------------- |
+| Learns from **relational facts**         |
+| Handles **connections between entities** |
+| Outputs **logical rules**                |
+| Natively represents relationships        |
 
 ---
 ## Why Is ILP Used?

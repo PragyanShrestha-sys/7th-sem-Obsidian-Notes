@@ -2,6 +2,20 @@ Great question. You already understand **data cube computation** (pre-calculatin
 
 > "After I compute these answers, which ones do I actually *save* to disk?"
 
+---
+2. Computational & Materialization Types
+
+These refer to how much of the data cube (all possible combinations of dimensions and calculations) is actually pre-calculated and stored:
+
+- **Full Cubes:** Computes and stores all possible aggregate combinations for all dimensions. It offers the fastest querying speed, but requires massive storage space. 
+
+- **Iceberg Cubes:** Only computes and stores aggregations that meet a specific minimum threshold (such as a minimum sales or volume). This significantly reduces the memory and storage required for large, sparse datasets. 
+
+- **Closed Cubes:** Only stores "closed cells" where an aggregation's value is different from all of its descendant cells. This cuts down redundant data while retaining all necessary analytical insights. 
+
+- **Cube Shells:** Only pre-computes combinations for a small, predefined set of dimensions (e.g., up to three at a time). Less common dimension combinations are computed on the fly as needed.
+
+----
 ## Cube Materialization = The Decision of What to Store
 
 **Materialization** just means "make permanent" — saving the computed results to disk so they persist and can be queried later.

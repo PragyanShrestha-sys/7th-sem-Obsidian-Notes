@@ -16,13 +16,11 @@ Here are short, focused introductions to each.
 5. Repeat from those nodes
 
 **Analogy:** A manager who only interviews the top 5 candidates at each round instead of everyone.
-
 **In graph mining:** Used to grow subgraph patterns step by step without exploding exponentially.
 
 **One sentence:** *Beam search keeps k best candidates at each step — a practical middle-ground between greedy (k=1) and exhaustive search.*
 
 ---
-
 ## 2. [[Inductive Logic Programming (ILP)]]
 
 **What it is:** A rule-learning algorithm that uses logic.

@@ -1,6 +1,3 @@
-You're right! Let me start **from absolute scratch** and explain everything in order.
-
----
 
 ## What You Will Learn
 
@@ -173,11 +170,9 @@ Rule 3: IF credit_score < 700 THEN REJECT
 ## PART 3: Rules Coverage and Accuracy (Measuring Rule Quality)
 
 ### Why Measure Rules?
-
 Not all rules are good. Some are useless. We need **numbers** to know which rules to keep.
 
 ### A. Coverage (How many people does the rule apply to?)
-
 **Definition:** The percentage of examples that match the rule's IF condition.
 
 **Formula:**

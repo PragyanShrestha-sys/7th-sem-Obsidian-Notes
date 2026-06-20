@@ -1,0 +1,1 @@
+A **heuristic** is ==a mental shortcut or "rule of thumb" that allows people to make quick, efficient decisions or solve problems without needing to overthink or calculate every detail==. It saves time and energy, though it does not guarantee 100% accuracy

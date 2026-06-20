@@ -1,5 +1,10 @@
 [[Data cube technology]] is ==a multidimensional data modeling approach used in Online Analytical Processing (OLAP) to store, aggregate, and analyze massive datasets rapidly==. It organizes data by dimensions (e.g., time, region, product) and measures (e.g., sales, revenue), allowing users to slice, dice, and query complex data faster than traditional relational databases.
 
+NOTE:
+No, a data cube does not have only 3 dimensions. Despite the name "cube," in data modeling it can have **any number of dimensions** (dozens or even hundreds).
+
+ **The Name is Just a Metaphor**
+
 ---
 ## [[Effecient method for data cube computation]]
 
@@ -26,7 +31,7 @@ General strategies for cube computation involve ==precomputing multi-dimensional
 
 ---
 
-## [[Attribute Oriented Induction]]
+## [[Attribute Oriented Induction AOI]]
 
 AOI is a **data mining process** (specifically for data characterization).
 **The core idea.**

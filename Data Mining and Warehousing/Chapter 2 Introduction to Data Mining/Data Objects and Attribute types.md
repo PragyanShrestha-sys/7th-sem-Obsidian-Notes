@@ -31,14 +31,15 @@ An **attribute** (also called a feature, variable, or field) is a property or 
 | **Interval**   | Yes    | + , -         | Temperature (°C), calendar years |
 | **Ratio**      | Yes    | + , - , × , ÷ | Age, income, weight, height      |
 
+
 ---
 ## Summary (Memory Aid)
 
-| Attribute | Key phrase | Example |
-| :--- | :--- | :--- |
-| **Nominal** | "Name only" | Color = Red |
-| **Ordinal** | "Order, no difference" | Rank = 1st, 2nd, 3rd |
-| **Interval** | "Difference matters, ratio doesn't" | Temp 20°C vs 40°C |
-| **Ratio** | "True zero, ratios matter" | Weight 20kg vs 40kg |
+| Attribute    | Key phrase                          | Example              |
+| :----------- | :---------------------------------- | :------------------- |
+| **Nominal**  | "Name only"                         | Color = Red          |
+| **Ordinal**  | "Order, no difference"              | Rank = 1st, 2nd, 3rd |
+| **Interval** | "Difference matters, ratio doesn't" | Temp 20°C vs 40°C    |
+| **Ratio**    | "True zero, ratios matter"          | Weight 20kg vs 40kg  |
 
 **In one sentence:** *Data objects are the rows (individual items you study), and attributes are the columns (their properties), which come in nominal (names), ordinal (ordered categories), interval (differences), and ratio (true zero) types.*

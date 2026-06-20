@@ -48,7 +48,7 @@ A **data object** (also called a record, instance, sample, or entity) is a singl
 An **attribute** (also called a feature, variable, or field) is a property or characteristic of a data object.
 
 ---
-## [[ Statistical Description of data]]
+## [[Statistical Description of data(AGGREGATION)]]
 **Statistical description** refers to using basic statistical measures to summarize, understand, and describe the main characteristics of a dataset. It helps you answer questions like: *"Where is the center of the data?" "How spread out are the values?" "What is the shape of the distribution?"*
 
 ---

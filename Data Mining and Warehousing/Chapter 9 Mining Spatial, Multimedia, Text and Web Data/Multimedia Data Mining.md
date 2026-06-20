@@ -7,12 +7,12 @@ Instead of just mining numbers and categories (like sales data), you're mining *
 
 ## What is "Multimedia Data"?
 
-| Type | Examples | File formats |
-|------|----------|--------------|
-| **Image** | Photos, medical X-rays, satellite images, handwritten digits | JPEG, PNG, GIF, BMP |
-| **Video** | Movies, surveillance footage, YouTube clips, traffic cameras | MP4, AVI, MOV, MKV |
-| **Audio** | Music, speech recordings, animal sounds, phone calls | MP3, WAV, AAC, FLAC |
-| **Text with formatting** | HTML, XML, social media posts with emojis (semi-structured) | - |
+| Type                     | Examples                                                     | File formats        |
+| ------------------------ | ------------------------------------------------------------ | ------------------- |
+| **Image**                | Photos, medical X-rays, satellite images, handwritten digits | JPEG, PNG, GIF, BMP |
+| **Video**                | Movies, surveillance footage, YouTube clips, traffic cameras | MP4, AVI, MOV, MKV  |
+| **Audio**                | Music, speech recordings, animal sounds, phone calls         | MP3, WAV, AAC, FLAC |
+| **Text with formatting** | HTML, XML, social media posts with emojis (semi-structured)  | -                   |
 
 ---
 

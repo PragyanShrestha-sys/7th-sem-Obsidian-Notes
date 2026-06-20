@@ -2,8 +2,8 @@ Data mining functionalities refer to the types of tasks or kinds of knowledge th
 
 They are broadly divided into two categories:
 
-1. **Descriptive Functionalities** – Describe patterns or relationships in the data without making predictions.
-2. **Predictive Functionalities** – Use historical data to make predictions about unknown or future values.
+1. **Descriptive Functionalities** – Describe **patterns** or relationships in the data without making predictions.
+2. **Predictive Functionalities** – Use historical data to make **predictions** about unknown or future values.
 
 Here’s a clear explanation of the main data mining functionalities:
 
@@ -53,16 +53,16 @@ Here’s a clear explanation of the main data mining functionalities:
 
 ### Quick Comparison Table
 
-| Functionality | Type | Output Example |
-|---------------|------|----------------|
-| Characterization | Descriptive | "Typical buyer is age 30–45" |
-| Discrimination | Descriptive | "Loyal customers have kids; non-loyal do not" |
-| Association | Descriptive | {diaper} → {beer} |
-| Classification | Predictive | Label: "High risk" or "Low risk" |
-| Clustering | Descriptive | Group A, Group B (no labels given) |
-| Regression | Predictive | Price = $250,000 |
-| Outlier Detection | Descriptive | Transaction #4479 is an anomaly |
-| Evolution | Descriptive/Predictive | Sales rise 5% each winter |
+| Functionality     | Type                   | Output Example                                |
+| ----------------- | ---------------------- | --------------------------------------------- |
+| Characterization  | Descriptive            | "Typical buyer is age 30–45"                  |
+| Discrimination    | Descriptive            | "Loyal customers have kids; non-loyal do not" |
+| Association       | Descriptive            | {diaper} → {beer}                             |
+| Classification    | Predictive             | Label: "High risk" or "Low risk"              |
+| Clustering        | Descriptive            | Group A, Group B (no labels given)            |
+| Regression        | Predictive             | Price = $250,000                              |
+| Outlier Detection | Descriptive            | Transaction #4479 is an anomaly               |
+| Evolution         | Descriptive/Predictive | Sales rise 5% each winter                     |
 
 In practice, you choose a functionality based on your goal:
 - **Summarizing existing data?** → Characterization/Discrimination

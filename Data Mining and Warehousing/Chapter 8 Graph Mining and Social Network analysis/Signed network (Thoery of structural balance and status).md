@@ -1,15 +1,14 @@
 Here's a **complete, detailed explanation** of Signed Networks, covering both major theories and their conflict.
 
----
-
 ## Part 1: What Is a Signed Network? (Refresher)
 
 > **A signed network is a graph where each edge has a positive (+) or negative (-) sign representing the type of relationship between two nodes.**
 
-| Sign | Meaning |
-|------|---------|
-| **+** | Friendship, trust, alliance, like, support |
+| Sign  | Meaning                                         |
+| ----- | ----------------------------------------------- |
+| **+** | Friendship, trust, alliance, like, support      |
 | **-** | Enmity, distrust, opposition, dislike, conflict |
+
 
 **Example:**
 ```
@@ -19,7 +18,7 @@ Bob (?) Carol  (unknown)
 ```
 
 ---
-## [[Theory of Structural Balance]]
+## [[Theory of Structural Balance (additive)]]
 ## [[Theory of Status]]
 
 ---

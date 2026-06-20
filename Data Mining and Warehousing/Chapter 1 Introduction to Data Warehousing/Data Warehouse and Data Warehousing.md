@@ -28,9 +28,6 @@ A data warehouse is a centralized repository that consolidates structured histor
 > **Data warehousing** is the process of extracting, cleaning, and loading data; the **data warehouse** is the final centralized repository that powers business intelligence and analytics.
 
 ---
----
-
-
 ### [[Features and Characterstics of Data Warehousing]]
 
 ## Data Warehouse – Key Traits
