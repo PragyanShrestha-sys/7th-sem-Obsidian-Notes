@@ -1,9 +1,7 @@
 
 **KDD** stands for **Knowledge Discovery in Databases**. It is the overall, multi-step process of discovering useful knowledge from large datasets. Data mining is just **one step** within the larger KDD process.
 
-
 ## The 9-Step KDD Process
-
 The KDD process is typically described in 9 iterative steps:
 
 | Step | Name                                                   | Description                                                                                                 |
@@ -19,7 +17,6 @@ The KDD process is typically described in 9 iterative steps:
 | 9    | **Using discovered knowledge**                         | Integrate knowledge into systems, generate reports, support decisions, or document findings.                |
 
 ---
-
 ## Visual Representation
 
 ```

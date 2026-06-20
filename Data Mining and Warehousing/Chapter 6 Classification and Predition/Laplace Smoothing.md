@@ -1,9 +1,7 @@
 # Laplace Smoothing (Add-One Smoothing) - Complete Explanation
 
 ## The Problem: Zero Probabilities in Naïve Bayes
-
 ### What Goes Wrong?
-
 In Naïve Bayes, if a feature value **never appears** with a certain class in the training data, its probability becomes **ZERO**.
 
 When you multiply by zero, the entire probability becomes zero:
@@ -15,7 +13,6 @@ P(Class | Features) ∝ P(Class) × P(F₁|Class) × P(F₂|Class) × ... × ZER
 This means the class gets **no chance** of being selected, even if all other features strongly support it.
 
 ---
-
 ## Simple Example Showing the Problem
 
 ### Training Data:
