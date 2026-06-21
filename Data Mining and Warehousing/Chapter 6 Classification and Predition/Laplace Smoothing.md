@@ -1,4 +1,4 @@
-# Laplace Smoothing (Add-One Smoothing) - Complete Explanation
+ # Laplace Smoothing (Add-One Smoothing) - Complete Explanation
 
 ## The Problem: Zero Probabilities in Naïve Bayes
 ### What Goes Wrong?

@@ -62,39 +62,6 @@ Here is each strategy explained in the simplest possible terms, using plain lang
 
 ---
 
-## Strategy 5: Apriori Pruning
-
-**Simple explanation:** If a category is already too small, don't waste time checking its subcategories. They can only be even smaller.
-**Analogy:** You're looking for rooms where the temperature is above 100°F.
-
-| Step | Logic |
-|:---|:---|
-| You check the whole house | It's 70°F → below threshold |
-| You conclude: "If the whole house is 70°F, no single room can be above 100°F" | |
-| You skip checking all 10 rooms | You saved 10 temperature checks |
-
-**The rule:** If parent is too small, ALL children are guaranteed too small. So skip them entirely.
-
----
-
-## Strategy 6: Multiway Array Aggregation
-
-**Simple explanation:** Imagine data as a Rubik's Cube of numbers. To get a total, you just crush one dimension flat.
-
-**Analogy:** A 3D grid of cubes, each cube has a number.
-
-| What you want | What you do |
-|:---|:---|
-| Total for one entire layer | Crush the third dimension (squash it flat) — add up all numbers along that line |
-| Total for one entire row | Crush two dimensions |
-| Grand total | Crush all dimensions into one pile |
-
-**The trick:** Break the big cube into small chunks. Compute all totals chunk by chunk. One pass through the whole cube gives you ALL answers.
-
-**Why use this?** Very fast when your data naturally fits in an array (like sales by Year × Product × Store). Not good for very empty data.
-
----
-
 ## One-Sentence Summary Table
 
 | Strategy | Simple One-Liner |

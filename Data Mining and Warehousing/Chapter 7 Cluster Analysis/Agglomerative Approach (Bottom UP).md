@@ -1,4 +1,4 @@
-Ah, now I understand! Thank you for clarifying.
+https://www.youtube.com/watch?v=N_afb0_jhjA&list=PLtusNRRQtirxX15AaS1BmJyusN236JFdk&index=27&t=379s
 
 You have **5 students** with **one mark each** (single attribute). Let me restate your data clearly:
 

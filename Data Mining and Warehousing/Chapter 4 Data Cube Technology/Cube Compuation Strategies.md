@@ -6,7 +6,7 @@ General strategies for cube computation involve ==precomputing multi-dimensional
 - **Simultaneous Aggregation and Caching:** Instead of computing everything from the base fact table, higher-level aggregates are computed from previously cached lower-level aggregates to reduce I/O cost.
 - **Smallest-Parent Method:** When computing multiple child cuboids, it is most efficient to calculate parent (more generalized) cuboids from the smallest previously computed child cuboid.
 - **Iceberg Cube Computation:** Used to handle sparse data by materializing only cells that meet a minimum support threshold (or other aggregate constraint), rather than all possible combinations.
-- **Apriori Pruning:** An optimization used in iceberg cubes, this method avoids computing descendants of cells that fail to meet the minimum support threshold.
+
 
 ---
 ---

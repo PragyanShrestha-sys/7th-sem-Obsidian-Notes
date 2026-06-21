@@ -44,10 +44,8 @@ If A trusts B, and B trusts C, thenÂ **A should have some level of trust in C**Â
 
 ---
 
-There are 3 ways of propagating trust in a network ig
-1. [[Atomic Propagation]]
-2. [[Propagation of distrust]]
-3. [[Iterative Propagation]]
+There are 3 ways of [[propagating trust and distrust]] in a network ig
+
 
 
 ---

@@ -1,6 +1,4 @@
 _"Iterative propagation is just the process of assigning trust values between all the data points that are represented as a graph."_
-
-
 aaile ko lai mathi ko explanation bhaye pugcha
 
 ---

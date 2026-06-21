@@ -139,7 +139,6 @@ High-quality links (from important pages) count more than low-quality links
 ### What Is It?
 
 **Web Usage Mining** is the process of discovering patterns in **how users interact with websites** – what pages they visit, how long they stay, what they click on, their navigation paths, and their behavior patterns.
-
 ### Data Sources
 
 | Source               | What It Records                      | Example                                                       |

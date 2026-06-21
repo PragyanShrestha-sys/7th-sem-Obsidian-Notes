@@ -1,7 +1,7 @@
 [[simple theory explanation]]
 
 [[Numerical Example]]
-
+https://www.youtube.com/watch?v=LF2jd5LhlFc&t=1399s
 ---
 Here is a **simple, short, complete reference** for **ID3 as an Attribute Selection Algorithm** – ready to paste into your notes.
 

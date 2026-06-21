@@ -41,16 +41,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CHAPTER 10 PYQ/2080.md",
+                "file": "Chapter 6 Classification and Predition/ID3(Iterative Dichotomiser 3)Algorithm for attribute selection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2080"
+              "title": "ID3(Iterative Dichotomiser 3)Algorithm for attribute selection"
+            }
+          },
+          {
+            "id": "a1faba3b387e4c3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHAPTER 10 PYQ/2079 DM Questiuons.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2079 DM Questiuons"
+            }
+          },
+          {
+            "id": "0d61352d5262ad9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHAPTER 10 PYQ/Model Question 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Model Question 1"
+            }
+          },
+          {
+            "id": "4c8050a8462cd1a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHAPTER 10 PYQ/Model Question 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Model Question 1"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -212,44 +254,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "723635510262b4a3",
+  "active": "a7f61d6ad1ee13e2",
   "lastOpenFiles": [
-    "CHAPTER 10 PYQ/2081 DM Questions.md",
-    "CHAPTER 10 PYQ/2080.md",
-    "CHAPTER 10 PYQ/2082 DM QUESIOTNS.md",
-    "Chapter 7 Cluster Analysis/Numerical Example DBSCAN.md",
-    "Attachments/Pasted image 20260620220154.png",
-    "Attachments/Pasted image 20260620212405.png",
-    "Chapter 4 Data Cube Technology/Cube Materialization.md",
-    "Attachments/Pasted image 20260620212150.png",
-    "Chapter 6 Classification and Predition/_Chapter 6 Classification and prediction.md",
-    "Chapter 6 Classification and Predition/Laplace Smoothing.md",
-    "Chapter 6 Classification and Predition/Bayesian classification.md",
-    "Chapter 6 Classification and Predition/Numerical Explanation.md",
-    "Attachments/Pasted image 20260620211455.png",
-    "Chapter 2 Introduction to Data Mining/KDD (Knowledge Discovery in Databases).md",
-    "Attachments/Pasted image 20260620205051.png",
-    "Chapter 4 Data Cube Technology/Cube Compuation Strategies.md",
-    "Chapter 6 Classification and Predition/Issues in Classification.md",
-    "Attachments/Pasted image 20260620194219.png",
-    "Chapter 5 Mining Frequent Patterns/Strong Association rules.md",
-    "Attachments/Pasted image 20260620193817.png",
-    "Attachments/Pasted image 20260620192054.png",
-    "Chapter 2 Introduction to Data Mining/Statistical Description of data(AGGREGATION).md",
-    "Chapter 1 Introduction to Data Warehousing/Conceptual Modelling of Data Warehouse.md",
-    "Chapter 1 Introduction to Data Warehousing/_Chapter 1 Introduction to Data Warehousing.md",
-    "Chapter 1 Introduction to Data Warehousing/Multidimensional Data Model.md",
-    "Chapter 1 Introduction to Data Warehousing/Data Warehouse and Data Warehousing.md",
-    "Attachments/Pasted image 20260620190700.png",
-    "Chapter 5 Mining Frequent Patterns/FP Growth.md",
-    "Chapter 5 Mining Frequent Patterns/Real life Example.md",
+    "Attachments/Pasted image 20260621090811.png",
+    "Attachments/Pasted image 20260621090738.png",
+    "Attachments/Pasted image 20260621090723.png",
+    "Attachments/Pasted image 20260621090700.png",
+    "Attachments/Pasted image 20260621085724.png",
+    "Chapter 7 Cluster Analysis/Hierarchial.md",
+    "Chapter 7 Cluster Analysis/Divisive Approach (Top Down).md",
+    "CHAPTER 10 PYQ/Model Question 1.md",
+    "Attachments/Pasted image 20260621085540.png",
     "Chapter 5 Mining Frequent Patterns/Aprori alogrihtm.md",
-    "Chapter 8 Graph Mining and Social Network analysis/Link Mining.md",
-    "Attachments/Pasted image 20260620175426.png",
-    "Chapter 6 Classification and Predition/Rule Based Classifier ((Decision tree rules, Rules Coverage and accuracy, effecient rule classifier) ).md",
+    "Attachments/Pasted image 20260621085410.png",
     "Chapter 1 Introduction to Data Warehousing/OLAP (Online Analytical Processing ) Operations in Multidimensional Model.md",
-    "Chapter 7 Cluster Analysis/Differnece between K means and K Medoids.md",
-    "Chapter 6 Classification and Predition/Support Vector Machine Theory.md",
+    "CHAPTER 10 PYQ/2080.md",
+    "CHAPTER 10 PYQ/2081 DM Questions.md",
+    "CHAPTER 10 PYQ/2082 DM QUESIOTNS.md",
+    "Chapter 5 Mining Frequent Patterns/handling noisy data.md",
+    "Special thanks to.md",
+    "Attachments/Pasted image 20260621085133.png",
+    "Attachments/Pasted image 20260621085129.png",
+    "Chapter 3 Data Pre processing/_Chapter 3 Data Preprocessing.md",
+    "Attachments/Pasted image 20260621084940.png",
+    "Chapter 8 Graph Mining and Social Network analysis/Trust Coupling (Trust in a Network).md",
+    "Chapter 8 Graph Mining and Social Network analysis/propagating trust and distrust.md",
+    "Chapter 8 Graph Mining and Social Network analysis/Atomic Propagation.md",
+    "Chapter 8 Graph Mining and Social Network analysis/Propagation of distrust (multiplication rule).md",
+    "Chapter 8 Graph Mining and Social Network analysis/Iterative Propagation.md",
+    "Attachments/Pasted image 20260621084344.png",
+    "Chapter 2 Introduction to Data Mining/KDD (Knowledge Discovery in Databases).md",
+    "Chapter 9 Mining Spatial, Multimedia, Text and Web Data/Web Mining (web content,structure,usage Mining).md",
+    "Chapter 4 Data Cube Technology/Cube Materialization.md",
+    "Chapter 4 Data Cube Technology/Cube Compuation Strategies.md",
+    "Chapter 4 Data Cube Technology/simple explanation.md",
+    "Chapter 1 Introduction to Data Warehousing/Components of a data warehouse.md",
+    "CHAPTER 10 PYQ/2079 DM Questiuons.md",
+    "Chapter 5 Mining Frequent Patterns/Market Basket Analysis.md",
+    "Chapter 5 Mining Frequent Patterns/Some Terms.md",
     "CHAPTER 10 PYQ/2082",
     "CHAPTER 10 PYQ",
     "Chapter 9 Mining Spatial, Multimedia, Text and Web Data",

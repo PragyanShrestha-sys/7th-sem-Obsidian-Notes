@@ -1,5 +1,5 @@
 [[mero confusion explanation]]
-
+https://www.youtube.com/watch?v=jqXJpQSLYoY&list=PLtusNRRQtirxX15AaS1BmJyusN236JFdk&index=2&t=1431s
 ---
 ## [[Theory]]
 

@@ -34,17 +34,16 @@ Distrust propagates **differently** from trust. It follows a **sign multiplicati
 
 ### The Sign Multiplication Table
 
-| A → B | B → C | A → C (inferred) |
-|-------|-------|-----------------|
-| Trust (+) | Trust (+) | Trust (+) |
-| Trust (+) | Distrust (-) | Distrust (-) |
-| Distrust (-) | Trust (+) | Distrust (-) |
-| Distrust (-) | Distrust (-) | Trust (+) |
+| A → B        | B → C        | A → C (inferred) |
+| ------------ | ------------ | ---------------- |
+| Trust (+)    | Trust (+)    | Trust (+)        |
+| Trust (+)    | Distrust (-) | Distrust (-)     |
+| Distrust (-) | Trust (+)    | Distrust (-)     |
+| Distrust (-) | Distrust (-) | Trust (+)        |
 
 ## Part 5: Atomic Propagation of Distrust
 
 Just like trust, distrust propagation can be **atomic** (one step, two known edges → one inferred edge).
-
 ### The Four Types (with Distrust)
 
 | Type | Known | Inferred | Example |

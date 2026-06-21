@@ -1,6 +1,6 @@
 There are 2 types of hierarchial 
 1. [[Agglomerative Approach (Bottom UP)]]
-2. [[Divisive Approach (Top Down]]
+2. [[Divisive Approach (Top Down)]]
 
 Note: first ma simple matra example cha
 

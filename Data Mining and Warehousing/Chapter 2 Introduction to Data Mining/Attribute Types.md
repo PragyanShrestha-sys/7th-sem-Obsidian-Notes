@@ -25,10 +25,10 @@ Attributes are classified into **3 main types**, plus a special fourth type:
 
 Numeric attributes are further divided into two sub-types:
 
-| Sub-type     | Definition                               | Operations    | Example                                                      |
-| :----------- | :--------------------------------------- | :------------ | :----------------------------------------------------------- |
-| **Interval** | No true zero. Ratios not meaningful.     | + , -         | Temperature in °C or °F (40°C is not "twice as hot" as 20°C) |
-| **Ratio**    | True zero exists. Ratios are meaningful. | + , - , × , ÷ | Age, Height, Weight, Income (40 years is twice 20 years)     |
+| Sub-type     | Definition                               | Operations    | Example                                                                                                                                                                              |
+| :----------- | :--------------------------------------- | :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Interval** | No true zero. Ratios not meaningful.     | + , -         | - Numeric data with **equal, measurable gaps** between values, but **NO true zero point** (zero is just a position on the scale, meaning the absence of the property doesn't exist). |
+| **Ratio**    | True zero exists. Ratios are meaningful. | + , - , × , ÷ | Numeric data with **equal gaps AND a true, meaningful zero** (where zero means "none" of that thing exists).                                                                         |
 
 ### 4. Binary Attributes (Special Case of Nominal)
 

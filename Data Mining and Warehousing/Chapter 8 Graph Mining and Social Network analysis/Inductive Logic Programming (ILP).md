@@ -1,6 +1,3 @@
-Here's a **detailed explanation** of Inductive Logic Programming (ILP) with a real-life numerical example.
-
----
 
 ## What Is Inductive Logic Programming? (Detailed Definition)
 
@@ -46,7 +43,6 @@ ILP algorithms construct hypotheses—usually represented as Horn clauses (if-th
 2. **Process:** The system induces a rule, or a set of rules, that covers all positive examples without covering any negative examples.
 3. **Output:** A logical program or classification rule that is transparent, interpretable, and generalizable to unseen data
 ---
-
 ## Real-Life Numerical Example: Family Relationships
 
 ### Scenario
