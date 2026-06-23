@@ -42,6 +42,7 @@ In simple words: **A Quality Control System is the specific process of inspectin
 
 ## [[Total Quality Management]]
 
+
 ### [[Total Quality Management Tools ]]
 
 ---

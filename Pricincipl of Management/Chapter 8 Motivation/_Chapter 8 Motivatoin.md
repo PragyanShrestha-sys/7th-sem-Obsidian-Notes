@@ -1,5 +1,5 @@
 
-## [[Concept of Motication and theoires]]
+## [[Concept of Motivation and theories]]
 
 2 theoires of motivation 
 1. Through motivation hygiene

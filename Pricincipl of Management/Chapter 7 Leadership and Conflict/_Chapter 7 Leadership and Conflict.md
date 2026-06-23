@@ -50,4 +50,4 @@ All groups in an organization fall under two massive umbrellas: **Formal** (crea
 4. Intragroup
 
 ---
-## [[Managing groups in Organizastion]]
+## [[Managing groups and conflict in Organizastion]]

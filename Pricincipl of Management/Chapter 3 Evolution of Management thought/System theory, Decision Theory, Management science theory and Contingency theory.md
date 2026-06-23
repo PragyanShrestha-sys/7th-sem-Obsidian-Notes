@@ -151,15 +151,6 @@ The idea that **there is no one best way to manage**. The optimal management app
 | **Size contingency** | Large organizations need more formalization than small ones. |
 | **Environment contingency** (Lawrence & Lorsch) | Uncertain environments require differentiation and integration. |
 
-### Key Contributors
-
-| Contributor | Contribution |
-| --- | --- |
-| **Joan Woodward** | Technology determines structure (unit, mass, process production). |
-| **Paul Lawrence & Jay Lorsch** | Environment uncertainty affects structure (differentiation vs. integration). |
-| **Fred Fiedler** | Leadership effectiveness depends on situation (Least Preferred Coworker model). |
-| **Tom Burns & G.M. Stalker** | Mechanistic vs. organic structures based on environmental stability. |
-
 ### Contributions (Points)
 
 | # | Contribution |
@@ -185,15 +176,14 @@ The idea that **there is no one best way to manage**. The optimal management app
 | 7. | **Less useful in crises** – need decisive action, not situational analysis. |
 
 ---
-
 ## Summary Table: Contributions vs. Limitations (All Four Theories)
 
-| Theory | Contributions (Points) | Limitations (Points) |
-| --- | --- | --- |
-| **Systems Theory** | 1. Focus on interdependence of parts. 2. Open system view. 3. Feedback loops. 4. Holistic thinking. 5. Synergy & equifinality. 6. Cross-disciplinary language. 7. Environment matters. | 1. Too abstract. 2. No specific tools. 3. Overly complex. 4. No "how to" guidance. 5. Hard to see whole system. 6. Boundaries unclear. |
-| **Decision Theory** | 1. Structured decision models. 2. Bounded rationality. 3. Certainty/risk/uncertainty distinction. 4. Decision trees & payoff matrices. 5. Satisficing concept. 6. Group techniques. 7. Links decisions to performance. | 1. Assumes rationality. 2. Time-consuming. 3. Information rarely perfect. 4. Ignores politics/power. 5. Cultural bias. 6. Overemphasizes individual. 7. Probabilities often unknown. |
-| **Management Science Theory** | 1. Mathematical rigor. 2. Optimization tools (linear programming, EOQ). 3. PERT/CPM for projects. 4. Simulation. 5. Better inventory control. 6. Forecasting methods. 7. Game theory for strategy. | 1. Ignores human factors. 2. Requires quantifiable data. 3. Expensive & slow. 4. Oversimplifies reality. 5. Not for all problems. 6. Implementation gap. 7. Static assumptions. |
-| **Contingency Theory** | 1. Rejects one best way. 2. Situational diagnosis. 3. Identifies key variables (size, tech, environment). 4. Empirical evidence. 5. Encourages adaptation. 6. Explains structural differences. 7. Influences modern management. | 1. Can be vague ("it depends"). 2. Too many variables. 3. Reactive, not proactive. 4. Hard to test. 5. Analysis paralysis risk. 6. Underestimates shaping environment. 7. Less useful in crises. |
+| Theory                        | Contributions (Points)                                                                                                                                                                                                          | Limitations (Points)                                                                                                                                                                             |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Systems Theory**            | 1. Focus on interdependence of parts. 2. Open system view. 3. Feedback loops. 4. Holistic thinking. 5. Synergy & equifinality. 6. Cross-disciplinary language. 7. Environment matters.                                          | 1. Too abstract. 2. No specific tools. 3. Overly complex. 4. No "how to" guidance. 5. Hard to see whole system. 6. Boundaries unclear.                                                           |
+| **Decision Theory**           | 1. Structured decision models. 2. Bounded rationality. 3. Certainty/risk/uncertainty distinction. 4. Decision trees & payoff matrices. 5. Satisficing concept. 6. Group techniques. 7. Links decisions to performance.          | 1. Assumes rationality. 2. Time-consuming. 3. Information rarely perfect. 4. Ignores politics/power. 5. Cultural bias. 6. Overemphasizes individual. 7. Probabilities often unknown.             |
+| **Management Science Theory** | 1. Mathematical rigor. 2. Optimization tools (linear programming, EOQ). 3. PERT/CPM for projects. 4. Simulation. 5. Better inventory control. 6. Forecasting methods. 7. Game theory for strategy.                              | 1. Ignores human factors. 2. Requires quantifiable data. 3. Expensive & slow. 4. Oversimplifies reality. 5. Not for all problems. 6. Implementation gap. 7. Static assumptions.                  |
+| **Contingency Theory**        | 1. Rejects one best way. 2. Situational diagnosis. 3. Identifies key variables (size, tech, environment). 4. Empirical evidence. 5. Encourages adaptation. 6. Explains structural differences. 7. Influences modern management. | 1. Can be vague ("it depends"). 2. Too many variables. 3. Reactive, not proactive. 4. Hard to test. 5. Analysis paralysis risk. 6. Underestimates shaping environment. 7. Less useful in crises. |
 
 ---
 

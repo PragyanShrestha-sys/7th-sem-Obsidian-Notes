@@ -41,12 +41,12 @@ Examiners **love** comparing theories. We will cover the two most foundational o
 
 Here is Maslow’s famous 5-Tier Pyramid (from bottom to top):
 
-| Level | Need Type | What it means in the Workplace | How Managers use it |
-| :--- | :--- | :--- | :--- |
-| **1. Physiological Needs** (Base) | Basic survival needs: Food, water, shelter, sleep, salary. | A living wage, safe working conditions, lunch breaks, restrooms. | Pay competitive salaries. Provide cafeterias, comfortable chairs, and proper lighting. |
-| **2. Safety Needs** | Security, stability, protection from physical/emotional harm. | Job security, health insurance, retirement plans, safe machinery, freedom from harassment. | Offer permanent contracts, medical benefits, safety protocols, and a stable work environment. |
-| **3. Social Needs (Belongingness)** | Love, friendship, belonging, acceptance. | Teamwork, social interactions, feeling accepted by colleagues, friendly work culture. | Organize team outings, open-plan offices, encourage collaboration, and avoid toxic cliques. |
-| **4. Esteem Needs** | Recognition, respect, status, achievement, self-worth. | Job titles, promotions, awards, praise from bosses, feeling valued. | Give public recognition, award "Employee of the Month," provide challenging titles, and offer genuine appreciation. |
+| Level                                 | Need Type                                                                    | What it means in the Workplace                                                                | How Managers use it                                                                                                   |
+| :------------------------------------ | :--------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| **1. Physiological Needs** (Base)     | Basic survival needs: Food, water, shelter, sleep, salary.                   | A living wage, safe working conditions, lunch breaks, restrooms.                              | Pay competitive salaries. Provide cafeterias, comfortable chairs, and proper lighting.                                |
+| **2. Safety Needs**                   | Security, stability, protection from physical/emotional harm.                | Job security, health insurance, retirement plans, safe machinery, freedom from harassment.    | Offer permanent contracts, medical benefits, safety protocols, and a stable work environment.                         |
+| **3. Social Needs (Belongingness)**   | Love, friendship, belonging, acceptance.                                     | Teamwork, social interactions, feeling accepted by colleagues, friendly work culture.         | Organize team outings, open-plan offices, encourage collaboration, and avoid toxic cliques.                           |
+| **4. Esteem Needs**                   | Recognition, respect, status, achievement, self-worth.                       | Job titles, promotions, awards, praise from bosses, feeling valued.                           | Give public recognition, award "Employee of the Month," provide challenging titles, and offer genuine appreciation.   |
 | **5. Self-Actualization Needs** (Top) | Reaching one's full potential, personal growth, creativity, problem-solving. | Meaningful work, autonomy, opportunities to innovate, leadership roles, personal development. | Provide training programs, allow employees to take on "stretch" assignments, and give them freedom to make decisions. |
 ![[Pasted image 20260622095737.png|354]]
 

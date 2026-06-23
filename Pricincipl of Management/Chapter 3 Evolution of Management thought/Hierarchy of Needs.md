@@ -12,13 +12,13 @@ This theory is one of the most famous contributions of the **Behavioural Science
 
 ### The Five Levels (Bottom to Top)
 
-| Level | Name | Description | Workplace Example |
-| --- | --- | --- | --- |
-| **1** | **Physiological Needs** | Basic survival needs (food, water, shelter, sleep, air). | Adequate salary to afford food and rent; rest breaks; reasonable work hours. |
-| **2** | **Safety Needs** | Physical and psychological security (job security, health insurance, safe working conditions, stability). | Job permanence (not temporary); safety equipment; pension plan; health insurance. |
-| **3** | **Social Needs (Belongingness)** | Love, friendship, acceptance, belonging to a group. | Teamwork; friendly colleagues; company events; open office culture; mentorship. |
-| **4** | **Esteem Needs** | Recognition, respect, status, achievement, self-worth. | Job titles; awards (employee of the month); praise from boss; promotions; challenging projects. |
-| **5** | **Self-Actualization Needs** | Reaching full potential; personal growth; creativity; problem-solving. | Opportunities for innovation; leadership roles; training programs; creative freedom. |
+| Level | Name                             | Description                                                                                               | Workplace Example                                                                               |
+| ----- | -------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **1** | **Physiological Needs**          | Basic survival needs (food, water, shelter, sleep, air).                                                  | Adequate salary to afford food and rent; rest breaks; reasonable work hours.                    |
+| **2** | **Safety Needs**                 | Physical and psychological security (job security, health insurance, safe working conditions, stability). | Job permanence (not temporary); safety equipment; pension plan; health insurance.               |
+| **3** | **Social Needs (Belongingness)** | Love, friendship, acceptance, belonging to a group.                                                       | Teamwork; friendly colleagues; company events; open office culture; mentorship.                 |
+| **4** | **Esteem Needs**                 | Recognition, respect, status, achievement, self-worth.                                                    | Job titles; awards (employee of the month); praise from boss; promotions; challenging projects. |
+| **5** | **Self-Actualization Needs**     | Reaching full potential; personal growth; creativity; problem-solving.                                    | Opportunities for innovation; leadership roles; training programs; creative freedom.            |
 
 > **Key Rule:** A person stuck at Level 2 (unsafe) is not motivated by Level 4 (recognition).
 

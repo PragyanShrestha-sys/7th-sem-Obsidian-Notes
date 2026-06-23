@@ -1,9 +1,3 @@
-Here is a **clear, exam-focused explanation** of **Decision Making: Definition and Approaches**.
-
-This is a core topic in Principles of Management, closely linked to Planning.
-
----
-
 ## Part 1: Definition of Decision Making
 
 ### What is Decision Making?
@@ -11,15 +5,6 @@ This is a core topic in Principles of Management, closely linked to Planning.
 **Decision making** is the process of **identifying a problem**, **generating alternative solutions**, and **choosing one course of action** from among those alternatives. It is the essence of management.
 
 > **In simple words:** Decision making = choosing the best option when you have choices.
-
-### Key Definitions (For Exams)
-
-| Scholar | Definition |
-| :--- | :--- |
-| **Peter Drucker** | "Whatever a manager does, he does through decision making." |
-| **Herbert Simon** (Nobel Prize winner) | "Decision making is the process of selecting a course of action from among alternatives. It is the heart of administration." |
-| **Koontz & O'Donnell** | "Decision making is the selection of a course of action from among alternatives." |
-| **Simple Definition** | Decision making is the act of choosing one option from two or more possibilities. |
 
 ### Nature / Characteristics of Decision Making
 

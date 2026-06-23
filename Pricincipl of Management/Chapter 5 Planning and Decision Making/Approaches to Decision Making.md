@@ -1,6 +1,4 @@
-Thank you for asking for this clarification. You have listed three **approaches to decision making** that are frequently compared in management textbooks.
-
-However, I need to point out a small but important distinction: **"Modern/Rational Approach"** is essentially the same as the **Classical Approach** (some textbooks use the names interchangeably). The three distinct approaches are usually:
+**"Modern/Rational Approach"** is essentially the same as the **Classical Approach** (some textbooks use the names interchangeably). The three distinct approaches are usually:
 
 1. **Classical Approach** (also called Rational/Economic Model)
 2. **Administrative Approach** (also called Bounded Rationality Model - Herbert Simon)
@@ -49,13 +47,13 @@ The **Classical Approach** assumes that managers are **perfectly rational**, hav
 
 ### Key Assumptions
 
-| Assumption | Meaning |
-| :--- | :--- |
-| **Complete information** | Manager knows all possible alternatives and all possible outcomes. |
-| **Perfect rationality** | Manager is logical, objective, and consistent. |
-| **Clear goal** | The objective is known and agreed upon. |
-| **No time/cost constraints** | Unlimited time and resources to analyze. |
-| **Maximization** | Manager chooses the alternative that gives the highest benefit (maximum profit, lowest cost). |
+| Assumption                   | Meaning                                                                                       |
+| :--------------------------- | :-------------------------------------------------------------------------------------------- |
+| **Complete information**     | Manager knows all possible alternatives and all possible outcomes.                            |
+| **Perfect rationality**      | Manager is logical, objective, and consistent.                                                |
+| **Clear goal**               | The objective is known and agreed upon.                                                       |
+| **No time/cost constraints** | Unlimited time and resources to analyze.                                                      |
+| **Maximization**             | Manager chooses the alternative that gives the highest benefit (maximum profit, lowest cost). |
 
 ### The Classical Decision Making Process
 
@@ -125,13 +123,13 @@ The **Administrative Approach** was developed by **Herbert Simon** (Nobel Prize 
 
 ### Key Assumptions
 
-| Assumption | Meaning |
-| :--- | :--- |
-| **Bounded rationality** | Managers are rational but limited by constraints. |
-| **Limited information** | Managers never have complete information. |
-| **Limited time** | Decisions must be made quickly. |
-| **Limited cognitive ability** | Human brain cannot process unlimited data. |
-| **Satisficing** | Managers accept a "good enough" solution, not the optimal one. |
+| Assumption                    | Meaning                                                        |
+| :---------------------------- | :------------------------------------------------------------- |
+| **Bounded rationality**       | Managers are rational but limited by constraints.              |
+| **Limited information**       | Managers never have complete information.                      |
+| **Limited time**              | Decisions must be made quickly.                                |
+| **Limited cognitive ability** | Human brain cannot process unlimited data.                     |
+| **Satisficing**               | Managers accept a "good enough" solution, not the optimal one. |
 
 ### The Bounds (Limitations) on Rationality
 
