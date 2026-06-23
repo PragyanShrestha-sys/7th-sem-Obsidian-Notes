@@ -1,10 +1,3 @@
-Excellent follow-up. Since you already understand the *concept*, let's now break down the **two types of business environment** in a clear, exam-friendly way.
-
-As mentioned earlier, the business environment is divided into **Internal** (inside the company, partially controllable) and **External** (outside the company, largely uncontrollable).
-
-Here is a structured comparison and detailed breakdown of each.
-
----
 
 ## Quick Comparison Table: Internal vs. External Environment
 
@@ -58,14 +51,14 @@ These are forces **close to the company** that directly affect its daily operati
 
 These are **broad, large-scale forces** that affect all businesses indirectly over time. Use the **PESTEL** framework.
 
-| Factor | What it means | Example |
-| :--- | :--- | :--- |
-| **Political** | Government stability, policies, trade tariffs | A new tax on imports increases costs for a smartphone company. |
-| **Economic** | Inflation, GDP, interest rates, unemployment | High interest rates make loans expensive, reducing business investment. |
-| **Social** | Demographics, lifestyle, culture, health trends | More people working from home reduces demand for office furniture. |
-| **Technological** | Automation, AI, digitalization, R&D | Streaming services killed the DVD rental business (e.g., Blockbuster). |
-| **Ecological** | Climate change, pollution, weather, resources | A clothing brand switches to recycled fabric due to environmental laws. |
-| **Legal** | Labor laws, safety standards, consumer protection | A company must provide health insurance due to new labor law. |
+| Factor            | What it means                                     | Example                                                                 |
+| :---------------- | :------------------------------------------------ | :---------------------------------------------------------------------- |
+| **Political**     | Government stability, policies, trade tariffs     | A new tax on imports increases costs for a smartphone company.          |
+| **Economic**      | Inflation, GDP, interest rates, unemployment      | High interest rates make loans expensive, reducing business investment. |
+| **Social**        | Demographics, lifestyle, culture, health trends   | More people working from home reduces demand for office furniture.      |
+| **Technological** | Automation, AI, digitalization, R&D               | Streaming services killed the DVD rental business (e.g., Blockbuster).  |
+| **Ecological**    | Climate change, pollution, weather, resources     | A clothing brand switches to recycled fabric due to environmental laws. |
+| **Legal**         | Labor laws, safety standards, consumer protection | A company must provide health insurance due to new labor law.           |
 
 > **Key point:** The Macro environment affects the Micro environment. For example, a new **law (legal)** → suppliers raise prices → your costs increase.
 

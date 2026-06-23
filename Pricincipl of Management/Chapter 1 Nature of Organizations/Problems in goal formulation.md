@@ -18,6 +18,7 @@ Here are the major problems, organized by category.
 | **Too difficult goals** | Goals are impossible given current resources, time, or technology.                        | "Become the market leader in 3 months" when the current market leader has 80% share and 20 years of advantage. Leads to frustration, cheating, or resignation.           |
 
 
+
 ### Category 2: Problems Related to the Formulation Process (How goals are set)
 
 | Problem                      | Description                                                                                                                                           | Example                                                                                                                                                                        |
@@ -51,46 +52,6 @@ Here are the major problems, organized by category.
 
 ---
 
-## The Interconnection: How Problems Compound
-
-These problems rarely occur in isolation. They feed into each other:
-
-```text
-Top-management isolation
-         ↓
-Leaders set unrealistic goals (too difficult)
-         ↓
-Poor communication → Employees don't understand the goals
-         ↓
-No acceptance → Passive non-compliance
-         ↓
-Poor performance
-         ↓
-Leaders set even more unrealistic goals (cycle worsens)
-         ↓
-Goal displacement (people focus on measurable rules, not purpose)
-```
-
----
-
-## Real-World Example: Multiple Problems at Once
-
-**Scenario:** A retail chain announces: "Become the #1 retailer in customer satisfaction within 6 months."
-
-| Problem Type | Specific Problem in This Scenario |
-| :--- | :--- |
-| Vagueness | What does "#1" mean? Which survey? What score? |
-| Too difficult | The current #1 has held the position for 10 years. |
-| Short-term focus | 6 months is unrealistic for cultural change. |
-| Lack of participation | Store employees (who interact with customers) were never consulted. |
-| Poor cascading | A cashier thinks: "Does this mean I should ignore the express lane rule and chat with every customer?" |
-| Conflicting goals | The chain also has a goal to "reduce labor costs" (fewer staff per store). Fewer staff = longer wait times = lower satisfaction. |
-
-**Result:** The goal fails. Employees are confused and cynical. The chain abandons the goal after 6 months and never revisits customer satisfaction.
-
----
-
-
 ## Summary Table: Problems of Goal Formulation (Revision Ready)
 
 | Category | Key Problems |
@@ -102,17 +63,3 @@ Goal displacement (people focus on measurable rules, not purpose)
 | **Environment** | Turbulence, uncertainty, resource volatility |
 
 ---
-
-
-## Quick Revision Card
-
-| Concept | One-Line Definition |
-| :--- | :--- |
-| **Problems of goal formulation** | Obstacles that prevent organizations from creating effective, actionable goals that drive performance. |
-| **Most common single problem** | **Vagueness** (failing the SMART test). |
-| **Most dangerous problem** | **Conflicting goals** (pulls the organization apart) or **Mixed messages** (rewards contradict stated goals). |
-| **Prevention** | SMART criteria + participation (MBO) + alignment checks + periodic review + flexibility. |
-
----
-
-Would you like a diagnostic exercise where you are given a real company's goal statement and asked to identify all the problems present, then rewrite it as an effective goal?

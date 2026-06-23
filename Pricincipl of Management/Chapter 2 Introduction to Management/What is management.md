@@ -1,9 +1,3 @@
-Here is a comprehensive **Introduction to Management**, covering its definition, importance, functions, levels, roles, and skills. This serves as a foundational overview for understanding how organizations operate and achieve goals.
-
----
-
-## What is Management?
-
 **Management** is the process of **planning, organizing, leading, and controlling** an organization’s human, financial, physical, and information resources to achieve organizational goals efficiently and effectively.
 
 - **Efficiency** – Doing things right (minimizing waste, using resources wisely).
@@ -38,28 +32,13 @@ These four functions are **interdependent** and happen continuously, not just in
 
 ## Key Management Skills
 
-| Skill Type | Definition | Example |
-| --- | --- | --- |
-| **Technical** | Expertise in a specific field | Accountant knowing tax law; programmer debugging code. |
-| **Human / Interpersonal** | Ability to work well with others | Active listening, conflict resolution, empathy. |
-| **Conceptual** | Ability to see the organization as a whole | Understanding how marketing affects production. |
-| **Decision-Making** | Choosing among alternatives | Analyzing data to pick a supplier. |
-| **Time Management** | Prioritizing tasks effectively | Using Eisenhower matrix (urgent vs. important). |
-
----
-## Management vs. Leadership (Common Distinction)
-
-| Aspect       | Management              | Leadership                  |
-| ------------ | ----------------------- | --------------------------- |
-| Focus        | Systems, control, order | Vision, change, inspiration |
-| Approach     | Plans & budgets         | Sets direction              |
-| Style        | Solves problems         | Challenges the status quo   |
-| Power source | Formal authority        | Personal influence          |
-| Key question | How? When?              | Why? What if?               |
-
-> **Note:** Good managers often lead, and good leaders often manage. They are complementary, not opposite.
-
----
+| Skill Type                | Definition                                 | Example                                                |
+| ------------------------- | ------------------------------------------ | ------------------------------------------------------ |
+| **Technical**             | Expertise in a specific field              | Accountant knowing tax law; programmer debugging code. |
+| **Human / Interpersonal** | Ability to work well with others           | Active listening, conflict resolution, empathy.        |
+| **Conceptual**            | Ability to see the organization as a whole | Understanding how marketing affects production.        |
+| **Decision-Making**       | Choosing among alternatives                | Analyzing data to pick a supplier.                     |
+| **Time Management**       | Prioritizing tasks effectively             | Using Eisenhower matrix (urgent vs. important).        |
 
 ## Real-World Example of Management Functions
 

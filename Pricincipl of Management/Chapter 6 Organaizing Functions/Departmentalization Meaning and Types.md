@@ -1,30 +1,22 @@
 
-In management, **Departmentalization** is the answer to the question: *"Now that I have listed all these hundreds of tasks, how do I cluster them together so they are managed efficiently?"*
-
 ### 1. Meaning of Departmentalization
 
 **In simple words:** Departmentalization is the process of dividing an organization into different departments or units, where each department handles a specific set of related activities.
-
 
 **Why is it done? (Objectives):**
 
 - **Specialization:** Employees in one department become experts in that specific field (e.g., finance experts handle only finance).
 - **Coordination:** It becomes easier to manage and coordinate similar tasks.
 - **Accountability:** You know exactly which department (and which manager) is responsible for a specific result.
-- **Growth:** It allows the organization to expand easily by adding new departments as it grows.
 
 ---
-
 ### 2. Types of Departmentalization
 
 There is no "one best" type. Depending on the organization's size, goals, and environment (remember the Contingency Approach!), managers choose one or a combination of these **5 main types**:
 
 ---
-
 #### Type 1: Functional Departmentalization (The Most Common)
 - **How it works:** Activities are grouped based on the function or specialized skill they require (e.g., Marketing, Finance, Human Resources, Production).
-- **Organizational Chart:** 
-  > CEO → Heads of: [Production] [Marketing] [Finance] [HR]
 - **Best for:** Small to medium-sized companies, or companies with a single product line.
 - **Real-world example:** A local hospital organizes into: Cardiology Dept., Radiology Dept., Nursing Dept., and Billing Dept.
 
@@ -50,7 +42,6 @@ There is no "one best" type. Depending on the organization's size, goals, and en
 | Great for innovation and adapting to product-specific market changes. | Reduces overall organizational cohesion and standardization. |
 
 ---
-
 #### Type 3: Geographical (Territorial) Departmentalization
 - **How it works:** Activities are grouped based on the geographic region or territory they serve. Each region acts as a semi-autonomous unit.
 - **Organizational Chart:** 

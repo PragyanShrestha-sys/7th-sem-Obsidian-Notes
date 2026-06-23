@@ -1,26 +1,8 @@
-This is a perfect transition. You've covered the **environment** in which a business operates and the **ethics** that guide it. Now, we move to the **core functions of management**—starting with **Planning** and **Decision Making**.
-
-In fact, many experts say: **Planning is the primary function of management**, and **Decision Making is the heart of planning**. You cannot have one without the other.
-
-Here is a clear, exam-focused explanation of the **concept of planning** and **decision making**.
-
----
-
-## Part 1: Concept of Planning
-
 ### What is Planning? (Definition)
 
 **Planning** is the process of **setting goals**, **developing strategies**, and **determining the tasks and resources** needed to achieve those goals. It answers the question: *"Where are we now, where do we want to go, and how will we get there?"*
 
 > **In simple words:** Planning is deciding *in advance* what to do, how to do it, when to do it, and who will do it.
-
-### Key Definitions (For Exams)
-
-| Scholar | Definition |
-| :--- | :--- |
-| **Koontz & O'Donnell** | "Planning is deciding in advance what to do, how to do it, when to do it, and who is to do it." |
-| **Henry Fayol** | "Planning is deciding the best alternative among alternatives to achieve the desired goal." |
-| **Simple Definition** | Planning is a bridge between where we are and where we want to go. |
 
 ### Types of Plans (Quick Overview)
 

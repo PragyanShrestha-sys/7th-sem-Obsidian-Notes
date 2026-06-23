@@ -27,8 +27,9 @@ An organization is not just a building or a group of people. In management theor
 | **Goal Displacement** | *"Lost the plot."* — Like studying so hard for an exam's format that you forget to learn the actual subject. |
 
 ---
-## [[Problems in goal formulation (long ans]]
-## [[Problems in goal formulations]]
+## [[Problems in goal formulation]]
+
+
 
 ---
 ## [[Changing Prespectives of organization]]
