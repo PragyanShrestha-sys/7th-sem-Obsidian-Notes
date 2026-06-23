@@ -24,7 +24,6 @@ To fully grasp the concept, remember these 4 features:
 4.  **Far-reaching:** A small change in one area (e.g., a new government policy) can have major effects across the entire business.
 
 ---
-
 ### [[The Two Main Components Internal & External Environment]]
 
 ---

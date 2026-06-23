@@ -10,12 +10,12 @@ Here is a clear, exam-focused explanation of the **Types of Decisions**.
 
 Managers make many different types of decisions. They can be classified based on **four main criteria**:
 
-| Basis of Classification | Types of Decisions |
-| :--- | :--- |
-| **1. Frequency / Repetitiveness** | Programmed vs. Non-programmed |
-| **2. Level of Management** | Strategic vs. Tactical vs. Operational |
-| **3. Certainty / Knowledge of Outcome** | Certainty vs. Risk vs. Uncertainty |
-| **4. Nature / Impact** | Routine vs. Basic / Major |
+| Basis of Classification                 | Types of Decisions                     |
+| :-------------------------------------- | :------------------------------------- |
+| **1. Frequency / Repetitiveness**       | Programmed vs. Non-programmed          |
+| **2. Level of Management**              | Strategic vs. Tactical vs. Operational |
+| **3. Certainty / Knowledge of Outcome** | Certainty vs. Risk vs. Uncertainty     |
+| **4. Nature / Impact**                  | Routine vs. Basic / Major              |
 
 > **Most important for exams:** The first two classifications (Programmed vs. Non-programmed and Strategic vs. Tactical vs. Operational) are the most frequently asked.
 
@@ -72,7 +72,6 @@ This is the **most common** way to classify decisions in management textbooks.
 | **Fair** | Everyone treated equally. |
 
 ---
-
 ### B. Non-programmed Decisions (Non-routine)
 
 **Definition:** Decisions that are **novel**, **unstructured**, and **unique**. There are no existing rules or procedures. Managers must use creativity, judgment, and analysis.
@@ -132,11 +131,11 @@ This is the **most common** way to classify decisions in management textbooks.
 
 Different management levels make different **types of decisions**.
 
-| Level | Type of Decision | Time Horizon | Example |
-| :--- | :--- | :--- | :--- |
-| **Top Management** (CEO, Board) | Strategic Decisions | Long-term (3-10+ years) | "Should we diversify into a new industry?" |
-| **Middle Management** (Dept. Heads) | Tactical Decisions | Medium-term (1-3 years) | "How will our marketing department support the strategy?" |
-| **Lower Management** (Supervisors) | Operational Decisions | Short-term (daily, weekly) | "Who will work the night shift tomorrow?" |
+| Level                               | Type of Decision      | Time Horizon               | Example                                                   |
+| :---------------------------------- | :-------------------- | :------------------------- | :-------------------------------------------------------- |
+| **Top Management** (CEO, Board)     | Strategic Decisions   | Long-term (3-10+ years)    | "Should we diversify into a new industry?"                |
+| **Middle Management** (Dept. Heads) | Tactical Decisions    | Medium-term (1-3 years)    | "How will our marketing department support the strategy?" |
+| **Lower Management** (Supervisors)  | Operational Decisions | Short-term (daily, weekly) | "Who will work the night shift tomorrow?"                 |
 
 ---
 
@@ -270,12 +269,12 @@ Decisions can be classified by **how much the manager knows** about the outcome 
 
 ## Summary Table: All Types of Decisions (Exam-Ready)
 
-| Classification Basis | Type 1 | Type 2 | Type 3 |
-| :--- | :--- | :--- | :--- |
-| **Frequency** | Programmed (routine, rules exist) | Non-programmed (unique, no rules) | - |
-| **Management Level** | Strategic (top, long-term) | Tactical (middle, medium-term) | Operational (lower, short-term) |
-| **Certainty** | Certainty (known outcome) | Risk (known probabilities) | Uncertainty (unknown) |
-| **Nature** | Routine (daily) | Basic/Major (strategic) | - |
+| Classification Basis | Type 1                            | Type 2                            | Type 3                          |
+| :------------------- | :-------------------------------- | :-------------------------------- | :------------------------------ |
+| **Frequency**        | Programmed (routine, rules exist) | Non-programmed (unique, no rules) | -                               |
+| **Management Level** | Strategic (top, long-term)        | Tactical (middle, medium-term)    | Operational (lower, short-term) |
+| **Certainty**        | Certainty (known outcome)         | Risk (known probabilities)        | Uncertainty (unknown)           |
+| **Nature**           | Routine (daily)                   | Basic/Major (strategic)           | -                               |
 
 ---
 

@@ -1,5 +1,4 @@
 
-
 ### 1. Concept of an Organization
 
 An organization is not just a building or a group of people. In management theory, it is defined as a **consciously coordinated social unit, composed of two or more people, that functions on a relatively continuous basis to achieve a common goal or set of goals.**

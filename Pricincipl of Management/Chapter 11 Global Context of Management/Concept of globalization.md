@@ -1,4 +1,3 @@
-
 ### 1. Meaning of Globalization (What is it?)
 
 **In simple words:** Globalization is the process by which businesses, ideas, technologies, information, and cultures spread and integrate across national borders. It is the increasing **interconnectedness and interdependence** of the world's economies, societies, and cultures.

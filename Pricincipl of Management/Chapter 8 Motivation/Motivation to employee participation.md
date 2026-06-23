@@ -5,20 +5,9 @@
 
 **Think of it like this:** 
 - **No Participation:** The manager says, *"You will work the night shift starting tomorrow. No discussion."* (Employee feels like a slave).
-- **Full Participation:** The manager says, *"We need someone for the night shift. Let's discuss as a team how we can rotate this fairly and who volunteers."* (Employee feels respected and commits willingly).
+- **Full Participation:** The manager says, *"We need someone for the night shift. Let's discuss as a team how we can rotate this fairly and who volunteers."* (Employee feels respected and commits willingly)
 
 ---
-
-**Why does Participation Motivate? (The Psychological Link)**
-
-| Reason | Explanation |
-| :--- | :--- |
-| **Ego Satisfaction** | When a manager asks for an employee's opinion, it fulfills their **Esteem needs** (Maslow) and acts as a powerful **Motivator** (Herzberg). |
-| **Sense of Ownership** | When employees help make a decision, they feel psychologically "invested" in its success. They won't sabotage a plan they helped create. |
-| **Better Communication** | Participation opens two-way communication, reducing misunderstandings and the "us vs. them" mentality between management and workers. |
-
----
-
 ### 2. Quality of Work Life (QWL)
 
 **Meaning:** Quality of Work Life (QWL) is a comprehensive concept that refers to the overall quality of an employee's experience at work. It covers everything from physical working conditions to psychological well-being, job satisfaction, and work-life balance.
@@ -29,16 +18,16 @@
 
 **The 8 Key Pillars of a High Quality of Work Life (Exam Gold!)**
 
-| Pillar | What it means | Example |
-| :--- | :--- | :--- |
-| **1. Adequate & Fair Compensation** | Pay must be fair, competitive, and match the effort required. | Regular salary benchmarking, performance-based bonuses, and transparency in pay scales. |
-| **2. Safe & Healthy Working Conditions** | The physical work environment must be free from hazards and health risks. | Ergonomic chairs, proper ventilation, safety gear, mental health support, and zero harassment policies. |
-| **3. Opportunity for Growth & Development** | Employees must see a clear path for learning and promotion. | Training programs, tuition reimbursement, mentorship, and clear promotion criteria. |
-| **4. Work-Life Balance** | Employees must have time and energy for their personal lives, families, and hobbies. | Flexible work hours, work-from-home options, paid parental leave, and strict boundaries against late-night emails. |
-| **5. Social Relevance & Meaningfulness** | The work must feel important and contribute positively to society. | A doctor saving lives, a teacher shaping futures, or a company that recycles and protects the environment. |
-| **6. Participation & Autonomy** | Employees must have a say in decisions and freedom to do their jobs their own way. | Allowing teams to choose their own project management tools or set their own daily schedules. |
-| **7. Recognition & Respect** | Employees must feel valued and appreciated for their contributions. | Public praise, "Employee of the Month" awards, and genuine thank-yous from leadership. |
-| **8. Work & Social Integration** | A sense of belonging; friendly colleagues and a non-toxic culture. | Team lunches, open-plan offices, and a culture where people genuinely care about each other. |
+| Pillar                                      | What it means                                                                        | Example                                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| **1. Adequate & Fair Compensation**         | Pay must be fair, competitive, and match the effort required.                        | Regular salary benchmarking, performance-based bonuses, and transparency in pay scales.                            |
+| **2. Safe & Healthy Working Conditions**    | The physical work environment must be free from hazards and health risks.            | Ergonomic chairs, proper ventilation, safety gear, mental health support, and zero harassment policies.            |
+| **3. Opportunity for Growth & Development** | Employees must see a clear path for learning and promotion.                          | Training programs, tuition reimbursement, mentorship, and clear promotion criteria.                                |
+| **4. Work-Life Balance**                    | Employees must have time and energy for their personal lives, families, and hobbies. | Flexible work hours, work-from-home options, paid parental leave, and strict boundaries against late-night emails. |
+| **5. Social Relevance & Meaningfulness**    | The work must feel important and contribute positively to society.                   | A doctor saving lives, a teacher shaping futures, or a company that recycles and protects the environment.         |
+| **6. Participation & Autonomy**             | Employees must have a say in decisions and freedom to do their jobs their own way.   | Allowing teams to choose their own project management tools or set their own daily schedules.                      |
+| **7. Recognition & Respect**                | Employees must feel valued and appreciated for their contributions.                  | Public praise, "Employee of the Month" awards, and genuine thank-yous from leadership.                             |
+
 
 ---
 

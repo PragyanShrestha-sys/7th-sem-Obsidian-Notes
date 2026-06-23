@@ -15,4 +15,4 @@
 2. interpersonal and non verbal
 ---
 
-## [[Barriers of effective communicatinon]]
+## [[Barriers of effective communication]]
