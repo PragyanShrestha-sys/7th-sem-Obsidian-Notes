@@ -1,7 +1,3 @@
-Here is a detailed explanation of the five changing perspectives on organizations, structured to cover **what** each perspective is, **why** it emerged (the shift from previous views), and **how** it conceptualizes an organization.
-
----
-
 ### i) Mechanistic Viewpoint on Organization
 
 - **What it is:**  
@@ -27,7 +23,7 @@ Here is a detailed explanation of the five changing perspectives on organization
   Views the organization as a **living organism** that constantly interacts with its external environment. It takes in inputs (raw materials, information, people), transforms them through internal processes, and produces outputs (goods, services, results), with feedback loops guiding adaptation.
 
 - **Why it emerged:**  
-  The mechanistic view failed in dynamic, uncertain environments. Organizations were experiencing rapid market changes, technological shifts, and social pressures. The open system perspective recognized that survival depends on adapting to external conditions, not just internal efficiency.
+  The mechanistic view failed in **dynamic**, uncertain environments. Organizations were experiencing rapid market changes, technological shifts, and social pressures. The open system perspective recognized that survival depends on **adapting to external conditions**, not just internal efficiency.
 
 - **How it works:**  
   - **Input → Throughput → Output → Feedback** cycle.  

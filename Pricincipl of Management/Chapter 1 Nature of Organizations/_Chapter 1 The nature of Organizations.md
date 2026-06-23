@@ -29,8 +29,6 @@ An organization is not just a building or a group of people. In management theor
 ---
 ## [[Problems in goal formulation]]
 
-
-
 ---
 ## [[Changing Prespectives of organization]]
 

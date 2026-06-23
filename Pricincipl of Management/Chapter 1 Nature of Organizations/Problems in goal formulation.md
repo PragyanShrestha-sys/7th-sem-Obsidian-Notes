@@ -1,5 +1,4 @@
 
-
 Understanding the **problems of goal formulation** helps you diagnose why organizations struggle to set effective goals—even when they know the SMART framework and have good intentions.
 
 Here are the major problems, organized by category.

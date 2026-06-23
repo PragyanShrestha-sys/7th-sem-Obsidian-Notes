@@ -28,9 +28,9 @@ The methods range from **Low Risk / Low Control** (Exporting) to **High Risk / H
 
 **Types of Exporting:**
 
-| Sub-Type | Meaning | Example |
-| :--- | :--- | :--- |
-| **Direct Exporting** | The company sells directly to an importer or distributor in the foreign country. | An Indian pharmaceutical company directly sells medicines to a hospital chain in Africa. |
+| Sub-Type               | Meaning                                                                                            | Example                                                                                                                                              |
+| :--------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Direct Exporting**   | The company sells directly to an importer or distributor in the foreign country.                   | An Indian pharmaceutical company directly sells medicines to a hospital chain in Africa.                                                             |
 | **Indirect Exporting** | The company uses an intermediary (an export house or trading company) to handle the foreign sales. | A small textile manufacturer uses a large trading company to export its cloth to Europe, without having to deal with foreign regulations themselves. |
 
 **Advantages:**
