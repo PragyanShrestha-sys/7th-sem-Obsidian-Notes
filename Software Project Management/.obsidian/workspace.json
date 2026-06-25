@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1 Introduction to Software project Management/Categorising Software Projects.md",
+                "file": "Chapter 1 Introduction to Software project Management/_Chapter 1 Introduction to Software Project Management.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Categorising Software Projects"
+              "title": "_Chapter 1 Introduction to Software Project Management"
+            }
+          },
+          {
+            "id": "6b5b430ee09827d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 9 Software Configuration Management/_Chapter 9 Software Configuration Management.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_Chapter 9 Software Configuration Management"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,21 +195,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "48b6f8009e3685f4",
+  "active": "47fb7c4618fea202",
   "lastOpenFiles": [
+    "Chapter 9 Software Configuration Management/Baseline.md",
+    "Chapter 9 Software Configuration Management/_Chapter 9 Software Configuration Management.md",
+    "Chapter 9 Software Configuration Management/Roles of SCM.md",
+    "Chapter 9 Software Configuration Management/Software Configuration management responsibilities.md",
+    "Chapter 9 Software Configuration Management/Basic Configuration of SCM.md",
+    "Chapter 9 Software Configuration Management/Introuduction to software cnofiguration managemetn.md",
+    "Chapter 9 Software Configuration Management/Need of SPM.md",
     "Chapter 1 Introduction to Software project Management/_Chapter 1 Introduction to Software Project Management.md",
+    "Chapter 9 Software Configuration Management",
+    "Chapter 1 Introduction to Software project Management/Categorising Software Projects.md",
     "Chapter 1 Introduction to Software project Management/Types of Project Plan.md",
     "Chapter 1 Introduction to Software project Management/Software Project Management Framework.md",
     "Chapter 1 Introduction to Software project Management/Project Management Life Cycle.md",
     "Chapter 1 Introduction to Software project Management/Activities covered by SPM.md",
-    "Chapter 1 Introduction to Software project Management/Categorising Software Projects.md",
     "Chapter 1 Introduction to Software project Management/Difference between software project and other types of project.md",
     "Chapter 1 Introduction to Software project Management/Software Project.md",
     "Chapter 1 Introduction to Software project Management/Software product.md",
     "Chapter 1 Introduction to Software project Management/Some Attributes of software Product (Non - Functional requirements ).md",
-    "SEI (Software Engineering Institute) and its Missions.md",
-    "Operation Characteristics.md",
-    "Fesability Study.md",
+    "Chapter 8 Software Quality Assurance/SEI (Software Engineering Institute) and its Missions.md",
+    "Chapter 8 Software Quality Assurance/Operation Characteristics.md",
+    "Chapter 8 Software Quality Assurance/Fesability Study.md",
     "Transition Characteristics.md",
     "Chapter 1 Introduction to Software project Management/Problems in Software Project Management.md"
   ]

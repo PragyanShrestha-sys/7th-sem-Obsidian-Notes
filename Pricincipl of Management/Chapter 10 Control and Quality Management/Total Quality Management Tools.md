@@ -97,6 +97,7 @@ Here is your complete, exam-ready breakdown of these **5 Strategic TQM Tools: Be
 
 ---
 ### 5. Statistical Process Control (SPC)
+
 note: spc is plotted in a graph
 
 _"SPC is just a quantifier of what to look at and what not to look at in management."_
