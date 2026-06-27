@@ -203,9 +203,7 @@ Password                            Injection   Server
 | FTA              | Critical, high-consequence risks | High   | Logical tree of causes             |
 
 ---
-
 ## Practical Recommendation
-
 Most software projects should use a **combination** of techniques:
 
 1. **Start with Brainstorming** (fast, broad)

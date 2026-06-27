@@ -11,7 +11,7 @@ Unlike a Gantt chart which focuses on time, a network model focuses on **relati
 | Model        | Full Name                               | Description                                                                                 |
 | ------------ | --------------------------------------- | ------------------------------------------------------------------------------------------- |
 | **[[PERT]]** | Program Evaluation and Review Technique | Uses three time estimates (optimistic, most likely, pessimistic) to account for uncertainty |
-| **[[CPM]]**  | Critical Path Method                    | Uses single time estimates and focuses on identifying the critical path                     |
+| **[[CPM (Critical Patth method)]]**  | Critical Path Method                    | Uses single time estimates and focuses on identifying the critical path                     |
 | **PDM**      | Precedence Diagramming Method           | Uses nodes for activities and arrows for relationships; supports multiple dependency types  |
 
 ![[Pasted image 20260329092759.png]]

@@ -2,8 +2,6 @@
 
 Project Control is the process of **monitoring, measuring, and regulating** the progress and performance of a project to ensure it achieves its objectives within defined constraints.
 
-
-
 ## Key Constraints Monitored
 
 |Constraint|Description|
@@ -14,8 +12,6 @@ Project Control is the process of **monitoring, measuring, and regulating** th
 |Quality|Ensuring outputs meet required standards|
 |Risk|Identifying and mitigating potential issues|
 |Resources|Optimizing allocation of people, tools, and equipment|
-
-
 
 ## Purpose of Project Control
 

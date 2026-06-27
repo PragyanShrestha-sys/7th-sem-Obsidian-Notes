@@ -113,14 +113,14 @@ This phase is about **taking action** on risks.
 
 ## Summary Table
 
-| Phase | Sub-Phase | Key Techniques |
-|-------|-----------|----------------|
-| **Risk Assessment** | Identification | Checklist, Design analysis, Assumption analysis, Decomposition |
-| | Analysis | Performance models, Cost models, Network analysis, Quality factor |
-| **Risk Control** | Prioritization | Risk Exposure, Risk Leverage, Risk reduction strategies |
-| | Planning | Buying information, Avoidance, Transfer, Reduction |
-| | Resolution | Prototypes, Simulations, Benchmarks, Analysis, Staffing |
-| | Monitoring | Milestone tracking, Top 10 tracking, Corrective action |
+| Phase               | Sub-Phase      | Key Techniques                                                    |
+| ------------------- | -------------- | ----------------------------------------------------------------- |
+| **Risk Assessment** | Identification | Checklist, Design analysis, Assumption analysis, Decomposition    |
+|                     | Analysis       | Performance models, Cost models, Network analysis, Quality factor |
+| **Risk Control**    | Prioritization | Risk Exposure, Risk Leverage, Risk reduction strategies           |
+|                     | Planning       | Buying information, Avoidance, Transfer, Reduction                |
+|                     | Resolution     | Prototypes, Simulations, Benchmarks, Analysis, Staffing           |
+|                     | Monitoring     | Milestone tracking, Top 10 tracking, Corrective action            |
 
 ---
 

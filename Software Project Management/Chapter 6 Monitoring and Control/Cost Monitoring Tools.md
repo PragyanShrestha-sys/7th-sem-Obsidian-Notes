@@ -1,7 +1,6 @@
 ## Financial, Technical, and Time-Based Cost Monitoring Tools
 
 ---
-
 ### General Definition
 
 Cost monitoring tools are instruments used to **track, measure, and report** project expenditures across three dimensions:

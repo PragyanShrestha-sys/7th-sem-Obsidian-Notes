@@ -7,9 +7,7 @@ Here are the formulas in a clean, plain-text format that you can copy and paste 
 **Formula:**
 
 PV = Planned Percentage Complete × Budget at Completion (BAC)
-
 **Alternative:**
-
 PV = BAC × (Planned Time Elapsed / Total Project Duration)
 
 ---
@@ -36,11 +34,11 @@ EV = BAC × (Work Actually Completed / Total Scope)
 
 ## Summary Table
 
-| Metric | Formula | What It Answers |
-|-------|--------|-----------------|
-| PV | PV = Planned % Complete × BAC | What should we have spent by now? |
-| AC | AC = Sum of actual costs incurred | What did we actually spend? |
-| EV | EV = Actual % Complete × BAC | What value did we actually get? |
+| Metric | Formula                           | What It Answers                   |
+| ------ | --------------------------------- | --------------------------------- |
+| PV     | PV = Planned % Complete × BAC     | What should we have spent by now? |
+| AC     | AC = Sum of actual costs incurred | What did we actually spend?       |
+| EV     | EV = Actual % Complete × BAC      | What value did we actually get?   |
 
 ---
 

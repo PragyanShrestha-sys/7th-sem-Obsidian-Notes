@@ -13,11 +13,9 @@ Note:
 The **critical path** is: **F → G**
 
 ---
-
 ## How Do I Know?
 
 You identify the critical path using **two methods**:
-
 ### Method 1: Float = 0
 
 **Critical activities are those with Float = 0**

@@ -1,6 +1,3 @@
-You are asking excellent questions that get to the heart of how these metrics actually work. Let me address them one by one.
-
----
 
 ### 1. Is the Discount Rate Fixed for All?
 

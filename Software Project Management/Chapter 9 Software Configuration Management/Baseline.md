@@ -1,8 +1,3 @@
-Since you’ve already explored the functions, responsibilities, and roles of SCM, asking about the **baseline** is perfect timing. The baseline is the single most important "physical" artifact in the entire SCM world. 
-
-If SCM is the "time machine" for your project, the **baseline** is the official **"save point"**—like saving your progress in a video game right before you fight the final boss.
-
-Here is the official software engineering definition, followed by what it actually means in real life:
 
 **Official Definition:** A baseline is a formally approved, frozen snapshot of a software project’s configuration items (source code, documents, libraries, and environment settings) at a specific point in time. 
 
@@ -14,11 +9,11 @@ Here is the official software engineering definition, followed by what it actual
 
 Not all baselines are created equal. In a professional software project, you will usually create these three:
 
-| Type of Baseline | What it is | Real-World Example |
-| :--- | :--- | :--- |
-| **Functional Baseline** | The initial agreed-upon requirements. What the customer *said* they wanted at the very start of the project. | The signed contract and design documents before a single line of code is written. |
-| **Allocated Baseline** | The breakdown of those requirements into specific, assignable pieces. | Saying, *"The 'Login' feature belongs to Team A, and the 'Payment' feature belongs to Team B."* |
-| **Product Baseline** | The actual, tested, working source code and executable files that are ready to be shipped to the customer. | The exact code you tagged as `v2.0.0` and sent to the Apple App Store. *(This is what most developers mean when they say "baseline").* |
+| Type of Baseline        | What it is                                                                                                   | Real-World Example                                                                                                                     |
+| :---------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| **Functional Baseline** | The initial agreed-upon requirements. What the customer *said* they wanted at the very start of the project. | The signed contract and design documents before a single line of code is written.                                                      |
+| **Allocated Baseline**  | The breakdown of those requirements into specific, assignable pieces.                                        | Saying, *"The 'Login' feature belongs to Team A, and the 'Payment' feature belongs to Team B."*                                        |
+| **Product Baseline**    | The actual, tested, working source code and executable files that are ready to be shipped to the customer.   | The exact code you tagged as `v2.0.0` and sent to the Apple App Store. *(This is what most developers mean when they say "baseline").* |
 
 ---
 

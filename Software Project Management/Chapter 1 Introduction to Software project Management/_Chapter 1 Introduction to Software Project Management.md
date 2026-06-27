@@ -2,8 +2,7 @@
 Software Project Management is ==the structured process of planning, organizing, scheduling, budgeting, and controlling software development to deliver high-quality, functional software on time and within budget==. It involves managing risks, resources, and stakeholders throughout the software development life cycle (SDLC)
 
 ---
-[[Problems in Software Project Management]]
-
+[[Problems in Software Project Management (sdlc ko phases ko)]]
 Software engineering problems in project management are ==core challenges arising from the technical complexity, uncertainty, and constant change inherent in developing software, often causing projects to exceed budgets, miss deadlines, and produce low-quality products==. Key issues include poor communication, scope creep, unrealistic stakeholder expectations, and difficulty managing technical debt.
 
 ---

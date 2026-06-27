@@ -1,10 +1,6 @@
 ![[Pasted image 20260328090057.png]]
 
 
-Here's an explanation of the **PERT (Program Evaluation and Review Technique)** network planning model:
-
----
-
 ## What Is PERT?
 
 **PERT** is a network planning technique used to analyze and represent the tasks involved in completing a project. It was developed in the 1950s for the U.S. Navy's Polaris missile project to handle uncertainty in activity durations. Unlike CPM which uses a single time estimate, PERT uses **three time estimates** to account for variability and risk.
@@ -22,29 +18,6 @@ PERT recognizes that activity durations are often uncertain. Instead of a single
 | **Pessimistic Time** | **P** or **b** | The maximum time if everything goes wrong (worst-case scenario)    |
 
 ---
-
-## PERT Formula
-
-The **expected time** for each activity is calculated using a weighted average:
-
-```
-Expected Time (TE) = (O + 4M + P) / 6
-```
-
-The formula gives **4 times more weight** to the most likely estimate, balancing optimism and pessimism.
-
-### Variance Formula
-
-To measure uncertainty, PERT also calculates **variance** for each activity:
-
-```
-Variance (σ²) = [(P - O) / 6]²
-```
-
-A higher variance indicates more uncertainty in the activity duration.
-
----
-
 
 ## PERT Calculation Example
 
@@ -74,13 +47,13 @@ This means the activity is expected to take **5.5 days**, with a variance of **1
 
 ## PERT vs CPM Comparison
 
-| Aspect | PERT | CPM |
-|--------|------|-----|
-| **Time Estimates** | Three (O, M, P) | Single |
-| **Focus** | Time and uncertainty | Time and cost trade-offs |
-| **Best For** | R&D, new projects, high uncertainty | Construction, repetitive projects, low uncertainty |
-| **Probability Analysis** | Yes | No |
-| **Complexity** | Higher | Lower |
+| Aspect                   | PERT                                | CPM                                                |
+| ------------------------ | ----------------------------------- | -------------------------------------------------- |
+| **Time Estimates**       | Three (O, M, P)                     | Single                                             |
+| **Focus**                | Time and uncertainty                | Time and cost trade-offs                           |
+| **Best For**             | R&D, new projects, high uncertainty | Construction, repetitive projects, low uncertainty |
+| **Probability Analysis** | Yes                                 | No                                                 |
+| **Complexity**           | Higher                              | Lower                                              |
 
 ---
 
@@ -98,7 +71,6 @@ It's like planning a road trip:
 
 PERT gives you an **expected time of 5.2 hours** and tells you there's an 85% chance you'll arrive within 6 hours. This helps you set realistic expectations and build contingency into your schedule.
 
----
 ---
 [[Sir ko slides ko explanation ]]
 

@@ -40,6 +40,3 @@ Common tools for resource allocation in software projects:
 ![[Pasted image 20260330071227.png]]
 ![[Pasted image 20260330071146.png]]
 
-
----
-[[The Seven Categories of project resources]]

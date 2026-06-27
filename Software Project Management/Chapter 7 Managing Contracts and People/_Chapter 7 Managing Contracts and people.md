@@ -18,7 +18,6 @@ In **software project management**, contracts define the scope, deliverables, t
 ![[Pasted image 20260402104623.png|466]]
 
 ---
-
 ## [[Stages of contract placement]]
 
 | Stage                   | Key Question                               |
@@ -46,6 +45,9 @@ These six stages ensure that software contracts are placed systematically, reduc
 **Contract Management** is the process of actively managing a contract between a client and a software vendor from the point of execution (signing) through project delivery, payment, and final closure. Its goal is to ensure that both parties fulfill their agreed-upon obligations, deliverables, timelines, and quality standards while minimizing disputes and financial risk.
 
 In software projects, contract management bridges the gap between the legal document and the daily technical work of building, testing, and deploying software.
+
+---
+## [[Managing people and Organizing terms]]
 
 ---
 ## [[Decision Making]]

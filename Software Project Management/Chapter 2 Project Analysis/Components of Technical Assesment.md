@@ -1,6 +1,4 @@
 
-
-
 ## Technical Assessment in Software Project Management
 
 While **strategic assessment** answers *"Should we build this and why?"*, **technical assessment** answers *"Can we build this, and how?"*. It evaluates the technical feasibility, risks, and architectural decisions before committing to development.
@@ -21,7 +19,6 @@ Let's break down each component:
 **Project Impact:** Architecture determines development velocity, scalability, maintainability, and team structure. Poor architectural choices create technical debt that compounds over time.
 
 ---
-
 ### 3. Security and Compliance
 **What it is:** Protecting the system and meeting legal/regulatory requirements.
 

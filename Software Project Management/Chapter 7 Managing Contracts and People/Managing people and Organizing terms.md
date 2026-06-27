@@ -2,7 +2,6 @@
 Managing people and organizing terms means handling the **human side of projects**—selecting, developing, motivating, and communicating with the team—because people, not just plans, deliver software.
 
 ---
-
 ## Why It Matters
 
 - Project managers must **motivate the team** during setbacks.
@@ -10,21 +9,20 @@ Managing people and organizing terms means handling the **human side of projects
 - Address **team retention**, **labor relations**, and **performance appraisals** over the project lifecycle.
 
 ---
-
 ## Team Communication Management
 
 - The process of **timely and appropriate** development, collection, dissemination, storage, and disposal of project information.
 - **More than 90%** of a project manager's time is spent on communication.
 
 ---
-
 ## Three Main Concerns
 
-| Concern | What It Means |
-|---------|----------------|
-| **Staff Selection** | Choosing the right people with the right skills for the project. |
+| Concern               | What It Means                                                          |
+| --------------------- | ---------------------------------------------------------------------- |
+| **Staff Selection**   | Choosing the right people with the right skills for the project.       |
 | **Staff Development** | Training, mentoring, and growing team capabilities during the project. |
-| **Staff Motivation** | Keeping the team engaged, rewarded, and resilient through challenges. |
+| **Staff Motivation**  | Keeping the team engaged, rewarded, and resilient through challenges.  |
+
 
 ---
 

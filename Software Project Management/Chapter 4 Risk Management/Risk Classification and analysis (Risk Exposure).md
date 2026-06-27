@@ -12,13 +12,6 @@ Risks may be assessed using:
 
 This helps prioritize the **most critical risks**.
 
-## Part 1: Risk Classification
-
-![[Pasted image 20260329163705.png]]
-
-Based on the images you provided, here is a complete explanation of **Risk Classification and Analysis** as part of the Risk Management Process (RMP).
-
-
 ---
 
 ## Part 2: Steps in Risk Classification and Analysis (yo Basically table banako ho for 'final result (probability * impact)' nikalna  )
@@ -81,14 +74,14 @@ The table below shows Amanda's risk exposure assessment:
 
 ### Interpreting the Example
 
-| Priority Order | Risk | RE | Why |
-|----------------|------|-----|-----|
-| **1st (Highest)** | R1 – Requirements changes during coding | 64 | Very high likelihood (8) × high impact (8) |
-| **2nd** | R3 – Staff sickness affecting critical path | 35 | Medium likelihood (5) × high impact (7) |
-| **3rd** | R6 – Testing reveals design errors | 32 | Medium likelihood (4) × high impact (8) |
-| **4th** | R4 – Staff sickness affecting non-critical | 30 | Very high likelihood (10) but low impact (3) |
-| **5th** | R2 – Specification takes longer | 21 | Low likelihood (3) × high impact (7) |
-| **6th (Lowest)** | R5 – Module coding takes longer | 20 | Low/medium likelihood (4) × medium impact (5) |
+| Priority Order    | Risk                                        | RE<br>(Pobability*Impact) | Why                                           |
+| ----------------- | ------------------------------------------- | ------------------------- | --------------------------------------------- |
+| **1st (Highest)** | R1 – Requirements changes during coding     | 64                        | Very high likelihood (8) × high impact (8)    |
+| **2nd**           | R3 – Staff sickness affecting critical path | 35                        | Medium likelihood (5) × high impact (7)       |
+| **3rd**           | R6 – Testing reveals design errors          | 32                        | Medium likelihood (4) × high impact (8)       |
+| **4th**           | R4 – Staff sickness affecting non-critical  | 30                        | Very high likelihood (10) but low impact (3)  |
+| **5th**           | R2 – Specification takes longer             | 21                        | Low likelihood (3) × high impact (7)          |
+| **6th (Lowest)**  | R5 – Module coding takes longer             | 20                        | Low/medium likelihood (4) × medium impact (5) |
 
 ---
 

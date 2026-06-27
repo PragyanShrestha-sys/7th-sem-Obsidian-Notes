@@ -1,12 +1,9 @@
 
-
 ## What is Risk Management?
 
 Risk management is the process of identifying, analyzing, and responding to potential problems that could affect a software project’s **scope, schedule, cost, or quality**. The goal is **not to eliminate all risks** (impossible), but to **minimize the impact** of negative risks and **maximize opportunities**.
 
 > In simple terms: *“Think ahead before things go wrong.”*
-
-
 
 ## Why is Risk Management Important?
 

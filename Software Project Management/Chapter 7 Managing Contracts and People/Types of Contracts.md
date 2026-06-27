@@ -12,6 +12,7 @@ Contracts in software projects generally fall into three broad categories: **Fix
 - **Pros for client**: Budget certainty; minimal financial risk.
 - **Cons for client**: Less flexibility for changes; vendor may cut corners to save costs.
 - **Software example**: Building a payroll system based on exact regulatory requirements.
+
 ![[Pasted image 20260402104022.png|351]]
 
 ### 2. Time and Materials (T&M) Contract
@@ -33,10 +34,12 @@ Contracts in software projects generally fall into three broad categories: **Fix
 - **Pros for client**: High adaptability; vendor less likely to cut quality.
 - **Cons for client**: Little cost certainty; requires detailed auditing.
 - **Software example**: Building a novel AI system where no historical cost data exists.
+
 ![[Pasted image 20260402104142.png|446]]
 ### 4. Additional Important Contract Types in Software
 
 # **Unit Price Contract**: 
+
 Client pays per predefined unit (e.g., per function point, per user story point, per line of code). Rare but used in component-based development
 
 A unit price contract in software project management is ==an agreement where payment is based on predefined, fixed rates for specific, measurable units of work (e.g., lines of code, API endpoints, test cases, or user stories) rather than a total project price==. It balances flexibility and cost control, allowing for variable, uncertain volumes of work, which makes it ideal for repetitive tasks, migration, or testing projects. 

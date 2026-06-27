@@ -71,6 +71,3 @@ The image lists four primary objectives:
 - Track vendor performance against key indicators (e.g., on-time delivery, defect rates).
 - Hold both parties accountable for their responsibilities.
 - Use performance data to inform future contract negotiations or vendor selections.
-
----
-## [[Managing people and Organizing terms]]

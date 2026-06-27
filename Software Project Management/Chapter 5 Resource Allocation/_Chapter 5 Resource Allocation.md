@@ -1,5 +1,4 @@
 [[Introduction to Resource Allocation]]
-
 **Resource allocation** in software project management is the process of assigning and scheduling available resources—such as developers, testers, tools, budget, and time—to project tasks in the most efficient way possible to achieve project goals.
 
 ---
@@ -22,8 +21,18 @@ It answers the question: _"What do we need to get this project done?"_
 
 [[Advantages and Challanges of Resource Allocation]]
 
+| Benefits             | Challenges              |
+| -------------------- | ----------------------- |
+| Collaboration        | Resource Scarcity       |
+| Cost-Effectiveness   | Skill Shortages         |
+| Improved Team Morale | Resource Overallocation |
+| Cost Reduction       | Lack of Visibility      |
+| —                    | Miscommunication        |
+| —                    | Outdated Technology     |
+| —                    | Scope Changes           |
 
 ---
+
 ![[Pasted image 20260330080912.png]]
 
 ---
@@ -47,12 +56,12 @@ Let me clarify:
 
 ## Difference between Resource Levelling and Resource Smoothing
 
-| Aspect | Resource Leveling | Resource Smoothing |
-|--------|------------------|-------------------|
-| **Constraint** | Resource limits are fixed | Timeline is fixed |
-| **What changes** | Project end date may extend | Timing of non-critical tasks |
-| **Critical path** | May change | Unchanged |
-| **Float usage** | May **delay critical tasks** (extending timeline) | Only uses non-critical float |
-| **Best for** | Limited resources, flexible deadlines | Fixed deadlines, minor conflicts |
+| Aspect            | Resource Leveling                                 | Resource Smoothing               |
+| ----------------- | ------------------------------------------------- | -------------------------------- |
+| **Constraint**    | Resource limits are fixed                         | Timeline is fixed                |
+| **What changes**  | Project end date may extend                       | Timing of non-critical tasks     |
+| **Critical path** | May change                                        | Unchanged                        |
+| **Float usage**   | May **delay critical tasks** (extending timeline) | Only uses non-critical float     |
+| **Best for**      | Limited resources, flexible deadlines             | Fixed deadlines, minor conflicts |
 
 ---

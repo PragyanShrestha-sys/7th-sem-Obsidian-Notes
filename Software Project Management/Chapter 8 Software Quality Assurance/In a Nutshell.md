@@ -8,14 +8,14 @@ Let me refine your understanding:
 
 **Partially yes, but not exactly.** Here's the distinction:
 
-| Aspect | Does SEI do this? |
-|--------|-------------------|
-| Create new programming languages? | ❌ No |
-| Invent new algorithms or data structures? | ❌ Not primarily |
-| Build new software tools? | ✅ Yes (as prototypes/demonstrations) |
-| Develop new software engineering *methods*? | ✅ Yes |
-| Create maturity models (like CMM)? | ✅ Yes |
-| Research how to build software *better, faster, safer*? | ✅ Yes |
+| Aspect                                                  | Does SEI do this?                    |
+| ------------------------------------------------------- | ------------------------------------ |
+| Create new programming languages?                       | ❌ No                                 |
+| Invent new algorithms or data structures?               | ❌ Not primarily                      |
+| Build new software tools?                               | ✅ Yes (as prototypes/demonstrations) |
+| Develop new software engineering *methods*?             | ✅ Yes                                |
+| Create maturity models (like CMM)?                      | ✅ Yes                                |
+| Research how to build software *better, faster, safer*? | ✅ Yes                                |
 
 ---
 

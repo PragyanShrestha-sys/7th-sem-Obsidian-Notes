@@ -1,18 +1,14 @@
-Based on your slide content combined with standard project management principles, here is a complete explanation of **Cost Monitoring**.
-
----
-
 ## What is Cost Monitoring?
 
 **Cost monitoring** is the process of **identifying, measuring, and reporting on costs associated** with a project or activity. It involves continuously tracking expenses to ensure that the project remains within the approved budget while maintaining the ability to deliver the required outcomes.
 
 As noted in your slide, costs can be categorized into three types:
 
-| Cost Type | Description | Examples |
-|-----------|-------------|---------|
-| **Financial** | Monetary expenditures | Salaries, software licenses, hardware, cloud services, vendor contracts |
-| **Technical** | Resource consumption | Server uptime, API calls, storage usage, development tools |
-| **Time-based** | Effort and duration | Person-hours, project timeline, overtime, delays |
+| Cost Type      | Description           | Examples                                                                |
+| -------------- | --------------------- | ----------------------------------------------------------------------- |
+| **Financial**  | Monetary expenditures | Salaries, software licenses, hardware, cloud services, vendor contracts |
+| **Technical**  | Resource consumption  | Server uptime, API calls, storage usage, development tools              |
+| **Time-based** | Effort and duration   | Person-hours, project timeline, overtime, delays                        |
 
 ---
 
@@ -64,7 +60,6 @@ According to your slide, cost monitoring serves to identify:
 ```
 
 ---
-
 ### Key Questions Cost Monitoring Answers
 
 | Question | Purpose |
@@ -76,8 +71,6 @@ According to your slide, cost monitoring serves to identify:
 | Where can we cut costs without impacting quality? | Optimization opportunities |
 
 ---
-
-
 
 ### Tools for Cost Monitoring
 
@@ -115,12 +108,12 @@ According to your slide, cost monitoring serves to identify:
 When integrated with schedule monitoring tools like Slip Charts and Timeline Charts, cost monitoring provides a complete picture of project health—ensuring that projects not only finish on time but also within budget.
 
 ----
-----
-![[Pasted image 20260330150124.png]]
 
+![[Pasted image 20260330150124.png]]
 
 ---
 #### [[Cost Monitoring Tools]]
+
 ![[Pasted image 20260330150246.png]]
 
 ---

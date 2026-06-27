@@ -10,10 +10,10 @@ The key constraint: **The project end date does not change.** You work within th
 
 Think of it like this:
 
-| Technique | Constraint | What You Adjust |
-|-----------|------------|-----------------|
-| **Resource Smoothing** | Time is fixed | Resource assignment and timing of non-critical activities |
-| **Resource Leveling** | Resource limits are fixed | Project timeline may extend |
+| Technique              | Constraint                | What You Adjust                                           |
+| ---------------------- | ------------------------- | --------------------------------------------------------- |
+| **Resource Smoothing** | Time is fixed             | Resource assignment and timing of non-critical activities |
+| **Resource Leveling**  | Resource limits are fixed | Project timeline may extend                               |
 
 With smoothing, you have a hard deadline that cannot move. Your only flexibility is to shift non-critical tasks within their float (slack) to balance when resources are needed.
 

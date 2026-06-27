@@ -100,30 +100,6 @@ Based on the image you provided, here is a detailed explanation of the **benefit
 
 **Example:** Using spreadsheets to track resources, a manager doesn't realize a developer is overallocated until the developer submits timesheets at month-end—too late to prevent the delay.
 
----
-
-### 5. Miscommunication
-**What it means:** Poor communication between teams, departments, or with stakeholders leads to allocation errors.
-
-**Impact:**
-- Resources may be double-booked across projects
-- Wrong resources are assigned because requirements were misunderstood
-- Customer expectations are not met
-
-**Example:** The sales team promised a client a dedicated UX designer without checking with the delivery team. The UX designer was already allocated elsewhere, creating conflict and disappointed stakeholders.
-
----
-
-### 6. Outdated Technology
-**What it means:** Relying on legacy tools like spreadsheets, emails, or non-integrated systems for resource management.
-
-**Impact:**
-- No real-time data—information is always stale
-- Manual errors in tracking and calculations
-- Inability to model "what-if" scenarios for reallocation
-- Time wasted on administrative overhead
-
-**Example:** A project manager manually updates an Excel sheet for resource allocation. A developer takes sick leave, but the update is missed for three days, causing tasks to be misassigned.
 
 ---
 

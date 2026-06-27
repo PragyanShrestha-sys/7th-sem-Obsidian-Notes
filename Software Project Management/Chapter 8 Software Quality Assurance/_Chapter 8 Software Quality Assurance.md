@@ -88,7 +88,6 @@ Software quality managers use a **cyclical process-based** quality assessment to
 ## [[SEI (Software Engineering Institute and its Missions)]]
 
 ---
-
 ## [[QA Organizational Structure]]
 
 The **QA Organizational Structure** defines how the Quality Assurance team is organized, how reporting lines work, and how different testing functions (functional, automation, performance, environment management) relate to each other and to the rest of the organization.

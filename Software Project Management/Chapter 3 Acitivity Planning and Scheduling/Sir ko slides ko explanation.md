@@ -1,7 +1,3 @@
-I'll explain the **Program Evaluation and Review Technique (PERT)** steps in a clear, detailed way based on the content you provided.
-
----
-
 ## What is PERT?
 
 **PERT** is a project management technique designed to handle **uncertainty** in activity durations. It uses **three time estimates** for each activity to calculate expected durations and analyze the probability of meeting project deadlines.
@@ -18,6 +14,7 @@ I'll explain the **Program Evaluation and Review Technique (PERT)** steps in a c
 - Each activity should have a **specific start and end point**
 
 **Example from your project:**
+
 | Activity | Description |
 |----------|-------------|
 | A | Design phase |
@@ -42,15 +39,16 @@ I'll explain the **Program Evaluation and Review Technique (PERT)** steps in a c
 - **Start-to-Finish (SF):** Activity B cannot finish until Activity A starts (rare)
 
 **Example from your project:**
-| Activity | Predecessors | Dependency Type |
-|----------|--------------|-----------------|
-| A | - | No dependencies |
-| B | - | No dependencies |
-| C | A | C cannot start until A finishes (FS) |
-| D | B | D cannot start until B finishes (FS) |
-| E | B | E cannot start until B finishes (FS) |
-| G | E, F | G cannot start until both E and F finish (FS) |
-| H | C, D | H cannot start until both C and D finish (FS) |
+
+| Activity | Predecessors | Dependency Type                               |
+| -------- | ------------ | --------------------------------------------- |
+| A        | -            | No dependencies                               |
+| B        | -            | No dependencies                               |
+| C        | A            | C cannot start until A finishes (FS)          |
+| D        | B            | D cannot start until B finishes (FS)          |
+| E        | B            | E cannot start until B finishes (FS)          |
+| G        | E, F         | G cannot start until both E and F finish (FS) |
+| H        | C, D         | H cannot start until both C and D finish (FS) |
 
 ---
 
@@ -95,16 +93,16 @@ TE = 10.5 weeks
 
 ### For All Activities (Example)
 
-| Activity | O | M | P | TE = (O + 4M + P)/6 |
-|----------|---|---|---|---------------------|
-| A | 4 | 6 | 8 | (4 + 24 + 8)/6 = 36/6 = 6 |
-| B | 3 | 4 | 7 | (3 + 16 + 7)/6 = 26/6 = 4.3 |
-| C | 2 | 3 | 5 | (2 + 12 + 5)/6 = 19/6 = 3.2 |
-| D | 3 | 4 | 6 | (3 + 16 + 6)/6 = 25/6 = 4.2 |
-| E | 2 | 3 | 5 | (2 + 12 + 5)/6 = 19/6 = 3.2 |
-| F | 8 | 10 | 15 | (8 + 40 + 15)/6 = 63/6 = 10.5 |
-| G | 2 | 3 | 7 | (2 + 12 + 7)/6 = 21/6 = 3.5 |
-| H | 1 | 2 | 4 | (1 + 8 + 4)/6 = 13/6 = 2.2 |
+| Activity | O   | M   | P   | TE = (O + 4M + P)/6           |
+| -------- | --- | --- | --- | ----------------------------- |
+| A        | 4   | 6   | 8   | (4 + 24 + 8)/6 = 36/6 = 6     |
+| B        | 3   | 4   | 7   | (3 + 16 + 7)/6 = 26/6 = 4.3   |
+| C        | 2   | 3   | 5   | (2 + 12 + 5)/6 = 19/6 = 3.2   |
+| D        | 3   | 4   | 6   | (3 + 16 + 6)/6 = 25/6 = 4.2   |
+| E        | 2   | 3   | 5   | (2 + 12 + 5)/6 = 19/6 = 3.2   |
+| F        | 8   | 10  | 15  | (8 + 40 + 15)/6 = 63/6 = 10.5 |
+| G        | 2   | 3   | 7   | (2 + 12 + 7)/6 = 21/6 = 3.5   |
+| H        | 1   | 2   | 4   | (1 + 8 + 4)/6 = 13/6 = 2.2    |
 
 ---
 

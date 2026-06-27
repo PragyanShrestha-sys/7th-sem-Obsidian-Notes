@@ -3,7 +3,6 @@ This is an excellent question because **strategic assessment** bridges high-leve
 Let’s break down each component from your image and explain how it applies specifically to software project management.
 
 ---
-
 ### 1. Internal Analysis
 **What it is:** An honest look inside your own organization or team.
 
@@ -16,7 +15,6 @@ Let’s break down each component from your image and explain how it applies spe
 *Example:* If your internal analysis shows a lack of DevOps expertise, building a complex cloud-native application may require hiring or training before starting.
 
 ---
-
 ### 2. External Analysis
 **What it is:** Understanding the environment outside your organization.
 
@@ -29,7 +27,6 @@ Let’s break down each component from your image and explain how it applies spe
 *Example:* If you’re building a healthcare app, external analysis would reveal strict data privacy laws, which directly impact your architecture and security requirements.
 
 ---
-
 ### 3. SWOT Analysis
 **What it is:** A synthesis of internal and external findings.
 
@@ -42,7 +39,6 @@ Let’s break down each component from your image and explain how it applies spe
 *Example:* A strength might be your team’s experience with microservices, but a threat could be a competitor launching a similar product with better funding. SWOT helps you decide where to focus.
 
 ---
-
 ### 4. Stakeholder Analysis
 **What it is:** Identifying who has a stake in the project and what they care about.
 

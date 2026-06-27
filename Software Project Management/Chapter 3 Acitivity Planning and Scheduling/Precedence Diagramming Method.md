@@ -2,8 +2,6 @@
 
 Based on the content you provided, let me explain PDM in a clear, structured way.
 
-
-
 ## What is PDM?
 
 The **Precedence Diagramming Method (PDM)** is a project scheduling technique used to visually represent the **logical relationships and dependencies** among project activities.
@@ -193,7 +191,3 @@ Diagramming method
 
 
 ---
-## Shortening Project Duration
-![[Pasted image 20260329094945.png]]
-![[Pasted image 20260329094955.png]]
-![[Pasted image 20260329095000.png]]

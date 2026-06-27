@@ -6,7 +6,6 @@ A **Software Quality Assurance (SQA) Plan** is a **document that outlines the st
 It is typically developed **early** in the software development process and is used to guide the entire development and testing process.
 
 ---
-
 ## Purpose of an SQA Plan
 
 | Purpose | Explanation |
@@ -83,7 +82,6 @@ The images list **8 key elements** of an SQA plan:
 - Environment configuration control
 
 ---
-
 ### 6. Problem Reporting and Resolution
 
 **Description:** Procedures for identifying and resolving defects in the software.

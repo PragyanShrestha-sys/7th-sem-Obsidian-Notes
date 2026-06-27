@@ -13,7 +13,6 @@ In simple terms:
 The image describes three types of test strategies:
 
 ---
-
 ## Types of Test Strategy
 
 ### 1. Static Test Strategy

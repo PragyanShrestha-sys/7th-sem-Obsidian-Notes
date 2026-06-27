@@ -1,4 +1,4 @@
-vb[[Introduction to Project Analysis]]
+[[Introduction to Project Analysis]]
 Project analysis is ==the systematic evaluation of a project's feasibility, risks, and progress, conducted throughout its life cycle to ensure it stays on track, within budget, and meets objectives==. It involves assessing costs and benefits to make informed decisions and prevent issues before they occur.
 
 ---

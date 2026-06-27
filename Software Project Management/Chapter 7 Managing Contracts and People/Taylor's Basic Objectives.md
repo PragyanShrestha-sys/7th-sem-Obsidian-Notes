@@ -13,7 +13,6 @@ Taylor's objectives were part of his **Scientific Management** theory, which sou
 | **3. Give incentives in the form of higher wages to best workers** (motivation) | Reward high-performing workers with financial or tangible benefits to motivate continued excellence.             | **How:** <br> - Offer performance-based bonuses (e.g., for on-time delivery with low defect rates). <br> - Provide salary hikes or promotions for consistent top performers. <br> - Use spot awards, profit sharing, or extra paid time off. <br> - Public recognition combined with monetary rewards (e.g., "Employee of the Sprint" with a bonus). |
 
 ---
-
 ## How Taylor's Objectives Work Together
 
 Taylor believed these three objectives form a cycle:

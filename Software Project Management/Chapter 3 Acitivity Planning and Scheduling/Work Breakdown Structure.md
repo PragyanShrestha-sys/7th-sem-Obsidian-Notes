@@ -13,8 +13,6 @@ The WBS is a hierarchical breakdown of a project where the **root** is the **pro
 ---
 [[Examples of WBS]]
 
-
-
 ---
 [[Components of WBS Structure]]
 

@@ -5,7 +5,7 @@
 
 ---
 
-[[Net Present Value (Present Worth]]
+[[Net Present Value (Present Worth)]]
 Net Present Value (NPV) or Present Worth measures the profitability of an investment by calculating the difference between the present value of cash inflows and outflows over time. It accounts for the time value of money, discounting future cash flows to today's value to determine if a project adds value.
 
 The objective is to determine the current worth of the project’s financial performance and
@@ -35,8 +35,6 @@ You've nailed it.
 
 They are mathematically linked. If NPV is positive, Future Worth is positive. They are just two ways of looking at the same financial reality.
 
-
-
 ### Final Simple Summary
 
 > **NPV and Future Worth are the same test.**
@@ -60,8 +58,7 @@ _"What is the average yearly benefit (or cost) of this project, spread evenly ac
 > **Annual Worth tells you average value per year.**
 
 ---
----
-[[Internal Rate of Return (IRR]]
+[[Internal Rate of Return (IRR)]]
 **Internal Rate of Return (IRR)** is the **discount rate** that makes the Net Present Value (NPV) of a project equal to zero.
 
 ---
@@ -71,4 +68,3 @@ _"What is the average yearly benefit (or cost) of this project, spread evenly ac
 $$BCR = \frac{\text{Present Value of Benefits}}{\text{Present Value of Costs}}$$
 
 ---
-[[Payback Period]]

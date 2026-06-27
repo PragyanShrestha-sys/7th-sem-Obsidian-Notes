@@ -23,7 +23,7 @@ Risk management is the process of identifying, analyzing, and responding to pote
 ![[Pasted image 20260329162125.png]]
 
 ---
-## [[Risk Classification and analysis]]
+## [[Risk Classification and analysis (Risk Exposure)]]
 
 | Step                      | Action                  | Key Question                          |
 | ------------------------- | ----------------------- | ------------------------------------- |
@@ -33,6 +33,7 @@ Risk management is the process of identifying, analyzing, and responding to pote
 | 4. Evaluate Key Decisions | Assess major choices    | *What risks come with this decision?* |
 | 5. Document the Risk      | Record in Risk Register | *How do we track this?*               |
 
+
 **Risk Classification** is the process of grouping identified risks into categories (e.g., by type, source, or impact area).  
 **Risk Analysis** is the process of evaluating each risk to determine its **probability** (likelihood) and **impact** (severity).
 
@@ -40,6 +41,11 @@ Together, they answer two critical questions:
 
 1. **What kind of risk is this?** (Classification)
 2. **How serious is it?** (Analysis)
+
+```
+Risk Exposure (RE) = Probability × Impact
+```
+
 
 > **Purpose:** Prioritize risks so you focus time and money on the most dangerous ones.
 
@@ -57,8 +63,7 @@ We want to answer questions like:
 Z-Value tells you how many **standard deviations** your target date is from your expected date. Then we convert that to a **probability percentage**.
 
 ---
-##  [[Boehm's Risk Engineering Breakdown]]
-
+##  [[Chapter 4 Risk Management/Boehm's Risk Engineering Breakdown (risk handling)]]
 
 
 ----

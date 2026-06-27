@@ -8,12 +8,12 @@ A key principle is that the structure must provide the **QA manager with direct 
 
 The image identifies four critical components:
 
-| Component | Role |
-|-----------|------|
-| **Functional Testing** | Validates that software features work according to requirements |
-| **Automated Testing** | Uses scripts and tools to execute repeatable tests efficiently |
-| **Performance Testing** | Tests system behavior under load, stress, and high concurrency |
-| **Environment Management** | Manages test environments, configurations, and test data |
+| Component                  | Role                                                            |
+| -------------------------- | --------------------------------------------------------------- |
+| **Functional Testing**     | Validates that software features work according to requirements |
+| **Automated Testing**      | Uses scripts and tools to execute repeatable tests efficiently  |
+| **Performance Testing**    | Tests system behavior under load, stress, and high concurrency  |
+| **Environment Management** | Manages test environments, configurations, and test data        |
 
 ---
 
@@ -33,10 +33,10 @@ The image provides a clear, phased strategy for building a QA organization:
 
 The number of leads/managers depends on the organization size:
 
-| Organization Size | Leadership Structure |
-|-------------------|---------------------|
-| **Small to Medium** | Three leads/managers: <br> 1. Functional <br> 2. Environments <br> 3. Combined Automation & Performance |
-| **Ideal / Large** | Four leads: <br> 1. Functional <br> 2. Environments <br> 3. Automation (separate) <br> 4. Performance (separate) |
+| Organization Size   | Leadership Structure                                                                                             |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Small to Medium** | Three leads/managers: <br> 1. Functional <br> 2. Environments <br> 3. Combined Automation & Performance          |
+| **Ideal / Large**   | Four leads: <br> 1. Functional <br> 2. Environments <br> 3. Automation (separate) <br> 4. Performance (separate) |
 
 > **Note:** Restructure the organization if current performance is not optimal.
 

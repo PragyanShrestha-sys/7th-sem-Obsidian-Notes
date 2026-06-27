@@ -1,3 +1,7 @@
+A **Test Plan** is a formal document that describes the scope, approach, resources, schedule, and activities for software testing. It serves as a roadmap for the testing team, guiding what will be tested, how it will be tested, who will do the testing, and when testing activities will occur.
+
+In simple terms: **A test plan answers the question, "How are we going to test this software?"**
+
 ### Objectives of a Test Plan
 
 | Objective                          | Explanation                                                                                                                                               |
@@ -6,9 +10,6 @@
 | **2. Establish testing approach**  | Specify test levels (unit, integration, system, acceptance), techniques (black-box, white-box), and types (functional, performance, security).            |
 | **3. Set entry and exit criteria** | Define conditions to start testing (e.g., code freeze, build available) and conditions to stop testing (e.g., 95% test pass rate, zero critical defects). |
 | **4. Allocate resources**          | Identify testers, tools, environments, and budget needed for testing.                                                                                     |
-| **5. Create testing schedule**     | Provide timelines for test case design, execution, defect fixing, and re-testing.                                                                         |
-| **6. Manage risks**                | Identify testing risks (e.g., environment unavailable, short schedule) and propose mitigation strategies.                                                 |
-| **7. Define deliverables**         | Specify what documents and artifacts testing will produce (test cases, defect logs, test summary reports).                                                |
 | **8. Ensure traceability**         | Link test cases to requirements so every requirement is tested.                                                                                           |
 
 ## Importance of a Test Plan
@@ -26,7 +27,6 @@
 ---
 ### [[Parts of a test plan]]
 A test plan is a formal document that guides the testing process. The image lists the following essential components:
-
 
 | Component                        | Key Question Answered                      |
 | -------------------------------- | ------------------------------------------ |

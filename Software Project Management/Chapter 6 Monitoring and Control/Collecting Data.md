@@ -1,11 +1,10 @@
-Based on the slides you provided, **Collecting Data** is the foundational activity within **Monitoring and Evaluation (M&E)** . It is the mechanism that transforms abstract project activities into concrete evidence.
+ **Collecting Data** is the foundational activity within **Monitoring and Evaluation (M&E)** . It is the mechanism that transforms abstract project activities into concrete evidence.
 
 Without data collection, Monitoring and Control becomes guesswork—you cannot measure progress, control quality, or manage risks if you do not have accurate information about what is actually happening.
 
 Here is a detailed explanation of data collection as part of Monitoring and Evaluation, structured around the concepts in your slides.
 
 ---
-
 ### 1. What is Data Collection in M&E?
 
 In the context of software project management, **data collection** is the systematic process of gathering information from various sources to measure the success, progress, and health of a project.
@@ -38,7 +37,6 @@ Your slide correctly emphasizes that data collection requires **continuous monit
 - **Reliable:** Would the same measurement produce the same result if repeated?
 - **Consistent:** Is the data collected in the same way across different teams and time periods? (e.g., Is "done" defined the same way for all sprints?)
 
----
 ---
 
 ### 4. Common Data Collection Methods (Expanded)

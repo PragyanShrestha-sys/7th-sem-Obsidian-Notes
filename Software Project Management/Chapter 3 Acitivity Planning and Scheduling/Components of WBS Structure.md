@@ -14,6 +14,7 @@ Here are the **components/elements of a Work Breakdown Structure (WBS)** explain
 
 - **Tasks**: Work packages broken down into smaller activities so they can be scheduled, monitored, and controlled by one person.
 ---
+
 ![[Pasted image 20260327074845.png]]
 ![[Pasted image 20260327075001.png]]
 
@@ -22,7 +23,6 @@ Here are the **components/elements of a Work Breakdown Structure (WBS)** explain
 Here's a simple explanation of the WBS components in my own words, along with a diagram you can use as a reference.
 
 ---
-
 ## Simple Explanation
 
 Imagine you're building a house. The **Work Breakdown Structure (WBS)** is like a family tree that breaks the big project into smaller and smaller pieces until each piece is small enough for one person to handle.

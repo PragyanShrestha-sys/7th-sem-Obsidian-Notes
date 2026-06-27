@@ -85,3 +85,5 @@ Money is the universal resource that enables the acquisition of all other catego
 | **Services**  | Cloud providers, Auditors, SaaS      | SLAs, vendor lock-in                      |
 | **Time**      | Sprints, Release dates, Man-hours    | Critical path, market windows             |
 | **Money**     | Salaries, Cloud spend, Subscriptions | Burn rate, ROI, budget cap                |
+
+SSTEMM L 

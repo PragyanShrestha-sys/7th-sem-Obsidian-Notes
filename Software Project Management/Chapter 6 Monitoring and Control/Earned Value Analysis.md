@@ -13,8 +13,8 @@ To perform EVA, you must first establish three core values based on the projectâ
 | **Planned Value** | **PV** (or BCWS) | The authorized budget assigned to the work scheduled to be completed by a specific date.              | *Example:* By the end of Sprint 4, you planned to have completed the "Login API" module, budgeted at \$10,000. PV = \$10,000.      |
 | **Actual Cost**   | **AC** (or ACWP) | The total costs actually incurred (labor, licenses, cloud spend) for the work completed by that date. | *Example:* To finish the "Login API," the team worked 20 overtime hours and consumed extra cloud testing resources. AC = \$13,000. |
 | **Earned Value**  | **EV** (or BCWP) | The **value** of the work *actually* completed by that date, measured against the original budget.    | *Example:* The "Login API" is 100% done. Its budgeted value was \$10,000. EV = \$10,000.                                           |
-[[Example for PV(planned value), AC (Actual cost), EV(Earned Value]]
 
+[[Example for PV(planned value), AC (Actual cost), EV(Earned Value]]
 
 ---
 

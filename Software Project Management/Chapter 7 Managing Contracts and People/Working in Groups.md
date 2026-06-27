@@ -16,7 +16,7 @@ Formal groups in an organization are divided into two main types:
 
 
 ---
-### [[Various Phases a team passes through]]
+### [[Various Phases a team passes through (Becoming a Team)]]
 ```
 Forming → Storming → Norming → Performing → Adjourning
   ↓          ↓          ↓           ↓             ↓

@@ -1,9 +1,7 @@
 Activity planning and scheduling in software project management involve ==breaking down a project into smaller, manageable tasks (planning), sequencing them based on dependencies, and mapping them to a timeline (scheduling) to ensure timely, budget-compliant delivery==. This process defines, organizes, and allocates resources to tasks using techniques like 
 
 Activity planning 
-
 It consists of two main components:
-
 ### 1. Defining Activities
 This involves breaking down the project into specific, manageable tasks.  
 - It starts with the **Work Breakdown Structure (WBS)** to identify all necessary activities.  

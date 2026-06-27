@@ -5,10 +5,7 @@ Visualizing progress is the practice of representing collected project data usin
 - **Past performance:** How did we get here?
 - **Future projections:** Where are we likely to end up?
 
-
-
 ---
-
 ### 2. Why is Visualization Important?
 
 Your slide highlights five key benefits. Here is how they apply in practice:
@@ -20,6 +17,7 @@ Your slide highlights five key benefits. Here is how they apply in practice:
 | **Identify Bottlenecks or Delays**     | Patterns in visuals—such as a flattening burndown line or stacked tasks in a Gantt—reveal where work is stuck.                                  |
 | **Make Informed Decisions**            | Visual evidence supports objective decision-making. Instead of guessing, managers can see exactly where to apply corrective action.             |
 | **Ensure Project Remains on Schedule** | Regular visualization creates accountability. When teams see the chart trending negatively, they are motivated to adjust before it is too late. |
+|                                        |                                                                                                                                                 |
 
 ---
 
@@ -31,8 +29,6 @@ Your slide lists four commonly used methods. Here is a detailed explanation of e
 
 A **Gantt Chart** is a horizontal bar chart that visually represents a project schedule over time. It is one of the most widely used tools in project management for planning, scheduling, and monitoring progress.
 
-
-
 - **Tasks** and their durations
 - **Timeline** (start and end dates)
 - **Dependencies** between tasks
@@ -40,7 +36,6 @@ A **Gantt Chart** is a horizontal bar chart that visually represents a project
 - **Milestones** (key events or deliverables)
 
 ---
-
 #### B. [[Slip Chart]]
 
 A **Slip Chart** (also known as a **Schedule Slippage Chart**) is a visual project management tool used to track and report schedule delays. In software project management, where requirements often change and estimation is difficult, the Slip Chart serves as an early warning system to detect when a project is falling behind its planned timeline.
@@ -48,7 +43,6 @@ A **Slip Chart** (also known as a **Schedule Slippage Chart**) is a visual proje
 
 ---
 #### C. [[Timeline Chart]]
-
 
 ---
 

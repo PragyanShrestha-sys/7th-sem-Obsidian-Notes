@@ -23,7 +23,6 @@ Where:
 - **Present Value of Costs:** All cash outflows discounted to today (including the initial investment)
 
 ---
-
 ### How is it Used?
 
 The decision rule is straightforward:
@@ -77,11 +76,11 @@ That is a **16.8% return on investment** in present value terms.
 
 ### BCR vs. NPV vs. IRR
 
-| Metric | Output | Decision Rule | What It Tells You |
-| :--- | :--- | :--- | :--- |
-| **NPV** | Dollar amount (e.g., $168,285) | Accept if NPV > 0 | Total value created in today's dollars |
-| **IRR** | Percentage (e.g., 16.5%) | Accept if IRR > Cost of Capital | Average annual percentage return |
-| **BCR** | Ratio (e.g., 1.168) | Accept if BCR > 1 | Dollars returned per dollar invested |
+| Metric  | Output                         | Decision Rule                   | What It Tells You                      |
+| :------ | :----------------------------- | :------------------------------ | :------------------------------------- |
+| **NPV** | Dollar amount (e.g., $168,285) | Accept if NPV > 0               | Total value created in today's dollars |
+| **IRR** | Percentage (e.g., 16.5%)       | Accept if IRR > Cost of Capital | Average annual percentage return       |
+| **BCR** | Ratio (e.g., 1.168)            | Accept if BCR > 1               | Dollars returned per dollar invested   |
 
 | Scenario                                        | Why BCR is Useful                                                                                                                     |
 | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
